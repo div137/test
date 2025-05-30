@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3 Quiz by Divyanshu Sir</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="quizcss.css">
+
+   
+</head>
+<body>
+    <div id="nameModal" class="modal" style="display: block;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 style="color: rgb(20, 109, 0);">Enter Your Name</h2>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="userNameInput" placeholder="Your Name" autofocus value=" ">
+                <p style="text-align: left; font-size: 14px; color: #666; margin-top: 5px;">
+                    Please enter your name to start the test.
+                </p>
+            </div>
+            <br>
+            <div class="modal-footer">
+                <a id="startTestBtn" class="button-1">Start Test <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="switchTestModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Test In Progress</h2>
+            <p>Please submit your current test before switching to another test.</p>
+            <button id="submitCurrentBtn" class="button-1">Submit Current Test</button>
+            <button id="continueCurrentBtn" style="background-color: #95a5a6;">Continue Current Test</button>
+        </div>
+    </div>
+
+    <div class="timer-container" id="timer" style="display: none;">
+        Time Remaining: 80:00
+    </div>
+    
+    <div class="container">
+        <div class="left-panel">
+            <div id="testTitle" class="test-title"></div>
+            <div class="quiz-container">
+                <div id="question" class="question"></div>
+                <div id="options" class="options"></div>
+                <div class="button-container">
+                    <button id="previousBtn">Previous</button>
+                    <button id="nextBtn">Next</button>
+                </div>
+                <center><button id="submitBtn">Submit Test</button></center>
+            </div>
+            <div id="result" class="result" style="display: none;"></div>
+        </div>
+        <div class="right-panel">
+            <h3>Questions</h3>
+            <div class="question-numbers" id="questionNumbers"></div>
+        </div>
+    </div>
+    
+    <div class="test-buttons-container">
+        <h3 style="text-align: center; margin-top: 10px;">Select a Test</h3>
+        <div class="test-buttons-grid" id="testButtonsGrid"></div>
+    </div>
+
+    <script>
+        // Global variables
+        let currentQuestionIndex = 0;
+        let userAnswers = [];
+        let questions = [];
+        let userName = "";
+        let timerInterval;
+        let timeLeft = 40 * 60;
+        let testStarted = false;
+        let currentTest = null;
+        let completedTests = [];
+
+        // Fisher-Yates shuffle algorithm
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        function shuffleQuestion(question) {
+            const shuffledOptions = [...question.options];
+            const correctAnswer = shuffledOptions[question.answer];
+            
+            for (let i = shuffledOptions.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffledOptions[i], shuffledOptions[j]] = [shuffledOptions[j], shuffledOptions[i]];
+            }
+            
+            const newAnswerIndex = shuffledOptions.indexOf(correctAnswer);
+            
+            return {
+                question: question.question,
+                options: shuffledOptions,
+                answer: newAnswerIndex
+            };
+        }
+
+        // Define questions for 4 tests (M1, M2, M3, M4)
+        const allTestQuestions = {
+            "Information Technology Tools and Network Basics":[
+                {
+                    question: "What is the capital of France?",
+                    options: ["London", "Berlin", "Paris", "Madrid"],
+                    answer: 2
+                },
+                {
+                    question: "Which planet is known as the Red Planet?",
+                    options: ["Venus", "Mars", "Jupiter", "Saturn"],
+                    answer: 1
+                }
+            ],
+            "Web Designing & Publishing": [
+                {
+                    question: "What is the largest mammal?",
+                    options: ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+                    answer: 1
+                },
+                {
+                    question: "Which gas do plants absorb from the atmosphere?",
+                    options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+                    answer: 1
+                }
+            ],
+            "Programming and Problem Solving through Python": [
+                {
+                    question: "Who painted the Mona Lisa?",
+                    options: ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+                    answer: 2
+                },
+                {
+                    question: "What is the chemical symbol for gold?",
+                    options: ["Go", "Gd", "Au", "Ag"],
+                    answer: 2
+                }
+            ],
+            "Internet of Things and its Applications": [
+                {
+                    question: "Which country is home to the kangaroo?",
+                    options: ["New Zealand", "South Africa", "Australia", "Brazil"],
+                    answer: 2
+                },
+                {
+                    question: "What is the largest ocean on Earth?",
+                    options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+                    answer: 3
+                }
+            ]
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            createTestButtons();
+            setupEventListeners();
+        });
+
+        function createTestButtons() {
+            const testButtonsGrid = document.getElementById('testButtonsGrid');
+            
+            // Create buttons for M1, M2, M3, M4
+            const testNames = ["Information Technology Tools and Network Basics", "Web Designing & Publishing", "Programming and Problem Solving through Python", "Internet of Things and its Applications"];
+            
+            testNames.forEach(testName => {
+                const button = document.createElement('button');
+                button.className = 'test-btn';
+                button.textContent = testName;
+                button.dataset.testNumber = testName;
+                button.addEventListener('click', function() {
+                    const testNumber = this.dataset.testNumber;
+                    handleTestButtonClick(testNumber);
+                });
+                testButtonsGrid.appendChild(button);
+            });
+        }
+
+        function handleTestButtonClick(testNumber) {
+            if (testStarted && currentTest !== testNumber) {
+                document.getElementById('switchTestModal').style.display = 'block';
+                return;
+            }
+            
+            document.querySelector('.test-buttons-container').style.display = 'none';
+            loadTestQuestions(testNumber, true);
+            document.querySelector('.container').style.display = 'flex';
+            document.querySelector('.timer-container').style.display = 'block';
+            
+            if (!testStarted) {
+                testStarted = true;
+                startTimer();
+            }
+            
+            currentTest = testNumber;
+        }
+
+        function startTimer() {
+            clearInterval(timerInterval);
+            timeLeft = 80 * 60;
+            updateTimerDisplay();
+            
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                updateTimerDisplay();
+                
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    showResults();
+                }
+            }, 1000);
+        }
+
+        function updateTimerDisplay() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            document.getElementById('timer').textContent = 
+                `Time Remaining: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            
+            if (timeLeft < 60) {
+                document.getElementById('timer').style.color = '#e74c3c';
+                document.getElementById('timer').style.fontWeight = 'bold';
+            }
+        }
+
+        function loadTestQuestions(testNumber, resetTimer) {
+            currentQuestionIndex = 0;
+            userAnswers = [];
+            
+            // Display test title
+            document.getElementById('testTitle').textContent = testNumber;
+            
+            // Get the specific test questions and shuffle them
+            const originalQuestions = allTestQuestions[testNumber];
+            questions = shuffleArray(originalQuestions.map(q => shuffleQuestion(q)));
+            userAnswers = Array(questions.length).fill(null);
+            
+            const questionNumbersElement = document.getElementById('questionNumbers');
+            questionNumbersElement.innerHTML = '';
+            renderQuestionNumbers();
+            
+            renderQuestion(currentQuestionIndex);
+            
+            document.getElementById('result').style.display = 'none';
+            document.querySelector('.quiz-container').style.display = 'block';
+            
+            if (resetTimer && testStarted) {
+                startTimer();
+            }
+        }
+
+        function renderQuestion(index) {
+            const questionElement = document.getElementById("question");
+            const optionsElement = document.getElementById("options");
+
+            const question = questions[index];
+            questionElement.textContent = `${index + 1}. ${question.question}`;
+
+            optionsElement.innerHTML = "";
+            question.options.forEach((option, i) => {
+                const label = document.createElement("label");
+                const input = document.createElement("input");
+                input.type = "radio";
+                input.name = "option";
+                input.value = i;
+                if (userAnswers[index] === i) {
+                    input.checked = true;
+                }
+
+                label.appendChild(input);
+                label.appendChild(document.createTextNode(option));
+                optionsElement.appendChild(label);
+
+                input.addEventListener("change", () => {
+                    userAnswers[index] = i;
+                    updateQuestionNumberStatus(index);
+                });
+            });
+
+            highlightCurrentQuestion(index);
+            updateButtonStates();
+        }
+
+        function renderQuestionNumbers() {
+            const questionNumbersElement = document.getElementById("questionNumbers");
+
+            questions.forEach((_, index) => {
+                const numberDiv = document.createElement("div");
+                numberDiv.className = "question-number";
+                numberDiv.textContent = index + 1;
+                numberDiv.onclick = () => {
+                    currentQuestionIndex = index;
+                    renderQuestion(index);
+                };
+                questionNumbersElement.appendChild(numberDiv);
+            });
+        }
+
+        function highlightCurrentQuestion(index) {
+            const questionNumbersElement = document.getElementById("questionNumbers");
+            Array.from(questionNumbersElement.children).forEach((child, i) => {
+                child.classList.toggle("active", i === index);
+                if (userAnswers[i] !== null) {
+                    child.classList.add("answered");
+                } else {
+                    child.classList.remove("answered");
+                }
+            });
+        }
+
+        function updateQuestionNumberStatus(index) {
+            const questionNumbersElement = document.getElementById("questionNumbers");
+            const questionNumberDiv = questionNumbersElement.children[index];
+
+            if (userAnswers[index] !== null) {
+                questionNumberDiv.classList.add("answered");
+            } else {
+                questionNumberDiv.classList.remove("answered");
+            }
+        }
+
+        function showResults() {
+            clearInterval(timerInterval);
+            const resultElement = document.getElementById("result");
+            const quizContainer = document.querySelector('.quiz-container');
+            
+            quizContainer.style.display = 'none';
+            resultElement.style.display = "block";
+            testStarted = false;
+
+            // Show test buttons again after submission
+            document.querySelector('.test-buttons-container').style.display = 'block';
+            document.querySelector('.timer-container').style.display = 'none';
+
+            if (currentTest && !completedTests.includes(currentTest)) {
+                completedTests.push(currentTest);
+                updateTestButtons();
+            }
+
+            let correctCount = 0;
+            let wrongCount = 0;
+            let attemptedCount = 0;
+            let unansweredCount = 0;
+
+            questions.forEach((_, index) => {
+                if (userAnswers[index] !== null) {
+                    attemptedCount++;
+                    if (userAnswers[index] === questions[index].answer) {
+                        correctCount++;
+                    } else {
+                        wrongCount++;
+                    }
+                } else {
+                    unansweredCount++;
+                }
+            });
+
+            const scorePercentage = Math.round((correctCount / questions.length) * 100);
+            
+            let grade, gradeClass, congratsMessage = '';
+            if (scorePercentage >= 90) {
+                grade = 'S';
+                gradeClass = 'grade-S';
+                congratsMessage = '🎉 Congratulations! Outstanding Performance! 🎉';
+            } else if (scorePercentage >= 80) {
+                grade = 'A';
+                gradeClass = 'grade-A';
+                congratsMessage = '🎉 Great Job! Excellent Performance! 🎉';
+            } else if (scorePercentage >= 70) {
+                grade = 'B';
+                gradeClass = 'grade-B';
+            } else if (scorePercentage >= 60) {
+                grade = 'C';
+                gradeClass = 'grade-C';
+            } else if (scorePercentage >= 50) {
+                grade = 'D';
+                gradeClass = 'grade-D';
+            } else {
+                grade = 'F';
+                gradeClass = 'grade-F';
+            }
+
+            resultElement.innerHTML = `
+                <h2>Hello ${userName}, Your Test Results for ${currentTest}</h2>
+                ${congratsMessage ? `<div style="text-align: center; margin-bottom: 15px; font-weight: bold; font-size: 18px;">${congratsMessage}</div>` : ''}
+                <div class="result-summary">
+                    <p>📝 <strong>Total Questions:</strong> ${questions.length}</p>
+                    <p>✏️ <strong>Attempted:</strong> ${attemptedCount}</p>
+                    <p class="correct">✅ <strong>Correct Answers:</strong> ${correctCount}</p>
+                    <p class="wrong">❌ <strong>Incorrect Answers:</strong> ${wrongCount}</p>
+                    <p>❓ <strong>Unanswered:</strong> ${unansweredCount}</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: ${scorePercentage}%">${scorePercentage}%</div>
+                    </div>
+                    <p>🏆 <strong>Your Score:</strong> ${correctCount}/${questions.length} (${scorePercentage}%)</p>
+                    <div class="grade ${gradeClass}">Grade: ${grade}</div>
+                </div>
+                <h3>📋 Detailed Results:</h3>
+                <div class="result-details" id="resultDetails"></div>
+                <center>
+                    <button class="share-btn" onclick="shareOnWhatsApp()">
+                        <i class="fab fa-whatsapp"></i> Share on WhatsApp
+                    </button>
+                </center>
+                <div class="creator-note">
+                    This app was created by Divyanshu Sir
+                </div>
+            `;
+
+            const resultDetails = document.getElementById("resultDetails");
+            questions.forEach((question, index) => {
+                const userAnswer = userAnswers[index];
+                const isCorrect = userAnswer === question.answer;
+                const isAnswered = userAnswer !== null;
+
+                const resultItem = document.createElement("div");
+                resultItem.className = "result-item";
+                
+                let answerStatus = "";
+                if (!isAnswered) {
+                    answerStatus = `<span class="wrong">❓ Not Answered</span>`;
+                } else if (isCorrect) {
+                    answerStatus = `<span class="correct">✅ Correct</span>`;
+                } else {
+                    answerStatus = `<span class="wrong">❌ Incorrect</span>`;
+                }
+
+                resultItem.innerHTML = `
+                    <p><strong>Q${index + 1}:</strong> ${question.question} (${answerStatus})</p>
+                    ${isAnswered ? 
+                        `<p>✏️ Your answer: <span class="${isCorrect ? 'correct' : 'wrong'}">
+                            ${question.options[userAnswer]}
+                        </span></p>` : ''
+                    }
+                    ${(!isAnswered || !isCorrect) ? 
+                        `<p class="correct">✅ Correct answer: ${question.options[question.answer]}</p>` : ''
+                    }
+                `;
+                resultDetails.appendChild(resultItem);
+            });
+        }
+
+        function updateTestButtons() {
+            const testButtons = document.querySelectorAll('.test-btn');
+            testButtons.forEach(button => {
+                const testNumber = button.dataset.testNumber;
+                if (completedTests.includes(testNumber)) {
+                    button.classList.add('completed');
+                }
+            });
+        }
+
+        function shareOnWhatsApp() {
+            let correctCount = 0;
+            questions.forEach((_, index) => {
+                if (userAnswers[index] === questions[index].answer) {
+                    correctCount++;
+                }
+            });
+
+            const scorePercentage = Math.round((correctCount / questions.length) * 100);
+            
+            let grade;
+            if (scorePercentage >= 90) {
+                grade = 'S';
+            } else if (scorePercentage >= 80) {
+                grade = 'A';
+            } else if (scorePercentage >= 70) {
+                grade = 'B';
+            } else if (scorePercentage >= 60) {
+                grade = 'C';
+            } else if (scorePercentage >= 50) {
+                grade = 'D';
+            } else {
+                grade = 'F';
+            }
+
+            const shareText = `📚 *Quiz App Results* 📚
+            
+👤 *Name:* ${userName}
+📝 *Test Number:* ${currentTest}
+📝 *Total Questions:* ${questions.length}
+✏️ *Attempted:* ${correctCount + (questions.length - correctCount - userAnswers.filter(a => a === null).length)}
+✅ *Correct Answers:* ${correctCount}
+❌ *Incorrect Answers:* ${questions.length - correctCount - userAnswers.filter(a => a === null).length}
+❓ *Unanswered:* ${userAnswers.filter(a => a === null).length}
+🏆 *Score:* ${correctCount}/${questions.length} (${scorePercentage}%)
+🎓 *Grade:* ${grade}
+
+This app was created by Divyanshu Sir`;
+
+            window.open(`https://wa.me/?text=${encodeURIComponent(shareText)}`, '_blank');
+        }
+
+        function updateButtonStates() {
+            document.getElementById('previousBtn').disabled = currentQuestionIndex === 0;
+            document.getElementById('nextBtn').disabled = currentQuestionIndex === questions.length - 1;
+        }
+
+        function setupEventListeners() {
+            document.getElementById('startTestBtn').addEventListener('click', function() {
+                const inputName = document.getElementById('userNameInput').value.trim();
+                if (inputName !== "") {
+                    userName = inputName;
+                }
+                document.getElementById('nameModal').style.display = 'none';
+                document.querySelector('.test-buttons-container').style.display = 'block';
+            });
+
+            window.addEventListener('click', function(event) {
+                if (event.target.className === 'modal') {
+                    event.target.style.display = 'none';
+                }
+            });
+
+            document.querySelectorAll('.close').forEach(closeBtn => {
+                closeBtn.addEventListener('click', function() {
+                    this.closest('.modal').style.display = 'none';
+                });
+            });
+
+            document.getElementById('submitCurrentBtn').addEventListener('click', function() {
+                document.getElementById('switchTestModal').style.display = 'none';
+                showResults();
+            });
+
+            document.getElementById('continueCurrentBtn').addEventListener('click', function() {
+                document.getElementById('switchTestModal').style.display = 'none';
+            });
+
+            document.getElementById("nextBtn").addEventListener("click", () => {
+                if (currentQuestionIndex < questions.length - 1) {
+                    currentQuestionIndex++;
+                    renderQuestion(currentQuestionIndex);
+                }
+            });
+
+            document.getElementById("previousBtn").addEventListener("click", () => {
+                if (currentQuestionIndex > 0) {
+                    currentQuestionIndex--;
+                    renderQuestion(currentQuestionIndex);
+                }
+            });
+
+            document.getElementById("submitBtn").addEventListener("click", () => {
+                if (confirm("Are you sure you want to submit the test?")) {
+                    showResults();
+                }
+            });
+
+            document.getElementById('userNameInput').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    document.getElementById('startTestBtn').click();
+                }
+            });
+        }
+
+        window.shareOnWhatsApp = shareOnWhatsApp;
+    </script>
+</body>
+</html>
