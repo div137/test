@@ -1363,17 +1363,422 @@
     }
 ],
             "Internet of Things and its Applications": [
-                {
-                    question: "Which country is home to the kangaroo?",
-                    options: ["New Zealand", "South Africa", "Australia", "Brazil"],
-                    answer: 2
-                },
-                {
-                    question: "What is the largest ocean on Earth?",
-                    options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-                    answer: 3
-                }
-            ]
+    /* Introduction to IoT (10) */
+    {
+        "question": "What does IoT stand for? / IoT का फुल फॉर्म क्या है?",
+        "options": ["Internet of Things", "Internet of Technology", "Integrated Online Technologies", "Intelligent Objects Tracking"],
+        "answer": 0
+    },
+    {
+        "question": "Which of these is NOT a characteristic of IoT? / इनमें से कौन सा IoT की विशेषता नहीं है?",
+        "options": ["Interconnectivity", "Heterogeneity", "Static Architecture", "Self-adapting"],
+        "answer": 2
+    },
+    {
+        "question": "The concept of IoT first emerged at which institute? / IoT की अवधारणा सबसे पहले किस संस्थान में उभरी?",
+        "options": ["MIT", "Stanford", "Carnegie Mellon", "Harvard"],
+        "answer": 0
+    },
+    {
+        "question": "Which year was the term 'Internet of Things' coined? / 'इंटरनेट ऑफ थिंग्स' शब्द किस वर्ष गढ़ा गया था?",
+        "options": ["1989", "1999", "2009", "2019"],
+        "answer": 1
+    },
+    {
+        "question": "What is the main goal of IoT? / IoT का मुख्य लक्ष्य क्या है?",
+        "options": ["Connect physical objects to the internet", "Replace human workers", "Create virtual reality", "Develop new programming languages"],
+        "answer": 0
+    },
+    {
+        "question": "Which component is NOT part of basic IoT architecture? / कौन सा घटक मूल IoT आर्किटेक्चर का हिस्सा नहीं है?",
+        "options": ["Things/Devices", "Cloud", "Network", "Operating System"],
+        "answer": 3
+    },
+    {
+        "question": "What percentage of devices are expected to be IoT connected by 2025? / 2025 तक कितने प्रतिशत डिवाइस IoT से जुड़े होने की उम्मीद है?",
+        "options": ["25%", "50%", "75%", "90%"],
+        "answer": 2
+    },
+    {
+        "question": "Which industry was an early adopter of IoT technology? / कौन सा उद्योग IoT तकनीक का प्रारंभिक अपनाने वाला था?",
+        "options": ["Manufacturing", "Healthcare", "Agriculture", "Retail"],
+        "answer": 0
+    },
+    {
+        "question": "What is the 'thing' in IoT? / IoT में 'थिंग' क्या है?",
+        "options": ["Any physical object", "Only computing devices", "Only sensors", "Only actuators"],
+        "answer": 0
+    },
+    {
+        "question": "Which technology enabled the growth of IoT? / किस तकनीक ने IoT के विकास को सक्षम बनाया?",
+        "options": ["IPv6", "Blockchain", "Quantum Computing", "Virtual Reality"],
+        "answer": 0
+    },
+
+    /* Applications/Devices (10) */
+    {
+        "question": "Which is NOT an IoT application? / कौन सा IoT एप्लीकेशन नहीं है?",
+        "options": ["Smart thermostat", "Fitness tracker", "Digital camera", "Industrial robot"],
+        "answer": 2
+    },
+    {
+        "question": "What is a common IoT device in homes? / घरों में एक सामान्य IoT डिवाइस क्या है?",
+        "options": ["Smart bulb", "Microwave", "Toaster", "Hair dryer"],
+        "answer": 0
+    },
+    {
+        "question": "Which IoT application helps farmers? / कौन सा IoT एप्लीकेशन किसानों की मदद करता है?",
+        "options": ["Precision agriculture", "Smart irrigation", "Livestock monitoring", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "What is a wearable IoT device? / वियरेबल IoT डिवाइस क्या है?",
+        "options": ["Smartwatch", "Fitness band", "AR glasses", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "Which IoT device monitors health? / कौन सा IoT डिवाइस स्वास्थ्य की निगरानी करता है?",
+        "options": ["ECG monitor", "Pulse oximeter", "Blood pressure monitor", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "What is an industrial IoT application? / एक औद्योगिक IoT एप्लीकेशन क्या है?",
+        "options": ["Predictive maintenance", "Asset tracking", "Quality control", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "Which is a smart city IoT application? / कौन सा स्मार्ट सिटी IoT एप्लीकेशन है?",
+        "options": ["Traffic monitoring", "Waste management", "Air quality sensors", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "What is NOT typically an IoT edge device? / आमतौर पर IoT एज डिवाइस कौन सा नहीं है?",
+        "options": ["Raspberry Pi", "Arduino", "Smart sensor", "Mainframe computer"],
+        "answer": 3
+    },
+    {
+        "question": "Which retail application uses IoT? / कौन सा रिटेल एप्लीकेशन IoT का उपयोग करता है?",
+        "options": ["Smart shelves", "Automated checkout", "Inventory tracking", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "What is an example of consumer IoT? / उपभोक्ता IoT का एक उदाहरण क्या है?",
+        "options": ["Smart refrigerator", "Voice assistant", "Home security system", "All of these"],
+        "answer": 3
+    },
+
+    /* Protocols and Communication Models (10) */
+    {
+        "question": "Which is NOT an IoT communication protocol? / कौन सा IoT कम्युनिकेशन प्रोटोकॉल नहीं है?",
+        "options": ["HTTP", "MQTT", "CoAP", "JPEG"],
+        "answer": 3
+    },
+    {
+        "question": "Which protocol is designed for constrained devices? / कौन सा प्रोटोकॉल संसाधन-सीमित डिवाइस के लिए डिज़ाइन किया गया है?",
+        "options": ["CoAP", "FTP", "SMTP", "TCP"],
+        "answer": 0
+    },
+    {
+        "question": "What is the main advantage of MQTT? / MQTT का मुख्य लाभ क्या है?",
+        "options": ["Lightweight", "High bandwidth", "Video support", "Complex routing"],
+        "answer": 0
+    },
+    {
+        "question": "Which communication model is client-initiated? / कौन सा कम्युनिकेशन मॉडल क्लाइंट-इनिशिएटेड है?",
+        "options": ["Request-Response", "Publish-Subscribe", "Push-Pull", "Exclusive Pair"],
+        "answer": 0
+    },
+    {
+        "question": "Which protocol uses port 1883 by default? / कौन सा प्रोटोकॉल डिफ़ॉल्ट रूप से पोर्ट 1883 का उपयोग करता है?",
+        "options": ["HTTP", "MQTT", "CoAP", "AMQP"],
+        "answer": 1
+    },
+    {
+        "question": "What does CoAP stand for? / CoAP का फुल फॉर्म क्या है?",
+        "options": ["Constrained Application Protocol", "Connected Application Protocol", "Compact Application Protocol", "Control Application Protocol"],
+        "answer": 0
+    },
+    {
+        "question": "Which is a short-range IoT protocol? / कौन सा शॉर्ट-रेंज IoT प्रोटोकॉल है?",
+        "options": ["Bluetooth", "LoRaWAN", "Sigfox", "NB-IoT"],
+        "answer": 0
+    },
+    {
+        "question": "Which protocol is suitable for industrial IoT? / कौन सा प्रोटोकॉल औद्योगिक IoT के लिए उपयुक्त है?",
+        "options": ["OPC UA", "HTTP", "FTP", "SMTP"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 6LoWPAN? / 6LoWPAN का उद्देश्य क्या है?",
+        "options": ["IPv6 over low-power networks", "6th generation wireless", "Low-power WiFi", "6G cellular"],
+        "answer": 0
+    },
+    {
+        "question": "Which communication model is event-driven? / कौन सा कम्युनिकेशन मॉडल इवेंट-ड्रिवेन है?",
+        "options": ["Request-Response", "Publish-Subscribe", "Client-Server", "Peer-to-Peer"],
+        "answer": 1
+    },
+
+    /* Things and Connections (10) */
+    {
+        "question": "What is a 'thing' in IoT? / IoT में 'थिंग' क्या है?",
+        "options": ["Any physical object with sensors", "Only computers", "Only smartphones", "Only cloud servers"],
+        "answer": 0
+    },
+    {
+        "question": "Which is NOT a requirement for IoT things? / IoT थिंग्स के लिए कौन सी आवश्यकता नहीं है?",
+        "options": ["Unique identity", "Sensing capability", "High processing power", "Communication ability"],
+        "answer": 2
+    },
+    {
+        "question": "What is device provisioning? / डिवाइस प्रोविजनिंग क्या है?",
+        "options": ["Adding devices to network", "Manufacturing devices", "Programming devices", "Testing devices"],
+        "answer": 0
+    },
+    {
+        "question": "What is the role of a gateway in IoT? / IoT में गेटवे की क्या भूमिका है?",
+        "options": ["Protocol translation", "Data aggregation", "Edge computing", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "Which connectivity option has the longest range? / किस कनेक्टिविटी विकल्प की रेंज सबसे लंबी है?",
+        "options": ["Bluetooth", "WiFi", "LoRaWAN", "Zigbee"],
+        "answer": 2
+    },
+    {
+        "question": "What is device onboarding? / डिवाइस ऑनबोर्डिंग क्या है?",
+        "options": ["Registering devices", "Configuring devices", "Authenticating devices", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "Which is a PAN technology? / कौन सी PAN तकनीक है?",
+        "options": ["Zigbee", "Cellular", "Satellite", "Ethernet"],
+        "answer": 0
+    },
+    {
+        "question": "What is the main challenge in IoT connectivity? / IoT कनेक्टिविटी में मुख्य चुनौती क्या है?",
+        "options": ["Power consumption", "Cost", "Reliability", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "What does LPWAN stand for? / LPWAN का फुल फॉर्म क्या है?",
+        "options": ["Low-Power Wide Area Network", "Long-Power Wireless Access Network", "Local Packet Wireless Area Network", "Low-Profile Wireless Access Node"],
+        "answer": 0
+    },
+    {
+        "question": "Which is NOT a wireless IoT technology? / कौन सी वायरलेस IoT तकनीक नहीं है?",
+        "options": ["NB-IoT", "LoRa", "Ethernet", "Sigfox"],
+        "answer": 2
+    },
+
+    /* Sensors, Actuators and Microcontrollers (10) */
+    {
+        "question": "What is the function of a sensor? / सेंसर का कार्य क्या है?",
+        "options": ["Convert physical to electrical signals", "Execute commands", "Store data", "Display information"],
+        "answer": 0
+    },
+    {
+        "question": "Which sensor measures temperature? / कौन सा सेंसर तापमान मापता है?",
+        "options": ["Thermocouple", "Accelerometer", "Gyroscope", "Photodiode"],
+        "answer": 0
+    },
+    {
+        "question": "What does an actuator do? / एक्चुएटर क्या करता है?",
+        "options": ["Converts electrical to physical action", "Measures environmental data", "Processes information", "Stores energy"],
+        "answer": 0
+    },
+    {
+        "question": "Which is NOT a microcontroller? / कौन सा माइक्रोकंट्रोलर नहीं है?",
+        "options": ["Arduino", "Raspberry Pi", "ESP32", "Intel i7"],
+        "answer": 3
+    },
+    {
+        "question": "What is the role of ADC in IoT? / IoT में ADC की क्या भूमिका है?",
+        "options": ["Convert analog to digital", "Convert digital to analog", "Amplify signals", "Filter noise"],
+        "answer": 0
+    },
+    {
+        "question": "Which sensor detects motion? / कौन सा सेंसर गति का पता लगाता है?",
+        "options": ["PIR sensor", "Thermistor", "Humidity sensor", "Gas sensor"],
+        "answer": 0
+    },
+    {
+        "question": "What is a common actuator in smart homes? / स्मार्ट होम में एक सामान्य एक्चुएटर क्या है?",
+        "options": ["Smart lock", "Temperature sensor", "Humidity sensor", "Light sensor"],
+        "answer": 0
+    },
+    {
+        "question": "Which microcontroller is WiFi enabled? / कौन सा माइक्रोकंट्रोलर WiFi सक्षम है?",
+        "options": ["ESP8266", "ATmega328", "PIC16F877A", "8051"],
+        "answer": 0
+    },
+    {
+        "question": "What does GPIO stand for? / GPIO का फुल फॉर्म क्या है?",
+        "options": ["General Purpose Input Output", "General Protocol Interface Object", "Global Peripheral Integration Option", "Generalized Peripheral Input Output"],
+        "answer": 0
+    },
+    {
+        "question": "Which sensor measures air quality? / कौन सा सेंसर वायु गुणवत्ता मापता है?",
+        "options": ["CO2 sensor", "Pressure sensor", "Load cell", "Ultrasonic sensor"],
+        "answer": 0
+    },
+
+    /* Building IoT Applications (10) */
+    {
+        "question": "What is the first step in IoT development? / IoT विकास में पहला कदम क्या है?",
+        "options": ["Define requirements", "Select sensors", "Choose cloud platform", "Design UI"],
+        "answer": 0
+    },
+    {
+        "question": "Which platform is used for IoT device management? / IoT डिवाइस प्रबंधन के लिए किस प्लेटफॉर्म का उपयोग किया जाता है?",
+        "options": ["AWS IoT Core", "Google Cloud IoT", "Azure IoT Hub", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "What is edge computing in IoT? / IoT में एज कंप्यूटिंग क्या है?",
+        "options": ["Processing data near the source", "Cloud computing", "Centralized processing", "Data storage"],
+        "answer": 0
+    },
+    {
+        "question": "Which language is commonly used for IoT programming? / IoT प्रोग्रामिंग के लिए आमतौर पर किस भाषा का उपयोग किया जाता है?",
+        "options": ["Python", "C/C++", "JavaScript", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "What is the purpose of IoT middleware? / IoT मिडलवेयर का उद्देश्य क्या है?",
+        "options": ["Connect different components", "Store data", "Provide power", "Manufacture devices"],
+        "answer": 0
+    },
+    {
+        "question": "Which tool is used for IoT prototyping? / IoT प्रोटोटाइपिंग के लिए किस टूल का उपयोग किया जाता है?",
+        "options": ["Arduino IDE", "Node-RED", "PlatformIO", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "What is digital twin in IoT? / IoT में डिजिटल ट्विन क्या है?",
+        "options": ["Virtual replica of physical system", "Twin sensors", "Duplicate devices", "Backup system"],
+        "answer": 0
+    },
+    {
+        "question": "Which database is suitable for IoT? / कौन सा डेटाबेस IoT के लिए उपयुक्त है?",
+        "options": ["Time-series database", "Relational database", "Graph database", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "What is the purpose of MQTT broker? / MQTT ब्रोकर का उद्देश्य क्या है?",
+        "options": ["Manage message routing", "Store device data", "Process analytics", "Power devices"],
+        "answer": 0
+    },
+    {
+        "question": "Which approach ensures IoT scalability? / कौन सा दृष्टिकोण IoT स्केलेबिलिटी सुनिश्चित करता है?",
+        "options": ["Microservices architecture", "Monolithic design", "Centralized processing", "Manual configuration"],
+        "answer": 0
+    },
+
+    /* Security and Future of IoT Ecosystem (10) */
+    {
+        "question": "What is the biggest security concern in IoT? / IoT में सबसे बड़ी सुरक्षा चिंता क्या है?",
+        "options": ["Device vulnerabilities", "Data privacy", "Network attacks", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "Which technique secures IoT communications? / कौन सी तकनीक IoT संचार को सुरक्षित करती है?",
+        "options": ["Encryption", "Authentication", "Secure protocols", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "What does DDoS stand for in security? / सुरक्षा में DDoS का फुल फॉर्म क्या है?",
+        "options": ["Distributed Denial of Service", "Data Defense of System", "Digital Domain of Security", "Device Detection of Signals"],
+        "answer": 0
+    },
+    {
+        "question": "Which emerging technology will impact IoT? / कौन सी उभरती तकनीक IoT को प्रभावित करेगी?",
+        "options": ["5G", "AI", "Blockchain", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "What is the future trend in IoT? / IoT में भविष्य की प्रवृत्ति क्या है?",
+        "options": ["Edge AI", "Digital twins", "Autonomous systems", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "Which standard addresses IoT security? / कौन सा मानक IoT सुरक्षा को संबोधित करता है?",
+        "options": ["ISO/IEC 27001", "NIST IoT Framework", "GDPR", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "What is the role of blockchain in IoT? / IoT में ब्लॉकचेन की क्या भूमिका है?",
+        "options": ["Secure transactions", "Device identity", "Data integrity", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "Which challenge may limit IoT growth? / कौन सी चुनौती IoT विकास को सीमित कर सकती है?",
+        "options": ["Security concerns", "Privacy issues", "Standardization", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "What is IoT device fingerprinting? / IoT डिवाइस फिंगरप्रिंटिंग क्या है?",
+        "options": ["Unique identification of devices", "Biometric sensors", "Device manufacturing", "Data encryption"],
+        "answer": 0
+    },
+    {
+        "question": "Which technology enables secure IoT updates? / कौन सी तकनीक सुरक्षित IoT अपडेट को सक्षम बनाती है?",
+        "options": ["OTA updates", "Blockchain", "Secure boot", "All of these"],
+        "answer": 3
+    },
+
+    /* Soft skills-Personality Development (10) */
+    {
+        "question": "Which soft skill is most important for IoT professionals? / IoT पेशेवरों के लिए कौन सा सॉफ्ट स्किल सबसे महत्वपूर्ण है?",
+        "options": ["Problem-solving", "Teamwork", "Communication", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "What is key for IoT team collaboration? / IoT टीम सहयोग के लिए क्या महत्वपूर्ण है?",
+        "options": ["Clear communication", "Defined roles", "Shared goals", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "Which trait helps in IoT innovation? / कौन सा गुण IoT नवाचार में मदद करता है?",
+        "options": ["Creativity", "Curiosity", "Adaptability", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "How to improve IoT presentations? / IoT प्रस्तुतियों को कैसे सुधारें?",
+        "options": ["Know your audience", "Use visuals", "Practice", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "What is important for IoT project management? / IoT परियोजना प्रबंधन के लिए क्या महत्वपूर्ण है?",
+        "options": ["Time management", "Risk assessment", "Stakeholder communication", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "Which skill helps explain technical IoT concepts? / कौन सा कौशल तकनीकी IoT अवधारणाओं को समझाने में मदद करता है?",
+        "options": ["Simplification", "Storytelling", "Visualization", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "How to handle IoT project failures? / IoT परियोजना विफलताओं को कैसे संभालें?",
+        "options": ["Learn from mistakes", "Maintain documentation", "Conduct post-mortem", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "Which personality trait aids IoT learning? / कौन सा व्यक्तित्व लक्षण IoT सीखने में सहायता करता है?",
+        "options": ["Persistence", "Open-mindedness", "Self-discipline", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "What is key for IoT client interactions? / IoT क्लाइंट इंटरैक्शन के लिए क्या महत्वपूर्ण है?",
+        "options": ["Active listening", "Clear requirements", "Regular updates", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "How to stay updated in IoT field? / IoT क्षेत्र में कैसे अपडेट रहें?",
+        "options": ["Continuous learning", "Networking", "Following trends", "All of these"],
+        "answer": 3
+    }
+]
         };
 
         document.addEventListener('DOMContentLoaded', function() {
