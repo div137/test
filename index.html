@@ -517,17 +517,393 @@
     }
 ],
             "Web Designing & Publishing": [
-                {
-                    question: "What is the largest mammal?",
-                    options: ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
-                    answer: 1
-                },
-                {
-                    question: "Which gas do plants absorb from the atmosphere?",
-                    options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
-                    answer: 1
-                }
-            ],
+    /* HTML Questions (5) */
+    {
+        "question": "What does HTML stand for? / HTML का फुल फॉर्म क्या है?",
+        "options": ["Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "Hyper Tool Multi Language"],
+        "answer": 0
+    },
+    {
+        "question": "Which HTML element is used for the largest heading? / सबसे बड़े हेडिंग के लिए किस HTML एलिमेंट का उपयोग किया जाता है?",
+        "options": ["<heading>", "<h6>", "<head>", "<h1>"],
+        "answer": 3
+    },
+    {
+        "question": "Which HTML attribute specifies an alternate text for an image? / कौन सा HTML एट्रिब्यूट इमेज के लिए अल्टरनेट टेक्स्ट स्पेसिफाई करता है?",
+        "options": ["src", "alt", "title", "longdesc"],
+        "answer": 1
+    },
+    {
+        "question": "Which HTML element defines the title of a document? / कौन सा HTML एलिमेंट डॉक्यूमेंट का टाइटल डिफाइन करता है?",
+        "options": ["<meta>", "<title>", "<head>", "<header>"],
+        "answer": 1
+    },
+    {
+        "question": "Which HTML element is used to specify a footer for a document? / डॉक्यूमेंट के लिए फुटर स्पेसिफाई करने के लिए किस HTML एलिमेंट का उपयोग किया जाता है?",
+        "options": ["<bottom>", "<footer>", "<section>", "<div>"],
+        "answer": 1
+    },
+
+    /* CSS Questions (5) */
+    {
+        "question": "What does CSS stand for? / CSS का फुल फॉर्म क्या है?",
+        "options": ["Creative Style Sheets", "Cascading Style Sheets", "Computer Style Sheets", "Colorful Style Sheets"],
+        "answer": 1
+    },
+    {
+        "question": "Which CSS property controls the text size? / कौन सा CSS प्रॉपर्टी टेक्स्ट साइज कंट्रोल करती है?",
+        "options": ["font-style", "text-size", "font-size", "text-style"],
+        "answer": 2
+    },
+    {
+        "question": "How do you select elements with class name 'example'? / क्लास नेम 'example' वाले एलिमेंट्स को कैसे सिलेक्ट करें?",
+        "options": ["example", "#example", ".example", "*example"],
+        "answer": 2
+    },
+    {
+        "question": "Which CSS property is used to change the background color? / बैकग्राउंड कलर बदलने के लिए कौन सी CSS प्रॉपर्टी यूज़ की जाती है?",
+        "options": ["bgcolor", "color", "background-color", "bg-color"],
+        "answer": 2
+    },
+    {
+        "question": "Which CSS property adds space between the content and the border? / कंटेंट और बॉर्डर के बीच स्पेस एड करने के लिए कौन सी CSS प्रॉपर्टी यूज़ करते हैं?",
+        "options": ["margin", "spacing", "padding", "border-space"],
+        "answer": 2
+    },
+
+    /* JavaScript Questions (10) */
+    {
+        "question": "How do you create a function in JavaScript? / JavaScript में फंक्शन कैसे बनाते हैं?",
+        "options": ["function = myFunction()", "function myFunction()", "function:myFunction()", "function => myFunction()"],
+        "answer": 1
+    },
+    {
+        "question": "Which operator is used to assign a value to a variable? / वेरिएबल को वैल्यू असाइन करने के लिए कौन सा ऑपरेटर यूज़ किया जाता है?",
+        "options": ["*", "-", "=", "x"],
+        "answer": 2
+    },
+    {
+        "question": "What will 'typeof null' return in JavaScript? / JavaScript में 'typeof null' क्या रिटर्न करेगा?",
+        "options": ["'null'", "'undefined'", "'object'", "'string'"],
+        "answer": 2
+    },
+    {
+        "question": "Which method removes the last element from an array? / कौन सी मेथड अरे से लास्ट एलिमेंट रिमूव करती है?",
+        "options": ["pop()", "shift()", "remove()", "delete()"],
+        "answer": 0
+    },
+    {
+        "question": "What is the correct syntax for referring to an external script? / एक्सटर्नल स्क्रिप्ट को रेफर करने का सही सिंटैक्स क्या है?",
+        "options": ["<script href='script.js'>", "<script name='script.js'>", "<script src='script.js'>", "<script link='script.js'>"],
+        "answer": 2
+    },
+    {
+        "question": "How do you write an IF statement in JavaScript? / JavaScript में IF स्टेटमेंट कैसे लिखते हैं?",
+        "options": ["if i = 5 then", "if (i == 5)", "if i == 5", "if i = 5"],
+        "answer": 1
+    },
+    {
+        "question": "Which event occurs when the user clicks on an HTML element? / यूजर द्वारा HTML एलिमेंट पर क्लिक करने पर कौन सा इवेंट होता है?",
+        "options": ["onchange", "onmouseover", "onclick", "onmouseclick"],
+        "answer": 2
+    },
+    {
+        "question": "What is the correct way to write a JavaScript array? / JavaScript अरे लिखने का सही तरीका कौन सा है?",
+        "options": ["var colors = ['red', 'green', 'blue']", "var colors = 'red', 'green', 'blue'", "var colors = (1:'red', 2:'green', 3:'blue')", "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')"],
+        "answer": 0
+    },
+    {
+        "question": "Which function converts a string to an integer? / कौन सा फंक्शन स्ट्रिंग को इंटिजर में कन्वर्ट करता है?",
+        "options": ["parseInt()", "parseString()", "stringToInteger()", "toInteger()"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'use strict' in JavaScript? / JavaScript में 'use strict' का उद्देश्य क्या है?",
+        "options": ["Makes JavaScript run faster", "Enforces stricter parsing and error handling", "Allows use of experimental features", "Disables all warnings"],
+        "answer": 1
+    },
+
+    /* W3.CSS Questions (25) */
+    {
+        "question": "What is W3.CSS? / W3.CSS क्या है?",
+        "options": ["A JavaScript framework", "A CSS framework", "A programming language", "A database system"],
+        "answer": 1
+    },
+    {
+        "question": "Which W3.CSS class provides a responsive container? / कौन सी W3.CSS क्लास रेस्पॉन्सिव कंटेनर प्रोवाइड करती है?",
+        "options": ["w3-container", "w3-responsive", "w3-layout", "w3-wrap"],
+        "answer": 0
+    },
+    {
+        "question": "Which W3.CSS class creates a red color? / कौन सी W3.CSS क्लास रेड कलर क्रिएट करती है?",
+        "options": ["w3-red", "w3-color-red", "w3-style-red", "w3-bg-red"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a full-width container in W3.CSS? / W3.CSS में फुल-विड्थ कंटेनर कैसे बनाते हैं?",
+        "options": ["w3-full", "w3-width-full", "w3-container w3-full", "w3-container"],
+        "answer": 3
+    },
+    {
+        "question": "Which W3.CSS class creates a card? / कौन सी W3.CSS क्लास कार्ड क्रिएट करती है?",
+        "options": ["w3-card", "w3-panel", "w3-box", "w3-container"],
+        "answer": 0
+    },
+    {
+        "question": "How do you add padding in W3.CSS? / W3.CSS में पैडिंग कैसे एड करते हैं?",
+        "options": ["w3-pad", "w3-padding", "w3-spacing", "w3-space"],
+        "answer": 1
+    },
+    {
+        "question": "Which W3.CSS class creates a responsive navigation bar? / कौन सी W3.CSS क्लास रेस्पॉन्सिव नेविगेशन बार बनाती है?",
+        "options": ["w3-nav", "w3-bar", "w3-menu", "w3-navigation"],
+        "answer": 1
+    },
+    {
+        "question": "How do you create a round button in W3.CSS? / W3.CSS में राउंड बटन कैसे बनाते हैं?",
+        "options": ["w3-button w3-round", "w3-round-button", "w3-circle", "w3-button-round"],
+        "answer": 0
+    },
+    {
+        "question": "Which W3.CSS class makes text bold? / कौन सी W3.CSS क्लास टेक्स्ट को बोल्ड बनाती है?",
+        "options": ["w3-bold", "w3-text-bold", "w3-b", "w3-strong"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a responsive grid in W3.CSS? / W3.CSS में रेस्पॉन्सिव ग्रिड कैसे बनाते हैं?",
+        "options": ["w3-grid", "w3-row and w3-col", "w3-layout", "w3-flex"],
+        "answer": 1
+    },
+    {
+        "question": "Which W3.CSS class creates a hoverable button? / कौन सी W3.CSS क्लास होवरेबल बटन बनाती है?",
+        "options": ["w3-button-hover", "w3-hover", "w3-button w3-hover", "w3-hoverable"],
+        "answer": 3
+    },
+    {
+        "question": "How do you create a dropdown menu in W3.CSS? / W3.CSS में ड्रॉपडाउन मेनू कैसे बनाते हैं?",
+        "options": ["w3-dropdown", "w3-menu w3-dropdown", "w3-dropdown-content", "w3-select"],
+        "answer": 2
+    },
+    {
+        "question": "Which W3.CSS class creates a light grey background? / कौन सी W3.CSS क्लास लाइट ग्रे बैकग्राउंड बनाती है?",
+        "options": ["w3-light-gray", "w3-bg-light-gray", "w3-gray-light", "w3-lightgrey"],
+        "answer": 3
+    },
+    {
+        "question": "How do you center-align text in W3.CSS? / W3.CSS में टेक्स्ट को सेंटर-अलाइन कैसे करते हैं?",
+        "options": ["w3-center", "w3-align-center", "w3-text-center", "w3-middle"],
+        "answer": 0
+    },
+    {
+        "question": "Which W3.CSS class creates a bordered table? / कौन सी W3.CSS क्लास बॉर्डर वाली टेबल बनाती है?",
+        "options": ["w3-table-bordered", "w3-bordered", "w3-table-border", "w3-border-table"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a responsive image in W3.CSS? / W3.CSS में रेस्पॉन्सिव इमेज कैसे बनाते हैं?",
+        "options": ["w3-image", "w3-responsive", "w3-img", "img w3-responsive"],
+        "answer": 0
+    },
+    {
+        "question": "Which W3.CSS class creates a sidebar? / कौन सी W3.CSS क्लास साइडबार बनाती है?",
+        "options": ["w3-sidebar", "w3-nav-side", "w3-bar-block", "w3-side-nav"],
+        "answer": 3
+    },
+    {
+        "question": "How do you create a modal in W3.CSS? / W3.CSS में मोडल कैसे बनाते हैं?",
+        "options": ["w3-modal", "w3-dialog", "w3-popup", "w3-window"],
+        "answer": 0
+    },
+    {
+        "question": "Which W3.CSS class creates a striped table? / कौन सी W3.CSS क्लास स्ट्राइप्ड टेबल बनाती है?",
+        "options": ["w3-table-striped", "w3-striped", "w3-zebra", "w3-table-zebra"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a responsive video container in W3.CSS? / W3.CSS में रेस्पॉन्सिव वीडियो कंटेनर कैसे बनाते हैं?",
+        "options": ["w3-video", "w3-video-container", "w3-responsive-video", "w3-video-responsive"],
+        "answer": 1
+    },
+    {
+        "question": "Which W3.CSS class creates a tooltip? / कौन सी W3.CSS क्लास टूलटिप बनाती है?",
+        "options": ["w3-tooltip", "w3-tip", "w3-popup", "w3-hint"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a progress bar in W3.CSS? / W3.CSS में प्रोग्रेस बार कैसे बनाते हैं?",
+        "options": ["w3-progress", "w3-bar w3-progress", "w3-progressbar", "w3-meter"],
+        "answer": 2
+    },
+    {
+        "question": "Which W3.CSS class creates a black navigation bar? / कौन सी W3.CSS क्लास ब्लैक नेविगेशन बार बनाती है?",
+        "options": ["w3-bar-black", "w3-black w3-bar", "w3-nav-black", "w3-bar w3-black"],
+        "answer": 3
+    },
+    {
+        "question": "How do you create a responsive form in W3.CSS? / W3.CSS में रेस्पॉन्सिव फॉर्म कैसे बनाते हैं?",
+        "options": ["w3-form", "w3-responsive-form", "w3-container w3-form", "w3-form-responsive"],
+        "answer": 0
+    },
+    {
+        "question": "Which W3.CSS class creates a shadow effect? / कौन सी W3.CSS क्लास शैडो इफेक्ट बनाती है?",
+        "options": ["w3-shadow", "w3-effect-shadow", "w3-box-shadow", "w3-drop-shadow"],
+        "answer": 0
+    },
+
+    /* Photoshop Questions (20) */
+    {
+        "question": "What is the default file extension for Photoshop files? / फोटोशॉप फाइल्स का डिफॉल्ट एक्सटेंशन क्या है?",
+        "options": [".psd", ".pht", ".photo", ".ps"],
+        "answer": 0
+    },
+    {
+        "question": "Which tool is used to remove blemishes in Photoshop? / फोटोशॉप में ब्लेमिशेज रिमूव करने के लिए कौन सा टूल यूज़ किया जाता है?",
+        "options": ["Clone Stamp", "Spot Healing Brush", "Eraser Tool", "Patch Tool"],
+        "answer": 1
+    },
+    {
+        "question": "What does the 'Opacity' setting control? / 'ओपेसिटी' सेटिंग क्या कंट्रोल करती है?",
+        "options": ["Color intensity", "Transparency", "Brush size", "Layer order"],
+        "answer": 1
+    },
+    {
+        "question": "Which shortcut key is used to zoom in? / जूम इन करने के लिए कौन सी शॉर्टकट की यूज़ की जाती है?",
+        "options": ["Ctrl + + (Plus)", "Ctrl + Z", "Ctrl + - (Minus)", "Ctrl + Space"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of layers in Photoshop? / फोटोशॉप में लेयर्स का उद्देश्य क्या है?",
+        "options": ["To organize different elements", "To change image size", "To apply filters", "To save memory"],
+        "answer": 0
+    },
+    {
+        "question": "Which tool allows you to make precise selections? / प्रिसाइस सेलेक्शन बनाने के लिए कौन सा टूल अलाउ करता है?",
+        "options": ["Lasso Tool", "Magic Wand", "Pen Tool", "Brush Tool"],
+        "answer": 2
+    },
+    {
+        "question": "What does the 'Feather' option do? / 'फेदर' ऑप्शन क्या करता है?",
+        "options": ["Softens selection edges", "Adds texture", "Changes color", "Sharpens image"],
+        "answer": 0
+    },
+    {
+        "question": "Which panel shows the history of edits? / एडिट्स का हिस्ट्री कौन सा पैनल दिखाता है?",
+        "options": ["Layers", "Properties", "History", "Adjustments"],
+        "answer": 2
+    },
+    {
+        "question": "What is the purpose of the 'Clipping Mask'? / 'क्लिपिंग मास्क' का उद्देश्य क्या है?",
+        "options": ["To hide parts of a layer", "To merge layers", "To flatten image", "To resize canvas"],
+        "answer": 0
+    },
+    {
+        "question": "Which tool is used to adjust colors? / कलर्स एडजस्ट करने के लिए कौन सा टूल यूज़ किया जाता है?",
+        "options": ["Brush Tool", "Eyedropper", "Color Balance", "Gradient Tool"],
+        "answer": 2
+    },
+    {
+        "question": "What does the 'Dodge Tool' do? / 'डॉज टूल' क्या करता है?",
+        "options": ["Lightens areas", "Darkens areas", "Blurs areas", "Sharpens areas"],
+        "answer": 0
+    },
+    {
+        "question": "Which file format supports transparency? / कौन सा फाइल फॉर्मेट ट्रांसपेरेंसी सपोर्ट करता है?",
+        "options": [".jpg", ".png", ".bmp", ".tiff"],
+        "answer": 1
+    },
+    {
+        "question": "What is the purpose of 'Smart Objects'? / 'स्मार्ट ऑब्जेक्ट्स' का उद्देश्य क्या है?",
+        "options": ["To apply non-destructive edits", "To create 3D effects", "To automate tasks", "To organize layers"],
+        "answer": 0
+    },
+    {
+        "question": "Which tool is used to straighten horizons? / होराइजन को सीधा करने के लिए कौन सा टूल यूज़ किया जाता है?",
+        "options": ["Crop Tool", "Ruler Tool", "Perspective Tool", "Rotate Tool"],
+        "answer": 0
+    },
+    {
+        "question": "What does 'CMYK' stand for? / 'CMYK' का फुल फॉर्म क्या है?",
+        "options": ["Color Mode Yellow Black", "Cyan Magenta Yellow Key", "Color Matching Yellow Key", "Cyan Mode Yellow Black"],
+        "answer": 1
+    },
+    {
+        "question": "Which filter creates a painterly effect? / पेंटरली इफेक्ट कौन सा फिल्टर क्रिएट करता है?",
+        "options": ["Blur", "Oil Paint", "Sharpen", "Noise"],
+        "answer": 1
+    },
+    {
+        "question": "What is the purpose of 'Actions' in Photoshop? / फोटोशॉप में 'एक्शन्स' का उद्देश्य क्या है?",
+        "options": ["To record and automate tasks", "To create animations", "To track changes", "To organize tools"],
+        "answer": 0
+    },
+    {
+        "question": "Which tool is used to sample colors from an image? / इमेज से कलर्स सैंपल करने के लिए कौन सा टूल यूज़ किया जाता है?",
+        "options": ["Brush Tool", "Eyedropper Tool", "Color Picker", "Gradient Tool"],
+        "answer": 1
+    },
+    {
+        "question": "What does the 'Content-Aware Fill' feature do? / 'कंटेंट-अवेयर फिल' फीचर क्या करता है?",
+        "options": ["Automatically fills selections based on content", "Changes document color", "Adds noise to image", "Creates patterns"],
+        "answer": 0
+    },
+    {
+        "question": "Which tool is used to adjust perspective? / पर्सपेक्टिव एडजस्ट करने के लिए कौन सा टूल यूज़ किया जाता है?",
+        "options": ["Crop Tool", "Perspective Warp", "Transform", "Liquify"],
+        "answer": 1
+    },
+
+    /* AngularJS Questions (10) */
+    {
+        "question": "What is AngularJS? / AngularJS क्या है?",
+        "options": ["A programming language", "A JavaScript framework", "A database system", "A CSS framework"],
+        "answer": 1
+    },
+    {
+        "question": "Which directive binds application data to HTML? / कौन सा डायरेक्टिव एप्लीकेशन डेटा को HTML से बाइंड करता है?",
+        "options": ["ng-model", "ng-bind", "ng-app", "ng-init"],
+        "answer": 0
+    },
+    {
+        "question": "What does 'ng' stand for in AngularJS? / AngularJS में 'ng' का क्या मतलब है?",
+        "options": ["Next Generation", "Angular", "No Good", "New Grammar"],
+        "answer": 1
+    },
+    {
+        "question": "Which AngularJS directive initializes an application? / कौन सा AngularJS डायरेक्टिव एप्लीकेशन को इनिशियलाइज करता है?",
+        "options": ["ng-init", "ng-app", "ng-start", "ng-model"],
+        "answer": 1
+    },
+    {
+        "question": "What is the purpose of $scope in AngularJS? / AngularJS में $scope का उद्देश्य क्या है?",
+        "options": ["To define CSS styles", "To link controller and view", "To create animations", "To manage routes"],
+        "answer": 1
+    },
+    {
+        "question": "Which AngularJS service is used for AJAX calls? / AJAX कॉल्स के लिए कौन सा AngularJS सर्विस यूज़ किया जाता है?",
+        "options": ["$http", "$ajax", "$call", "$request"],
+        "answer": 0
+    },
+    {
+        "question": "What does the ng-repeat directive do? / ng-repeat डायरेक्टिव क्या करता है?",
+        "options": ["Repeats HTML elements", "Creates loops in JavaScript", "Duplicates controllers", "Copies variables"],
+        "answer": 0
+    },
+    {
+        "question": "Which AngularJS filter formats a number with decimals? / कौन सा AngularJS फिल्टर नंबर को डेसीमल के साथ फॉर्मेट करता है?",
+        "options": ["number", "decimal", "currency", "count"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of AngularJS modules? / AngularJS मॉड्यूल का उद्देश्य क्या है?",
+        "options": ["To organize code", "To create templates", "To define CSS", "To manage databases"],
+        "answer": 0
+    },
+    {
+        "question": "Which AngularJS directive shows/hides HTML elements? / कौन सा AngularJS डायरेक्टिव HTML एलिमेंट्स को शो/हाइड करता है?",
+        "options": ["ng-visible", "ng-hide", "ng-if", "ng-show"],
+        "answer": 3
+    }
+],
             "Programming and Problem Solving through Python": [
                 {
                     question: "Who painted the Mona Lisa?",
