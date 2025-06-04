@@ -38,9 +38,9 @@
             <button id="continueCurrentBtn" style="background-color: #95a5a6;">Continue Current Test</button>
         </div>
     </div>
-
+<h3 style="text-align:center ; color: orange;">ASIT Edutech Test Platform</h3>
     <div class="timer-container" id="timer" style="display: none;">
-        Time Remaining: 80:00
+        Time Remaining: 60:00
     </div>
     
     <div class="container">
@@ -75,7 +75,7 @@
         let questions = [];
         let userName = "";
         let timerInterval;
-        let timeLeft = 40 * 60;
+        let timeLeft = 60 * 60;
         let testStarted = false;
         let currentTest = null;
         let completedTests = [];
@@ -110,12 +110,412 @@
         // Define questions for 4 tests (M1, M2, M3, M4)
         const allTestQuestions = {
             "Information Technology Tools and Network Basics":[
-                
-                {
-                    question: "Test not ready",
-                    
-                }
-            ],
+    {
+        "question": "What is the default file extension for LibreOffice Writer documents? / LibreOffice Writer दस्तावेज़ों के लिए डिफ़ॉल्ट फ़ाइल एक्सटेंशन क्या है?",
+        "options": [".docx", ".odt", ".txt", ".rtf"],
+        "answer": 1
+    },
+    {
+        "question": "Which shortcut key is used to save a document in LibreOffice? / LibreOffice में दस्तावेज़ सहेजने के लिए किस शॉर्टकट कुंजी का उपयोग किया जाता है?",
+        "options": ["Ctrl+N", "Ctrl+S", "Ctrl+O", "Ctrl+P"],
+        "answer": 1
+    },
+    {
+        "question": "In LibreOffice Calc, what does the SUM function do? / LibreOffice Calc में SUM फ़ंक्शन क्या करता है?",
+        "options": ["Multiplies numbers", "Adds numbers", "Finds averages", "Counts cells"],
+        "answer": 1
+    },
+    {
+        "question": "Which menu contains the 'Insert Page Break' option in Writer? / Writer में 'पेज ब्रेक इंसर्ट करें' विकल्प किस मेनू में होता है?",
+        "options": ["File", "Edit", "Insert", "Format"],
+        "answer": 2
+    },
+    {
+        "question": "What is the maximum number of rows in a LibreOffice Calc spreadsheet? / LibreOffice Calc स्प्रेडशीट में अधिकतम पंक्तियों की संख्या कितनी होती है?",
+        "options": ["65,536", "1,048,576", "16,384", "32,768"],
+        "answer": 1
+    },
+    {
+        "question": "Which of these is not a view option in LibreOffice Writer? / इनमें से कौन सा LibreOffice Writer में दृश्य विकल्प नहीं है?",
+        "options": ["Print Layout", "Web Layout", "Full Screen", "Slide Show"],
+        "answer": 3
+    },
+    {
+        "question": "In Calc, what does the AVERAGE function calculate? / Calc में AVERAGE फ़ंक्शन क्या गणना करता है?",
+        "options": ["Sum of numbers", "Middle value", "Arithmetic mean", "Most frequent value"],
+        "answer": 2
+    },
+    {
+        "question": "How do you insert a table in LibreOffice Writer? / LibreOffice Writer में टेबल कैसे डालें?",
+        "options": ["Table > Insert Table", "Insert > Table", "Format > Table", "Tools > Table"],
+        "answer": 1
+    },
+    {
+        "question": "Which function would you use to find the highest value in a range in Calc? / Calc में किसी रेंज में सबसे बड़ा मान खोजने के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
+        "options": ["TOP()", "MAX()", "HIGH()", "PEAK()"],
+        "answer": 1
+    },
+    {
+        "question": "What is the purpose of the Navigator in LibreOffice? / LibreOffice में नेविगेटर का उद्देश्य क्या है?",
+        "options": ["To browse the internet", "To quickly move through a document", "To manage files", "To check spelling"],
+        "answer": 1
+    },
+    {
+        "question": "Which of these is not a chart type available in Calc? / इनमें से कौन सा Calc में उपलब्ध चार्ट प्रकार नहीं है?",
+        "options": ["Pie", "Bar", "Line", "Cube"],
+        "answer": 3
+    },
+    {
+        "question": "How do you start a numbered list in Writer? / Writer में नंबर सूची कैसे शुरू करें?",
+        "options": ["Press 1. then space", "Format > Bullets and Numbering", "Both of these", "Neither of these"],
+        "answer": 2
+    },
+    {
+        "question": "What does the 'Merge Cells' option do in Calc? / Calc में 'मर्ज सेल' विकल्प क्या करता है?",
+        "options": ["Combines multiple cells into one", "Splits one cell into multiple", "Deletes cell contents", "Copies cell formatting"],
+        "answer": 0
+    },
+    {
+        "question": "Which keyboard shortcut centers text in Writer? / Writer में टेक्स्ट को सेंटर में लाने के लिए किस कीबोर्ड शॉर्टकट का उपयोग करते हैं?",
+        "options": ["Ctrl+E", "Ctrl+C", "Ctrl+M", "Ctrl+T"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of conditional formatting in Calc? / Calc में कंडीशनल फॉर्मेटिंग का उद्देश्य क्या है?",
+        "options": ["To format cells based on their values", "To protect cells from editing", "To validate data entry", "To create formulas"],
+        "answer": 0
+    },
+    {
+        "question": "Which file format is best for preserving formatting when sharing Writer documents? / Writer दस्तावेज़ साझा करते समय फॉर्मेटिंग को संरक्षित करने के लिए कौन सा फ़ाइल फॉर्मेट सबसे अच्छा है?",
+        "options": [".txt", ".odt", ".csv", ".html"],
+        "answer": 1
+    },
+    {
+        "question": "In Calc, what does the COUNT function do? / Calc में COUNT फ़ंक्शन क्या करता है?",
+        "options": ["Adds numbers", "Counts numeric cells", "Averages values", "Multiplies values"],
+        "answer": 1
+    },
+    {
+        "question": "How do you insert a page number in Writer? / Writer में पेज नंबर कैसे डालें?",
+        "options": ["Insert > Page Number", "Format > Page > Number", "Tools > Page Numbering", "View > Page Numbers"],
+        "answer": 0
+    },
+    {
+        "question": "Which of these is not a valid cell reference type in Calc? / इनमें से कौन सा Calc में वैध सेल संदर्भ प्रकार नहीं है?",
+        "options": ["Absolute", "Relative", "Mixed", "Circular"],
+        "answer": 3
+    },
+    {
+        "question": "What does the 'Track Changes' feature do in Writer? / Writer में 'ट्रैक परिवर्तन' सुविधा क्या करती है?",
+        "options": ["Records editing changes", "Follows hyperlinks", "Monitors file size", "Checks grammar"],
+        "answer": 0
+    },
+    {
+        "question": "Which function would you use to combine text from multiple cells in Calc? / Calc में कई सेल से टेक्स्ट को संयोजित करने के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
+        "options": ["JOIN()", "COMBINE()", "CONCATENATE()", "MERGE()"],
+        "answer": 2
+    },
+    {
+        "question": "How do you create a header in Writer? / Writer में हेडर कैसे बनाएं?",
+        "options": ["Insert > Header", "Format > Page > Header", "View > Header", "Tools > Header"],
+        "answer": 1
+    },
+    {
+        "question": "What is the purpose of the IF function in Calc? / Calc में IF फ़ंक्शन का उद्देश्य क्या है?",
+        "options": ["To perform logical tests", "To find information", "To calculate interest", "To format cells"],
+        "answer": 0
+    },
+    {
+        "question": "Which of these is not a paragraph alignment option in Writer? / इनमें से कौन सा Writer में पैराग्राफ अलाइनमेंट विकल्प नहीं है?",
+        "options": ["Left", "Right", "Center", "Diagonal"],
+        "answer": 3
+    },
+    {
+        "question": "In Calc, what does the $ symbol indicate in cell references? / Calc में सेल संदर्भों में $ प्रतीक क्या दर्शाता है?",
+        "options": ["Absolute reference", "Currency format", "Error value", "Comment"],
+        "answer": 0
+    },
+    {
+        "question": "How do you insert a comment in Writer? / Writer में टिप्पणी कैसे डालें?",
+        "options": ["Insert > Comment", "Tools > Comment", "Review > Comment", "View > Comment"],
+        "answer": 0
+    },
+    {
+        "question": "Which function would you use to find the current date in Calc? / Calc में वर्तमान तिथि खोजने के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
+        "options": ["CURRENTDATE()", "NOW()", "TODAY()", "DATE()"],
+        "answer": 2
+    },
+    {
+        "question": "What is the purpose of styles in Writer? / Writer में स्टाइल का उद्देश्य क्या है?",
+        "options": ["To apply consistent formatting", "To check grammar", "To track changes", "To insert images"],
+        "answer": 0
+    },
+    {
+        "question": "In Calc, what does the VLOOKUP function do? / Calc में VLOOKUP फ़ंक्शन क्या करता है?",
+        "options": ["Looks up values vertically", "Looks up values horizontally", "Validates data", "Creates charts"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a bulleted list in Writer? / Writer में बुलेट सूची कैसे बनाएं?",
+        "options": ["Press * then space", "Format > Bullets and Numbering", "Both of these", "Neither of these"],
+        "answer": 2
+    },
+    {
+        "question": "Which of these is not a valid data type in Calc? / इनमें से कौन सा Calc में वैध डेटा प्रकार नहीं है?",
+        "options": ["Number", "Text", "Date", "Image"],
+        "answer": 3
+    },
+    {
+        "question": "What does the 'Word Count' feature show in Writer? / Writer में 'शब्द गणना' सुविधा क्या दिखाती है?",
+        "options": ["Number of words", "Number of characters", "Number of pages", "All of these"],
+        "answer": 3
+    },
+    {
+        "question": "In Calc, what is the correct syntax for a function? / Calc में फ़ंक्शन के लिए सही सिंटैक्स क्या है?",
+        "options": ["FunctionName[arguments]", "FunctionName{arguments}", "FunctionName(arguments)", "FunctionName<arguments>"],
+        "answer": 2
+    },
+    {
+        "question": "How do you insert a hyperlink in Writer? / Writer में हाइपरलिंक कैसे डालें?",
+        "options": ["Insert > Hyperlink", "Format > Hyperlink", "Tools > Hyperlink", "View > Hyperlink"],
+        "answer": 0
+    },
+    {
+        "question": "Which function would you use to round a number in Calc? / Calc में किसी संख्या को राउंड करने के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
+        "options": ["ROUND()", "FIX()", "INTEGER()", "WHOLE()"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of the Format Painter tool? / फॉर्मेट पेंटर टूल का उद्देश्य क्या है?",
+        "options": ["To copy formatting", "To create drawings", "To adjust colors", "To insert pictures"],
+        "answer": 0
+    },
+    {
+        "question": "In Calc, what does the PMT function calculate? / Calc में PMT फ़ंक्शन क्या गणना करता है?",
+        "options": ["Payment for a loan", "Percentage of total", "Probability", "Prime numbers"],
+        "answer": 0
+    },
+    {
+        "question": "How do you check spelling in Writer? / Writer में वर्तनी कैसे जांचें?",
+        "options": ["Tools > Spelling", "Format > Spelling", "Review > Spelling", "F7 key"],
+        "answer": 3
+    },
+    {
+        "question": "Which of these is not a valid way to reference another sheet in Calc? / Calc में किसी अन्य शीट को संदर्भित करने का यह कौन सा वैध तरीका नहीं है?",
+        "options": ["Sheet1.A1", "Sheet1!A1", "'Sheet1'.A1", "'Sheet1'!A1"],
+        "answer": 0
+    },
+    {
+        "question": "What does the 'Mail Merge' feature do in Writer? / Writer में 'मेल मर्ज' सुविधा क्या करती है?",
+        "options": ["Combines email accounts", "Creates multiple documents from a template", "Sends documents via email", "Merges multiple documents"],
+        "answer": 1
+    },
+    {
+        "question": "In Calc, what does the COUNTA function count? / Calc में COUNTA फ़ंक्शन क्या गिनता है?",
+        "options": ["Only numeric cells", "Only empty cells", "All non-empty cells", "Only text cells"],
+        "answer": 2
+    },
+    {
+        "question": "How do you insert a page break in Writer? / Writer में पेज ब्रेक कैसे डालें?",
+        "options": ["Insert > Break > Page Break", "Format > Paragraph > Break", "Ctrl+Enter", "Both 1 and 3"],
+        "answer": 3
+    },
+    {
+        "question": "Which function would you use to extract part of a text string in Calc? / Calc में टेक्स्ट स्ट्रिंग के भाग को निकालने के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
+        "options": ["EXTRACT()", "PART()", "MID()", "GETTEXT()"],
+        "answer": 2
+    },
+    {
+        "question": "What is the purpose of templates in LibreOffice? / LibreOffice में टेम्प्लेट का उद्देश्य क्या है?",
+        "options": ["To create pre-formatted documents", "To store images", "To backup files", "To connect to databases"],
+        "answer": 0
+    },
+    {
+        "question": "In Calc, what does the RAND function do? / Calc में RAND फ़ंक्शन क्या करता है?",
+        "options": ["Rounds numbers", "Generates random numbers", "Ranks values", "Reads data"],
+        "answer": 1
+    },
+    {
+        "question": "How do you create a table of contents in Writer? / Writer में सामग्री तालिका कैसे बनाएं?",
+        "options": ["Insert > Indexes > Table of Contents", "Tools > Table of Contents", "Format > Table of Contents", "View > Table of Contents"],
+        "answer": 0
+    },
+    {
+        "question": "Which of these is not a valid chart element in Calc? / इनमें से कौन सा Calc में वैध चार्ट तत्व नहीं है?",
+        "options": ["Legend", "Axis", "Plot area", "Font area"],
+        "answer": 3
+    },
+    {
+        "question": "What does the 'Split Window' feature allow in Writer? / Writer में 'विंडो को विभाजित करें' सुविधा क्या अनुमति देती है?",
+        "options": ["To view different parts of the same document", "To open two documents side by side", "To divide the page into columns", "To create multiple windows"],
+        "answer": 0
+    },
+    {
+        "question": "In Calc, what does the ROUNDUP function do? / Calc में ROUNDUP फ़ंक्शन क्या करता है?",
+        "options": ["Rounds to nearest integer", "Rounds up away from zero", "Rounds to even number", "Rounds to specified digits"],
+        "answer": 1
+    },
+    {
+        "question": "How do you protect a document with a password in Writer? / Writer में दस्तावेज़ को पासवर्ड से कैसे सुरक्षित करें?",
+        "options": ["File > Save As > Password", "File > Properties > Security", "Tools > Options > Security", "File > Save with Password"],
+        "answer": 3
+    },
+    {
+        "question": "Which function would you use to calculate depreciation in Calc? / Calc में मूल्यह्रास की गणना के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
+        "options": ["DEPR()", "SLN()", "AMORT()", "REDUCE()"],
+        "answer": 1
+    },
+    {
+        "question": "What is the purpose of the Data Pilot feature in Calc? / Calc में डेटा पायलट सुविधा का उद्देश्य क्या है?",
+        "options": ["To create pivot tables", "To automate data entry", "To validate data", "To import data"],
+        "answer": 0
+    },
+    {
+        "question": "How do you insert a footnote in Writer? / Writer में फुटनोट कैसे डालें?",
+        "options": ["Insert > Footnote", "Tools > Footnote", "Format > Footnote", "View > Footnote"],
+        "answer": 0
+    },
+    {
+        "question": "Which of these is not a valid cell format in Calc? / इनमें से कौन सा Calc में वैध सेल फॉर्मेट नहीं है?",
+        "options": ["Currency", "Percentage", "Fraction", "Emoji"],
+        "answer": 3
+    },
+    {
+        "question": "What does the 'Compare Documents' feature do in Writer? / Writer में 'दस्तावेज़ तुलना करें' सुविधा क्या करती है?",
+        "options": ["Shows differences between documents", "Merges documents", "Converts document formats", "Compresses document size"],
+        "answer": 0
+    },
+    {
+        "question": "In Calc, what does the HLOOKUP function do? / Calc में HLOOKUP फ़ंक्शन क्या करता है?",
+        "options": ["Looks up values vertically", "Looks up values horizontally", "Finds highest value", "Creates hyperlinks"],
+        "answer": 1
+    },
+    {
+        "question": "How do you create a cross-reference in Writer? / Writer में क्रॉस-रेफरेंस कैसे बनाएं?",
+        "options": ["Insert > Cross-reference", "Tools > Cross-reference", "Format > Cross-reference", "View > Cross-reference"],
+        "answer": 0
+    },
+    {
+        "question": "Which function would you use to calculate net present value in Calc? / Calc में शुद्ध वर्तमान मूल्य की गणना के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
+        "options": ["PV()", "NPV()", "FV()", "TVM()"],
+        "answer": 1
+    },
+    {
+        "question": "What is the purpose of the Navigator's 'Drag Mode' in Writer? / Writer में नेविगेटर के 'ड्रैग मोड' का उद्देश्य क्या है?",
+        "options": ["To move elements by dragging", "To create drawings", "To rearrange pages", "To select multiple items"],
+        "answer": 0
+    },
+    {
+        "question": "In Calc, what does the ROUNDDOWN function do? / Calc में ROUNDDOWN फ़ंक्शन क्या करता है?",
+        "options": ["Rounds to nearest integer", "Rounds down toward zero", "Rounds to odd number", "Rounds to specified digits"],
+        "answer": 1
+    },
+    {
+        "question": "How do you record a macro in LibreOffice? / LibreOffice में मैक्रो कैसे रिकॉर्ड करें?",
+        "options": ["Tools > Macros > Record Macro", "Macro > Start Recording", "View > Macros > Record", "There is no recording feature"],
+        "answer": 0
+    },
+    {
+        "question": "Which of these is not a valid conditional formatting option in Calc? / इनमें से कौन सा Calc में वैध कंडीशनल फॉर्मेटिंग विकल्प नहीं है?",
+        "options": ["Cell Value Is", "Formula Is", "Date Is", "Font Is"],
+        "answer": 3
+    },
+    {
+        "question": "What does the 'Versions' feature do in Writer? / Writer में 'संस्करण' सुविधा क्या करती है?",
+        "options": ["Tracks different versions of a document", "Checks document version compatibility", "Updates software version", "Shows version history of changes"],
+        "answer": 0
+    },
+    {
+        "question": "In Calc, what does the DSUM function do? / Calc में DSUM फ़ंक्शन क्या करता है?",
+        "options": ["Sums database records that meet criteria", "Sums diagonal cells", "Sums dates", "Sums decimal values only"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a bibliography in Writer? / Writer में ग्रंथ सूची कैसे बनाएं?",
+        "options": ["Insert > Indexes > Bibliography", "Tools > Bibliography", "Format > Bibliography", "View > Bibliography"],
+        "answer": 0
+    },
+    {
+        "question": "Which function would you use to calculate internal rate of return in Calc? / Calc में आंतरिक प्रतिफल दर की गणना के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
+        "options": ["IRR()", "ROR()", "ROI()", "RETURN()"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of the 'Master Document' feature in Writer? / Writer में 'मास्टर दस्तावेज़' सुविधा का उद्देश्य क्या है?",
+        "options": ["To manage large documents as smaller sub-documents", "To create template documents", "To protect documents", "To format documents"],
+        "answer": 0
+    },
+    {
+        "question": "In Calc, what does the MATCH function do? / Calc में MATCH फ़ंक्शन क्या करता है?",
+        "options": ["Finds matching cells", "Returns position of item in range", "Compares two cells", "Creates matching pairs"],
+        "answer": 1
+    },
+    {
+        "question": "How do you insert a section break in Writer? / Writer में सेक्शन ब्रेक कैसे डालें?",
+        "options": ["Insert > Section", "Format > Section", "Tools > Section Break", "View > Section"],
+        "answer": 0
+    },
+    {
+        "question": "Which of these is not a valid sort option in Calc? / इनमें से कौन सा Calc में वैध सॉर्ट विकल्प नहीं है?",
+        "options": ["Ascending", "Descending", "Custom", "Random"],
+        "answer": 3
+    },
+    {
+        "question": "What does the 'Field Shadings' option show in Writer? / Writer में 'फील्ड शेडिंग' विकल्प क्या दिखाता है?",
+        "options": ["Background of form fields", "Shadow effects for text", "Highlighted fields", "Gray background for all fields"],
+        "answer": 0
+    },
+    {
+        "question": "In Calc, what does the INDEX function do? / Calc में INDEX फ़ंक्शन क्या करता है?",
+        "options": ["Creates an index", "Returns value at intersection of row/column", "Finds text in cells", "Marks important cells"],
+        "answer": 1
+    },
+    {
+        "question": "How do you create a form in Writer? / Writer में फॉर्म कैसे बनाएं?",
+        "options": ["Insert > Form", "Tools > Form Design", "View > Forms", "File > New > Form"],
+        "answer": 1
+    },
+    {
+        "question": "Which function would you use to calculate payment periods in Calc? / Calc में भुगतान अवधि की गणना के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
+        "options": ["NPER()", "TERM()", "DURATION()", "PERIODS()"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of the 'Gallery' in LibreOffice? / LibreOffice में 'गैलरी' का उद्देश्य क्या है?",
+        "options": ["To store and insert media elements", "To view document history", "To display available fonts", "To show formatting options"],
+        "answer": 0
+    },
+    {
+        "question": "In Calc, what does the STDEV function calculate? / Calc में STDEV फ़ंक्शन क्या गणना करता है?",
+        "options": ["Standard deviation", "Average", "Median", "Variance"],
+        "answer": 0
+    },
+    {
+        "question": "How do you insert a watermark in Writer? / Writer में वॉटरमार्क कैसे डालें?",
+        "options": ["Insert > Watermark", "Format > Page > Watermark", "Tools > Watermark", "View > Watermark"],
+        "answer": 1
+    },
+    {
+        "question": "Which of these is not a valid data filter option in Calc? / इनमें से कौन सा Calc में वैध डेटा फ़िल्टर विकल्प नहीं है?",
+        "options": ["Standard Filter", "AutoFilter", "Advanced Filter", "Smart Filter"],
+        "answer": 3
+    },
+    {
+        "question": "What does the 'Hidden Paragraphs' feature do in Writer? / Writer में 'छिपे हुए पैराग्राफ' सुविधा क्या करती है?",
+        "options": ["Hides paragraphs from view", "Protects paragraphs", "Creates invisible text", "Marks confidential paragraphs"],
+        "answer": 0
+    },
+    {
+        "question": "In Calc, what does the OFFSET function do? / Calc में OFFSET फ़ंक्शन क्या करता है?",
+        "options": ["Skips cells", "Returns reference offset from starting point", "Moves data", "Aligns cells"],
+        "answer": 1
+    },
+    {
+        "question": "How do you create a custom dictionary in Writer? / Writer में कस्टम डिक्शनरी कैसे बनाएं?",
+        "options": ["Tools > Options > Language Settings > Writing Aids", "Tools > Spelling > Dictionary", "Format > Language > Dictionary", "File > Properties > Dictionary"],
+        "answer": 0
+    }
+],
             "Web Designing & Publishing": [
                 {
                     question: "What is the largest mammal?",
@@ -199,7 +599,7 @@
 
         function startTimer() {
             clearInterval(timerInterval);
-            timeLeft = 80 * 60;
+            timeLeft = 60 * 60;
             updateTimerDisplay();
             
             timerInterval = setInterval(() => {
