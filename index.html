@@ -109,412 +109,608 @@
 
         // Define questions for 4 tests (M1, M2, M3, M4)
         const allTestQuestions = {
-            "Information Technology Tools and Network Basics":[
+            "Information Technology Tools and Network Basics":[[
     {
-        "question": "What is the default file extension for LibreOffice Writer documents? / LibreOffice Writer दस्तावेज़ों के लिए डिफ़ॉल्ट फ़ाइल एक्सटेंशन क्या है?",
-        "options": [".docx", ".odt", ".txt", ".rtf"],
+        "question": "What is the shortcut to save a document in MS Word? / MS Word में डॉक्यूमेंट सेव करने की शॉर्टकट क्या है?",
+        "options": ["Ctrl+S", "Ctrl+P", "Ctrl+N", "Ctrl+O"],
+        "answer": 0
+    },
+    {
+        "question": "Which function is used to add numbers in Excel? / Excel में नंबर्स को जोड़ने के लिए किस फंक्शन का उपयोग किया जाता है?",
+        "options": ["SUM()", "AVG()", "COUNT()", "MAX()"],
+        "answer": 0
+    },
+    {
+        "question": "What does 'PPT' stand for in PowerPoint? / PowerPoint में 'PPT' का फुल फॉर्म क्या है?",
+        "options": ["PowerPoint Template", "PowerPoint Presentation", "PowerPoint Tool", "PowerPoint Text"],
         "answer": 1
     },
     {
-        "question": "Which shortcut key is used to save a document in LibreOffice? / LibreOffice में दस्तावेज़ सहेजने के लिए किस शॉर्टकट कुंजी का उपयोग किया जाता है?",
-        "options": ["Ctrl+N", "Ctrl+S", "Ctrl+O", "Ctrl+P"],
+        "question": "Which tab in Outlook is used to send and receive emails? / Outlook में ईमेल भेजने और प्राप्त करने के लिए किस टैब का उपयोग किया जाता है?",
+        "options": ["Home", "Send/Receive", "View", "Folder"],
         "answer": 1
     },
     {
-        "question": "In LibreOffice Calc, what does the SUM function do? / LibreOffice Calc में SUM फ़ंक्शन क्या करता है?",
-        "options": ["Multiplies numbers", "Adds numbers", "Finds averages", "Counts cells"],
+        "question": "What is the default file extension for Access databases? / Access डेटाबेस का डिफॉल्ट फाइल एक्सटेंशन क्या है?",
+        "options": [".accdb", ".mdb", ".adb", ".axdb"],
+        "answer": 0
+    },
+    {
+        "question": "Which key combination is used to insert a hyperlink in Word? / Word में हाइपरलिंक डालने के लिए किस की कॉम्बिनेशन का उपयोग किया जाता है?",
+        "options": ["Ctrl+K", "Ctrl+H", "Ctrl+L", "Ctrl+I"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'VLOOKUP' function in Excel? / Excel में 'VLOOKUP' फंक्शन का क्या उद्देश्य है?",
+        "options": ["To look up data vertically", "To create charts", "To format cells", "To sort data"],
+        "answer": 0
+    },
+    {
+        "question": "How do you start a slideshow in PowerPoint from the beginning? / PowerPoint में शुरुआत से स्लाइडशो कैसे शुरू करें?",
+        "options": ["F5", "Shift+F5", "Ctrl+F5", "Alt+F5"],
+        "answer": 0
+    },
+    {
+        "question": "Which feature in Outlook helps to manage repetitive emails? / Outlook में दोहराए जाने वाले ईमेल्स को मैनेज करने में कौन सी फीचर मदद करती है?",
+        "options": ["Rules", "Categories", "Quick Steps", "All of above"],
+        "answer": 3
+    },
+    {
+        "question": "What is the primary purpose of tables in MS Access? / MS Access में टेबल्स का प्राथमिक उद्देश्य क्या है?",
+        "options": ["To store data", "To create forms", "To design reports", "To write macros"],
+        "answer": 0
+    },
+    {
+        "question": "Which option is used to track changes in a Word document? / Word डॉक्यूमेंट में बदलावों को ट्रैक करने के लिए किस ऑप्शन का उपयोग किया जाता है?",
+        "options": ["Review > Track Changes", "View > Track Changes", "Home > Track Changes", "Insert > Track Changes"],
+        "answer": 0
+    },
+    {
+        "question": "What does the 'Freeze Panes' feature do in Excel? / Excel में 'Freeze Panes' फीचर क्या करता है?",
+        "options": ["Locks rows/columns while scrolling", "Hides selected cells", "Deletes empty cells", "Formats cells automatically"],
+        "answer": 0
+    },
+    {
+        "question": "Which view in PowerPoint shows thumbnails of all slides? / PowerPoint में कौन सा व्यू सभी स्लाइड्स के थंबनेल दिखाता है?",
+        "options": ["Normal View", "Slide Sorter", "Reading View", "Notes Page"],
         "answer": 1
     },
     {
-        "question": "Which menu contains the 'Insert Page Break' option in Writer? / Writer में 'पेज ब्रेक इंसर्ट करें' विकल्प किस मेनू में होता है?",
-        "options": ["File", "Edit", "Insert", "Format"],
+        "question": "What is the shortcut to create a new email in Outlook? / Outlook में नया ईमेल बनाने की शॉर्टकट क्या है?",
+        "options": ["Ctrl+N", "Ctrl+Shift+M", "Ctrl+M", "Ctrl+E"],
+        "answer": 1
+    },
+    {
+        "question": "Which object in Access is used to retrieve specific data? / Access में विशिष्ट डेटा पुनर्प्राप्त करने के लिए किस ऑब्जेक्ट का उपयोग किया जाता है?",
+        "options": ["Query", "Form", "Report", "Macro"],
+        "answer": 0
+    },
+    {
+        "question": "How do you insert a page break in Word? / Word में पेज ब्रेक कैसे डालें?",
+        "options": ["Layout > Breaks > Page", "Insert > Page Break", "Home > Page Break", "View > Page Break"],
+        "answer": 0
+    },
+    {
+        "question": "Which function would you use to find the average in Excel? / Excel में औसत निकालने के लिए आप किस फंक्शन का उपयोग करेंगे?",
+        "options": ["AVERAGE()", "MEAN()", "SUM()/COUNT()", "Both A and C"],
+        "answer": 3
+    },
+    {
+        "question": "What is the purpose of 'Slide Master' in PowerPoint? / PowerPoint में 'Slide Master' का क्या उद्देश्य है?",
+        "options": ["To design consistent slide layouts", "To add animations", "To insert multimedia", "To record narration"],
+        "answer": 0
+    },
+    {
+        "question": "How do you categorize emails in Outlook? / Outlook में ईमेल्स को कैसे कैटेगराइज़ करते हैं?",
+        "options": ["Right-click > Categorize", "Home > Tags > Categorize", "Both A and B", "None of these"],
         "answer": 2
     },
     {
-        "question": "What is the maximum number of rows in a LibreOffice Calc spreadsheet? / LibreOffice Calc स्प्रेडशीट में अधिकतम पंक्तियों की संख्या कितनी होती है?",
-        "options": ["65,536", "1,048,576", "16,384", "32,768"],
-        "answer": 1
+        "question": "What is a primary key in Access? / Access में प्राइमरी की क्या होती है?",
+        "options": ["A unique identifier for records", "A password protection tool", "A type of query", "A form element"],
+        "answer": 0
     },
     {
-        "question": "Which of these is not a view option in LibreOffice Writer? / इनमें से कौन सा LibreOffice Writer में दृश्य विकल्प नहीं है?",
-        "options": ["Print Layout", "Web Layout", "Full Screen", "Slide Show"],
+        "question": "Which ribbon tab contains the 'Thesaurus' feature in Word? / Word में 'थिसॉरस' फीचर किस रिबन टैब में होता है?",
+        "options": ["Review", "Home", "References", "View"],
+        "answer": 0
+    },
+    {
+        "question": "What does 'PMT' function calculate in Excel? / Excel में 'PMT' फंक्शन क्या कैलकुलेट करता है?",
+        "options": ["Loan payments", "Present value", "Future value", "Interest rate"],
+        "answer": 0
+    },
+    {
+        "question": "How do you add speaker notes in PowerPoint? / PowerPoint में स्पीकर नोट्स कैसे जोड़ें?",
+        "options": ["View > Notes", "Insert > Notes", "Review > Notes", "Home > Notes"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Quick Parts' in Outlook? / Outlook में 'Quick Parts' का क्या उद्देश्य है?",
+        "options": ["To save reusable content", "To filter emails", "To schedule meetings", "To set reminders"],
+        "answer": 0
+    },
+    {
+        "question": "Which view in Access shows data in rows and columns? / Access में कौन सा व्यू डेटा को पंक्तियों और स्तंभों में दिखाता है?",
+        "options": ["Datasheet View", "Design View", "Form View", "Report View"],
+        "answer": 0
+    },
+    {
+        "question": "What is the shortcut to open the Font dialog box in Word? / Word में फॉन्ट डायलॉग बॉक्स खोलने की शॉर्टकट क्या है?",
+        "options": ["Ctrl+D", "Ctrl+F", "Ctrl+G", "Ctrl+H"],
+        "answer": 0
+    },
+    {
+        "question": "Which Excel feature automatically fills data based on a pattern? / Excel की कौन सी फीचर पैटर्न के आधार पर डेटा को स्वचालित रूप से भरती है?",
+        "options": ["Flash Fill", "AutoSum", "Data Validation", "Conditional Formatting"],
+        "answer": 0
+    },
+    {
+        "question": "How do you apply a transition to all slides in PowerPoint? / PowerPoint में सभी स्लाइड्स पर ट्रांजिशन कैसे अप्लाई करें?",
+        "options": ["Apply To All", "Slide Master", "Format Painter", "None of these"],
+        "answer": 0
+    },
+    {
+        "question": "What does 'BCC' stand for in Outlook? / Outlook में 'BCC' का क्या मतलब है?",
+        "options": ["Blind Carbon Copy", "Basic Carbon Copy", "Business Carbon Copy", "Blank Carbon Copy"],
+        "answer": 0
+    },
+    {
+        "question": "Which Access object provides a user-friendly interface for data entry? / Access का कौन सा ऑब्जेक्ट डेटा एंट्री के लिए यूजर-फ्रेंडली इंटरफेस प्रदान करता है?",
+        "options": ["Form", "Query", "Macro", "Module"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a hanging indent in Word? / Word में हैंगिंग इंडेंट कैसे बनाएं?",
+        "options": ["Paragraph dialog > Special > Hanging", "Home > Indent Increase", "Layout > Indent", "View > Ruler"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'IFERROR' function in Excel? / Excel में 'IFERROR' फंक्शन का क्या उद्देश्य है?",
+        "options": ["To handle errors gracefully", "To check conditions", "To count errors", "To ignore errors"],
+        "answer": 0
+    },
+    {
+        "question": "Which PowerPoint feature allows you to rehearse timings? / PowerPoint की कौन सी फीचर आपको टाइमिंग्स का रिहर्सल करने देती है?",
+        "options": ["Rehearse Timings", "Slide Show Setup", "Record Slide Show", "Presenter View"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a rule to move emails in Outlook? / Outlook में ईमेल्स को मूव करने के लिए रूल कैसे बनाएं?",
+        "options": ["Rules > Create Rule", "Home > Move > Rules", "Right-click > Create Rule", "All of above"],
         "answer": 3
     },
     {
-        "question": "In Calc, what does the AVERAGE function calculate? / Calc में AVERAGE फ़ंक्शन क्या गणना करता है?",
-        "options": ["Sum of numbers", "Middle value", "Arithmetic mean", "Most frequent value"],
-        "answer": 2
+        "question": "What is the purpose of a macro in Access? / Access में मैक्रो का क्या उद्देश्य है?",
+        "options": ["To automate tasks", "To create tables", "To design forms", "To write SQL queries"],
+        "answer": 0
     },
     {
-        "question": "How do you insert a table in LibreOffice Writer? / LibreOffice Writer में टेबल कैसे डालें?",
-        "options": ["Table > Insert Table", "Insert > Table", "Format > Table", "Tools > Table"],
-        "answer": 1
+        "question": "Which Word feature compares two documents? / Word की कौन सी फीचर दो डॉक्यूमेंट्स की तुलना करती है?",
+        "options": ["Compare", "Combine", "Track Changes", "Document Inspector"],
+        "answer": 0
     },
     {
-        "question": "Which function would you use to find the highest value in a range in Calc? / Calc में किसी रेंज में सबसे बड़ा मान खोजने के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
-        "options": ["TOP()", "MAX()", "HIGH()", "PEAK()"],
-        "answer": 1
+        "question": "What does 'COUNTBLANK' function do in Excel? / Excel में 'COUNTBLANK' फंक्शन क्या करता है?",
+        "options": ["Counts empty cells", "Counts non-empty cells", "Counts cells with text", "Counts cells with numbers"],
+        "answer": 0
     },
     {
-        "question": "What is the purpose of the Navigator in LibreOffice? / LibreOffice में नेविगेटर का उद्देश्य क्या है?",
-        "options": ["To browse the internet", "To quickly move through a document", "To manage files", "To check spelling"],
-        "answer": 1
+        "question": "How do you insert a video in PowerPoint? / PowerPoint में वीडियो कैसे डालें?",
+        "options": ["Insert > Video", "Design > Media", "Home > Insert Video", "View > Multimedia"],
+        "answer": 0
     },
     {
-        "question": "Which of these is not a chart type available in Calc? / इनमें से कौन सा Calc में उपलब्ध चार्ट प्रकार नहीं है?",
-        "options": ["Pie", "Bar", "Line", "Cube"],
+        "question": "What is the purpose of 'Out of Office' in Outlook? / Outlook में 'आउट ऑफ ऑफिस' का क्या उद्देश्य है?",
+        "options": ["To set automatic replies", "To block emails", "To schedule meetings", "To organize tasks"],
+        "answer": 0
+    },
+    {
+        "question": "Which Access data type stores large amounts of text? / Access का कौन सा डेटा टाइप बड़ी मात्रा में टेक्स्ट स्टोर करता है?",
+        "options": ["Memo", "Text", "Long Text", "Both A and C"],
         "answer": 3
     },
     {
-        "question": "How do you start a numbered list in Writer? / Writer में नंबर सूची कैसे शुरू करें?",
-        "options": ["Press 1. then space", "Format > Bullets and Numbering", "Both of these", "Neither of these"],
-        "answer": 2
-    },
-    {
-        "question": "What does the 'Merge Cells' option do in Calc? / Calc में 'मर्ज सेल' विकल्प क्या करता है?",
-        "options": ["Combines multiple cells into one", "Splits one cell into multiple", "Deletes cell contents", "Copies cell formatting"],
+        "question": "How do you create a table of contents in Word? / Word में सामग्री सूची (Table of Contents) कैसे बनाएं?",
+        "options": ["References > Table of Contents", "Insert > Index", "Layout > Contents", "View > Outline"],
         "answer": 0
     },
     {
-        "question": "Which keyboard shortcut centers text in Writer? / Writer में टेक्स्ट को सेंटर में लाने के लिए किस कीबोर्ड शॉर्टकट का उपयोग करते हैं?",
-        "options": ["Ctrl+E", "Ctrl+C", "Ctrl+M", "Ctrl+T"],
+        "question": "What is the shortcut to edit the active cell in Excel? / Excel में एक्टिव सेल को एडिट करने की शॉर्टकट क्या है?",
+        "options": ["F2", "F4", "F5", "F7"],
         "answer": 0
     },
     {
-        "question": "What is the purpose of conditional formatting in Calc? / Calc में कंडीशनल फॉर्मेटिंग का उद्देश्य क्या है?",
-        "options": ["To format cells based on their values", "To protect cells from editing", "To validate data entry", "To create formulas"],
+        "question": "Which PowerPoint view is best for adding notes? / PowerPoint में नोट्स जोड़ने के लिए कौन सा व्यू सबसे अच्छा है?",
+        "options": ["Notes Page", "Normal View", "Outline View", "Slide Sorter"],
         "answer": 0
     },
     {
-        "question": "Which file format is best for preserving formatting when sharing Writer documents? / Writer दस्तावेज़ साझा करते समय फॉर्मेटिंग को संरक्षित करने के लिए कौन सा फ़ाइल फॉर्मेट सबसे अच्छा है?",
-        "options": [".txt", ".odt", ".csv", ".html"],
-        "answer": 1
-    },
-    {
-        "question": "In Calc, what does the COUNT function do? / Calc में COUNT फ़ंक्शन क्या करता है?",
-        "options": ["Adds numbers", "Counts numeric cells", "Averages values", "Multiplies values"],
-        "answer": 1
-    },
-    {
-        "question": "How do you insert a page number in Writer? / Writer में पेज नंबर कैसे डालें?",
-        "options": ["Insert > Page Number", "Format > Page > Number", "Tools > Page Numbering", "View > Page Numbers"],
-        "answer": 0
-    },
-    {
-        "question": "Which of these is not a valid cell reference type in Calc? / इनमें से कौन सा Calc में वैध सेल संदर्भ प्रकार नहीं है?",
-        "options": ["Absolute", "Relative", "Mixed", "Circular"],
+        "question": "How do you flag an email for follow-up in Outlook? / Outlook में ईमेल को फॉलो-अप के लिए कैसे फ्लैग करें?",
+        "options": ["Right-click > Follow Up", "Home > Follow Up", "Message > Flag", "All of above"],
         "answer": 3
     },
     {
-        "question": "What does the 'Track Changes' feature do in Writer? / Writer में 'ट्रैक परिवर्तन' सुविधा क्या करती है?",
-        "options": ["Records editing changes", "Follows hyperlinks", "Monitors file size", "Checks grammar"],
+        "question": "What is a query in Access? / Access में क्वेरी क्या होती है?",
+        "options": ["A question about data", "A data entry form", "A printed report", "A programming code"],
         "answer": 0
     },
     {
-        "question": "Which function would you use to combine text from multiple cells in Calc? / Calc में कई सेल से टेक्स्ट को संयोजित करने के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
-        "options": ["JOIN()", "COMBINE()", "CONCATENATE()", "MERGE()"],
-        "answer": 2
-    },
-    {
-        "question": "How do you create a header in Writer? / Writer में हेडर कैसे बनाएं?",
-        "options": ["Insert > Header", "Format > Page > Header", "View > Header", "Tools > Header"],
-        "answer": 1
-    },
-    {
-        "question": "What is the purpose of the IF function in Calc? / Calc में IF फ़ंक्शन का उद्देश्य क्या है?",
-        "options": ["To perform logical tests", "To find information", "To calculate interest", "To format cells"],
-        "answer": 0
-    },
-    {
-        "question": "Which of these is not a paragraph alignment option in Writer? / इनमें से कौन सा Writer में पैराग्राफ अलाइनमेंट विकल्प नहीं है?",
-        "options": ["Left", "Right", "Center", "Diagonal"],
+        "question": "Which Word feature checks for grammatical errors? / Word की कौन सी फीचर व्याकरणिक त्रुटियों की जांच करती है?",
+        "options": ["Grammar Check", "Spelling & Grammar", "Editor", "All of above"],
         "answer": 3
     },
     {
-        "question": "In Calc, what does the $ symbol indicate in cell references? / Calc में सेल संदर्भों में $ प्रतीक क्या दर्शाता है?",
-        "options": ["Absolute reference", "Currency format", "Error value", "Comment"],
+        "question": "What does 'ROUND' function do in Excel? / Excel में 'ROUND' फंक्शन क्या करता है?",
+        "options": ["Rounds a number", "Counts rounded cells", "Finds circular references", "Rounds time values"],
         "answer": 0
     },
     {
-        "question": "How do you insert a comment in Writer? / Writer में टिप्पणी कैसे डालें?",
-        "options": ["Insert > Comment", "Tools > Comment", "Review > Comment", "View > Comment"],
+        "question": "How do you add a sound effect to PowerPoint transitions? / PowerPoint ट्रांजिशन में साउंड इफेक्ट कैसे जोड़ें?",
+        "options": ["Transitions > Sound", "Insert > Audio", "Slide Show > Narration", "Design > Effects"],
         "answer": 0
     },
     {
-        "question": "Which function would you use to find the current date in Calc? / Calc में वर्तमान तिथि खोजने के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
-        "options": ["CURRENTDATE()", "NOW()", "TODAY()", "DATE()"],
-        "answer": 2
-    },
-    {
-        "question": "What is the purpose of styles in Writer? / Writer में स्टाइल का उद्देश्य क्या है?",
-        "options": ["To apply consistent formatting", "To check grammar", "To track changes", "To insert images"],
+        "question": "What is the purpose of 'Junk Email' folder in Outlook? / Outlook में 'जंक ईमेल' फोल्डर का क्या उद्देश्य है?",
+        "options": ["To store spam emails", "To archive old emails", "To keep important emails", "To organize sent items"],
         "answer": 0
     },
     {
-        "question": "In Calc, what does the VLOOKUP function do? / Calc में VLOOKUP फ़ंक्शन क्या करता है?",
-        "options": ["Looks up values vertically", "Looks up values horizontally", "Validates data", "Creates charts"],
+        "question": "Which Access feature creates a printable data summary? / Access की कौन सी फीचर प्रिंट करने योग्य डेटा सारांश बनाती है?",
+        "options": ["Report", "Form", "Query", "Macro"],
         "answer": 0
     },
     {
-        "question": "How do you create a bulleted list in Writer? / Writer में बुलेट सूची कैसे बनाएं?",
-        "options": ["Press * then space", "Format > Bullets and Numbering", "Both of these", "Neither of these"],
-        "answer": 2
+        "question": "How do you change line spacing in Word? / Word में लाइन स्पेसिंग कैसे बदलें?",
+        "options": ["Home > Paragraph > Line Spacing", "Layout > Spacing", "Design > Paragraph", "View > Ruler"],
+        "answer": 0
     },
     {
-        "question": "Which of these is not a valid data type in Calc? / इनमें से कौन सा Calc में वैध डेटा प्रकार नहीं है?",
-        "options": ["Number", "Text", "Date", "Image"],
+        "question": "What is the purpose of 'Data Validation' in Excel? / Excel में 'डेटा वैलिडेशन' का क्या उद्देश्य है?",
+        "options": ["To restrict data entry", "To validate formulas", "To check for duplicates", "To format cells"],
+        "answer": 0
+    },
+    {
+        "question": "How do you record a slide show in PowerPoint? / PowerPoint में स्लाइड शो कैसे रिकॉर्ड करें?",
+        "options": ["Slide Show > Record Slide Show", "Insert > Recording", "Review > Record", "View > Narration"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Calendar' in Outlook? / Outlook में 'कैलेंडर' का क्या उद्देश्य है?",
+        "options": ["To schedule appointments", "To organize emails", "To set reminders", "To manage contacts"],
+        "answer": 0
+    },
+    {
+        "question": "Which Access object contains VBA code? / Access का कौन सा ऑब्जेक्ट VBA कोड रखता है?",
+        "options": ["Module", "Form", "Report", "Macro"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a footnote in Word? / Word में फुटनोट कैसे बनाएं?",
+        "options": ["References > Insert Footnote", "Insert > Footnote", "Home > Notes", "View > Footnotes"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'PivotTable' in Excel? / Excel में 'PivotTable' का क्या उद्देश्य है?",
+        "options": ["To summarize data", "To create charts", "To validate data", "To format tables"],
+        "answer": 0
+    },
+    {
+        "question": "How do you add a background image to PowerPoint slides? / PowerPoint स्लाइड्स में बैकग्राउंड इमेज कैसे जोड़ें?",
+        "options": ["Design > Format Background", "Insert > Picture", "Home > Background", "View > Slide Master"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Tasks' in Outlook? / Outlook में 'टास्क्स' का क्या उद्देश्य है?",
+        "options": ["To manage to-do items", "To track emails", "To schedule meetings", "To organize contacts"],
+        "answer": 0
+    },
+    {
+        "question": "Which Access feature helps prevent duplicate entries? / Access की कौन सी फीचर डुप्लीकेट एंट्रीज को रोकने में मदद करती है?",
+        "options": ["Primary Key", "Index", "Validation Rule", "All of above"],
         "answer": 3
     },
     {
-        "question": "What does the 'Word Count' feature show in Writer? / Writer में 'शब्द गणना' सुविधा क्या दिखाती है?",
-        "options": ["Number of words", "Number of characters", "Number of pages", "All of these"],
+        "question": "How do you create a mail merge in Word? / Word में मेल मर्ज कैसे बनाएं?",
+        "options": ["Mailings > Start Mail Merge", "Insert > Merge", "Home > Merge", "Review > Mail Merge"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Conditional Formatting' in Excel? / Excel में 'कंडीशनल फॉर्मेटिंग' का क्या उद्देश्य है?",
+        "options": ["To format cells based on conditions", "To validate data", "To create formulas", "To protect sheets"],
+        "answer": 0
+    },
+    {
+        "question": "How do you add animation to text in PowerPoint? / PowerPoint में टेक्स्ट को एनिमेट कैसे करें?",
+        "options": ["Animations > Add Animation", "Home > Animate", "Insert > Animation", "Design > Effects"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Notes' in Outlook? / Outlook में 'नोट्स' का क्या उद्देश्य है?",
+        "options": ["To jot down quick reminders", "To compose emails", "To schedule tasks", "To manage contacts"],
+        "answer": 0
+    },
+    {
+        "question": "Which Access view allows you to design tables? / Access का कौन सा व्यू आपको टेबल्स डिजाइन करने देता है?",
+        "options": ["Design View", "Datasheet View", "Layout View", "Form View"],
+        "answer": 0
+    },
+    {
+        "question": "How do you insert a symbol in Word? / Word में सिंबल कैसे डालें?",
+        "options": ["Insert > Symbol", "Home > Symbol", "Design > Icons", "View > Special Characters"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Goal Seek' in Excel? / Excel में 'गोल सीक' का क्या उद्देश्य है?",
+        "options": ["To find input for desired output", "To search for data", "To validate goals", "To track changes"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a custom slide show in PowerPoint? / PowerPoint में कस्टम स्लाइड शो कैसे बनाएं?",
+        "options": ["Slide Show > Custom Slide Show", "Insert > Custom Show", "Home > New Show", "View > Presenter View"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Rules' in Outlook? / Outlook में 'रूल्स' का क्या उद्देश्य है?",
+        "options": ["To automate email management", "To create templates", "To schedule meetings", "To block senders"],
+        "answer": 0
+    },
+    {
+        "question": "Which Access feature creates a user interface for data entry? / Access की कौन सी फीचर डेटा एंट्री के लिए यूजर इंटरफेस बनाती है?",
+        "options": ["Form", "Report", "Query", "Macro"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a bibliography in Word? / Word में बिब्लियोग्राफी कैसे बनाएं?",
+        "options": ["References > Bibliography", "Insert > Citation", "Home > References", "View > Bibliography"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Solver' add-in in Excel? / Excel में 'सॉल्वर' ऐड-इन का क्या उद्देश्य है?",
+        "options": ["To optimize solutions", "To solve equations", "To analyze data", "All of above"],
         "answer": 3
     },
     {
-        "question": "In Calc, what is the correct syntax for a function? / Calc में फ़ंक्शन के लिए सही सिंटैक्स क्या है?",
-        "options": ["FunctionName[arguments]", "FunctionName{arguments}", "FunctionName(arguments)", "FunctionName<arguments>"],
-        "answer": 2
-    },
-    {
-        "question": "How do you insert a hyperlink in Writer? / Writer में हाइपरलिंक कैसे डालें?",
-        "options": ["Insert > Hyperlink", "Format > Hyperlink", "Tools > Hyperlink", "View > Hyperlink"],
+        "question": "How do you save PowerPoint slides as images? / PowerPoint स्लाइड्स को इमेज के रूप में कैसे सेव करें?",
+        "options": ["File > Save As > Image Format", "Export > Create Images", "Share > Send as Picture", "All of above"],
         "answer": 0
     },
     {
-        "question": "Which function would you use to round a number in Calc? / Calc में किसी संख्या को राउंड करने के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
-        "options": ["ROUND()", "FIX()", "INTEGER()", "WHOLE()"],
+        "question": "What is the purpose of 'Quick Steps' in Outlook? / Outlook में 'क्विक स्टेप्स' का क्या उद्देश्य है?",
+        "options": ["To perform multiple actions with one click", "To schedule emails", "To categorize messages", "To set reminders"],
         "answer": 0
     },
     {
-        "question": "What is the purpose of the Format Painter tool? / फॉर्मेट पेंटर टूल का उद्देश्य क्या है?",
-        "options": ["To copy formatting", "To create drawings", "To adjust colors", "To insert pictures"],
+        "question": "Which Access feature helps create relationships between tables? / Access की कौन सी फीचर टेबल्स के बीच रिलेशनशिप बनाने में मदद करती है?",
+        "options": ["Relationships", "Joins", "Queries", "Forms"],
         "answer": 0
     },
     {
-        "question": "In Calc, what does the PMT function calculate? / Calc में PMT फ़ंक्शन क्या गणना करता है?",
-        "options": ["Payment for a loan", "Percentage of total", "Probability", "Prime numbers"],
+        "question": "How do you create an index in Word? / Word में इंडेक्स कैसे बनाएं?",
+        "options": ["References > Index", "Insert > Index", "Home > Mark Entry", "View > Index"],
         "answer": 0
     },
     {
-        "question": "How do you check spelling in Writer? / Writer में वर्तनी कैसे जांचें?",
-        "options": ["Tools > Spelling", "Format > Spelling", "Review > Spelling", "F7 key"],
+        "question": "What is the purpose of 'Scenario Manager' in Excel? / Excel में 'सिनेरियो मैनेजर' का क्या उद्देश्य है?",
+        "options": ["To compare different scenarios", "To manage worksheets", "To track changes", "To validate data"],
+        "answer": 0
+    },
+    {
+        "question": "How do you add a password to PowerPoint? / PowerPoint में पासवर्ड कैसे जोड़ें?",
+        "options": ["File > Info > Protect Presentation", "Review > Protect", "Home > Security", "View > Password"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Public Folders' in Outlook? / Outlook में 'पब्लिक फोल्डर्स' का क्या उद्देश्य है?",
+        "options": ["To share items with others", "To archive emails", "To organize personal files", "To backup data"],
+        "answer": 0
+    },
+    {
+        "question": "Which Access feature helps import data from Excel? / Access की कौन सी फीचर Excel से डेटा इम्पोर्ट करने में मदद करती है?",
+        "options": ["External Data > Excel", "File > Import", "Home > Get Data", "All of above"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a caption in Word? / Word में कैप्शन कैसे बनाएं?",
+        "options": ["References > Insert Caption", "Insert > Caption", "Home > Label", "View > Captions"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Watch Window' in Excel? / Excel में 'वॉच विंडो' का क्या उद्देश्य है?",
+        "options": ["To monitor specific cells", "To watch videos", "To track changes", "To validate data"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a photo album in PowerPoint? / PowerPoint में फोटो एल्बम कैसे बनाएं?",
+        "options": ["Insert > Photo Album", "Design > Album", "Home > New Album", "View > Album"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Search Folders' in Outlook? / Outlook में 'सर्च फोल्डर्स' का क्या उद्देश्य है?",
+        "options": ["To quickly find specific emails", "To organize folders", "To archive messages", "To backup data"],
+        "answer": 0
+    },
+    {
+        "question": "Which Access feature creates a printable layout of data? / Access की कौन सी फीचर डेटा का प्रिंट करने योग्य लेआउट बनाती है?",
+        "options": ["Report", "Form", "Query", "Macro"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a cross-reference in Word? / Word में क्रॉस-रेफरेन्स कैसे बनाएं?",
+        "options": ["References > Cross-reference", "Insert > Reference", "Home > Link", "View > References"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Data Table' in Excel? / Excel में 'डेटा टेबल' का क्या उद्देश्य है?",
+        "options": ["To show multiple results", "To organize data", "To create charts", "To validate inputs"],
+        "answer": 0
+    },
+    {
+        "question": "How do you compress media in PowerPoint? / PowerPoint में मीडिया को कैसे कंप्रेस करें?",
+        "options": ["File > Compress Media", "Format > Compress", "Insert > Optimize", "View > Compression"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Signatures' in Outlook? / Outlook में 'सिग्नेचर्स' का क्या उद्देश्य है?",
+        "options": ["To add professional closings", "To sign documents", "To encrypt emails", "To authenticate accounts"],
+        "answer": 0
+    },
+    {
+        "question": "Which Access feature runs a series of commands? / Access की कौन सी फीचर कमांड्स की एक सीरीज रन करती है?",
+        "options": ["Macro", "Module", "Query", "Form"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a watermark in Word? / Word में वॉटरमार्क कैसे बनाएं?",
+        "options": ["Design > Watermark", "Insert > Watermark", "Home > Background", "View > Mark"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Sparklines' in Excel? / Excel में 'स्पार्कलाइन्स' का क्या उद्देश्य है?",
+        "options": ["To show mini charts in cells", "To highlight data", "To create trends", "To format tables"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a custom layout in PowerPoint? / PowerPoint में कस्टम लेआउट कैसे बनाएं?",
+        "options": ["Slide Master > Insert Layout", "Design > Customize", "Home > New Layout", "View > Layouts"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Archive' in Outlook? / Outlook में 'आर्काइव' का क्या उद्देश्य है?",
+        "options": ["To store old items", "To backup data", "To delete emails", "To organize folders"],
+        "answer": 0
+    },
+    {
+        "question": "Which Access feature helps analyze database performance? / Access की कौन सी फीचर डेटाबेस परफॉर्मेंस को एनालाइज़ करने में मदद करती है?",
+        "options": ["Performance Analyzer", "Database Tools", "Query Optimizer", "All of above"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a mail merge directory in Word? / Word में मेल मर्ज डायरेक्टरी कैसे बनाएं?",
+        "options": ["Mailings > Directory", "Insert > Merge Field", "Home > Address Block", "View > Data Source"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Quick Analysis' tool in Excel? / Excel में 'क्विक एनालिसिस' टूल का क्या उद्देश्य है?",
+        "options": ["To quickly visualize data", "To format cells", "To create formulas", "To validate inputs"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a motion path animation in PowerPoint? / PowerPoint में मोशन पाथ एनिमेशन कैसे बनाएं?",
+        "options": ["Animations > Add Animation > Motion Paths", "Insert > Path", "Home > Animate", "Design > Effects"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Voting Buttons' in Outlook? / Outlook में 'वोटिंग बटन्स' का क्या उद्देश्य है?",
+        "options": ["To collect responses", "To format emails", "To track replies", "To schedule polls"],
+        "answer": 0
+    },
+    {
+        "question": "Which Access feature helps create navigation forms? / Access की कौन सी फीचर नेविगेशन फॉर्म्स बनाने में मदद करती है?",
+        "options": ["Navigation Form", "Switchboard", "Menu Builder", "All of above"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a drop cap in Word? / Word में ड्रॉप कैप कैसे बनाएं?",
+        "options": ["Insert > Drop Cap", "Home > Drop Cap", "Design > Typography", "View > Special Effects"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Slicers' in Excel? / Excel में 'स्लाइसर्स' का क्या उद्देश्य है?",
+        "options": ["To filter PivotTables interactively", "To slice data", "To create charts", "To format tables"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a self-running presentation in PowerPoint? / PowerPoint में सेल्फ-रनिंग प्रेजेंटेशन कैसे बनाएं?",
+        "options": ["Slide Show > Set Up Slide Show > Browsed at Kiosk", "File > Save As > AutoRun", "Insert > Automatic Show", "View > Continuous"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Outlook Mobile'? / 'आउटलुक मोबाइल' का क्या उद्देश्य है?",
+        "options": ["To access Outlook on mobile devices", "To sync contacts", "To backup data", "To manage calendars"],
+        "answer": 0
+    },
+    {
+        "question": "Which Access feature helps create startup options? / Access की कौन सी फीचर स्टार्टअप ऑप्शन्स बनाने में मदद करती है?",
+        "options": ["Startup Options", "AutoExec Macro", "Splash Screen", "All of above"],
+        "answer": 0
+    },
+    {
+        "question": "How do you create a custom dictionary in Word? / Word में कस्टम डिक्शनरी कैसे बनाएं?",
+        "options": ["File > Options > Proofing > Custom Dictionaries", "Review > Spelling > Options", "Home > Language > Dictionary", "View > References"],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of 'Power Query' in Excel? / Excel में 'पावर क्वेरी' का क्या उद्देश्य है?",
+        "options": ["To transform and clean data", "To create queries", "To analyze data", "All of above"],
         "answer": 3
     },
     {
-        "question": "Which of these is not a valid way to reference another sheet in Calc? / Calc में किसी अन्य शीट को संदर्भित करने का यह कौन सा वैध तरीका नहीं है?",
-        "options": ["Sheet1.A1", "Sheet1!A1", "'Sheet1'.A1", "'Sheet1'!A1"],
+        "question": "How do you create a zoom effect in PowerPoint? / PowerPoint में ज़ूम इफेक्ट कैसे बनाएं?",
+        "options": ["Insert > Zoom", "Transitions > Morph", "Animations > Grow/Shrink", "All of above"],
         "answer": 0
     },
     {
-        "question": "What does the 'Mail Merge' feature do in Writer? / Writer में 'मेल मर्ज' सुविधा क्या करती है?",
-        "options": ["Combines email accounts", "Creates multiple documents from a template", "Sends documents via email", "Merges multiple documents"],
-        "answer": 1
-    },
-    {
-        "question": "In Calc, what does the COUNTA function count? / Calc में COUNTA फ़ंक्शन क्या गिनता है?",
-        "options": ["Only numeric cells", "Only empty cells", "All non-empty cells", "Only text cells"],
-        "answer": 2
-    },
-    {
-        "question": "How do you insert a page break in Writer? / Writer में पेज ब्रेक कैसे डालें?",
-        "options": ["Insert > Break > Page Break", "Format > Paragraph > Break", "Ctrl+Enter", "Both 1 and 3"],
-        "answer": 3
-    },
-    {
-        "question": "Which function would you use to extract part of a text string in Calc? / Calc में टेक्स्ट स्ट्रिंग के भाग को निकालने के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
-        "options": ["EXTRACT()", "PART()", "MID()", "GETTEXT()"],
-        "answer": 2
-    },
-    {
-        "question": "What is the purpose of templates in LibreOffice? / LibreOffice में टेम्प्लेट का उद्देश्य क्या है?",
-        "options": ["To create pre-formatted documents", "To store images", "To backup files", "To connect to databases"],
+        "question": "What is the purpose of 'Delayed Delivery' in Outlook? / Outlook में 'डिलेड डिलीवरी' का क्या उद्देश्य है?",
+        "options": ["To schedule email sending", "To recall messages", "To delay receipts", "To postpone meetings"],
         "answer": 0
     },
     {
-        "question": "In Calc, what does the RAND function do? / Calc में RAND फ़ंक्शन क्या करता है?",
-        "options": ["Rounds numbers", "Generates random numbers", "Ranks values", "Reads data"],
-        "answer": 1
-    },
-    {
-        "question": "How do you create a table of contents in Writer? / Writer में सामग्री तालिका कैसे बनाएं?",
-        "options": ["Insert > Indexes > Table of Contents", "Tools > Table of Contents", "Format > Table of Contents", "View > Table of Contents"],
+        "question": "Which Access feature helps compact and repair databases? / Access की कौन सी फीचर डेटाबेस को कॉम्पैक्ट और रिपेयर करने में मदद करती है?",
+        "options": ["Compact & Repair", "Database Tools", "Backup", "All of above"],
         "answer": 0
     },
     {
-        "question": "Which of these is not a valid chart element in Calc? / इनमें से कौन सा Calc में वैध चार्ट तत्व नहीं है?",
-        "options": ["Legend", "Axis", "Plot area", "Font area"],
-        "answer": 3
-    },
-    {
-        "question": "What does the 'Split Window' feature allow in Writer? / Writer में 'विंडो को विभाजित करें' सुविधा क्या अनुमति देती है?",
-        "options": ["To view different parts of the same document", "To open two documents side by side", "To divide the page into columns", "To create multiple windows"],
+        "question": "How do you create a building block in Word? / Word में बिल्डिंग ब्लॉक कैसे बनाएं?",
+        "options": ["Insert > Quick Parts > Save Selection to Quick Part Gallery", "Home > Building Blocks", "Design > Templates", "View > Blocks"],
         "answer": 0
     },
     {
-        "question": "In Calc, what does the ROUNDUP function do? / Calc में ROUNDUP फ़ंक्शन क्या करता है?",
-        "options": ["Rounds to nearest integer", "Rounds up away from zero", "Rounds to even number", "Rounds to specified digits"],
-        "answer": 1
-    },
-    {
-        "question": "How do you protect a document with a password in Writer? / Writer में दस्तावेज़ को पासवर्ड से कैसे सुरक्षित करें?",
-        "options": ["File > Save As > Password", "File > Properties > Security", "Tools > Options > Security", "File > Save with Password"],
-        "answer": 3
-    },
-    {
-        "question": "Which function would you use to calculate depreciation in Calc? / Calc में मूल्यह्रास की गणना के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
-        "options": ["DEPR()", "SLN()", "AMORT()", "REDUCE()"],
-        "answer": 1
-    },
-    {
-        "question": "What is the purpose of the Data Pilot feature in Calc? / Calc में डेटा पायलट सुविधा का उद्देश्य क्या है?",
-        "options": ["To create pivot tables", "To automate data entry", "To validate data", "To import data"],
+        "question": "What is the purpose of 'Forecast Sheet' in Excel? / Excel में 'फोरकास्ट शीट' का क्या उद्देश्य है?",
+        "options": ["To predict trends", "To create budgets", "To analyze data", "To format tables"],
         "answer": 0
     },
     {
-        "question": "How do you insert a footnote in Writer? / Writer में फुटनोट कैसे डालें?",
-        "options": ["Insert > Footnote", "Tools > Footnote", "Format > Footnote", "View > Footnote"],
+        "question": "How do you create a trigger animation in PowerPoint? / PowerPoint में ट्रिगर एनिमेशन कैसे बनाएं?",
+        "options": ["Animations > Trigger", "Insert > Action", "Slide Show > Interactive", "All of above"],
         "answer": 0
     },
     {
-        "question": "Which of these is not a valid cell format in Calc? / इनमें से कौन सा Calc में वैध सेल फॉर्मेट नहीं है?",
-        "options": ["Currency", "Percentage", "Fraction", "Emoji"],
-        "answer": 3
-    },
-    {
-        "question": "What does the 'Compare Documents' feature do in Writer? / Writer में 'दस्तावेज़ तुलना करें' सुविधा क्या करती है?",
-        "options": ["Shows differences between documents", "Merges documents", "Converts document formats", "Compresses document size"],
+        "question": "What is the purpose of 'Outlook Groups'? / 'आउटलुक ग्रुप्स' का क्या उद्देश्य है?",
+        "options": ["To collaborate with teams", "To organize contacts", "To manage tasks", "To share calendars"],
         "answer": 0
     },
     {
-        "question": "In Calc, what does the HLOOKUP function do? / Calc में HLOOKUP फ़ंक्शन क्या करता है?",
-        "options": ["Looks up values vertically", "Looks up values horizontally", "Finds highest value", "Creates hyperlinks"],
-        "answer": 1
-    },
-    {
-        "question": "How do you create a cross-reference in Writer? / Writer में क्रॉस-रेफरेंस कैसे बनाएं?",
-        "options": ["Insert > Cross-reference", "Tools > Cross-reference", "Format > Cross-reference", "View > Cross-reference"],
+        "question": "Which Access feature helps create data macros? / Access की कौन सी फीचर डेटा मैक्रोज बनाने में मदद करती है?",
+        "options": ["Data Macros", "Event Macros", "Table Macros", "All of above"],
         "answer": 0
     },
     {
-        "question": "Which function would you use to calculate net present value in Calc? / Calc में शुद्ध वर्तमान मूल्य की गणना के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
-        "options": ["PV()", "NPV()", "FV()", "TVM()"],
-        "answer": 1
-    },
-    {
-        "question": "What is the purpose of the Navigator's 'Drag Mode' in Writer? / Writer में नेविगेटर के 'ड्रैग मोड' का उद्देश्य क्या है?",
-        "options": ["To move elements by dragging", "To create drawings", "To rearrange pages", "To select multiple items"],
+        "question": "How do you create a custom style in Word? / Word में कस्टम स्टाइल कैसे बनाएं?",
+        "options": ["Home > Styles > Create Style", "Design > New Style", "Layout > Style Builder", "View > Styles"],
         "answer": 0
     },
     {
-        "question": "In Calc, what does the ROUNDDOWN function do? / Calc में ROUNDDOWN फ़ंक्शन क्या करता है?",
-        "options": ["Rounds to nearest integer", "Rounds down toward zero", "Rounds to odd number", "Rounds to specified digits"],
-        "answer": 1
-    },
-    {
-        "question": "How do you record a macro in LibreOffice? / LibreOffice में मैक्रो कैसे रिकॉर्ड करें?",
-        "options": ["Tools > Macros > Record Macro", "Macro > Start Recording", "View > Macros > Record", "There is no recording feature"],
+        "question": "What is the purpose of '3D Maps' in Excel? / Excel में '3D मैप्स' का क्या उद्देश्य है?",
+        "options": ["To visualize geographic data", "To create 3D charts", "To analyze trends", "To format tables"],
         "answer": 0
     },
     {
-        "question": "Which of these is not a valid conditional formatting option in Calc? / इनमें से कौन सा Calc में वैध कंडीशनल फॉर्मेटिंग विकल्प नहीं है?",
-        "options": ["Cell Value Is", "Formula Is", "Date Is", "Font Is"],
-        "answer": 3
-    },
-    {
-        "question": "What does the 'Versions' feature do in Writer? / Writer में 'संस्करण' सुविधा क्या करती है?",
-        "options": ["Tracks different versions of a document", "Checks document version compatibility", "Updates software version", "Shows version history of changes"],
+        "question": "How do you create a screen recording in PowerPoint? / PowerPoint में स्क्रीन रिकॉर्डिंग कैसे बनाएं?",
+        "options": ["Insert > Screen Recording", "Slide Show > Record", "Home > Media", "View > Capture"],
         "answer": 0
     },
     {
-        "question": "In Calc, what does the DSUM function do? / Calc में DSUM फ़ंक्शन क्या करता है?",
-        "options": ["Sums database records that meet criteria", "Sums diagonal cells", "Sums dates", "Sums decimal values only"],
+        "question": "What is the purpose of 'Outlook Add-ins'? / 'आउटलुक ऐड-इन्स' का क्या उद्देश्य है?",
+        "options": ["To extend functionality", "To block emails", "To organize folders", "To backup data"],
         "answer": 0
     },
     {
-        "question": "How do you create a bibliography in Writer? / Writer में ग्रंथ सूची कैसे बनाएं?",
-        "options": ["Insert > Indexes > Bibliography", "Tools > Bibliography", "Format > Bibliography", "View > Bibliography"],
-        "answer": 0
-    },
-    {
-        "question": "Which function would you use to calculate internal rate of return in Calc? / Calc में आंतरिक प्रतिफल दर की गणना के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
-        "options": ["IRR()", "ROR()", "ROI()", "RETURN()"],
-        "answer": 0
-    },
-    {
-        "question": "What is the purpose of the 'Master Document' feature in Writer? / Writer में 'मास्टर दस्तावेज़' सुविधा का उद्देश्य क्या है?",
-        "options": ["To manage large documents as smaller sub-documents", "To create template documents", "To protect documents", "To format documents"],
-        "answer": 0
-    },
-    {
-        "question": "In Calc, what does the MATCH function do? / Calc में MATCH फ़ंक्शन क्या करता है?",
-        "options": ["Finds matching cells", "Returns position of item in range", "Compares two cells", "Creates matching pairs"],
-        "answer": 1
-    },
-    {
-        "question": "How do you insert a section break in Writer? / Writer में सेक्शन ब्रेक कैसे डालें?",
-        "options": ["Insert > Section", "Format > Section", "Tools > Section Break", "View > Section"],
-        "answer": 0
-    },
-    {
-        "question": "Which of these is not a valid sort option in Calc? / इनमें से कौन सा Calc में वैध सॉर्ट विकल्प नहीं है?",
-        "options": ["Ascending", "Descending", "Custom", "Random"],
-        "answer": 3
-    },
-    {
-        "question": "What does the 'Field Shadings' option show in Writer? / Writer में 'फील्ड शेडिंग' विकल्प क्या दिखाता है?",
-        "options": ["Background of form fields", "Shadow effects for text", "Highlighted fields", "Gray background for all fields"],
-        "answer": 0
-    },
-    {
-        "question": "In Calc, what does the INDEX function do? / Calc में INDEX फ़ंक्शन क्या करता है?",
-        "options": ["Creates an index", "Returns value at intersection of row/column", "Finds text in cells", "Marks important cells"],
-        "answer": 1
-    },
-    {
-        "question": "How do you create a form in Writer? / Writer में फॉर्म कैसे बनाएं?",
-        "options": ["Insert > Form", "Tools > Form Design", "View > Forms", "File > New > Form"],
-        "answer": 1
-    },
-    {
-        "question": "Which function would you use to calculate payment periods in Calc? / Calc में भुगतान अवधि की गणना के लिए आप किस फ़ंक्शन का उपयोग करेंगे?",
-        "options": ["NPER()", "TERM()", "DURATION()", "PERIODS()"],
-        "answer": 0
-    },
-    {
-        "question": "What is the purpose of the 'Gallery' in LibreOffice? / LibreOffice में 'गैलरी' का उद्देश्य क्या है?",
-        "options": ["To store and insert media elements", "To view document history", "To display available fonts", "To show formatting options"],
-        "answer": 0
-    },
-    {
-        "question": "In Calc, what does the STDEV function calculate? / Calc में STDEV फ़ंक्शन क्या गणना करता है?",
-        "options": ["Standard deviation", "Average", "Median", "Variance"],
-        "answer": 0
-    },
-    {
-        "question": "How do you insert a watermark in Writer? / Writer में वॉटरमार्क कैसे डालें?",
-        "options": ["Insert > Watermark", "Format > Page > Watermark", "Tools > Watermark", "View > Watermark"],
-        "answer": 1
-    },
-    {
-        "question": "Which of these is not a valid data filter option in Calc? / इनमें से कौन सा Calc में वैध डेटा फ़िल्टर विकल्प नहीं है?",
-        "options": ["Standard Filter", "AutoFilter", "Advanced Filter", "Smart Filter"],
-        "answer": 3
-    },
-    {
-        "question": "What does the 'Hidden Paragraphs' feature do in Writer? / Writer में 'छिपे हुए पैराग्राफ' सुविधा क्या करती है?",
-        "options": ["Hides paragraphs from view", "Protects paragraphs", "Creates invisible text", "Marks confidential paragraphs"],
-        "answer": 0
-    },
-    {
-        "question": "In Calc, what does the OFFSET function do? / Calc में OFFSET फ़ंक्शन क्या करता है?",
-        "options": ["Skips cells", "Returns reference offset from starting point", "Moves data", "Aligns cells"],
-        "answer": 1
-    },
-    {
-        "question": "How do you create a custom dictionary in Writer? / Writer में कस्टम डिक्शनरी कैसे बनाएं?",
-        "options": ["Tools > Options > Language Settings > Writing Aids", "Tools > Spelling > Dictionary", "Format > Language > Dictionary", "File > Properties > Dictionary"],
+        "question": "Which Access feature helps create web databases? / Access की कौन सी फीचर वेब डेटाबेस बनाने में मदद करती है?",
+        "options": ["Web App", "SharePoint Integration", "Cloud Publishing", "All of above"],
         "answer": 0
     }
+]
 ],
             "Web Designing & Publishing": [
     /* HTML Questions (5) */
