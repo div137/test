@@ -1002,461 +1002,784 @@
     }
 ],
             "Programming and Problem Solving through Python": [
-    /* Python History (5) */
+    // Algorithms (5 questions)
     {
-        "question": "When was Python first released? / Python पहली बार कब रिलीज़ हुआ था?",
-        "options": ["1989", "1991", "1995", "2000"],
+        "question": "What is an algorithm? / एक एल्गोरिदम क्या है?",
+        "options": [
+            "A programming language / एक प्रोग्रामिंग भाषा",
+            "A step-by-step procedure to solve a problem / एक समस्या को हल करने के लिए चरण-दर-चरण प्रक्रिया",
+            "A type of computer hardware / एक प्रकार का कंप्यूटर हार्डवेयर",
+            "A database management system / एक डेटाबेस प्रबंधन प्रणाली"
+        ],
         "answer": 1
     },
     {
-        "question": "Who created Python? / Python के निर्माता कौन हैं?",
-        "options": ["Guido van Rossum", "Linus Torvalds", "James Gosling", "Bjarne Stroustrup"],
-        "answer": 0
+        "question": "Which algorithm is used to find the greatest common divisor (GCD)? / महत्तम समापवर्तक (GCD) खोजने के लिए किस एल्गोरिदम का उपयोग किया जाता है?",
+        "options": [
+            "Bubble sort",
+            "Euclidean algorithm",
+            "Dijkstra's algorithm",
+            "Quick sort"
+        ],
+        "answer": 1
     },
     {
-        "question": "Python is named after: / Python का नाम किसके नाम पर रखा गया है?",
-        "options": ["A snake", "A programming concept", "Monty Python comedy show", "The Python river"],
+        "question": "What is the time complexity of binary search? / बाइनरी सर्च की समय जटिलता क्या है?",
+        "options": [
+            "O(1)",
+            "O(n)",
+            "O(log n)",
+            "O(n²)"
+        ],
         "answer": 2
     },
     {
-        "question": "Which of these is NOT a principle of Python? / इनमें से कौन सा Python का सिद्धांत नहीं है?",
-        "options": ["Beautiful is better than ugly", "Simple is better than complex", "Fast is better than slow", "Readability counts"],
+        "question": "Which sorting algorithm has the worst-case time complexity of O(n²)? / किस सॉर्टिंग एल्गोरिदम की सबसे खराब स्थिति समय जटिलता O(n²) है?",
+        "options": [
+            "Merge sort",
+            "Quick sort",
+            "Bubble sort",
+            "Heap sort"
+        ],
         "answer": 2
     },
     {
-        "question": "Python was influenced by which language? / Python किस भाषा से प्रभावित था?",
-        "options": ["C", "Java", "ABC", "Perl"],
-        "answer": 2
-    },
-
-    /* Operators (10) */
-    {
-        "question": "What does the % operator do in Python? / Python में % ऑपरेटर क्या करता है?",
-        "options": ["Division", "Modulus (remainder)", "Percentage calculation", "Multiplication"],
-        "answer": 1
-    },
-    {
-        "question": "Which operator is used for exponentiation? / घातांक के लिए किस ऑपरेटर का उपयोग किया जाता है?",
-        "options": ["^", "**", "^^", "*"],
-        "answer": 1
-    },
-    {
-        "question": "What does the // operator do? // ऑपरेटर क्या करता है?",
-        "options": ["Floor division", "Comment", "Logical OR", "Bitwise shift"],
-        "answer": 0
-    },
-    {
-        "question": "Which operator checks if values are equal? / कौन सा ऑपरेटर जाँचता है कि क्या मान बराबर हैं?",
-        "options": ["=", "==", "===", "equals"],
-        "answer": 1
-    },
-    {
-        "question": "What does the 'is' operator do? / 'is' ऑपरेटर क्या करता है?",
-        "options": ["Checks value equality", "Checks object identity", "Checks type", "Checks membership"],
-        "answer": 1
-    },
-    {
-        "question": "Which operator is used for string concatenation? / स्ट्रिंग संयोजन के लिए किस ऑपरेटर का उपयोग किया जाता है?",
-        "options": ["+", "&", "||", "concat"],
-        "answer": 0
-    },
-    {
-        "question": "What does the != operator mean? / != ऑपरेटर का क्या अर्थ है?",
-        "options": ["Approximately equal", "Not equal", "Assignment", "Logical NOT"],
-        "answer": 1
-    },
-    {
-        "question": "Which operator has highest precedence? / किस ऑपरेटर की प्राथमिकता सबसे अधिक है?",
-        "options": ["+ (addition)", "* (multiplication)", "** (exponentiation)", "= (assignment)"],
-        "answer": 2
-    },
-    {
-        "question": "What does the := operator do? / := ऑपरेटर क्या करता है?",
-        "options": ["Assignment expression", "Bitwise OR", "Type declaration", "Pattern matching"],
-        "answer": 0
-    },
-    {
-        "question": "Which operator checks if a value is in a sequence? / कौन सा ऑपरेटर जाँचता है कि कोई मान अनुक्रम में है या नहीं?",
-        "options": ["contains", "in", "has", "within"],
+        "question": "What is the purpose of a searching algorithm? / एक खोज एल्गोरिदम का उद्देश्य क्या है?",
+        "options": [
+            "To sort data in ascending order / डेटा को आरोही क्रम में व्यवस्थित करने के लिए",
+            "To find a specific item in a collection / किसी संग्रह में एक विशिष्ट आइटम खोजने के लिए",
+            "To encrypt data / डेटा को एन्क्रिप्ट करने के लिए",
+            "To compress files / फाइलों को संपीड़ित करने के लिए"
+        ],
         "answer": 1
     },
 
-    /* Error Types (5) */
+    // Flowchart (5 questions)
     {
-        "question": "What type of error occurs when syntax is wrong? / सिंटैक्स गलत होने पर किस प्रकार की त्रुटि होती है?",
-        "options": ["RuntimeError", "SyntaxError", "LogicalError", "TypeError"],
+        "question": "Which symbol is used to represent a decision in a flowchart? / फ्लोचार्ट में निर्णय को दर्शाने के लिए किस प्रतीक का उपयोग किया जाता है?",
+        "options": [
+            "Rectangle / आयत",
+            "Diamond / हीरा",
+            "Oval / अंडाकार",
+            "Arrow / तीर"
+        ],
         "answer": 1
     },
     {
-        "question": "Which error occurs when dividing by zero? / शून्य से विभाजित करने पर कौन सी त्रुटि होती है?",
-        "options": ["ValueError", "ZeroDivisionError", "ArithmeticError", "MathError"],
+        "question": "What does a parallelogram represent in a flowchart? / फ्लोचार्ट में एक समांतर चतुर्भुज क्या दर्शाता है?",
+        "options": [
+            "Process / प्रक्रिया",
+            "Input/Output / इनपुट/आउटपुट",
+            "Start/End / शुरू/अंत",
+            "Decision / निर्णय"
+        ],
         "answer": 1
     },
     {
-        "question": "What error occurs when a variable is not found? / वेरिएबल नहीं मिलने पर कौन सी त्रुटि होती है?",
-        "options": ["NameError", "VariableError", "NotFoundError", "KeyError"],
-        "answer": 0
-    },
-    {
-        "question": "Which error occurs when types don't match? / प्रकार मेल नहीं खाने पर कौन सी त्रुटि होती है?",
-        "options": ["ValueError", "TypeError", "MatchError", "CastError"],
+        "question": "Which flowchart symbol is used to represent a process? / किस फ्लोचार्ट प्रतीक का उपयोग प्रक्रिया को दर्शाने के लिए किया जाता है?",
+        "options": [
+            "Diamond / हीरा",
+            "Rectangle / आयत",
+            "Parallelogram / समांतर चतुर्भुज",
+            "Circle / वृत्त"
+        ],
         "answer": 1
     },
     {
-        "question": "What error occurs when an index is out of range? / इंडेक्स रेंज से बाहर होने पर कौन सी त्रुटि होती है?",
-        "options": ["RangeError", "IndexError", "OutOfBoundsError", "SequenceError"],
-        "answer": 1
-    },
-
-    /* Operator Precedence (5) */
-    {
-        "question": "What is evaluated first: 2 + 3 * 4 or (2 + 3) * 4? / क्या पहले मूल्यांकन किया जाता है: 2 + 3 * 4 या (2 + 3) * 4?",
-        "options": ["2 + 3 * 4", "(2 + 3) * 4", "Same", "Depends on Python version"],
-        "answer": 0
-    },
-    {
-        "question": "Which has higher precedence: ** or *? / किसकी प्राथमिकता अधिक है: ** या *?",
-        "options": ["**", "*", "Same", "Depends on operands"],
-        "answer": 0
-    },
-    {
-        "question": "What is evaluated first in: not x and y? / not x and y में क्या पहले मूल्यांकन किया जाता है?",
-        "options": ["not x", "x and y", "y", "Same time"],
-        "answer": 0
-    },
-    {
-        "question": "Which has higher precedence: comparison or logical operators? / किसकी प्राथमिकता अधिक है: तुलना या लॉजिकल ऑपरेटर्स?",
-        "options": ["Comparison", "Logical", "Same", "Depends on operators"],
-        "answer": 0
-    },
-    {
-        "question": "What is the correct evaluation order for 2**3**2? / 2**3**2 के लिए सही मूल्यांकन क्रम क्या है?",
-        "options": ["(2**3)**2 = 64", "2**(3**2) = 512", "Left to right: 2**3 then **2", "Right to left: 3**2 then 2**"],
-        "answer": 1
-    },
-
-    /* if-else (5) */
-    {
-        "question": "What is the correct syntax for if statement? / if स्टेटमेंट के लिए सही सिंटैक्स क्या है?",
-        "options": ["if condition:", "if (condition):", "if condition then", "if: condition"],
-        "answer": 0
-    },
-    {
-        "question": "How to write an else-if clause in Python? / Python में else-if क्लॉज कैसे लिखें?",
-        "options": ["elseif", "else if", "elif", "else (if)"],
-        "answer": 2
-    },
-    {
-        "question": "What does 'pass' do in an if block? / if ब्लॉक में 'pass' क्या करता है?",
-        "options": ["Skips condition", "Does nothing", "Exits program", "Continues loop"],
+        "question": "What is the purpose of arrows in a flowchart? / फ्लोचार्ट में तीरों का क्या उद्देश्य है?",
+        "options": [
+            "To show data storage / डेटा संग्रहण दिखाने के लिए",
+            "To indicate the flow of control / नियंत्रण के प्रवाह को इंगित करने के लिए",
+            "To represent decisions / निर्णयों का प्रतिनिधित्व करने के लिए",
+            "To mark the start and end points / प्रारंभ और अंत बिंदुओं को चिह्नित करने के लिए"
+        ],
         "answer": 1
     },
     {
-        "question": "Can if-else be written in one line? / क्या if-else एक लाइन में लिखा जा सकता है?",
-        "options": ["Yes, with ternary operator", "No, never", "Only in Python 3+", "Only with simple conditions"],
-        "answer": 0
-    },
-    {
-        "question": "What is the ternary operator syntax? / टर्नरी ऑपरेटर सिंटैक्स क्या है?",
-        "options": ["condition ? true_expr : false_expr", "if condition then true_expr else false_expr", "true_expr if condition else false_expr", "condition : true_expr ? false_expr"],
-        "answer": 2
-    },
-
-    /* Lambda Functions (5) */
-    {
-        "question": "What is a lambda function? / लैम्ब्डा फंक्शन क्या है?",
-        "options": ["Anonymous function", "Recursive function", "Generator function", "Built-in function"],
-        "answer": 0
-    },
-    {
-        "question": "Correct lambda syntax for squaring a number? / किसी संख्या का वर्ग करने के लिए सही लैम्ब्डा सिंटैक्स?",
-        "options": ["lambda x: x**2", "lambda (x): x^2", "lambda: x*x", "def lambda(x): return x*x"],
-        "answer": 0
-    },
-    {
-        "question": "Where are lambda functions commonly used? / लैम्ब्डा फंक्शंस आमतौर पर कहाँ उपयोग किए जाते हैं?",
-        "options": ["As regular functions", "With map/filter", "For complex logic", "As class methods"],
-        "answer": 1
-    },
-    {
-        "question": "Can lambda functions have multiple expressions? / क्या लैम्ब्डा फंक्शंस में एकाधिक एक्सप्रेशन हो सकते हैं?",
-        "options": ["Yes, separated by commas", "Yes, separated by semicolons", "No, only one expression", "Only in Python 3+"],
-        "answer": 2
-    },
-    {
-        "question": "How to call a lambda immediately? / लैम्ब्डा को तुरंत कैसे कॉल करें?",
-        "options": ["(lambda x: x+1)(5)", "call lambda x: x+1 with 5", "lambda(5)", "immediately lambda x: x+1, 5"],
-        "answer": 0
-    },
-
-    /* Lists (5) */
-    {
-        "question": "How to create an empty list? / खाली लिस्ट कैसे बनाएँ?",
-        "options": ["list()", "[]", "Both A and B", "new list"],
-        "answer": 2
-    },
-    {
-        "question": "How to add an item to a list? / लिस्ट में आइटम कैसे जोड़ें?",
-        "options": ["list.add(item)", "list.append(item)", "list.insert(item)", "list += item"],
-        "answer": 1
-    },
-    {
-        "question": "How to get the last item of a list? / लिस्ट का अंतिम आइटम कैसे प्राप्त करें?",
-        "options": ["list[-1]", "list.last()", "list[len(list)]", "list.get(-1)"],
-        "answer": 0
-    },
-    {
-        "question": "What does list[1:4] return? / list[1:4] क्या रिटर्न करता है?",
-        "options": ["Items at index 1 to 4 (inclusive)", "Items at index 1 to 3", "First 4 items", "Every 4th item starting from 1"],
-        "answer": 1
-    },
-    {
-        "question": "How to concatenate two lists? / दो लिस्ट को कैसे जोड़ें?",
-        "options": ["list1 + list2", "list1.concat(list2)", "list1.join(list2)", "list1.extend(list2)"],
-        "answer": 0
-    },
-
-    /* Tuples (5) */
-    {
-        "question": "How to create a tuple with one item? / एक आइटम के साथ टपल कैसे बनाएँ?",
-        "options": ["(item)", "(item,)", "tuple(item)", "[item]"],
-        "answer": 1
-    },
-    {
-        "question": "Are tuples mutable? / क्या टपल म्यूटेबल हैं?",
-        "options": ["Yes", "No", "Only in Python 2", "Only if they contain lists"],
-        "answer": 1
-    },
-    {
-        "question": "How to convert a list to a tuple? / लिस्ट को टपल में कैसे बदलें?",
-        "options": ["tuple(list)", "list.to_tuple()", "tuple.from_list(list)", "tuple(*list)"],
-        "answer": 0
-    },
-    {
-        "question": "What is the main advantage of tuples over lists? / लिस्ट्स पर टपल्स का मुख्य लाभ क्या है?",
-        "options": ["Faster iteration", "More methods", "Immutable (safer)", "Takes less memory"],
-        "answer": 2
-    },
-    {
-        "question": "How to unpack a tuple? / टपल को अनपैक कैसे करें?",
-        "options": ["a, b = tuple", "unpack(tuple)", "tuple.unpack()", "tuple->a,b"],
-        "answer": 0
-    },
-
-    /* Sets (5) */
-    {
-        "question": "How to create an empty set? / खाली सेट कैसे बनाएँ?",
-        "options": ["{}", "set()", "[]", "()"],
-        "answer": 1
-    },
-    {
-        "question": "What is a key property of sets? / सेट्स की मुख्य प्रॉपर्टी क्या है?",
-        "options": ["Ordered", "Mutable", "Contains unique elements", "Indexed"],
-        "answer": 2
-    },
-    {
-        "question": "How to add an item to a set? / सेट में आइटम कैसे जोड़ें?",
-        "options": ["set.add(item)", "set.append(item)", "set.insert(item)", "set += item"],
-        "answer": 0
-    },
-    {
-        "question": "What does set1 - set2 return? / set1 - set2 क्या रिटर्न करता है?",
-        "options": ["Union", "Intersection", "Difference", "Symmetric difference"],
-        "answer": 2
-    },
-    {
-        "question": "How to check if an item is in a set? / कैसे जाँचें कि कोई आइटम सेट में है?",
-        "options": ["item in set", "set.contains(item)", "set.has(item)", "set.exists(item)"],
-        "answer": 0
-    },
-
-    /* Variable Scope (5) */
-    {
-        "question": "What is the scope of a variable defined in a function? / फंक्शन में डिफाइन किए गए वेरिएबल का स्कोप क्या है?",
-        "options": ["Global", "Local", "Module-level", "Class-level"],
-        "answer": 1
-    },
-    {
-        "question": "How to access a global variable inside a function? / फंक्शन के अंदर ग्लोबल वेरिएबल को कैसे एक्सेस करें?",
-        "options": ["Just use its name", "global keyword", "globals() function", "Cannot be accessed"],
-        "answer": 1
-    },
-    {
-        "question": "What is LEGB rule in Python? / Python में LEGB नियम क्या है?",
-        "options": ["Loop Evaluation Guide Basics", "Local, Enclosing, Global, Built-in scopes", "Logical Expression Grouping Behavior", "List Element Getter Builder"],
-        "answer": 1
-    },
-    {
-        "question": "Where are built-in names like 'print' defined? / 'print' जैसे बिल्ट-इन नाम कहाँ डिफाइन होते हैं?",
-        "options": ["Local scope", "Global scope", "Built-in scope", "Module scope"],
-        "answer": 2
-    },
-    {
-        "question": "What is a nonlocal variable? / नॉनलोकल वेरिएबल क्या है?",
-        "options": ["Variable in global scope", "Variable in enclosing function scope", "Variable in built-in scope", "Variable in another module"],
+        "question": "Which diagram is used to represent an algorithm visually? / एल्गोरिदम को दृश्य रूप से दर्शाने के लिए किस आरेख का उपयोग किया जाता है?",
+        "options": [
+            "ER Diagram",
+            "Flowchart",
+            "UML Diagram",
+            "Class Diagram"
+        ],
         "answer": 1
     },
 
-    /* Modules (5) */
+    // Pseudocode (5 questions)
     {
-        "question": "How to import a module? / मॉड्यूल को कैसे इम्पोर्ट करें?",
-        "options": ["import module", "include module", "require module", "load module"],
+        "question": "What is pseudocode? / स्यूडोकोड क्या है?",
+        "options": [
+            "A programming language / एक प्रोग्रामिंग भाषा",
+            "A machine code / एक मशीन कोड",
+            "An informal high-level description of an algorithm / किसी एल्गोरिदम का एक अनौपचारिक उच्च-स्तरीय विवरण",
+            "A type of computer hardware / एक प्रकार का कंप्यूटर हार्डवेयर"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "What will be the output of the following pseudocode?\nSET x = 5\nSET y = 2\nPRINT x + y * 2",
+        "options": [
+            "9",
+            "14",
+            "7",
+            "10"
+        ],
         "answer": 0
     },
     {
-        "question": "How to import a specific function? / स्पेसिफिक फंक्शन को कैसे इम्पोर्ट करें?",
-        "options": ["import function from module", "from module import function", "module.import(function)", "import module.function"],
+        "question": "In pseudocode, what does the keyword 'WHILE' represent? / स्यूडोकोड में, 'WHILE' कीवर्ड क्या दर्शाता है?",
+        "options": [
+            "A conditional statement / एक सशर्त कथन",
+            "A loop that continues while a condition is true / एक लूप जो एक शर्त सत्य होने पर जारी रहता है",
+            "A function definition / एक फ़ंक्शन परिभाषा",
+            "A variable declaration / एक चर घोषणा"
+        ],
         "answer": 1
     },
     {
-        "question": "What is __name__ when a module is run directly? / जब मॉड्यूल सीधे रन किया जाता है तो __name__ क्या होता है?",
-        "options": ["__main__", "module", "None", "The filename"],
+        "question": "What will this pseudocode output?\nSET a = 10\nIF a > 5 THEN\n    PRINT 'Greater'\nELSE\n    PRINT 'Smaller'\nENDIF",
+        "options": [
+            "Greater",
+            "Smaller",
+            "10",
+            "5"
+        ],
         "answer": 0
     },
     {
-        "question": "Where does Python look for modules? / Python मॉड्यूल्स को कहाँ ढूँढता है?",
-        "options": ["Current directory", "PYTHONPATH", "Standard library", "All of the above"],
+        "question": "Which of the following is a benefit of using pseudocode? / निम्नलिखित में से कौन सा स्यूडोकोड का उपयोग करने का लाभ है?",
+        "options": [
+            "It can be directly executed by computers / इसे कंप्यूटर द्वारा सीधे निष्पादित किया जा सकता है",
+            "It helps in planning algorithms without worrying about syntax / यह सिंटैक्स की चिंता किए बिना एल्गोरिदम की योजना बनाने में मदद करता है",
+            "It is faster to execute than actual code / यह वास्तविक कोड की तुलना में निष्पादित करने में तेज़ है",
+            "It doesn't require any logical thinking / इसके लिए किसी तार्किक सोच की आवश्यकता नहीं होती है"
+        ],
+        "answer": 1
+    },
+
+    // Testing and Debugging (5 questions)
+    {
+        "question": "What is debugging in programming? / प्रोग्रामिंग में डिबगिंग क्या है?",
+        "options": [
+            "Writing new code / नया कोड लिखना",
+            "Finding and fixing errors in code / कोड में त्रुटियों को ढूंढना और ठीक करना",
+            "Optimizing code performance / कोड प्रदर्शन को अनुकूलित करना",
+            "Documenting code / कोड का दस्तावेजीकरण करना"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which of these is a type of software testing? / इनमें से कौन सा सॉफ्टवेयर परीक्षण का एक प्रकार है?",
+        "options": [
+            "Unit testing / यूनिट टेस्टिंग",
+            "Debug testing / डिबग टेस्टिंग",
+            "Compiler testing / कंपाइलर टेस्टिंग",
+            "Syntax testing / सिंटैक्स टेस्टिंग"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What is the purpose of testing in software development? / सॉफ्टवेयर विकास में परीक्षण का क्या उद्देश्य है?",
+        "options": [
+            "To make the code run faster / कोड को तेजी से चलाने के लिए",
+            "To find and fix bugs before release / रिलीज़ से पहले बग्स ढूंढने और ठीक करने के लिए",
+            "To reduce the size of the code / कोड के आकार को कम करने के लिए",
+            "To improve the user interface / उपयोगकर्ता इंटरफ़ेस को सुधारने के लिए"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "What is a breakpoint in debugging? / डिबगिंग में ब्रेकपॉइंट क्या है?",
+        "options": [
+            "A point where the program stops execution / एक बिंदु जहां प्रोग्राम निष्पादन रोकता है",
+            "A type of syntax error / एक प्रकार की सिंटैक्स त्रुटि",
+            "A tool for code formatting / कोड फॉर्मेटिंग के लिए एक उपकरण",
+            "A way to speed up program execution / प्रोग्राम निष्पादन को गति देने का एक तरीका"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of these is NOT a testing technique? / इनमें से कौन सी परीक्षण तकनीक नहीं है?",
+        "options": [
+            "Black box testing / ब्लैक बॉक्स टेस्टिंग",
+            "White box testing / व्हाइट बॉक्स टेस्टिंग",
+            "Green box testing / ग्रीन बॉक्स टेस्टिंग",
+            "Gray box testing / ग्रे बॉक्स टेस्टिंग"
+        ],
+        "answer": 2
+    },
+
+    // Logical Programming (5 questions)
+    {
+        "question": "What is the GCD of 48 and 18? / 48 और 18 का GCD क्या है?",
+        "options": [
+            "6",
+            "12",
+            "18",
+            "24"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What will be the output of the following Python code for reversing a number?\nnum = 1234\nreverse = int(str(num)[::-1])\nprint(reverse)",
+        "options": [
+            "1234",
+            "4321",
+            "432",
+            "321"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which of these is a palindrome number? / इनमें से कौन सी एक पैलिंड्रोम संख्या है?",
+        "options": [
+            "1234",
+            "1221",
+            "12321",
+            "Both 1221 and 12321 / 1221 और 12321 दोनों"
+        ],
         "answer": 3
     },
     {
-        "question": "How to create a Python package? / Python पैकेज कैसे बनाएँ?",
-        "options": ["Folder with __init__.py", "Folder with __package__.py", "Any Python file", "Special compiler command"],
-        "answer": 0
-    },
-
-    /* Loops (5) */
-    {
-        "question": "How to write a for loop in Python? / Python में for लूप कैसे लिखें?",
-        "options": ["for i = 0 to 10:", "for i in range(10):", "for (i=0; i<10; i++):", "loop i from 0 to 9:"],
+        "question": "What is the output of this factorial program for input 5?\ndef fact(n):\n    if n == 0:\n        return 1\n    return n * fact(n-1)\nprint(fact(5))",
+        "options": [
+            "24",
+            "120",
+            "720",
+            "5040"
+        ],
         "answer": 1
     },
     {
-        "question": "What does 'break' do in a loop? / लूप में 'break' क्या करता है?",
-        "options": ["Skips current iteration", "Exits the loop", "Continues next iteration", "Pauses the loop"],
+        "question": "What does this Python code do?\ndef func(n):\n    return n % 2 == 0",
+        "options": [
+            "Checks if n is even / जांचता है कि क्या n सम है",
+            "Checks if n is odd / जांचता है कि क्या n विषम है",
+            "Returns the square of n / n का वर्ग लौटाता है",
+            "Returns the factorial of n / n का भाज्य लौटाता है"
+        ],
+        "answer": 0
+    },
+
+    // Python Introduction (5 questions)
+    {
+        "question": "Python was created by? / पायथन किसके द्वारा बनाया गया था?",
+        "options": [
+            "Guido van Rossum",
+            "Linus Torvalds",
+            "James Gosling",
+            "Bjarne Stroustrup"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Python is a ___ language. / पायथन एक ___ भाषा है।",
+        "options": [
+            "Compiled / संकलित",
+            "Interpreted / व्याख्यात्मक",
+            "Assembly / असेंबली",
+            "Machine code / मशीन कोड"
+        ],
         "answer": 1
     },
     {
-        "question": "What does 'continue' do in a loop? / लूप में 'continue' क्या करता है?",
-        "options": ["Skips current iteration", "Exits the loop", "Restarts the loop", "Pauses the loop"],
-        "answer": 0
+        "question": "Which year was Python first released? / पायथन पहली बार किस वर्ष जारी किया गया था?",
+        "options": [
+            "1989",
+            "1991",
+            "1995",
+            "2000"
+        ],
+        "answer": 1
     },
     {
-        "question": "How to loop through list with index? / इंडेक्स के साथ लिस्ट के माध्यम से कैसे लूप करें?",
-        "options": ["for i, item in enumerate(list):", "for i in list.indexes():", "for i in range(list.length):", "for i in list.indices():"],
-        "answer": 0
+        "question": "What is the extension of Python files? / पायथन फाइलों का एक्सटेंशन क्या है?",
+        "options": [
+            ".pyt",
+            ".py",
+            ".pt",
+            ".python"
+        ],
+        "answer": 1
     },
     {
-        "question": "What is list comprehension? / लिस्ट कॉम्प्रिहेंशन क्या है?",
-        "options": ["A way to create lists", "A way to document lists", "A way to sort lists", "A way to concatenate lists"],
-        "answer": 0
+        "question": "Which of these is NOT a Python feature? / इनमें से कौन सी पायथन विशेषता नहीं है?",
+        "options": [
+            "Easy to learn / सीखने में आसान",
+            "Dynamically typed / गतिशील रूप से टाइप किया गया",
+            "Requires variable declaration / चर घोषणा की आवश्यकता होती है",
+            "High-level language / उच्च-स्तरीय भाषा"
+        ],
+        "answer": 2
     },
 
-    /* Strings (5) */
+    // Python Tokens (5 questions)
     {
-        "question": "How to get string length? / स्ट्रिंग लेंथ कैसे प्राप्त करें?",
-        "options": ["len(str)", "str.length", "str.size", "str.len()"],
-        "answer": 0
-    },
-    {
-        "question": "How to concatenate strings? / स्ट्रिंग्स को कैसे जोड़ें?",
-        "options": ["str1 + str2", "str1.concat(str2)", "str1.append(str2)", "str1 & str2"],
-        "answer": 0
-    },
-    {
-        "question": "How to format strings (Python 3.6+)? / स्ट्रिंग्स को कैसे फॉर्मेट करें (Python 3.6+)?",
-        "options": ["f\"{var}\"", "str.format()", "% formatting", "All of the above"],
+        "question": "Which of these is NOT a Python token? / इनमें से कौन सा पायथन टोकन नहीं है?",
+        "options": [
+            "Keywords / कीवर्ड्स",
+            "Identifiers / पहचानकर्ता",
+            "Literals / लिटरल्स",
+            "Commands / कमांड्स"
+        ],
         "answer": 3
     },
     {
-        "question": "How to check if string contains substring? / कैसे जाँचें कि स्ट्रिंग में सबस्ट्रिंग है?",
-        "options": ["substring in string", "string.contains(substring)", "string.find(substring) != -1", "All of the above"],
-        "answer": 3
+        "question": "How many keywords are there in Python 3? / पायथन 3 में कितने कीवर्ड हैं?",
+        "options": [
+            "25",
+            "33",
+            "42",
+            "50"
+        ],
+        "answer": 1
     },
     {
-        "question": "How to split a string? / स्ट्रिंग को कैसे स्प्लिट करें?",
-        "options": ["str.split()", "str.explode()", "str.break()", "str.partition()"],
-        "answer": 0
-    },
-
-    /* NumPy (5) */
-    {
-        "question": "How to import NumPy? / NumPy को कैसे इम्पोर्ट करें?",
-        "options": ["import numpy", "import numpy as np", "Both A and B", "include numpy"],
+        "question": "Which of these is a valid Python identifier? / इनमें से कौन सा एक वैध पायथन पहचानकर्ता है?",
+        "options": [
+            "123variable",
+            "variable-name",
+            "_variable",
+            "break"
+        ],
         "answer": 2
     },
     {
-        "question": "How to create a NumPy array? / NumPy अरे कैसे बनाएँ?",
-        "options": ["np.array([1,2,3])", "np.create_array([1,2,3])", "np.make_array([1,2,3])", "np.new_array([1,2,3])"],
-        "answer": 0
+        "question": "What is the smallest individual unit in a Python program? / पायथन प्रोग्राम में सबसे छोटी व्यक्तिगत इकाई क्या है?",
+        "options": [
+            "Character / अक्षर",
+            "Token / टोकन",
+            "Line / लाइन",
+            "Function / फंक्शन"
+        ],
+        "answer": 1
     },
     {
-        "question": "What is the shape of a 2x3 matrix? / 2x3 मैट्रिक्स का शेप क्या है?",
-        "options": ["(2,)", "(3,)", "(2,3)", "(6,)"],
+        "question": "Which of these is a Python keyword? / इनमें से कौन सा पायथन कीवर्ड है?",
+        "options": [
+            "main",
+            "print",
+            "if",
+            "run"
+        ],
         "answer": 2
-    },
-    {
-        "question": "How to get array dimensions? / अरे डायमेंशन्स कैसे प्राप्त करें?",
-        "options": ["array.dim", "array.shape", "array.size", "array.length"],
-        "answer": 1
-    },
-    {
-        "question": "What does np.zeros(5) create? / np.zeros(5) क्या बनाता है?",
-        "options": ["Array of 5 ones", "Array of 5 zeros", "5x5 identity matrix", "5x5 zero matrix"],
-        "answer": 1
     },
 
-    /* File Handling (5) */
+    // Python Literals (5 questions)
     {
-        "question": "How to open a file for reading? / रीडिंग के लिए फाइल कैसे ओपन करें?",
-        "options": ["open(file, 'r')", "open(file, 'read')", "open(file, 'w')", "open(file)"],
+        "question": "Which of these is a string literal? / इनमें से कौन सा स्ट्रिंग लिटरल है?",
+        "options": [
+            "123",
+            "'hello'",
+            "3.14",
+            "True"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "What is the type of 42 in Python? / पायथन में 42 का प्रकार क्या है?",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
         "answer": 0
     },
     {
-        "question": "What is the correct way to ensure a file is closed? / फाइल क्लोज़ हो गई है यह सुनिश्चित करने का सही तरीका क्या है?",
-        "options": ["with open(file) as f:", "try-finally block", "Both A and B", "Manually calling close()"],
-        "answer": 2
+        "question": "Which of these is a float literal? / इनमें से कौन सा फ्लोट लिटरल है?",
+        "options": [
+            "100",
+            "3.14",
+            "'3.14'",
+            "True"
+        ],
+        "answer": 1
     },
     {
-        "question": "How to read all lines of a file? / फाइल की सभी लाइन्स को कैसे पढ़ें?",
-        "options": ["file.read()", "file.readlines()", "file.read_all()", "Both A and B"],
+        "question": "What is the value of the boolean literal 'False'? / बूलियन लिटरल 'False' का मूल्य क्या है?",
+        "options": [
+            "0",
+            "1",
+            "None",
+            "False"
+        ],
         "answer": 3
     },
     {
-        "question": "Which mode appends to a file? / कौन सा मोड फाइल में अपेंड करता है?",
-        "options": ["'w'", "'a'", "'r+'", "'x'"],
-        "answer": 1
-    },
-    {
-        "question": "How to check if a file exists? / कैसे जाँचें कि फाइल मौजूद है?",
-        "options": ["os.path.exists(file)", "file.exists()", "path.exists(file)", "exists(file)"],
+        "question": "Which of these represents a complex number literal in Python? / इनमें से कौन सा पायथन में एक जटिल संख्या लिटरल का प्रतिनिधित्व करता है?",
+        "options": [
+            "3+4j",
+            "3 + 4",
+            "3.4",
+            "'3+4i'"
+        ],
         "answer": 0
     },
 
-    /* Predefined Functions (5) */
+    // Type Casting (5 questions)
     {
-        "question": "What does len() do? / len() क्या करता है?",
-        "options": ["Returns length", "Returns logarithm", "Returns last element", "Returns line count"],
+        "question": "What is the output of: int(3.14)",
+        "options": [
+            "3.14",
+            "3",
+            "3.0",
+            "Error"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "What does str(42) return? / str(42) क्या लौटाता है?",
+        "options": [
+            "42",
+            "'42'",
+            "42.0",
+            "Error"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "What is the output of: float('3.14')",
+        "options": [
+            "3",
+            "3.14",
+            "'3.14'",
+            "Error"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which function converts a string to an integer? / कौन सा फंक्शन एक स्ट्रिंग को पूर्णांक में परिवर्तित करता है?",
+        "options": [
+            "str()",
+            "int()",
+            "float()",
+            "bool()"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "What is the output of: bool(0)",
+        "options": [
+            "True",
+            "False",
+            "0",
+            "1"
+        ],
+        "answer": 1
+    },
+
+    // Boolean (5 questions)
+    {
+        "question": "What is the data type of True in Python? / पायथन में True का डेटा प्रकार क्या है?",
+        "options": [
+            "int",
+            "float",
+            "bool",
+            "str"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "What is the output of: True + False",
+        "options": [
+            "0",
+            "1",
+            "True",
+            "False"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which operator returns True if both operands are True? / कौन सा ऑपरेटर True लौटाता है यदि दोनों ऑपरेंड True हैं?",
+        "options": [
+            "or",
+            "and",
+            "not",
+            "xor"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "What is the output of: not(True or False)",
+        "options": [
+            "True",
+            "False",
+            "None",
+            "Error"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which of these evaluates to False? / इनमें से कौन सा False का मूल्यांकन करता है?",
+        "options": [
+            "bool(1)",
+            "bool(-1)",
+            "bool(0)",
+            "bool('False')"
+        ],
+        "answer": 2
+    },
+
+    // Sets (5 questions)
+    {
+        "question": "How do you create an empty set in Python? / पायथन में एक खाली सेट कैसे बनाते हैं?",
+        "options": [
+            "{}",
+            "[]",
+            "set()",
+            "()"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "What is the output of: len({1, 2, 2, 3})",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which set operation returns elements in either set? / कौन सा सेट ऑपरेशन किसी भी सेट में तत्वों को लौटाता है?",
+        "options": [
+            "intersection",
+            "union",
+            "difference",
+            "symmetric_difference"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "What is the output of: {1, 2, 3} & {2, 3, 4}",
+        "options": [
+            "{1, 2, 3, 4}",
+            "{2, 3}",
+            "{1, 4}",
+            "Error"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which method adds an element to a set? / कौन सी विधि एक सेट में एक तत्व जोड़ती है?",
+        "options": [
+            "append()",
+            "add()",
+            "insert()",
+            "update()"
+        ],
+        "answer": 1
+    },
+
+    // Strings (5 questions)
+    {
+        "question": "How do you get the length of a string? / आप एक स्ट्रिंग की लंबाई कैसे प्राप्त करते हैं?",
+        "options": [
+            "len(str)",
+            "str.length()",
+            "str.size()",
+            "length(str)"
+        ],
         "answer": 0
     },
     {
-        "question": "What does range(5) generate? / range(5) क्या जनरेट करता है?",
-        "options": ["0,1,2,3,4", "1,2,3,4,5", "5 numbers starting from 0", "Both A and C"],
+        "question": "What is the output of: 'hello'[1:4]",
+        "options": [
+            "'hel'",
+            "'ell'",
+            "'ello'",
+            "'ell'"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which method converts a string to uppercase? / कौन सी विधि एक स्ट्रिंग को अपरकेस में बदलती है?",
+        "options": [
+            "upper()",
+            "toUpperCase()",
+            "capitalize()",
+            "uppercase()"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What is the output of: 'Python'.replace('P', 'J')",
+        "options": [
+            "'Python'",
+            "'Jython'",
+            "'J'",
+            "'ython'"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "How do you check if a substring exists in a string? / आप कैसे जांचते हैं कि कोई सबस्ट्रिंग स्ट्रिंग में मौजूद है?",
+        "options": [
+            "substring in string",
+            "string.contains(substring)",
+            "string.find(substring) != -1",
+            "All of the above / उपरोक्त सभी"
+        ],
+        "answer": 3
+    },
+
+    // Lists (5 questions)
+    {
+        "question": "How do you create an empty list? / आप एक खाली सूची कैसे बनाते हैं?",
+        "options": [
+            "{}",
+            "[]",
+            "list()",
+            "Both [] and list() / [] और list() दोनों"
+        ],
         "answer": 3
     },
     {
-        "question": "What does sorted() return? / sorted() क्या रिटर्न करता है?",
-        "options": ["Original list", "New sorted list", "Sorted iterator", "None"],
-        "answer": 1
-    },
-    {
-        "question": "What does zip() do? / zip() क्या करता है?",
-        "options": ["Compresses files", "Combines iterables", "Creates archives", "Zips folders"],
-        "answer": 1
-    },
-    {
-        "question": "What does isinstance() check? / isinstance() क्या जाँचता है?",
-        "options": ["If object is instance of class", "If class is subclass", "If variable is defined", "If type matches exactly"],
+        "question": "What is the output of: [1, 2, 3] + [4, 5]",
+        "options": [
+            "[1, 2, 3, 4, 5]",
+            "[5, 7, 3]",
+            "[1, 2, 7]",
+            "Error"
+        ],
         "answer": 0
+    },
+    {
+        "question": "Which method adds an element to the end of a list? / कौन सी विधि एक सूची के अंत में एक तत्व जोड़ती है?",
+        "options": [
+            "append()",
+            "add()",
+            "insert()",
+            "push()"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What is the output of: [x*2 for x in range(3)]",
+        "options": [
+            "[0, 1, 2]",
+            "[0, 2, 4]",
+            "[0, 2, 4, 6]",
+            "Error"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "How do you remove the last element from a list? / आप एक सूची से अंतिम तत्व कैसे हटाते हैं?",
+        "options": [
+            "list.remove(-1)",
+            "list.pop()",
+            "list.delete()",
+            "list.clear()"
+        ],
+        "answer": 1
+    },
+
+    // Tuples (5 questions)
+    {
+        "question": "How do you create a tuple with one element? / आप एक तत्व के साथ एक टपल कैसे बनाते हैं?",
+        "options": [
+            "(1)",
+            "(1,)",
+            "[1]",
+            "{1}"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "What is the main difference between lists and tuples? / सूचियों और टपल्स के बीच मुख्य अंतर क्या है?",
+        "options": [
+            "Tuples are mutable / टपल्स परिवर्तनशील हैं",
+            "Lists are immutable / सूचियाँ अपरिवर्तनीय हैं",
+            "Tuples are immutable / टपल्स अपरिवर्तनीय हैं",
+            "There is no difference / कोई अंतर नहीं है"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "What is the output of: tuple([1, 2, 3])",
+        "options": [
+            "[1, 2, 3]",
+            "(1, 2, 3)",
+            "{1, 2, 3}",
+            "Error"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which operation is NOT allowed on tuples? / टपल्स पर कौन सा ऑपरेशन अनुमति नहीं है?",
+        "options": [
+            "Indexing",
+            "Slicing",
+            "Appending",
+            "Counting elements"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "What is the output of: (1, 2) + (3, 4)",
+        "options": [
+            "(1, 2, 3, 4)",
+            "(4, 6)",
+            "(1, 2)(3, 4)",
+            "Error"
+        ],
+        "answer": 0
+    },
+
+    // Print Statement (5 questions)
+    {
+        "question": "What is the output of: print('Hello', 'World', sep='-')",
+        "options": [
+            "Hello World",
+            "Hello-World",
+            "'Hello'-'World'",
+            "Error"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which parameter specifies the separator in print()? / प्रिंट () में सेपरेटर कौन सा पैरामीटर निर्दिष्ट करता है?",
+        "options": [
+            "sep",
+            "end",
+            "delim",
+            "separator"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What is the output of: print(10, 20, end='!')",
+        "options": [
+            "10 20!",
+            "10!20!",
+            "10 20",
+            "1020!"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "How do you print without a newline in Python 3? / आप पायथन 3 में न्यूलाइन के बिना कैसे प्रिंट करते हैं?",
+        "options": [
+            "print(..., end='')",
+            "print(..., newline=False)",
+            "print(..., nl=False)",
+            "print(..., breakline=False)"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What is the output of: print(f'{10 + 20}')",
+        "options": [
+            "10 + 20",
+            "30",
+            "1020",
+            "Error"
+        ],
+        "answer": 1
     }
 ],
             "Internet of Things and its Applications": [
