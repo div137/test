@@ -1001,767 +1001,106 @@
         "answer": 3
     }
 ],
-            "Programming and Problem Solving through Python":
-[
+            "Programming and Problem Solving through Python":[
     {
-        "question": "What is the output?\nx = 5\ndef func():\n    x = 10\n    print(x)\nfunc()\nprint(x)",
-        "options": ["10 5", "5 10", "10 10", "5 5"],
-        "answer": 0,
-        "explanation": "The function prints local x (10), then global x (5) is printed."
+        "question": "What is the output of print(math.floor(3.7))? / print(math.floor(3.7)) का आउटपुट क्या है?",
+        "options": ["3 / 3", "4 / 4", "3.7 / 3.7", "Error / एरर"],
+        "answer": 0
     },
     {
-        "question": "Which scope does Python check first when resolving a variable?",
-        "options": ["Local", "Enclosing", "Global", "Built-in"],
-        "answer": 0,
-        "explanation": "Python follows LEGB rule: Local → Enclosing → Global → Built-in"
+        "question": "Which function converts degrees to radians? / डिग्री को रेडियन में कौन सा फंक्शन बदलता है?",
+        "options": ["math.radians() / math.radians()", "math.degrees() / math.degrees()", "math.convert() / math.convert()", "math.angle() / math.angle()"],
+        "answer": 0
     },
     {
-        "question": "What is the output?\nimport math\nprint(math.floor(3.7))",
-        "options": ["3", "3.0", "4", "4.0"],
-        "answer": 0,
-        "explanation": "math.floor() returns the largest integer <= x"
+        "question": "What is the value of math.pi? / math.pi का मान क्या है?",
+        "options": ["3.14159... / 3.14159...", "2.71828... / 2.71828...", "1.61803... / 1.61803...", "0.57721... / 0.57721..."],
+        "answer": 0
     },
     {
-        "question": "How to get current date as a string in 'YYYY-MM-DD' format?",
-        "options": [
-            "datetime.today()",
-            "datetime.now().strftime('%Y-%m-%d')",
-            "time.current_date()",
-            "calendar.today()"
-        ],
-        "answer": 1,
-        "explanation": "datetime.now() with strftime formatting gives required output"
+        "question": "How to calculate 2^5 using math module? / math मॉड्यूल का उपयोग करके 2^5 की गणना कैसे करें?",
+        "options": ["math.pow(2,5) / math.pow(2,5)", "2**5 / 2**5", "math.exp(2,5) / math.exp(2,5)", "Both A and B / A और B दोनों"],
+        "answer": 3
     },
     {
-        "question": "What is the output?\nfrom datetime import datetime\nprint(datetime.now().year)",
-        "options": ["Current hour", "Current year", "Current month", "Error"],
-        "answer": 1,
-        "explanation": ".year attribute returns current year"
+        "question": "What does calendar.month(2023,9) return? / calendar.month(2023,9) क्या रिटर्न करता है?",
+        "options": ["Formatted September 2023 calendar / फॉर्मेटेड सितंबर 2023 कैलेंडर", "Number of days in September / सितंबर में दिनों की संख्या", "List of dates / तारीखों की सूची", "Weekday of 1st September / 1 सितंबर का वीकडे"],
+        "answer": 0
     },
     {
-        "question": "Which command correctly imports only the sqrt function from math module?",
-        "options": [
-            "import sqrt from math",
-            "from math import sqrt",
-            "import math.sqrt",
-            "from sqrt import math"
-        ],
-        "answer": 1,
-        "explanation": "Correct syntax for importing specific functions"
+        "question": "Which function pauses program execution? / कौन सा फंक्शन प्रोग्राम एक्जीक्यूशन को रोकता है?",
+        "options": ["time.sleep() / time.sleep()", "time.wait() / time.wait()", "time.pause() / time.pause()", "time.stop() / time.stop()"],
+        "answer": 0
     },
     {
-        "question": "What is the output?\nimport calendar\nprint(calendar.monthrange(2023, 2)[1])",
-        "options": ["28", "29", "30", "31"],
-        "answer": 0,
-        "explanation": "February 2023 has 28 days (not a leap year)"
+        "question": "How to get current date? / करंट डेट कैसे प्राप्त करें?",
+        "options": ["datetime.date.today() / datetime.date.today()", "time.date() / time.date()", "calendar.today() / calendar.today()", "date.current() / date.current()"],
+        "answer": 0
     },
     {
-        "question": "What does this code output?\nimport time\nprint(time.strftime('%A'))",
-        "options": ["Current year", "Current weekday", "Current month", "Error"],
-        "answer": 1,
-        "explanation": "%A formats weekday name (e.g., Monday)"
+        "question": "What is the output of print(time.strftime('%H:%M'))? / print(time.strftime('%H:%M')) का आउटपुट क्या है?",
+        "options": ["Current time in HH:MM format / HH:MM फॉर्मेट में करंट टाइम", "Date and time / डेट और टाइम", "Timestamp / टाइमस्टैम्प", "Error / एरर"],
+        "answer": 0
     },
     {
-        "question": "How to check if a file named 'data.txt' exists?",
-        "options": [
-            "os.file_exists('data.txt')",
-            "os.path.exists('data.txt')",
-            "file.exists('data.txt')",
-            "exists('data.txt')"
-        ],
-        "answer": 1,
-        "explanation": "os.path.exists() checks file existence"
+        "question": "Which module is needed for trigonometric functions? / ट्रिगोनोमेट्रिक फंक्शन्स के लिए किस मॉड्यूल की आवश्यकता होती है?",
+        "options": ["math / math", "trig / trig", "numpy / numpy", "geometry / geometry"],
+        "answer": 0
     },
     {
-        "question": "What is the output when this script is run directly?\nprint(__name__)",
-        "options": ["__main__", "None", "main", "Error"],
-        "answer": 0,
-        "explanation": "__name__ is '__main__' when run directly"
+        "question": "How to calculate sine of 30 degrees? / 30 डिग्री की साइन की गणना कैसे करें?",
+        "options": ["math.sin(math.radians(30)) / math.sin(math.radians(30))", "math.sin(30) / math.sin(30)", "math.degrees(math.sin(30)) / math.degrees(math.sin(30))", "sin(30) / sin(30)"],
+        "answer": 0
     },
     {
-        "question": "Which method reads an entire file as a single string?",
-        "options": ["read()", "readline()", "readlines()", "load()"],
-        "answer": 0,
-        "explanation": "read() returns entire file content as string"
+        "question": "What is the output of print(calendar.isleap(2024))? / print(calendar.isleap(2024)) का आउटपुट क्या है?",
+        "options": ["True / सही", "False / गलत", "1 / 1", "Error / एरर"],
+        "answer": 0
     },
     {
-        "question": "What is the output?\nfrom math import pi\nprint(f'{pi:.2f}')",
-        "options": ["3.14", "3.141", "3", "Error"],
-        "answer": 0,
-        "explanation": "Formats π to 2 decimal places"
+        "question": "How to get weekday of specific date? / विशिष्ट तिथि का वीकडे कैसे प्राप्त करें?",
+        "options": ["datetime.date(2023,9,15).weekday() / datetime.date(2023,9,15).weekday()", "calendar.day(2023,9,15) / calendar.day(2023,9,15)", "time.weekday(2023,9,15) / time.weekday(2023,9,15)", "date.getweekday(2023,9,15) / date.getweekday(2023,9,15)"],
+        "answer": 0
     },
     {
-        "question": "Which mode opens a file for writing without truncating?",
-        "options": ["'w'", "'w+'", "'a'", "'x'"],
-        "answer": 2,
-        "explanation": "'a' mode appends without truncating"
+        "question": "What is the output of print(math.log10(100))? / print(math.log10(100)) का आउटपुट क्या है?",
+        "options": ["2.0 / 2.0", "10.0 / 10.0", "100.0 / 100.0", "1.0 / 1.0"],
+        "answer": 0
     },
     {
-        "question": "What is the output?\nimport os\nprint(os.path.splitext('report.pdf'))",
-        "options": [
-            "('report', '.pdf')",
-            "'report.pdf'",
-            "['report', 'pdf']",
-            "Error"
-        ],
-        "answer": 0,
-        "explanation": "splitext() splits filename and extension"
+        "question": "How to convert timestamp to readable format? / टाइमस्टैम्प को रीडेबल फॉर्मेट में कैसे बदलें?",
+        "options": ["time.ctime(timestamp) / time.ctime(timestamp)", "time.read(timestamp) / time.read(timestamp)", "time.convert(timestamp) / time.convert(timestamp)", "time.format(timestamp) / time.format(timestamp)"],
+        "answer": 0
     },
     {
-        "question": "What makes a directory a Python package?",
-        "options": [
-            "Having .py files",
-            "Containing __init__.py",
-            "Having a main.py",
-            "Being in Python path"
-        ],
-        "answer": 1,
-        "explanation": "__init__.py makes directory a package"
+        "question": "What is the output of print(math.fabs(-5.5))? / print(math.fabs(-5.5)) का आउटपुट क्या है?",
+        "options": ["5.5 / 5.5", "-5.5 / -5.5", "5 / 5", "Error / एरर"],
+        "answer": 0
     },
     {
-        "question": "What is the output?\nimport time\nprint(time.gmtime(0))",
-        "options": [
-            "Current time",
-            "Epoch time tuple",
-            "Local time",
-            "Error"
-        ],
-        "answer": 1,
-        "explanation": "gmtime(0) returns struct_time for Unix epoch"
+        "question": "How to get number of days in month? / महीने में दिनों की संख्या कैसे प्राप्त करें?",
+        "options": ["calendar.monthrange(year,month)[1] / calendar.monthrange(year,month)[1]", "datetime.daysinmonth(year,month) / datetime.daysinmonth(year,month)", "time.monthdays(year,month) / time.monthdays(year,month)", "date.getdays(year,month) / date.getdays(year,month)"],
+        "answer": 0
     },
     {
-        "question": "Which module provides factorial() function?",
-        "options": ["random", "math", "statistics", "numpy"],
-        "answer": 1,
-        "explanation": "math.factorial() calculates factorial"
+        "question": "What is the output of print(round(math.sin(math.pi/2),2))? / print(round(math.sin(math.pi/2),2)) का आउटपुट क्या है?",
+        "options": ["1.0 / 1.0", "0.0 / 0.0", "0.5 / 0.5", "-1.0 / -1.0"],
+        "answer": 0
     },
     {
-        "question": "What is the output?\nfrom calendar import isleap\nprint(isleap(2000))",
-        "options": ["True", "False", "2000", "Error"],
-        "answer": 0,
-        "explanation": "2000 is divisible by 400 (leap year)"
+        "question": "How to measure execution time of code block? / कोड ब्लॉक का एक्जीक्यूशन टाइम कैसे मापें?",
+        "options": ["Use time.time() before and after / time.time() का उपयोग पहले और बाद में करें", "Use time.measure() / time.measure() का उपयोग करें", "Use datetime.duration() / datetime.duration() का उपयोग करें", "Use calendar.timing() / calendar.timing() का उपयोग करें"],
+        "answer": 0
     },
     {
-        "question": "How to import datetime module with alias 'dt'?",
-        "options": [
-            "import datetime as dt",
-            "from datetime import dt",
-            "alias dt = datetime",
-            "import dt from datetime"
-        ],
-        "answer": 0,
-        "explanation": "Correct alias syntax"
+        "question": "What is the output of print(math.ceil(2.3))? / print(math.ceil(2.3)) का आउटपुट क्या है?",
+        "options": ["3 / 3", "2 / 2", "2.3 / 2.3", "Error / एरर"],
+        "answer": 0
     },
     {
-        "question": "What is the output?\nimport sys\nprint(sys.version_info.major)",
-        "options": ["1", "2", "3", "Error"],
-        "answer": 2,
-        "explanation": "Prints major version (3 for Python 3.x)"
-    },
-    {
-        "question": "Which function returns absolute path of a file?",
-        "options": [
-            "os.path()",
-            "os.path.abs()",
-            "os.path.abspath()",
-            "os.absolute()"
-        ],
-        "answer": 2,
-        "explanation": "abspath() returns absolute path"
-    },
-    {
-        "question": "What is the output?\nfrom math import radians\nprint(radians(90))",
-        "options": ["1.57", "3.14", "90", "Error"],
-        "answer": 0,
-        "explanation": "90° ≈ 1.57 radians (π/2)"
-    },
-    {
-        "question": "Which mode opens a binary file for reading?",
-        "options": ["'r'", "'rb'", "'br'", "'readbin'"],
-        "answer": 1,
-        "explanation": "'rb' opens file in binary read mode"
-    },
-    {
-        "question": "What is the output?\nimport os\nprint(os.name)",
-        "options": ["'posix'", "'nt'", "'java'", "Error"],
-        "answer": 1,
-        "explanation": "Prints OS name ('nt' for Windows)"
-    },
-    {
-        "question": "How to list all names in math module?",
-        "options": [
-            "math.list()",
-            "dir(math)",
-            "math.names()",
-            "help(math)"
-        ],
-        "answer": 1,
-        "explanation": "dir() shows module attributes"
-    },
-    {
-        "question": "What is the output?\nfrom datetime import timedelta\nprint(timedelta(days=1).seconds)",
-        "options": ["0", "86400", "3600", "Error"],
-        "answer": 0,
-        "explanation": "seconds attribute doesn't include days"
-    },
-    {
-        "question": "Which method moves file pointer to start?",
-        "options": ["reset()", "seek(0)", "rewind()", "start()"],
-        "answer": 1,
-        "explanation": "seek(0) moves pointer to start"
-    },
-    {
-        "question": "What is the output?\nimport math\nprint(math.log(100, 10))",
-        "options": ["1", "2", "10", "100"],
-        "answer": 1,
-        "explanation": "log₁₀(100) = 2"
-    },
-    {
-        "question": "How to get current working directory?",
-        "options": [
-            "os.cwd()",
-            "os.getcwd()",
-            "os.current_dir()",
-            "os.path.cwd()"
-        ],
-        "answer": 1,
-        "explanation": "os.getcwd() returns CWD"
-    },
-    {
-        "question": "What is the output?\nimport calendar\nprint(calendar.day_name[0])",
-        "options": ["Sunday", "Monday", "0", "Error"],
-        "answer": 1,
-        "explanation": "day_name[0] is Monday (ISO standard)"
-    },
-    {
-        "question": "Which module handles timezone conversions?",
-        "options": ["time", "datetime", "pytz", "calendar"],
-        "answer": 2,
-        "explanation": "pytz handles timezones (not in stdlib)"
-    },
-    {
-        "question": "What is the output?\nfrom math import hypot\nprint(hypot(3, 4))",
-        "options": ["5", "7", "12", "5.0"],
-        "answer": 3,
-        "explanation": "hypot() returns float (√(3²+4²)=5.0)"
-    },
-    {
-        "question": "How to rename a file from 'old.txt' to 'new.txt'?",
-        "options": [
-            "os.move('old.txt', 'new.txt')",
-            "os.rename('old.txt', 'new.txt')",
-            "file.rename('old.txt', 'new.txt')",
-            "rename('old.txt', 'new.txt')"
-        ],
-        "answer": 1,
-        "explanation": "os.rename() changes filename"
-    },
-    {
-        "question": "What is the output?\nimport time\nprint(time.ctime(0))",
-        "options": [
-            "Current time",
-            "Epoch time string",
-            "0",
-            "Error"
-        ],
-        "answer": 1,
-        "explanation": "ctime(0) converts epoch to string"
-    },
-    {
-        "question": "Which function returns CPU time used by process?",
-        "options": [
-            "time.time()",
-            "time.process_time()",
-            "time.cpu()",
-            "time.clock()"
-        ],
-        "answer": 1,
-        "explanation": "process_time() returns CPU time"
-    },
-    {
-        "question": "What is the output?\nfrom datetime import datetime\ndt = datetime(2023, 1, 1)\nprint(dt.strftime('%B'))",
-        "options": ["'01'", "'1'", "'January'", "'Jan'"],
-        "answer": 2,
-        "explanation": "%B gives full month name"
-    },
-    {
-        "question": "How to check if a path is a directory?",
-        "options": [
-            "os.path.isdir()",
-            "os.is_dir()",
-            "path.isdir()",
-            "is_directory()"
-        ],
-        "answer": 0,
-        "explanation": "os.path.isdir() checks directory"
-    },
-    {
-        "question": "What is the output?\nimport math\nprint(math.ceil(2.1))",
-        "options": ["2", "2.0", "3", "3.0"],
-        "answer": 2,
-        "explanation": "ceil() returns smallest integer >= x"
-    },
-    {
-        "question": "Which method writes multiple lines to file?",
-        "options": [
-            "write()",
-            "writelines()",
-            "writeall()",
-            "writemany()"
-        ],
-        "answer": 1,
-        "explanation": "writelines() writes sequence of strings"
-    },
-    {
-        "question": "What is the output?\nimport os\nprint(os.path.join('dir', 'file.txt'))",
-        "options": [
-            "'dir\\file.txt'",
-            "'dir/file.txt'",
-            "'dir file.txt'",
-            "Error"
-        ],
-        "answer": 0,
-        "explanation": "join() creates OS-appropriate path"
-    },
-    {
-        "question": "How to reload an imported module?",
-        "options": [
-            "reload(module)",
-            "import module again",
-            "from importlib import reload",
-            "Both 1 and 3"
-        ],
-        "answer": 3,
-        "explanation": "importlib.reload() in Python 3"
-    },
-    {
-        "question": "What is the output?\nfrom math import e\nprint(f'{e:.3f}')",
-        "options": ["2.718", "3.142", "1.414", "Error"],
-        "answer": 0,
-        "explanation": "e ≈ 2.718 (formatted to 3 decimal places)"
-    },
-    {
-        "question": "Which module provides command-line arguments?",
-        "options": ["sys", "os", "argparse", "main"],
-        "answer": 0,
-        "explanation": "sys.argv contains CLI arguments"
-    },
-    {
-        "question": "What is the output?\nimport calendar\nprint(calendar.weekday(2023, 1, 1))",
-        "options": ["0", "6", "1", "5"],
-        "answer": 1,
-        "explanation": "Jan 1, 2023 was Sunday (6 in Python)"
-    },
-    {
-        "question": "How to get file size in bytes?",
-        "options": [
-            "os.size()",
-            "os.path.size()",
-            "os.path.getsize()",
-            "file.size()"
-        ],
-        "answer": 2,
-        "explanation": "os.path.getsize() returns bytes"
-    },
-    {
-        "question": "What is the output?\nimport math\nprint(math.fmod(7, 3))",
-        "options": ["1", "2", "1.0", "2.0"],
-        "answer": 2,
-        "explanation": "fmod() returns float remainder"
-    },
-    {
-        "question": "Which method flushes file buffer?",
-        "options": ["flush()", "sync()", "commit()", "save()"],
-        "answer": 0,
-        "explanation": "flush() writes buffered data"
-    },
-    {
-        "question": "What is the output?\nfrom datetime import datetime\nd1 = datetime(2023,1,1)\nd2 = datetime(2023,1,2)\nprint(d2 - d1)",
-        "options": ["1", "24", "1 day", "1 day, 0:00:00"],
-        "answer": 3,
-        "explanation": "Returns timedelta object"
-    },
-    {
-        "question": "How to list files in a directory?",
-        "options": [
-            "os.list()",
-            "os.listdir()",
-            "os.files()",
-            "dir.list()"
-        ],
-        "answer": 1,
-        "explanation": "os.listdir() returns directory contents"
-    },
-    {
-        "question": "What is the output?\nimport math\nprint(math.gcd(12, 18))",
-        "options": ["6", "12", "18", "36"],
-        "answer": 0,
-        "explanation": "Greatest Common Divisor of 12 and 18"
-    },
-    {
-        "question": "Which mode creates new file for writing?",
-        "options": ["'w'", "'a'", "'x'", "'n'"],
-        "answer": 2,
-        "explanation": "'x' creates exclusively (fails if exists)"
-    },
-    {
-        "question": "What is the output?\nimport os\nprint(os.path.dirname('/a/b/c.txt'))",
-        "options": ["'/a/b'", "'c.txt'", "'/a/b/c.txt'", "Error"],
-        "answer": 0,
-        "explanation": "dirname() returns directory part"
-    },
-    {
-        "question": "How to convert string to datetime?",
-        "options": [
-            "datetime.parse()",
-            "datetime.fromstring()",
-            "datetime.strptime()",
-            "datetime.convert()"
-        ],
-        "answer": 2,
-        "explanation": "strptime() parses string to datetime"
-    },
-    {
-        "question": "What is the output?\nimport math\nprint(math.isqrt(10))",
-        "options": ["3", "4", "3.16", "Error"],
-        "answer": 0,
-        "explanation": "Integer square root (floor of √10)"
-    },
-    {
-        "question": "Which method returns file pointer position?",
-        "options": ["pos()", "tell()", "where()", "loc()"],
-        "answer": 1,
-        "explanation": "tell() returns current position"
-    },
-    {
-        "question": "What is the output?\nfrom math import degrees\nprint(degrees(1.57))",
-        "options": ["90", "57.3", "180", "Error"],
-        "answer": 0,
-        "explanation": "1.57 radians ≈ 90 degrees"
-    },
-    {
-        "question": "How to delete a file?",
-        "options": [
-            "os.delete()",
-            "os.remove()",
-            "file.delete()",
-            "delete()"
-        ],
-        "answer": 1,
-        "explanation": "os.remove() deletes files"
-    },
-    {
-        "question": "What is the output?\nimport time\nprint(time.localtime().tm_year)",
-        "options": ["Current year", "2023", "1970", "Error"],
-        "answer": 0,
-        "explanation": "tm_year gives current year"
-    },
-    {
-        "question": "Which module provides random numbers?",
-        "options": ["math", "random", "numpy", "statistics"],
-        "answer": 1,
-        "explanation": "random module for randomization"
-    },
-    {
-        "question": "What is the output?\nfrom calendar import month_abbr\nprint(month_abbr[1])",
-        "options": ["'Jan'", "'January'", "1", "Error"],
-        "answer": 0,
-        "explanation": "month_abbr[1] is 'Jan'"
-    },
-    {
-        "question": "How to make a directory?",
-        "options": [
-            "os.mkdir()",
-            "os.create_dir()",
-            "dir.create()",
-            "make.dir()"
-        ],
-        "answer": 0,
-        "explanation": "os.mkdir() creates directory"
-    },
-    {
-        "question": "What is the output?\nimport math\nprint(math.comb(5, 2))",
-        "options": ["10", "20", "25", "32"],
-        "answer": 0,
-        "explanation": "C(5,2) = 10 combinations"
-    },
-    {
-        "question": "Which method closes file automatically?",
-        "options": ["close()", "with", "auto", "shutdown()"],
-        "answer": 1,
-        "explanation": "with statement auto-closes"
-    },
-    {
-        "question": "What is the output?\nfrom datetime import datetime\nprint(datetime.min)",
-        "options": [
-            "0001-01-01 00:00:00",
-            "1970-01-01 00:00:00",
-            "0",
-            "Error"
-        ],
-        "answer": 0,
-        "explanation": "Earliest representable datetime"
-    },
-    {
-        "question": "How to check file permissions?",
-        "options": [
-            "os.access()",
-            "os.check_perms()",
-            "file.permissions()",
-            "perms()"
-        ],
-        "answer": 0,
-        "explanation": "os.access() checks permissions"
-    },
-    {
-        "question": "What is the output?\nimport math\nprint(math.prod([2, 3, 4]))",
-        "options": ["9", "12", "24", "Error"],
-        "answer": 2,
-        "explanation": "Product of numbers (2×3×4)"
-    },
-    {
-        "question": "Which module handles JSON?",
-        "options": ["js", "json", "simplejson", "jason"],
-        "answer": 1,
-        "explanation": "json module in standard library"
-    },
-    {
-        "question": "What is the output?\nimport time\nprint(time.sleep(1))",
-        "options": ["1", "None", "Pauses", "Error"],
-        "answer": 1,
-        "explanation": "sleep() returns None after pausing"
-    },
-    {
-        "question": "How to get file creation time?",
-        "options": [
-            "os.getctime()",
-            "os.path.getctime()",
-            "file.ctime()",
-            "time.create()"
-        ],
-        "answer": 1,
-        "explanation": "os.path.getctime() returns creation time"
-    },
-    {
-        "question": "What is the output?\nfrom math import log10\nprint(log10(1000))",
-        "options": ["2", "3", "1000", "Error"],
-        "answer": 1,
-        "explanation": "log₁₀(1000) = 3"
-    },
-    {
-        "question": "Which method reads one line from file?",
-        "options": ["read()", "readline()", "readlines()", "getline()"],
-        "answer": 1,
-        "explanation": "readline() reads single line"
-    },
-    {
-        "question": "What is the output?\nimport os\nprint(os.sep)",
-        "options": ["'/'", "'\\'", "OS separator", "Error"],
-        "answer": 2,
-        "explanation": "os.sep gives OS path separator"
-    },
-    {
-        "question": "How to convert datetime to string?",
-        "options": [
-            "datetime.tostring()",
-            "datetime.strftime()",
-            "datetime.format()",
-            "str(datetime)"
-        ],
-        "answer": 1,
-        "explanation": "strftime() formats datetime"
-    },
-    {
-        "question": "What is the output?\nimport math\nprint(math.dist((0,0), (3,4)))",
-        "options": ["5", "7", "5.0", "7.0"],
-        "answer": 2,
-        "explanation": "Euclidean distance (returns float)"
-    },
-    {
-        "question": "Which module handles CSV files?",
-        "options": ["csv", "pandas", "table", "excel"],
-        "answer": 0,
-        "explanation": "csv module in standard library"
-    },
-    {
-        "question": "What is the output?\nimport time\nprint(time.perf_counter() > 0)",
-        "options": ["True", "False", "0", "Error"],
-        "answer": 0,
-        "explanation": "perf_counter() returns float > 0"
-    },
-    {
-        "question": "How to copy a file?",
-        "options": [
-            "os.copy()",
-            "shutil.copy()",
-            "file.copy()",
-            "copy()"
-        ],
-        "answer": 1,
-        "explanation": "shutil.copy() copies files"
-    },
-    {
-        "question": "What is the output?\nfrom math import tau\nprint(tau)",
-        "options": ["3.14", "6.28", "1.57", "Error"],
-        "answer": 1,
-        "explanation": "τ (tau) = 2π ≈ 6.28"
-    },
-    {
-        "question": "Which method truncates file size?",
-        "options": ["cut()", "truncate()", "resize()", "shorten()"],
-        "answer": 1,
-        "explanation": "truncate() resizes file"
-    },
-    {
-        "question": "What is the output?\nimport os\nprint(os.path.commonprefix(['/a/b', '/a/c']))",
-        "options": ["'/a/'", "'/a'", "'/'", "Error"],
-        "answer": 1,
-        "explanation": "commonprefix() finds shared path"
-    },
-    {
-        "question": "How to parse command-line arguments?",
-        "options": ["sys.argv", "argparse", "getopt", "All"],
-        "answer": 3,
-        "explanation": "All are valid methods"
-    },
-    {
-        "question": "What is the output?\nimport math\nprint(math.remainder(5, 2))",
-        "options": ["1", "2", "1.0", "2.5"],
-        "answer": 2,
-        "explanation": "IEEE remainder (returns float)"
-    },
-    {
-        "question": "Which module handles ZIP files?",
-        "options": ["zip", "zipfile", "zlib", "compress"],
-        "answer": 1,
-        "explanation": "zipfile in standard library"
-    },
-    {
-        "question": "What is the output?\nimport time\nprint(time.monotonic() > 0)",
-        "options": ["True", "False", "0", "Error"],
-        "answer": 0,
-        "explanation": "monotonic() returns increasing float"
-    },
-    {
-        "question": "How to move a file?",
-        "options": [
-            "os.move()",
-            "shutil.move()",
-            "file.move()",
-            "move()"
-        ],
-        "answer": 1,
-        "explanation": "shutil.move() handles moves"
-    },
-    {
-        "question": "What is the output?\nfrom math import lgamma\nprint(lgamma(1))",
-        "options": ["0", "1", "0.0", "1.0"],
-        "answer": 2,
-        "explanation": "log-gamma of 1 is 0.0"
-    },
-    {
-        "question": "Which method checks if file is closed?",
-        "options": ["closed()", "is_closed()", ".closed", "check_closed()"],
-        "answer": 2,
-        "explanation": ".closed attribute is boolean"
-    },
-    {
-        "question": "What is the output?\nimport os\nprint(os.path.expanduser('~'))",
-        "options": [
-            "Home directory",
-            "'~'",
-            "Current directory",
-            "Error"
-        ],
-        "answer": 0,
-        "explanation": "expanduser() resolves ~ to home"
-    },
-    {
-        "question": "How to get environment variables?",
-        "options": [
-            "os.env()",
-            "os.getenv()",
-            "os.environ",
-            "Both 2 and 3"
-        ],
-        "answer": 3,
-        "explanation": "os.environ dict or os.getenv()"
-    },
-    {
-        "question": "What is the output?\nimport math\nprint(math.nextafter(1.0, 2.0))",
-        "options": ["1.0", "1.000...1", "2.0", "Error"],
-        "answer": 1,
-        "explanation": "Next floating-point number after 1.0"
-    },
-    {
-        "question": "Which module handles regular expressions?",
-        "options": ["regex", "re", "regexp", "rx"],
-        "answer": 1,
-        "explanation": "re module in standard library"
-    },
-    {
-        "question": "What is the output?\nimport time\nprint(time.time_ns() > 0)",
-        "options": ["True", "False", "0", "Error"],
-        "answer": 0,
-        "explanation": "time_ns() returns nanoseconds > 0"
-    },
-    {
-        "question": "How to change file permissions?",
-        "options": [
-            "os.chmod()",
-            "os.set_perms()",
-            "file.permissions()",
-            "chmod()"
-        ],
-        "answer": 0,
-        "explanation": "os.chmod() changes permissions"
-    },
-    {
-        "question": "What is the output?\nfrom math import erf\nprint(erf(0))",
-        "options": ["0", "1", "0.0", "1.0"],
-        "answer": 2,
-        "explanation": "Error function at 0 is 0.0"
-    },
-    {
-        "question": "Which method returns file descriptor?",
-        "options": ["fileno()", "fd()", "descriptor()", "getfd()"],
-        "answer": 0,
-        "explanation": "fileno() returns integer fd"
-    },
-    {
-        "question": "What is the output?\nimport os\nprint(os.path.ismount('/'))",
-        "options": ["True", "False", "None", "Error"],
-        "answer": 0,
-        "explanation": "Root directory is a mount point"
-    },
-    {
-        "question": "How to execute system commands?",
-        "options": [
-            "os.system()",
-            "os.command()",
-            "os.run()",
-            "system()"
-        ],
-        "answer": 0,
-        "explanation": "os.system() runs shell commands"
-    },
-    {
-        "question": "What is the output?\nimport math\nprint(math.ulp(1.0))",
-        "options": ["0", "2.22e-16", "1.0", "Error"],
-        "answer": 1,
-        "explanation": "Unit in last place for 1.0 (≈2⁻⁵²)"
-    },
-    {
-        "question": "Which module handles config files?",
-        "options": ["config", "configparser", "cfg", "settings"],
-        "answer": 1,
-        "explanation": "configparser in standard library"
-    },
-    {
-        "question": "What is the output?\nimport time\nprint(time.thread_time() > 0)",
-        "options": ["True", "False", "0", "Error"],
-        "answer": 0,
-        "explanation": "thread_time() returns CPU time > 0"
+        "question": "How to format time as 12-hour clock? / टाइम को 12-घंटे के क्लॉक में कैसे फॉर्मेट करें?",
+        "options": ["time.strftime('%I:%M %p') / time.strftime('%I:%M %p')", "time.format('12h') / time.format('12h')", "datetime.12hour() / datetime.12hour()", "time.convert(12) / time.convert(12)"],
+        "answer": 0
     }
 ]
 ,
