@@ -1003,104 +1003,264 @@
 ],
             "Programming and Problem Solving through Python":[
     {
-        "question": "What is the output of print(math.floor(3.7))? / print(math.floor(3.7)) का आउटपुट क्या है?",
-        "options": ["3 / 3", "4 / 4", "3.7 / 3.7", "Error / एरर"],
+        "question": "What is the output of random.randint(1,10)? / random.randint(1,10) का आउटपुट क्या है?",
+        "options": ["Random integer between 1-10 / 1-10 के बीच रैंडम इंटिजर", "Random float between 1-10 / 1-10 के बीच रैंडम फ्लोट", "Always 5 / हमेशा 5", "Error / एरर"],
         "answer": 0
     },
     {
-        "question": "Which function converts degrees to radians? / डिग्री को रेडियन में कौन सा फंक्शन बदलता है?",
-        "options": ["math.radians() / math.radians()", "math.degrees() / math.degrees()", "math.convert() / math.convert()", "math.angle() / math.angle()"],
+        "question": "How to shuffle a list in Python? / पायथन में लिस्ट को कैसे शफल करें?",
+        "options": ["random.shuffle(list) / random.shuffle(list)", "list.shuffle() / list.shuffle()", "shuffle(list) / shuffle(list)", "random.shuffleList(list) / random.shuffleList(list)"],
         "answer": 0
     },
     {
-        "question": "What is the value of math.pi? / math.pi का मान क्या है?",
-        "options": ["3.14159... / 3.14159...", "2.71828... / 2.71828...", "1.61803... / 1.61803...", "0.57721... / 0.57721..."],
+        "question": "What does random.choice() do? / random.choice() क्या करता है?",
+        "options": ["Returns random element from sequence / सीक्वेंस से रैंडम एलिमेंट रिटर्न करता है", "Returns random number / रैंडम नंबर रिटर्न करता है", "Returns sorted list / सॉर्टेड लिस्ट रिटर्न करता है", "Returns first element / पहला एलिमेंट रिटर्न करता है"],
         "answer": 0
     },
     {
-        "question": "How to calculate 2^5 using math module? / math मॉड्यूल का उपयोग करके 2^5 की गणना कैसे करें?",
-        "options": ["math.pow(2,5) / math.pow(2,5)", "2**5 / 2**5", "math.exp(2,5) / math.exp(2,5)", "Both A and B / A और B दोनों"],
+        "question": "How to generate random float between 0-1? / 0-1 के बीच रैंडम फ्लोट कैसे जनरेट करें?",
+        "options": ["random.random() / random.random()", "random.float() / random.float()", "random.uniform() / random.uniform()", "random.randfloat() / random.randfloat()"],
+        "answer": 0
+    },
+    {
+        "question": "What is the scope of a variable defined inside a function? / फंक्शन के अंदर डिफाइन्ड वेरिएबल का स्कोप क्या होता है?",
+        "options": ["Local / लोकल", "Global / ग्लोबल", "Module / मॉड्यूल", "Built-in / बिल्ट-इन"],
+        "answer": 0
+    },
+    {
+        "question": "How to import specific function from module? / मॉड्यूल से स्पेसिफिक फंक्शन कैसे इम्पोर्ट करें?",
+        "options": ["from module import function / from module import function", "import function from module / import function from module", "import module.function / import module.function", "require module:function / require module:function"],
+        "answer": 0
+    },
+    {
+        "question": "What is the correct way to open file for writing? / राइटिंग के लिए फाइल ओपन करने का सही तरीका क्या है?",
+        "options": ["open('file.txt','w') / open('file.txt','w')", "open('file.txt','r') / open('file.txt','r')", "open('file.txt','write') / open('file.txt','write')", "open('file.txt','a') / open('file.txt','a')"],
+        "answer": 0
+    },
+    {
+        "question": "How to get current date and time? / करंट डेट और टाइम कैसे प्राप्त करें?",
+        "options": ["datetime.datetime.now() / datetime.datetime.now()", "time.current() / time.current()", "date.today() / date.today()", "calendar.datetime() / calendar.datetime()"],
+        "answer": 0
+    },
+    {
+        "question": "What does math.sqrt(16) return? / math.sqrt(16) क्या रिटर्न करता है?",
+        "options": ["4.0 / 4.0", "8.0 / 8.0", "256.0 / 256.0", "Error / एरर"],
+        "answer": 0
+    },
+    {
+        "question": "How to check if year is leap year? / लीप ईयर कैसे चेक करें?",
+        "options": ["calendar.isleap(year) / calendar.isleap(year)", "datetime.isleap(year) / datetime.isleap(year)", "time.leap(year) / time.leap(year)", "year.leap() / year.leap()"],
+        "answer": 0
+    },
+    {
+        "question": "What does time.sleep(5) do? / time.sleep(5) क्या करता है?",
+        "options": ["Pauses execution for 5 seconds / एक्जीक्यूशन को 5 सेकंड के लिए रोकता है", "Runs faster for 5 seconds / 5 सेकंड के लिए तेज चलता है", "Records execution time / एक्जीक्यूशन टाइम रिकॉर्ड करता है", "Nothing / कुछ नहीं"],
+        "answer": 0
+    },
+    {
+        "question": "How to get random element from list? / लिस्ट से रैंडम एलिमेंट कैसे प्राप्त करें?",
+        "options": ["random.choice(list) / random.choice(list)", "list.random() / list.random()", "random.list(list) / random.list(list)", "choice(list) / choice(list)"],
+        "answer": 0
+    },
+    {
+        "question": "What is the output of random.uniform(5,10)? / random.uniform(5,10) का आउटपुट क्या है?",
+        "options": ["Random float between 5-10 / 5-10 के बीच रैंडम फ्लोट", "Random integer between 5-10 / 5-10 के बीच रैंडम इंटिजर", "Always 7.5 / हमेशा 7.5", "Error / एरर"],
+        "answer": 0
+    },
+    {
+        "question": "How to convert datetime to string? / डेटटाइम को स्ट्रिंग में कैसे बदलें?",
+        "options": ["strftime() / strftime()", "tostring() / tostring()", "format() / format()", "convert() / convert()"],
+        "answer": 0
+    },
+    {
+        "question": "What is the value of math.e? / math.e का मान क्या है?",
+        "options": ["2.71828... / 2.71828...", "3.14159... / 3.14159...", "1.61803... / 1.61803...", "0.57721... / 0.57721..."],
+        "answer": 0
+    },
+    {
+        "question": "How to get weekday name from date? / डेट से वीकडे नाम कैसे प्राप्त करें?",
+        "options": ["calendar.day_name[weekday] / calendar.day_name[weekday]", "datetime.weekdayname() / datetime.weekdayname()", "time.getweekday() / time.getweekday()", "date.weekdayname() / date.weekdayname()"],
+        "answer": 0
+    },
+    {
+        "question": "What does time.time() return? / time.time() क्या रिटर्न करता है?",
+        "options": ["Current timestamp / करंट टाइमस्टैम्प", "Formatted time / फॉर्मेटेड टाइम", "Date string / डेट स्ट्रिंग", "Time object / टाइम ऑब्जेक्ट"],
+        "answer": 0
+    },
+    {
+        "question": "How to calculate factorial of 5? / 5 के फैक्टोरियल की गणना कैसे करें?",
+        "options": ["math.factorial(5) / math.factorial(5)", "factorial(5) / factorial(5)", "math.fact(5) / math.fact(5)", "5.factorial() / 5.factorial()"],
+        "answer": 0
+    },
+    {
+        "question": "What is the output of math.degrees(math.pi)? / math.degrees(math.pi) का आउटपुट क्या है?",
+        "options": ["180.0 / 180.0", "90.0 / 90.0", "3.14159 / 3.14159", "360.0 / 360.0"],
+        "answer": 0
+    },
+    {
+        "question": "How to generate random number from normal distribution? / नॉर्मल डिस्ट्रीब्यूशन से रैंडम नंबर कैसे जनरेट करें?",
+        "options": ["random.gauss() / random.gauss()", "random.normal() / random.normal()", "random.distribution() / random.distribution()", "random.randnormal() / random.randnormal()"],
+        "answer": 0
+    },
+    {
+        "question": "What is the scope resolution order in Python? / पायथन में स्कोप रेजोल्यूशन ऑर्डर क्या है?",
+        "options": ["LEGB (Local, Enclosing, Global, Built-in) / लेग्बी (लोकल, एनक्लोजिंग, ग्लोबल, बिल्ट-इन)", "GBLE (Global, Built-in, Local, Enclosing) / जीबीएलई (ग्लोबल, बिल्ट-इन, लोकल, एनक्लोजिंग)", "ELGB (Enclosing, Local, Global, Built-in) / ईएलजीबी (एनक्लोजिंग, लोकल, ग्लोबल, बिल्ट-इन)", "BGEL (Built-in, Global, Enclosing, Local) / बीजीईएल (बिल्ट-इन, ग्लोबल, एनक्लोजिंग, लोकल)"],
+        "answer": 0
+    },
+    {
+        "question": "How to read entire file content at once? / फाइल कंटेंट को एक बार में कैसे पढ़ें?",
+        "options": ["file.read() / file.read()", "file.readall() / file.readall()", "file.get() / file.get()", "file.content() / file.content()"],
+        "answer": 0
+    },
+    {
+        "question": "What is the output of datetime.datetime.now().strftime('%Y')? / datetime.datetime.now().strftime('%Y') का आउटपुट क्या है?",
+        "options": ["Current year / करंट ईयर", "Current month / करंट मंथ", "Current day / करंट डे", "Current time / करंट टाइम"],
+        "answer": 0
+    },
+    {
+        "question": "How to calculate tangent of angle? / एंगल के टेंजेंट की गणना कैसे करें?",
+        "options": ["math.tan() / math.tan()", "math.tangent() / math.tangent()", "tan() / tan()", "angle.tan() / angle.tan()"],
+        "answer": 0
+    },
+    {
+        "question": "What does calendar.monthcalendar() return? / calendar.monthcalendar() क्या रिटर्न करता है?",
+        "options": ["Matrix representing month's calendar / मैट्रिक्स जो महीने के कैलेंडर को रिप्रेजेंट करता है", "List of dates / तारीखों की सूची", "Number of days / दिनों की संख्या", "Weekday names / वीकडे नाम"],
+        "answer": 0
+    },
+    {
+        "question": "How to measure time taken by code execution? / कोड एक्जीक्यूशन द्वारा लिए गए समय को कैसे मापें?",
+        "options": ["Use time.time() before and after / time.time() का उपयोग पहले और बाद में करें", "Use time.measure() / time.measure() का उपयोग करें", "Use datetime.duration() / datetime.duration() का उपयोग करें", "Use stopwatch() / stopwatch() का उपयोग करें"],
+        "answer": 0
+    },
+    {
+        "question": "What is the output of random.sample(range(100),5)? / random.sample(range(100),5) का आउटपुट क्या है?",
+        "options": ["List of 5 unique random numbers from 0-99 / 0-99 से 5 यूनिक रैंडम नंबर्स की लिस्ट", "Single random number between 0-99 / 0-99 के बीच एक रैंडम नंबर", "List of 5 sequential numbers / 5 सीक्वेंशियल नंबर्स की लिस्ट", "Error / एरर"],
+        "answer": 0
+    },
+    {
+        "question": "How to convert string to datetime object? / स्ट्रिंग को डेटटाइम ऑब्जेक्ट में कैसे बदलें?",
+        "options": ["datetime.strptime() / datetime.strptime()", "datetime.parse() / datetime.parse()", "datetime.fromstring() / datetime.fromstring()", "datetime.convert() / datetime.convert()"],
+        "answer": 0
+    },
+    {
+        "question": "What is the output of math.log(math.e)? / math.log(math.e) का आउटपुट क्या है?",
+        "options": ["1.0 / 1.0", "2.71828 / 2.71828", "0.0 / 0.0", "Error / एरर"],
+        "answer": 0
+    },
+    {
+        "question": "How to get month name from month number? / महीने के नंबर से महीने का नाम कैसे प्राप्त करें?",
+        "options": ["calendar.month_name[number] / calendar.month_name[number]", "datetime.monthname(number) / datetime.monthname(number)", "time.getmonth(number) / time.getmonth(number)", "date.monthname(number) / date.monthname(number)"],
+        "answer": 0
+    },
+    {
+        "question": "What does time.localtime() return? / time.localtime() क्या रिटर्न करता है?",
+        "options": ["struct_time object with local time / लोकल टाइम के साथ struct_time ऑब्जेक्ट", "Timestamp / टाइमस्टैम्प", "Formatted string / फॉर्मेटेड स्ट्रिंग", "Time zone info / टाइम जोन इन्फो"],
+        "answer": 0
+    },
+    {
+        "question": "How to calculate hypotenuse of right triangle? / राइट ट्रायंगल के हाइपोटेन्यूज की गणना कैसे करें?",
+        "options": ["math.hypot(x,y) / math.hypot(x,y)", "math.sqrt(x*x + y*y) / math.sqrt(x*x + y*y)", "Both A and B / A और B दोनों", "math.triangle(x,y) / math.triangle(x,y)"],
+        "answer": 2
+    },
+    {
+        "question": "What is the output of calendar.weekday(2023,9,15)? / calendar.weekday(2023,9,15) का आउटपुट क्या है?",
+        "options": ["4 (Friday) / 4 (शुक्रवार)", "5 (Saturday) / 5 (शनिवार)", "6 (Sunday) / 6 (रविवार)", "0 (Monday) / 0 (सोमवार)"],
+        "answer": 0
+    },
+    {
+        "question": "How to generate random password in Python? / पायथन में रैंडम पासवर्ड कैसे जनरेट करें?",
+        "options": ["Use random.choices() with string module / string मॉड्यूल के साथ random.choices() का उपयोग करें", "random.password() / random.password()", "generate.password() / generate.password()", "password.random() / password.random()"],
+        "answer": 0
+    },
+    {
+        "question": "What is the output of math.ceil(9.1)? / math.ceil(9.1) का आउटपुट क्या है?",
+        "options": ["10 / 10", "9 / 9", "9.1 / 9.1", "Error / एरर"],
+        "answer": 0
+    },
+    {
+        "question": "How to format date as '15 September 2023'? / डेट को '15 September 2023' के रूप में कैसे फॉर्मेट करें?",
+        "options": ["strftime('%d %B %Y') / strftime('%d %B %Y')", "format('DD Month YYYY') / format('DD Month YYYY')", "dateformat('long') / dateformat('long')", "convert('full_date') / convert('full_date')"],
+        "answer": 0
+    },
+    {
+        "question": "What is the output of random.random()? / random.random() का आउटपुट क्या है?",
+        "options": ["Float between 0.0 and 1.0 / 0.0 और 1.0 के बीच फ्लोट", "Integer between 0 and 1 / 0 और 1 के बीच इंटिजर", "Boolean value / बूलियन वैल्यू", "Random string / रैंडम स्ट्रिंग"],
+        "answer": 0
+    },
+    {
+        "question": "How to write to file without overwriting? / ओवरराइट किए बिना फाइल में कैसे लिखें?",
+        "options": ["Open in append mode ('a') / ऐपेंड मोड ('a') में ओपन करें", "Open in write mode ('w') / राइट मोड ('w') में ओपन करें", "Use file.insert() / file.insert() का उपयोग करें", "Use non_overwrite mode / non_overwrite मोड का उपयोग करें"],
+        "answer": 0
+    },
+    {
+        "question": "What is the output of math.fmod(10,3)? / math.fmod(10,3) का आउटपुट क्या है?",
+        "options": ["1.0 / 1.0", "3.333... / 3.333...", "0.0 / 0.0", "Error / एरर"],
+        "answer": 0
+    },
+    {
+        "question": "How to get time in seconds since epoch? / एपोक से सेकंड में टाइम कैसे प्राप्त करें?",
+        "options": ["time.time() / time.time()", "datetime.timestamp() / datetime.timestamp()", "time.seconds() / time.seconds()", "calendar.epoch() / calendar.epoch()"],
+        "answer": 0
+    },
+    {
+        "question": "What is the output of math.trunc(3.7)? / math.trunc(3.7) का आउटपुट क्या है?",
+        "options": ["3 / 3", "4 / 4", "3.7 / 3.7", "0.7 / 0.7"],
+        "answer": 0
+    },
+    {
+        "question": "How to generate random integer between 50-100? / 50-100 के बीच रैंडम इंटिजर कैसे जनरेट करें?",
+        "options": ["random.randint(50,100) / random.randint(50,100)", "random.randrange(50,100) / random.randrange(50,100)", "Both A and B / A और B दोनों", "random.random(50,100) / random.random(50,100)"],
+        "answer": 2
+    },
+    {
+        "question": "What is the output of datetime.timedelta(days=5)? / datetime.timedelta(days=5) का आउटपुट क्या है?",
+        "options": ["5 days, 0:00:00 / 5 दिन, 0:00:00", "5 / 5", "Current date + 5 days / करंट डेट + 5 दिन", "Error / एरर"],
+        "answer": 0
+    },
+    {
+        "question": "How to calculate log base 2 of 8? / 8 के लॉग बेस 2 की गणना कैसे करें?",
+        "options": ["math.log2(8) / math.log2(8)", "math.log(8,2) / math.log(8,2)", "Both A and B / A और B दोनों", "log(8)/log(2) / log(8)/log(2)"],
+        "answer": 2
+    },
+    {
+        "question": "What is the output of calendar.monthrange(2023,9)[1]? / calendar.monthrange(2023,9)[1] का आउटपुट क्या है?",
+        "options": ["30 (days in September) / 30 (सितंबर में दिन)", "31 (days in September) / 31 (सितंबर में दिन)", "7 (days in week) / 7 (सप्ताह में दिन)", "4 (weekday of 1st September) / 4 (1 सितंबर का वीकडे)"],
+        "answer": 0
+    },
+    {
+        "question": "How to seed the random number generator? / रैंडम नंबर जनरेटर को कैसे सीड करें?",
+        "options": ["random.seed() / random.seed()", "random.init() / random.init()", "random.start() / random.start()", "random.begin() / random.begin()"],
+        "answer": 0
+    },
+    {
+        "question": "What is the output of math.gcd(48,18)? / math.gcd(48,18) का आउटपुट क्या है?",
+        "options": ["6 / 6", "18 / 18", "48 / 48", "3 / 3"],
+        "answer": 0
+    },
+    {
+        "question": "How to get time in UTC? / यूटीसी में टाइम कैसे प्राप्त करें?",
+        "options": ["time.gmtime() / time.gmtime()", "time.utc() / time.utc()", "datetime.utcnow() / datetime.utcnow()", "Both A and C / A और C दोनों"],
         "answer": 3
     },
     {
-        "question": "What does calendar.month(2023,9) return? / calendar.month(2023,9) क्या रिटर्न करता है?",
-        "options": ["Formatted September 2023 calendar / फॉर्मेटेड सितंबर 2023 कैलेंडर", "Number of days in September / सितंबर में दिनों की संख्या", "List of dates / तारीखों की सूची", "Weekday of 1st September / 1 सितंबर का वीकडे"],
+        "question": "What is the output of random.choices(['a','b','c'], k=2)? / random.choices(['a','b','c'], k=2) का आउटपुट क्या है?",
+        "options": ["List of 2 elements (may contain duplicates) / 2 एलिमेंट्स की लिस्ट (डुप्लीकेट हो सकते हैं)", "List of 2 unique elements / 2 यूनिक एलिमेंट्स की लिस्ट", "Single random element / सिंगल रैंडम एलिमेंट", "Error / एरर"],
         "answer": 0
     },
     {
-        "question": "Which function pauses program execution? / कौन सा फंक्शन प्रोग्राम एक्जीक्यूशन को रोकता है?",
-        "options": ["time.sleep() / time.sleep()", "time.wait() / time.wait()", "time.pause() / time.pause()", "time.stop() / time.stop()"],
+        "question": "How to convert radians to degrees? / रेडियन को डिग्री में कैसे बदलें?",
+        "options": ["math.degrees() / math.degrees()", "radians.to_degrees() / radians.to_degrees()", "convert.rad_to_deg() / convert.rad_to_deg()", "math.rad2deg() / math.rad2deg()"],
         "answer": 0
     },
     {
-        "question": "How to get current date? / करंट डेट कैसे प्राप्त करें?",
-        "options": ["datetime.date.today() / datetime.date.today()", "time.date() / time.date()", "calendar.today() / calendar.today()", "date.current() / date.current()"],
+        "question": "What is the output of datetime.datetime.now().hour? / datetime.datetime.now().hour का आउटपुट क्या है?",
+        "options": ["Current hour (0-23) / करंट घंटा (0-23)", "Current hour (1-12) / करंट घंटा (1-12)", "Hours since midnight / मिडनाइट से घंटे", "Error / एरर"],
         "answer": 0
     },
     {
-        "question": "What is the output of print(time.strftime('%H:%M'))? / print(time.strftime('%H:%M')) का आउटपुट क्या है?",
-        "options": ["Current time in HH:MM format / HH:MM फॉर्मेट में करंट टाइम", "Date and time / डेट और टाइम", "Timestamp / टाइमस्टैम्प", "Error / एरर"],
-        "answer": 0
-    },
-    {
-        "question": "Which module is needed for trigonometric functions? / ट्रिगोनोमेट्रिक फंक्शन्स के लिए किस मॉड्यूल की आवश्यकता होती है?",
-        "options": ["math / math", "trig / trig", "numpy / numpy", "geometry / geometry"],
-        "answer": 0
-    },
-    {
-        "question": "How to calculate sine of 30 degrees? / 30 डिग्री की साइन की गणना कैसे करें?",
-        "options": ["math.sin(math.radians(30)) / math.sin(math.radians(30))", "math.sin(30) / math.sin(30)", "math.degrees(math.sin(30)) / math.degrees(math.sin(30))", "sin(30) / sin(30)"],
-        "answer": 0
-    },
-    {
-        "question": "What is the output of print(calendar.isleap(2024))? / print(calendar.isleap(2024)) का आउटपुट क्या है?",
-        "options": ["True / सही", "False / गलत", "1 / 1", "Error / एरर"],
-        "answer": 0
-    },
-    {
-        "question": "How to get weekday of specific date? / विशिष्ट तिथि का वीकडे कैसे प्राप्त करें?",
-        "options": ["datetime.date(2023,9,15).weekday() / datetime.date(2023,9,15).weekday()", "calendar.day(2023,9,15) / calendar.day(2023,9,15)", "time.weekday(2023,9,15) / time.weekday(2023,9,15)", "date.getweekday(2023,9,15) / date.getweekday(2023,9,15)"],
-        "answer": 0
-    },
-    {
-        "question": "What is the output of print(math.log10(100))? / print(math.log10(100)) का आउटपुट क्या है?",
-        "options": ["2.0 / 2.0", "10.0 / 10.0", "100.0 / 100.0", "1.0 / 1.0"],
-        "answer": 0
-    },
-    {
-        "question": "How to convert timestamp to readable format? / टाइमस्टैम्प को रीडेबल फॉर्मेट में कैसे बदलें?",
-        "options": ["time.ctime(timestamp) / time.ctime(timestamp)", "time.read(timestamp) / time.read(timestamp)", "time.convert(timestamp) / time.convert(timestamp)", "time.format(timestamp) / time.format(timestamp)"],
-        "answer": 0
-    },
-    {
-        "question": "What is the output of print(math.fabs(-5.5))? / print(math.fabs(-5.5)) का आउटपुट क्या है?",
-        "options": ["5.5 / 5.5", "-5.5 / -5.5", "5 / 5", "Error / एरर"],
-        "answer": 0
-    },
-    {
-        "question": "How to get number of days in month? / महीने में दिनों की संख्या कैसे प्राप्त करें?",
-        "options": ["calendar.monthrange(year,month)[1] / calendar.monthrange(year,month)[1]", "datetime.daysinmonth(year,month) / datetime.daysinmonth(year,month)", "time.monthdays(year,month) / time.monthdays(year,month)", "date.getdays(year,month) / date.getdays(year,month)"],
-        "answer": 0
-    },
-    {
-        "question": "What is the output of print(round(math.sin(math.pi/2),2))? / print(round(math.sin(math.pi/2),2)) का आउटपुट क्या है?",
-        "options": ["1.0 / 1.0", "0.0 / 0.0", "0.5 / 0.5", "-1.0 / -1.0"],
-        "answer": 0
-    },
-    {
-        "question": "How to measure execution time of code block? / कोड ब्लॉक का एक्जीक्यूशन टाइम कैसे मापें?",
-        "options": ["Use time.time() before and after / time.time() का उपयोग पहले और बाद में करें", "Use time.measure() / time.measure() का उपयोग करें", "Use datetime.duration() / datetime.duration() का उपयोग करें", "Use calendar.timing() / calendar.timing() का उपयोग करें"],
-        "answer": 0
-    },
-    {
-        "question": "What is the output of print(math.ceil(2.3))? / print(math.ceil(2.3)) का आउटपुट क्या है?",
-        "options": ["3 / 3", "2 / 2", "2.3 / 2.3", "Error / एरर"],
-        "answer": 0
-    },
-    {
-        "question": "How to format time as 12-hour clock? / टाइम को 12-घंटे के क्लॉक में कैसे फॉर्मेट करें?",
-        "options": ["time.strftime('%I:%M %p') / time.strftime('%I:%M %p')", "time.format('12h') / time.format('12h')", "datetime.12hour() / datetime.12hour()", "time.convert(12) / time.convert(12)"],
-        "answer": 0
+        "question": "How to calculate Euclidean distance between points? / पॉइंट्स के बीच यूक्लिडियन डिस्टेंस कैसे कैलकुलेट करें?",
+        "options": ["math.dist() / math.dist()", "math.hypot() / math.hypot()", "Both A and B / A और B दोनों", "distance.euclidean() / distance.euclidean()"],
+        "answer": 2
     }
 ]
 ,
