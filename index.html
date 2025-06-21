@@ -109,6 +109,10 @@
 
         // Define questions for 4 tests (M1, M2, M3, M4)
         const allTestQuestions = {
+
+            //==============================================================================================================================
+            //==============================================================================================================================
+            //==============================================================================================================================
             "Information Technology Tools and Network Basics":[
    
     {
@@ -1001,627 +1005,770 @@
         "answer": 3
     }
 ],
-            "Programming and Problem Solving through Python":[
+    //==============================================================================================================================
+    //==============================================================================================================================
+    //==============================================================================================================================
+    //==============================================================================================================================
+            "Programming and Problem Solving through Python":
+[
     {
-        "question": "How to import the entire math module in Python?\nPython में पूरे math मॉड्यूल को कैसे इम्पोर्ट करें?",
-        "options": ["import math", "from math import *", "include math", "require math"],
+        "question": "What is NumPy?\nNumPy क्या है?",
+        "options": ["A Python library for numerical computations", "A database management system", "A web development framework", "A machine learning algorithm"],
         "answer": 0,
-        "explanation": "Use 'import math' to import the entire math module/पूरे math मॉड्यूल को इम्पोर्ट करने के लिए 'import math' का उपयोग करें"
+        "explanation": "NumPy is a Python library used for numerical computations/NumPy एक पायथन लाइब्रेरी है जिसका उपयोग संख्यात्मक गणनाओं के लिए किया जाता है"
     },
     {
-        "question": "Which function returns the value of pi from math module?\nmath मॉड्यूल से pi का मान कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["math.pi()", "math.pi", "math.PI", "math.PI()"],
-        "answer": 1,
-        "explanation": "math.pi is a constant, not a function/math.pi एक कॉन्स्टेंट है, फंक्शन नहीं"
-    },
-    {
-        "question": "How to import only the exp function from math module?\nmath मॉड्यूल से केवल exp फंक्शन को कैसे इम्पोर्ट करें?",
-        "options": ["import exp from math", "from math import exp", "import math.exp", "math.import(exp)"],
-        "answer": 1,
-        "explanation": "Use 'from math import exp' to import specific function/किसी विशिष्ट फंक्शन को इम्पोर्ट करने के लिए 'from math import exp' का उपयोग करें"
-    },
-    {
-        "question": "What does math.exp(1) return?\nmath.exp(1) क्या रिटर्न करता है?",
-        "options": ["1", "2.718", "3.14", "0"],
-        "answer": 1,
-        "explanation": "math.exp(1) returns e^1 ≈ 2.718/math.exp(1) e^1 ≈ 2.718 रिटर्न करता है"
-    },
-    {
-        "question": "How to calculate 2^5 using math module?\nmath मॉड्यूल का उपयोग करके 2^5 की गणना कैसे करें?",
-        "options": ["math.pow(2,5)", "math.power(2,5)", "2**5", "math.exp(2,5)"],
+        "question": "How to install NumPy?\nNumPy को कैसे इंस्टॉल करें?",
+        "options": ["pip install numpy", "install numpy", "python get numpy", "python install numpy"],
         "answer": 0,
-        "explanation": "math.pow(x,y) returns x raised to power y/math.pow(x,y) x की पावर y रिटर्न करता है"
+        "explanation": "NumPy can be installed using pip install numpy/NumPy को pip install numpy का उपयोग करके इंस्टॉल किया जा सकता है"
     },
     {
-        "question": "Which function checks if a number is finite in math module?\nmath मॉड्यूल में कौन सा फंक्शन चेक करता है कि कोई नंबर फाइनाइट है या नहीं?",
-        "options": ["math.finite()", "math.isfinite()", "math.checkfinite()", "math.is_finite()"],
-        "answer": 1,
-        "explanation": "math.isfinite() checks if number is finite/math.isfinite() चेक करता है कि नंबर फाइनाइट है या नहीं"
-    },
-    {
-        "question": "What does math.gcd(12,18) return?\nmath.gcd(12,18) क्या रिटर्न करता है?",
-        "options": ["2", "3", "6", "12"],
-        "answer": 2,
-        "explanation": "GCD of 12 and 18 is 6/12 और 18 का GCD 6 है"
-    },
-    {
-        "question": "How to generate a random float between 0 and 1 using random module?\nrandom मॉड्यूल का उपयोग करके 0 और 1 के बीच रैंडम फ्लोट कैसे जनरेट करें?",
-        "options": ["random.random()", "random.float()", "random.uniform(0,1)", "random.randfloat()"],
+        "question": "What is the main object in NumPy?\nNumPy में मुख्य ऑब्जेक्ट क्या है?",
+        "options": ["ndarray", "list", "tuple", "dictionary"],
         "answer": 0,
-        "explanation": "random.random() returns float between 0 and 1/random.random() 0 और 1 के बीच फ्लोट रिटर्न करता है"
+        "explanation": "The main object in NumPy is ndarray (n-dimensional array)/NumPy में मुख्य ऑब्जेक्ट ndarray (n-डायमेंशनल ऐरे) है"
     },
     {
-        "question": "Which function returns current date in datetime module?\ndatetime मॉड्यूल में करंट डेट कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["datetime.now()", "datetime.date()", "datetime.today()", "datetime.current()"],
-        "answer": 2,
-        "explanation": "datetime.date.today() returns current date/datetime.date.today() करंट डेट रिटर्न करता है"
-    },
-    {
-        "question": "How to get current timestamp using time module?\ntime मॉड्यूल का उपयोग करके करंट टाइमस्टैम्प कैसे प्राप्त करें?",
-        "options": ["time.now()", "time.time()", "time.timestamp()", "time.current()"],
-        "answer": 1,
-        "explanation": "time.time() returns current timestamp/time.time() करंट टाइमस्टैम्प रिटर्न करता है"
-    },
-    {
-        "question": "Which function checks if a year is leap year in calendar module?\ncalendar मॉड्यूल में कौन सा फंक्शन चेक करता है कि कोई साल लीप ईयर है या नहीं?",
-        "options": ["calendar.leap()", "calendar.isleap()", "calendar.checkleap()", "calendar.leapyear()"],
-        "answer": 1,
-        "explanation": "calendar.isleap() checks leap year/calendar.isleap() लीप ईयर चेक करता है"
-    },
-    {
-        "question": "What does math.log(100,10) return?\nmath.log(100,10) क्या रिटर्न करता है?",
-        "options": ["1", "2", "10", "100"],
-        "answer": 1,
-        "explanation": "log of 100 with base 10 is 2/100 का लॉग बेस 10 में 2 होता है"
-    },
-    {
-        "question": "How to shuffle a list using random module?\nrandom मॉड्यूल का उपयोग करके लिस्ट को कैसे शफल करें?",
-        "options": ["random.shuffle()", "random.mix()", "random.reorder()", "random.arrange()"],
+        "question": "How to create a NumPy array from a list?\nलिस्ट से NumPy ऐरे कैसे बनाएं?",
+        "options": ["np.array(list)", "np.create(list)", "np.make(list)", "np.list_to_array(list)"],
         "answer": 0,
-        "explanation": "random.shuffle() shuffles list in place/random.shuffle() लिस्ट को इन-प्लेस शफल करता है"
+        "explanation": "Use np.array() to create array from list/लिस्ट से ऐरे बनाने के लिए np.array() का उपयोग करें"
     },
     {
-        "question": "Which function returns formatted time from time module?\ntime मॉड्यूल से फॉर्मेटेड टाइम कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["time.strftime()", "time.format()", "time.ctime()", "time.localtime()"],
+        "question": "What does ndarray stand for?\nndarray का पूरा नाम क्या है?",
+        "options": ["n-dimensional array", "numeric data array", "named data array", "nested data array"],
         "answer": 0,
-        "explanation": "time.strftime() returns formatted time/time.strftime() फॉर्मेटेड टाइम रिटर्न करता है"
+        "explanation": "ndarray stands for n-dimensional array/ndarray का मतलब n-डायमेंशनल ऐरे है"
     },
     {
-        "question": "What does math.remainder(10,3) return?\nmath.remainder(10,3) क्या रिटर्न करता है?",
-        "options": ["1", "1.0", "3.333", "0.333"],
-        "answer": 1,
-        "explanation": "remainder when 10 is divided by 3 is 1/10 को 3 से भाग देने पर रिमाइंडर 1 होता है"
-    },
-    {
-        "question": "How to get current year from datetime module?\ndatetime मॉड्यूल से करंट ईयर कैसे प्राप्त करें?",
-        "options": ["datetime.year()", "datetime.now().year", "datetime.current().year", "datetime.today().getYear()"],
-        "answer": 1,
-        "explanation": "datetime.now().year returns current year/datetime.now().year करंट ईयर रिटर्न करता है"
-    },
-    {
-        "question": "Which function returns day names in calendar module?\ncalendar मॉड्यूल में दिन के नाम कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["calendar.days()", "calendar.day_name", "calendar.getdays()", "calendar.weekdays()"],
-        "answer": 1,
-        "explanation": "calendar.day_name contains day names/calendar.day_name में दिन के नाम होते हैं"
-    },
-    {
-        "question": "What does random.randint(1,10) return?\nrandom.randint(1,10) क्या रिटर्न करता है?",
-        "options": ["Float between 1-10", "Integer between 1-10 inclusive", "List of numbers 1-10", "Random float"],
-        "answer": 1,
-        "explanation": "randint returns random integer in range inclusive/randint रेंज में रैंडम इंटीजर इन्क्लूसिव रिटर्न करता है"
-    },
-    {
-        "question": "How to calculate LCM of 4 and 6 using math module?\nmath मॉड्यूल का उपयोग करके 4 और 6 के LCM की गणना कैसे करें?",
-        "options": ["math.lcm(4,6)", "math.gcd(4,6)", "math.lcd(4,6)", "math.lcm([4,6])"],
+        "question": "Which attribute returns the shape of an array?\nकौन सा एट्रिब्यूट ऐरे का शेप रिटर्न करता है?",
+        "options": ["shape", "size", "dim", "length"],
         "answer": 0,
-        "explanation": "math.lcm() calculates least common multiple/math.lcm() लीस्ट कॉमन मल्टीपल कैलकुलेट करता है"
+        "explanation": "shape attribute returns array dimensions/shape एट्रिब्यूट ऐरे के डायमेंशन रिटर्न करता है"
     },
     {
-        "question": "Which function returns local time from time module?\ntime मॉड्यूल से लोकल टाइम कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["time.time()", "time.localtime()", "time.now()", "time.current()"],
-        "answer": 1,
-        "explanation": "time.localtime() returns local time/time.localtime() लोकल टाइम रिटर्न करता है"
-    },
-    {
-        "question": "What does math.prod([2,3,4]) return?\nmath.prod([2,3,4]) क्या रिटर्न करता है?",
-        "options": ["9", "24", "[2,3,4]", "Error"],
-        "answer": 1,
-        "explanation": "prod calculates product of elements/prod एलिमेंट्स का प्रोडक्ट कैलकुलेट करता है"
-    },
-    {
-        "question": "How to get weekday of a date in datetime module?\ndatetime मॉड्यूल में डेट का वीकडे कैसे प्राप्त करें?",
-        "options": ["date.weekday()", "date.day()", "date.getweekday()", "date.week()"],
+        "question": "How to create an array of zeros?\nज़ीरो का ऐरे कैसे बनाएं?",
+        "options": ["np.zeros()", "np.empty()", "np.zeroes()", "np.null()"],
         "answer": 0,
-        "explanation": "date.weekday() returns weekday (0=Monday)/date.weekday() वीकडे रिटर्न करता है (0=सोमवार)"
+        "explanation": "Use np.zeros() to create array filled with zeros/ज़ीरो से भरे ऐरे बनाने के लिए np.zeros() का उपयोग करें"
     },
     {
-        "question": "Which function returns random element from sequence in random module?\nrandom मॉड्यूल में सीक्वेंस से रैंडम एलिमेंट कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["random.pick()", "random.select()", "random.choice()", "random.element()"],
-        "answer": 2,
-        "explanation": "random.choice() returns random element/random.choice() रैंडम एलिमेंट रिटर्न करता है"
-    },
-    {
-        "question": "What does math.isclose(1.0, 1.0000001) likely return?\nmath.isclose(1.0, 1.0000001) संभवतः क्या रिटर्न करता है?",
-        "options": ["True", "False", "Error", "None"],
+        "question": "Which function creates an array with evenly spaced values?\nकौन सा फंक्शन समान दूरी वाले वैल्यूज़ के साथ ऐरे बनाता है?",
+        "options": ["np.linspace()", "np.arange()", "np.range()", "np.sequence()"],
         "answer": 0,
-        "explanation": "Numbers are close within default tolerance/नंबर्स डिफॉल्ट टॉलरेंस के भीतर क्लोज हैं"
+        "explanation": "np.linspace() creates array with evenly spaced numbers/np.linspace() समान दूरी वाले नंबर्स के साथ ऐरे बनाता है"
     },
     {
-        "question": "How to convert timestamp to local time using time module?\ntime मॉड्यूल का उपयोग करके टाइमस्टैम्प को लोकल टाइम में कैसे कन्वर्ट करें?",
-        "options": ["time.localtime(timestamp)", "time.fromtimestamp(timestamp)", "time.convert(timestamp)", "time.tolocal(timestamp)"],
+        "question": "How to get the data type of a NumPy array?\nNumPy ऐरे का डेटा टाइप कैसे प्राप्त करें?",
+        "options": ["dtype", "type", "datatype", "arraytype"],
         "answer": 0,
-        "explanation": "time.localtime() converts timestamp/time.localtime() टाइमस्टैम्प को कन्वर्ट करता है"
+        "explanation": "dtype attribute returns array's data type/dtype एट्रिब्यूट ऐरे का डेटा टाइप रिटर्न करता है"
     },
     {
-        "question": "Which function returns multiple random elements with replacement in random module?\nrandom मॉड्यूल में रिप्लेसमेंट के साथ मल्टीपल रैंडम एलिमेंट्स कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["random.sample()", "random.choices()", "random.multichoice()", "random.picks()"],
-        "answer": 1,
-        "explanation": "random.choices() returns multiple elements with replacement/random.choices() रिप्लेसमेंट के साथ मल्टीपल एलिमेंट्स रिटर्न करता है"
-    },
-    {
-        "question": "What does math.log1p(0) return?\nmath.log1p(0) क्या रिटर्न करता है?",
-        "options": ["0", "1", "e", "Error"],
+        "question": "What is the output of np.arange(5)?\nnp.arange(5) का आउटपुट क्या है?",
+        "options": ["[0 1 2 3 4]", "[1 2 3 4 5]", "[5]", "[0 1 2 3 4 5]"],
         "answer": 0,
-        "explanation": "log1p(0) is log(1+0) which is 0/log1p(0) लॉग(1+0) है जो 0 है"
+        "explanation": "np.arange(5) creates array from 0 to 4/np.arange(5) 0 से 4 तक का ऐरे बनाता है"
     },
     {
-        "question": "How to format date as 'YYYY-MM-DD' using datetime module?\ndatetime मॉड्यूल का उपयोग करके डेट को 'YYYY-MM-DD' के रूप में कैसे फॉर्मेट करें?",
-        "options": ["date.format('%Y-%m-%d')", "date.strftime('%Y-%m-%d')", "date.toString('YYYY-MM-DD')", "date.toformat('%Y-%m-%d')"],
-        "answer": 1,
-        "explanation": "strftime() formats date/strftime() डेट को फॉर्मेट करता है"
-    },
-    {
-        "question": "Which function returns permutation count in math module?\nmath मॉड्यूल में परम्यूटेशन काउंट कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["math.perm()", "math.comb()", "math.factorial()", "math.permutation()"],
-        "answer": 0,
-        "explanation": "math.perm() returns permutation count/math.perm() परम्यूटेशन काउंट रिटर्न करता है"
-    },
-    {
-        "question": "What does random.seed(42) do?\nrandom.seed(42) क्या करता है?",
-        "options": ["Generates 42 random numbers", "Sets random number generator seed", "Returns 42", "Creates 42 random seeds"],
-        "answer": 1,
-        "explanation": "seed() initializes random number generator/seed() रैंडम नंबर जनरेटर को इनिशियलाइज़ करता है"
-    },
-    {
-        "question": "How to get month name from calendar module?\ncalendar मॉड्यूल से महीने का नाम कैसे प्राप्त करें?",
-        "options": ["calendar.month_name[1]", "calendar.get_month(1)", "calendar.monthname(1)", "calendar.month(1)"],
-        "answer": 0,
-        "explanation": "calendar.month_name contains month names/calendar.month_name में महीनों के नाम होते हैं"
-    },
-    {
-        "question": "Which function returns combination count in math module?\nmath मॉड्यूल में कॉम्बिनेशन काउंट कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["math.comb()", "math.perm()", "math.factorial()", "math.combination()"],
-        "answer": 0,
-        "explanation": "math.comb() returns combination count/math.comb() कॉम्बिनेशन काउंट रिटर्न करता है"
-    },
-    {
-        "question": "What does math.fmod(7,3) return?\nmath.fmod(7,3) क्या रिटर्न करता है?",
-        "options": ["1", "2", "1.0", "2.333"],
-        "answer": 0,
-        "explanation": "fmod returns floating-point remainder/fmod फ्लोटिंग-पॉइंट रिमाइंडर रिटर्न करता है"
-    },
-    {
-        "question": "How to generate random float between 5 and 10 using random module?\nrandom मॉड्यूल का उपयोग करके 5 और 10 के बीच रैंडम फ्लोट कैसे जनरेट करें?",
-        "options": ["random.random(5,10)", "random.float(5,10)", "random.uniform(5,10)", "random.range(5,10)"],
-        "answer": 2,
-        "explanation": "random.uniform() returns float in range/random.uniform() रेंज में फ्लोट रिटर्न करता है"
-    },
-    {
-        "question": "Which function returns current datetime in datetime module?\ndatetime मॉड्यूल में करंट डेटटाइम कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["datetime.current()", "datetime.now()", "datetime.today()", "datetime.date()"],
-        "answer": 1,
-        "explanation": "datetime.now() returns current datetime/datetime.now() करंट डेटटाइम रिटर्न करता है"
-    },
-    {
-        "question": "What does math.ldexp(3,2) return?\nmath.ldexp(3,2) क्या रिटर्न करता है?",
-        "options": ["6", "9", "12", "32"],
-        "answer": 2,
-        "explanation": "ldexp(x,i) returns x*(2^i)/ldexp(x,i) x*(2^i) रिटर्न करता है"
-    },
-    {
-        "question": "How to check if year 2024 is leap using calendar module?\ncalendar मॉड्यूल का उपयोग करके चेक कैसे करें कि वर्ष 2024 लीप है?",
-        "options": ["calendar.leap(2024)", "calendar.isleap(2024)", "calendar.leapyear(2024)", "calendar.checkleap(2024)"],
-        "answer": 1,
-        "explanation": "calendar.isleap() checks leap year/calendar.isleap() लीप ईयर चेक करता है"
-    },
-    {
-        "question": "Which function returns multiple random elements without replacement in random module?\nrandom मॉड्यूल में बिना रिप्लेसमेंट के मल्टीपल रैंडम एलिमेंट्स कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["random.choices()", "random.sample()", "random.multipick()", "random.selection()"],
-        "answer": 1,
-        "explanation": "random.sample() returns unique elements/random.sample() यूनिक एलिमेंट्स रिटर्न करता है"
-    },
-    {
-        "question": "What does math.nextafter(1.0, 2.0) return?\nmath.nextafter(1.0, 2.0) क्या रिटर्न करता है?",
-        "options": ["1.0000000000000002", "2.0", "1.5", "1.0000000000000001"],
-        "answer": 0,
-        "explanation": "nextafter returns next floating-point value/nextafter अगला फ्लोटिंग-पॉइंट वैल्यू रिटर्न करता है"
-    },
-    {
-        "question": "How to get day name from weekday number in calendar module?\ncalendar मॉड्यूल में वीकडे नंबर से दिन का नाम कैसे प्राप्त करें?",
-        "options": ["calendar.day_name[0]", "calendar.get_day(0)", "calendar.weekdayname(0)", "calendar.dayname(0)"],
-        "answer": 0,
-        "explanation": "calendar.day_name contains day names/calendar.day_name में दिन के नाम होते हैं"
-    },
-    {
-        "question": "Which function returns exponential minus 1 in math module?\nmath मॉड्यूल में एक्सपोनेंशियल माइनस 1 कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["math.exp()", "math.expm1()", "math.exminus1()", "math.e-1()"],
-        "answer": 1,
-        "explanation": "math.expm1() returns exp(x)-1/math.expm1() exp(x)-1 रिटर्न करता है"
-    },
-    {
-        "question": "What does random.randrange(1,10,2) return?\nrandom.randrange(1,10,2) क्या रिटर्न करता है?",
-        "options": ["Random even number between 1-10", "Random odd number between 1-10", "List of numbers 1-10 step 2", "Random float between 1-10"],
-        "answer": 1,
-        "explanation": "randrange with step 2 returns odd numbers/स्टेप 2 के साथ randrange विषम संख्याएँ रिटर्न करता है"
-    },
-    {
-        "question": "How to create datetime object for 2023-12-25 in datetime module?\ndatetime मॉड्यूल में 2023-12-25 के लिए डेटटाइम ऑब्जेक्ट कैसे बनाएं?",
-        "options": ["datetime(2023,12,25)", "datetime.date(2023,12,25)", "datetime.create(2023,12,25)", "datetime.new(2023,12,25)"],
-        "answer": 0,
-        "explanation": "datetime() constructor creates datetime object/datetime() कंस्ट्रक्टर डेटटाइम ऑब्जेक्ट बनाता है"
-    },
-    {
-        "question": "Which function returns time struct from timestamp in time module?\ntime मॉड्यूल में टाइमस्टैम्प से टाइम स्ट्रक्चर कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["time.fromtimestamp()", "time.localtime()", "time.structtime()", "time.mktime()"],
-        "answer": 1,
-        "explanation": "time.localtime() converts timestamp to struct/time.localtime() टाइमस्टैम्प को स्ट्रक्चर में कन्वर्ट करता है"
-    },
-    {
-        "question": "What does math.tau return?\nmath.tau क्या रिटर्न करता है?",
-        "options": ["3.14", "6.28", "1.57", "0.79"],
-        "answer": 1,
-        "explanation": "tau is 2*pi ≈ 6.28/tau 2*pi ≈ 6.28 है"
-    },
-    {
-        "question": "How to calculate number of leap days between 2000 and 2020 using calendar module?\ncalendar मॉड्यूल का उपयोग करके 2000 और 2020 के बीच लीप डेज़ की संख्या की गणना कैसे करें?",
-        "options": ["calendar.leapdays(2000,2020)", "calendar.countleaps(2000,2020)", "calendar.leapcount(2000,2020)", "calendar.leapyears(2000,2020)"],
-        "answer": 0,
-        "explanation": "calendar.leapdays() counts leap days/calendar.leapdays() लीप डेज़ की गिनती करता है"
-    },
-    {
-        "question": "Which function returns logarithm base 2 in math module?\nmath मॉड्यूल में लॉगरिदम बेस 2 कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["math.log()", "math.log2()", "math.log10()", "math.ln()"],
-        "answer": 1,
-        "explanation": "math.log2() returns base-2 logarithm/math.log2() बेस-2 लॉगरिदम रिटर्न करता है"
-    },
-    {
-        "question": "What does datetime.now().strftime('%H:%M') return?\ndatetime.now().strftime('%H:%M') क्या रिटर्न करता है?",
-        "options": ["Current date", "Current time in HH:MM format", "Current timestamp", "Hour and minute as tuple"],
-        "answer": 1,
-        "explanation": "strftime('%H:%M') formats time as HH:MM/strftime('%H:%M') टाइम को HH:MM के रूप में फॉर्मेट करता है"
-    },
-    {
-        "question": "How to check if value is NaN in math module?\nmath मॉड्यूल में कैसे चेक करें कि वैल्यू NaN है?",
-        "options": ["math.isnan()", "math.checknan()", "math.nan()", "math.is_nan()"],
-        "answer": 0,
-        "explanation": "math.isnan() checks for NaN/math.isnan() NaN के लिए चेक करता है"
-    },
-    {
-        "question": "Which function returns random integer in random module?\nrandom मॉड्यूल में रैंडम इंटीजर कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["random.int()", "random.randint()", "random.integer()", "random.randomint()"],
-        "answer": 1,
-        "explanation": "random.randint() returns random integer/random.randint() रैंडम इंटीजर रिटर्न करता है"
-    },
-    {
-        "question": "What does math.log10(1000) return?\nmath.log10(1000) क्या रिटर्न करता है?",
-        "options": ["2", "3", "10", "1000"],
-        "answer": 1,
-        "explanation": "log10(1000) is 3 because 10^3=1000/log10(1000) 3 है क्योंकि 10^3=1000"
-    },
-    {
-        "question": "How to get month from datetime object in datetime module?\ndatetime मॉड्यूल में datetime ऑब्जेक्ट से महीना कैसे प्राप्त करें?",
-        "options": ["dt.getMonth()", "dt.month", "dt.date.month", "dt.get_month()"],
-        "answer": 1,
-        "explanation": "dt.month returns month/dt.month महीना रिटर्न करता है"
-    },
-    {
-        "question": "Which function returns formatted calendar month in calendar module?\ncalendar मॉड्यूल में फॉर्मेटेड कैलेंडर मंथ कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["calendar.month()", "calendar.formatmonth()", "calendar.prmonth()", "calendar.monthcalendar()"],
-        "answer": 0,
-        "explanation": "calendar.month() returns formatted month/calendar.month() फॉर्मेटेड महीना रिटर्न करता है"
-    },
-    {
-        "question": "What does time.ctime() return?\ntime.ctime() क्या रिटर्न करता है?",
-        "options": ["Current timestamp", "Current time as string", "Current date as tuple", "Current time in milliseconds"],
-        "answer": 1,
-        "explanation": "ctime() returns current time as string/ctime() करंट टाइम को स्ट्रिंग के रूप में रिटर्न करता है"
-    },
-    {
-        "question": "How to calculate permutation of 5 items taken 2 at a time in math module?\nmath मॉड्यूल में 5 आइटम्स से 2 को एक समय में लेकर परम्यूटेशन की गणना कैसे करें?",
-        "options": ["math.perm(5,2)", "math.comb(5,2)", "math.factorial(5)/factorial(3)", "math.permutation(5,2)"],
-        "answer": 0,
-        "explanation": "math.perm() calculates permutations/math.perm() परम्यूटेशन की गणना करता है"
-    },
-    {
-        "question": "Which function returns current date as string in datetime module?\ndatetime मॉड्यूल में करंट डेट को स्ट्रिंग के रूप में कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["datetime.now().toString()", "datetime.now().isoformat()", "datetime.now().str()", "datetime.now().format()"],
-        "answer": 1,
-        "explanation": "isoformat() returns date as string/isoformat() डेट को स्ट्रिंग के रूप में रिटर्न करता है"
-    },
-    {
-        "question": "What does random.choice(['a','b','c']) return?\nrandom.choice(['a','b','c']) क्या रिटर्न करता है?",
-        "options": ["['a','b','c']", "Random element from list", "Shuffled list", "Error"],
-        "answer": 1,
-        "explanation": "choice() returns random element/choice() रैंडम एलिमेंट रिटर्न करता है"
-    },
-    {
-        "question": "How to check if value is infinite in math module?\nmath मॉड्यूल में कैसे चेक करें कि वैल्यू इनफिनिट है?",
-        "options": ["math.isinf()", "math.infinite()", "math.checkinf()", "math.is_inf()"],
-        "answer": 0,
-        "explanation": "math.isinf() checks for infinity/math.isinf() इनफिनिटी के लिए चेक करता है"
-    },
-    {
-        "question": "Which function converts time tuple to timestamp in time module?\ntime मॉड्यूल में टाइम टपल को टाइमस्टैम्प में कौन सा फंक्शन कन्वर्ट करता है?",
-        "options": ["time.fromtuple()", "time.mktime()", "time.totimestamp()", "time.convert()"],
-        "answer": 1,
-        "explanation": "time.mktime() converts time tuple/time.mktime() टाइम टपल को कन्वर्ट करता है"
-    },
-    {
-        "question": "What does math.nan represent?\nmath.nan क्या प्रतिनिधित्व करता है?",
-        "options": ["Negative number", "Not a Number", "Natural number", "Null value"],
-        "answer": 1,
-        "explanation": "nan means Not a Number/nan का मतलब है नॉट ए नंबर"
-    },
-    {
-        "question": "How to get day of week (0-6) from datetime in datetime module?\ndatetime मॉड्यूल में datetime से वीक डे (0-6) कैसे प्राप्त करें?",
-        "options": ["dt.dayofweek", "dt.weekday()", "dt.getDay()", "dt.day()"],
-        "answer": 1,
-        "explanation": "weekday() returns day number (0=Monday)/weekday() दिन का नंबर रिटर्न करता है (0=सोमवार)"
-    },
-    {
-        "question": "Which function returns calendar as matrix in calendar module?\ncalendar मॉड्यूल में कैलेंडर को मैट्रिक्स के रूप में कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["calendar.monthcalendar()", "calendar.matrix()", "calendar.grid()", "calendar.monthgrid()"],
-        "answer": 0,
-        "explanation": "monthcalendar() returns calendar as matrix/monthcalendar() कैलेंडर को मैट्रिक्स के रूप में रिटर्न करता है"
-    },
-    {
-        "question": "What does datetime.now().hour return?\ndatetime.now().hour क्या रिटर्न करता है?",
-        "options": ["Current hour (0-23)", "Current hour (1-12)", "Hours since epoch", "Total hours today"],
-        "answer": 0,
-        "explanation": "hour returns current hour (0-23)/hour करंट आवर रिटर्न करता है (0-23)"
-    },
-    {
-        "question": "How to calculate combination of 5 items taken 2 at a time in math module?\nmath मॉड्यूल में 5 आइटम्स से 2 को एक समय में लेकर कॉम्बिनेशन की गणना कैसे करें?",
-        "options": ["math.comb(5,2)", "math.perm(5,2)", "math.factorial(5)/(factorial(2)*factorial(3))", "math.combination(5,2)"],
-        "answer": 0,
-        "explanation": "math.comb() calculates combinations/math.comb() कॉम्बिनेशन की गणना करता है"
-    },
-    {
-        "question": "Which function returns current time as string in time module?\ntime मॉड्यूल में करंट टाइम को स्ट्रिंग के रूप में कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["time.now()", "time.ctime()", "time.str()", "time.localtime()"],
-        "answer": 1,
-        "explanation": "ctime() returns time as string/ctime() टाइम को स्ट्रिंग के रूप में रिटर्न करता है"
-    },
-    {
-        "question": "What does math.inf represent?\nmath.inf क्या प्रतिनिधित्व करता है?",
-        "options": ["Very large number", "Infinity", "Invalid float", "Negative number"],
-        "answer": 1,
-        "explanation": "inf represents infinity/inf इनफिनिटी को प्रतिनिधित्व करता है"
-    },
-    {
-        "question": "How to get microsecond from datetime in datetime module?\ndatetime मॉड्यूल में datetime से माइक्रोसेकंड कैसे प्राप्त करें?",
-        "options": ["dt.microsecond", "dt.getmicrosecond()", "dt.time.microsecond", "dt.usec"],
-        "answer": 0,
-        "explanation": "microsecond attribute returns microseconds/microsecond एट्रिब्यूट माइक्रोसेकंड्स रिटर्न करता है"
-    },
-    {
-        "question": "Which function returns formatted weekday name in calendar module?\ncalendar मॉड्यूल में फॉर्मेटेड वीकडे नाम कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["calendar.weekday()", "calendar.day_name", "calendar.formatweekday()", "calendar.weekdayname()"],
-        "answer": 2,
-        "explanation": "formatweekday() returns formatted name/formatweekday() फॉर्मेटेड नाम रिटर्न करता है"
-    },
-    {
-        "question": "What does datetime.now().minute return?\ndatetime.now().minute क्या रिटर्न करता है?",
-        "options": ["Current minute (0-59)", "Minutes since midnight", "Total minutes today", "Current minute (1-60)"],
-        "answer": 0,
-        "explanation": "minute returns current minute (0-59)/minute करंट मिनट रिटर्न करता है (0-59)"
-    },
-    {
-        "question": "How to calculate floating-point remainder in math module?\nmath मॉड्यूल में फ्लोटिंग-पॉइंट रिमाइंडर की गणना कैसे करें?",
-        "options": ["math.remainder()", "math.fmod()", "math.mod()", "math.modf()"],
-        "answer": 1,
-        "explanation": "math.fmod() returns floating-point remainder/math.fmod() फ्लोटिंग-पॉइंट रिमाइंडर रिटर्न करता है"
-    },
-    {
-        "question": "Which function returns time struct from components in time module?\ntime मॉड्यूल में कंपोनेंट्स से टाइम स्ट्रक्चर कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["time.struct()", "time.mktime()", "time.gmtime()", "time.localtime()"],
-        "answer": 1,
-        "explanation": "mktime() creates struct from components/mktime() कंपोनेंट्स से स्ट्रक्चर बनाता है"
-    },
-    {
-        "question": "What does datetime.now().second return?\ndatetime.now().second क्या रिटर्न करता है?",
-        "options": ["Current second (0-59)", "Seconds since midnight", "Total seconds today", "Current second (1-60)"],
-        "answer": 0,
-        "explanation": "second returns current second (0-59)/second करंट सेकंड रिटर्न करता है (0-59)"
-    },
-    {
-        "question": "How to set random seed in random module?\nrandom मॉड्यूल में रैंडम सीड कैसे सेट करें?",
-        "options": ["random.setseed()", "random.seed()", "random.init()", "random.srand()"],
-        "answer": 1,
-        "explanation": "random.seed() initializes random generator/random.seed() रैंडम जनरेटर को इनिशियलाइज़ करता है"
-    },
-    {
-        "question": "Which function returns formatted calendar year in calendar module?\ncalendar मॉड्यूल में फॉर्मेटेड कैलेंडर ईयर कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["calendar.year()", "calendar.formatyear()", "calendar.pryear()", "calendar.yearcalendar()"],
-        "answer": 1,
-        "explanation": "formatyear() returns formatted year/formatyear() फॉर्मेटेड ईयर रिटर्न करता है"
-    },
-    {
-        "question": "What does math.exp(0) return?\nmath.exp(0) क्या रिटर्न करता है?",
-        "options": ["0", "1", "e", "Error"],
-        "answer": 1,
-        "explanation": "exp(0) is e^0 which is 1/exp(0) e^0 है जो 1 होता है"
-    },
-    {
-        "question": "How to get timestamp from datetime in datetime module?\ndatetime मॉड्यूल में datetime से टाइमस्टैम्प कैसे प्राप्त करें?",
-        "options": ["dt.timestamp()", "dt.gettimestamp()", "dt.toTimestamp()", "dt.time()"],
-        "answer": 0,
-        "explanation": "timestamp() method returns POSIX timestamp/timestamp() मेथड POSIX टाइमस्टैम्प रिटर्न करता है"
-    },
-    {
-        "question": "Which function returns time as string with format in time module?\ntime मॉड्यूल में फॉर्मेट के साथ टाइम को स्ट्रिंग के रूप में कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["time.strftime()", "time.ctime()", "time.format()", "time.tostring()"],
-        "answer": 0,
-        "explanation": "strftime() formats time as string/strftime() टाइम को स्ट्रिंग के रूप में फॉर्मेट करता है"
-    },
-    {
-        "question": "What does math.log1p(1) return?\nmath.log1p(1) क्या रिटर्न करता है?",
-        "options": ["0", "1", "0.693", "2"],
-        "answer": 2,
-        "explanation": "log1p(1) is log(2) ≈ 0.693/log1p(1) लॉग(2) ≈ 0.693 है"
-    },
-    {
-        "question": "How to create date object for 2025-01-01 in datetime module?\ndatetime मॉड्यूल में 2025-01-01 के लिए डेट ऑब्जेक्ट कैसे बनाएं?",
-        "options": ["datetime.date(2025,1,1)", "date(2025,1,1)", "datetime(2025,1,1)", "new Date(2025,1,1)"],
-        "answer": 0,
-        "explanation": "date() constructor creates date object/date() कंस्ट्रक्टर डेट ऑब्जेक्ट बनाता है"
-    },
-    {
-        "question": "Which function returns time struct from UTC timestamp in time module?\ntime मॉड्यूल में UTC टाइमस्टैम्प से टाइम स्ट्रक्चर कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["time.utctime()", "time.gmtime()", "time.fromutc()", "time.ucttime()"],
-        "answer": 1,
-        "explanation": "gmtime() returns UTC struct/gmtime() UTC स्ट्रक्चर रिटर्न करता है"
-    },
-    {
-        "question": "What does math.isclose(1.0, 1.0) return?\nmath.isclose(1.0, 1.0) क्या रिटर्न करता है?",
-        "options": ["True", "False", "Error", "None"],
-        "answer": 0,
-        "explanation": "Numbers are exactly equal/नंबर्स बिल्कुल बराबर हैं"
-    },
-    {
-        "question": "How to get day of month from datetime in datetime module?\ndatetime मॉड्यूल में datetime से महीने का दिन कैसे प्राप्त करें?",
-        "options": ["dt.day", "dt.getDay()", "dt.dayofmonth", "dt.mday"],
-        "answer": 0,
-        "explanation": "day attribute returns day of month/day एट्रिब्यूट महीने का दिन रिटर्न करता है"
-    },
-    {
-        "question": "Which function returns calendar with weeks starting on Sunday in calendar module?\ncalendar मॉड्यूल में रविवार से शुरू होने वाले सप्ताह के साथ कैलेंडर कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["calendar.setfirstweekday(6)", "calendar.SundayFirst()", "calendar.weekstart(0)", "calendar.firstday(6)"],
-        "answer": 0,
-        "explanation": "setfirstweekday(6) sets Sunday as first day/setfirstweekday(6) रविवार को पहला दिन सेट करता है"
-    },
-    {
-        "question": "What does datetime.now().year return?\ndatetime.now().year क्या रिटर्न करता है?",
-        "options": ["Current year", "Years since epoch", "Year as string", "Last two digits of year"],
-        "answer": 0,
-        "explanation": "year returns current year/year करंट ईयर रिटर्न करता है"
-    },
-    {
-        "question": "How to calculate logarithm base e in math module?\nmath मॉड्यूल में लॉगरिदम बेस e की गणना कैसे करें?",
-        "options": ["math.log()", "math.ln()", "math.loge()", "math.log10()"],
-        "answer": 0,
-        "explanation": "math.log() with single argument is natural log/एकल आर्ग्युमेंट के साथ math.log() नेचुरल लॉग है"
-    },
-    {
-        "question": "Which function returns time struct from components in time module?\ntime मॉड्यूल में कंपोनेंट्स से टाइम स्ट्रक्चर कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["time.struct()", "time.mktime()", "time.gmtime()", "time.localtime()"],
-        "answer": 1,
-        "explanation": "mktime() creates struct from components/mktime() कंपोनेंट्स से स्ट्रक्चर बनाता है"
-    },
-    {
-        "question": "What does math.comb(4,2) return?\nmath.comb(4,2) क्या रिटर्न करता है?",
-        "options": ["4", "6", "8", "12"],
-        "answer": 1,
-        "explanation": "comb(4,2) is 6 (4 choose 2)/comb(4,2) 6 है (4 चूज़ 2)"
-    },
-    {
-        "question": "How to get month name from datetime in datetime module?\ndatetime मॉड्यूल में datetime से महीने का नाम कैसे प्राप्त करें?",
-        "options": ["dt.month_name", "dt.strftime('%B')", "dt.getMonthName()", "dt.monthname()"],
-        "answer": 1,
-        "explanation": "strftime('%B') returns full month name/strftime('%B') पूरा महीने का नाम रिटर्न करता है"
-    },
-    {
-        "question": "Which function returns calendar as text in calendar module?\ncalendar मॉड्यूल में कैलेंडर को टेक्स्ट के रूप में कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["calendar.textcalendar()", "calendar.prcal()", "calendar.format()", "calendar.TextCalendar()"],
+        "question": "How to create a 2x2 identity matrix?\n2x2 आइडेंटिटी मैट्रिक्स कैसे बनाएं?",
+        "options": ["np.eye(2)", "np.identity(2)", "np.ones((2,2))", "Both A and B"],
         "answer": 3,
-        "explanation": "TextCalendar() creates text calendar/TextCalendar() टेक्स्ट कैलेंडर बनाता है"
+        "explanation": "Both np.eye(2) and np.identity(2) create identity matrix/np.eye(2) और np.identity(2) दोनों आइडेंटिटी मैट्रिक्स बनाते हैं"
     },
     {
-        "question": "What does math.perm(4,2) return?\nmath.perm(4,2) क्या रिटर्न करता है?",
-        "options": ["6", "8", "12", "16"],
-        "answer": 2,
-        "explanation": "perm(4,2) is 12 (4*3)/perm(4,2) 12 है (4*3)"
-    },
-    {
-        "question": "How to get day name from datetime in datetime module?\ndatetime मॉड्यूल में datetime से दिन का नाम कैसे प्राप्त करें?",
-        "options": ["dt.day_name", "dt.strftime('%A')", "dt.getDayName()", "dt.weekdayname()"],
-        "answer": 1,
-        "explanation": "strftime('%A') returns full day name/strftime('%A') पूरा दिन का नाम रिटर्न करता है"
-    },
-    {
-        "question": "Which function returns formatted month header in calendar module?\ncalendar मॉड्यूल में फॉर्मेटेड मंथ हेडर कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["calendar.monthheader()", "calendar.formatmonthname()", "calendar.monthname()", "calendar.month()"],
-        "answer": 1,
-        "explanation": "formatmonthname() returns month header/formatmonthname() मंथ हेडर रिटर्न करता है"
-    },
-    {
-        "question": "What does math.lcm(3,4) return?\nmath.lcm(3,4) क्या रिटर्न करता है?",
-        "options": ["1", "6", "12", "24"],
-        "answer": 2,
-        "explanation": "LCM of 3 and 4 is 12/3 और 4 का LCM 12 है"
-    },
-    {
-        "question": "How to get week number from datetime in datetime module?\ndatetime मॉड्यूल में datetime से सप्ताह संख्या कैसे प्राप्त करें?",
-        "options": ["dt.week", "dt.isocalendar()[1]", "dt.getWeek()", "dt.weeknumber()"],
-        "answer": 1,
-        "explanation": "isocalendar()[1] returns week number/isocalendar()[1] सप्ताह संख्या रिटर्न करता है"
-    },
-    {
-        "question": "Which function returns calendar with custom width in calendar module?\ncalendar मॉड्यूल में कस्टम चौड़ाई के साथ कैलेंडर कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["calendar.setwidth()", "calendar.format(width=)", "calendar.TextCalendar(width=)", "calendar.width()"],
-        "answer": 2,
-        "explanation": "TextCalendar(width=) sets calendar width/TextCalendar(width=) कैलेंडर की चौड़ाई सेट करता है"
-    },
-    {
-        "question": "What does math.fmod(-10,3) return?\nmath.fmod(-10,3) क्या रिटर्न करता है?",
-        "options": ["1", "-1", "2", "-2"],
-        "answer": 1,
-        "explanation": "fmod preserves dividend sign (-10%3=-1)/fmod डिविडेंड साइन प्रिजर्व करता है (-10%3=-1)"
-    },
-    {
-        "question": "How to get quarter from datetime in datetime module?\ndatetime मॉड्यूल में datetime से क्वार्टर कैसे प्राप्त करें?",
-        "options": ["dt.quarter", "(dt.month-1)//3+1", "dt.getQuarter()", "dt.quarter()"],
-        "answer": 1,
-        "explanation": "Quarter can be calculated from month/महीने से क्वार्टर की गणना की जा सकती है"
-    },
-    {
-        "question": "Which function returns calendar with custom locale in calendar module?\ncalendar मॉड्यूल में कस्टम लोकेल के साथ कैलेंडर कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["calendar.setlocale()", "calendar.LocaleCalendar()", "calendar.TextCalendar(locale=)", "calendar.locale()"],
-        "answer": 2,
-        "explanation": "TextCalendar(locale=) sets locale/TextCalendar(locale=) लोकेल सेट करता है"
-    },
-    {
-        "question": "What does math.remainder(-10,3) return?\nmath.remainder(-10,3) क्या रिटर्न करता है?",
-        "options": ["1", "-1", "2", "-2"],
-        "answer": 1,
-        "explanation": "remainder(-10,3) is -1/remainder(-10,3) -1 है"
-    },
-    {
-        "question": "How to get days in month from datetime in datetime module?\ndatetime मॉड्यूल में datetime से महीने के दिन कैसे प्राप्त करें?",
-        "options": ["dt.daysinmonth", "calendar.monthrange(dt.year, dt.month)[1]", "dt.getDaysInMonth()", "dt.monthdays"],
-        "answer": 1,
-        "explanation": "monthrange() returns (weekday, days)/monthrange() (वीकडे, दिन) रिटर्न करता है"
-    },
-    {
-        "question": "Which function returns HTML calendar in calendar module?\ncalendar मॉड्यूल में HTML कैलेंडर कौन सा फंक्शन रिटर्न करता है?",
-        "options": ["calendar.HTMLCalendar()", "calendar.tohtml()", "calendar.webcalendar()", "calendar.html()"],
-        "answer": 0,
-        "explanation": "HTMLCalendar() creates HTML calendar/HTMLCalendar() HTML कैलेंडर बनाता है"
-    },
-    {
-        "question": "What does math.nextafter(0.0, 1.0) return?\nmath.nextafter(0.0, 1.0) क्या रिटर्न करता है?",
-        "options": ["0.0", "1.0", "Smallest float > 0", "Error"],
-        "answer": 2,
-        "explanation": "nextafter returns next representable float/nextafter अगला प्रस्तुत करने योग्य फ्लोट रिटर्न करता है"
-    },
-    {
-        "question": "How to get timezone from datetime in datetime module?\ndatetime मॉड्यूल में datetime से टाइमज़ोन कैसे प्राप्त करें?",
-        "options": ["dt.tz", "dt.timezone", "dt.getTimezone()", "dt.tzinfo"],
+        "question": "Which method converts a list to a NumPy array?\nकौन सी मेथड लिस्ट को NumPy ऐरे में कन्वर्ट करती है?",
+        "options": ["np.array()", "np.asarray()", "np.fromiter()", "All of the above"],
         "answer": 3,
-        "explanation": "tzinfo contains timezone info/tzinfo में टाइमज़ोन इन्फो होता है"
+        "explanation": "All these methods can convert list to array/ये सभी मेथड लिस्ट को ऐरे में कन्वर्ट कर सकती हैं"
+    },
+    {
+        "question": "How to get the number of dimensions of an array?\nऐरे के डायमेंशन की संख्या कैसे प्राप्त करें?",
+        "options": ["ndim", "shape", "size", "dim"],
+        "answer": 0,
+        "explanation": "ndim attribute returns number of dimensions/ndim एट्रिब्यूट डायमेंशन की संख्या रिटर्न करता है"
+    },
+    {
+        "question": "What does array slicing allow?\nऐरे स्लाइसिंग क्या अनुमति देती है?",
+        "options": ["Accessing parts of array", "Changing array shape", "Converting array type", "All of the above"],
+        "answer": 0,
+        "explanation": "Slicing allows accessing parts of array/स्लाइसिंग ऐरे के भागों तक पहुँचने की अनुमति देती है"
+    },
+    {
+        "question": "How to access the first element of a 1D array?\n1D ऐरे के पहले एलिमेंट तक कैसे पहुँचें?",
+        "options": ["arr[0]", "arr[1]", "arr.first", "arr(0)"],
+        "answer": 0,
+        "explanation": "Use index 0 to access first element/पहले एलिमेंट तक पहुँचने के लिए इंडेक्स 0 का उपयोग करें"
+    },
+    {
+        "question": "What is the result of np.array([1,2]) + np.array([3,4])?\nnp.array([1,2]) + np.array([3,4]) का रिजल्ट क्या है?",
+        "options": ["[4,6]", "[1,2,3,4]", "[1,3,2,4]", "Error"],
+        "answer": 0,
+        "explanation": "NumPy performs element-wise addition/NumPy एलिमेंट-वाइज एडिशन करता है"
+    },
+    {
+        "question": "How to create a 3x3 array of random numbers?\nरैंडम नंबर्स का 3x3 ऐरे कैसे बनाएं?",
+        "options": ["np.random.rand(3,3)", "np.rand(3,3)", "np.random.random((3,3))", "Both A and C"],
+        "answer": 3,
+        "explanation": "Both np.random.rand() and np.random.random() can create random arrays/np.random.rand() और np.random.random() दोनों रैंडम ऐरे बना सकते हैं"
+    },
+    {
+        "question": "Which function creates an array from existing data?\nकौन सा फंक्शन मौजूदा डेटा से ऐरे बनाता है?",
+        "options": ["np.asarray()", "np.fromfunction()", "np.fromiter()", "All of the above"],
+        "answer": 3,
+        "explanation": "All these functions can create arrays from existing data/ये सभी फंक्शन मौजूदा डेटा से ऐरे बना सकते हैं"
+    },
+    {
+        "question": "What is the output of np.zeros((2,3)).shape?\nnp.zeros((2,3)).shape का आउटपुट क्या है?",
+        "options": ["(2,3)", "(3,2)", "(6)", "(2)"],
+        "answer": 0,
+        "explanation": "shape returns dimensions (rows, columns)/shape डायमेंशन (पंक्तियाँ, कॉलम) रिटर्न करता है"
+    },
+    {
+        "question": "How to get the last element of a 1D array?\n1D ऐरे के अंतिम एलिमेंट को कैसे प्राप्त करें?",
+        "options": ["arr[-1]", "arr[last]", "arr[len(arr)]", "arr.end"],
+        "answer": 0,
+        "explanation": "Negative indexing starts from the end/नेगेटिव इंडेक्सिंग अंत से शुरू होती है"
+    },
+    {
+        "question": "What does the size attribute return?\nsize एट्रिब्यूट क्या रिटर्न करता है?",
+        "options": ["Total number of elements", "Memory size", "Data type size", "Array dimensions"],
+        "answer": 0,
+        "explanation": "size returns total number of elements/size एलिमेंट्स की कुल संख्या रिटर्न करता है"
+    },
+    {
+        "question": "How to create a 1D array from 0 to 9?\n0 से 9 तक का 1D ऐरे कैसे बनाएं?",
+        "options": ["np.arange(10)", "np.range(10)", "np.array(0,9)", "np.sequence(10)"],
+        "answer": 0,
+        "explanation": "np.arange(10) creates array with values 0-9/np.arange(10) 0-9 वैल्यू के साथ ऐरे बनाता है"
+    },
+    {
+        "question": "What is the result of np.array([1,2,3]) * 2?\nnp.array([1,2,3]) * 2 का रिजल्ट क्या है?",
+        "options": ["[2,4,6]", "[1,2,3,1,2,3]", "[1,2,3,2]", "Error"],
+        "answer": 0,
+        "explanation": "NumPy performs element-wise operations/NumPy एलिमेंट-वाइज ऑपरेशन करता है"
+    },
+    {
+        "question": "How to create a 2D array with all values as 5?\nसभी वैल्यू 5 के साथ 2D ऐरे कैसे बनाएं?",
+        "options": ["np.full((2,2),5)", "np.ones((2,2))*5", "np.array([[5,5],[5,5]])", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods create 2D array with all 5s/ये सभी मेथड सभी वैल्यू 5 के साथ 2D ऐरे बनाते हैं"
+    },
+    {
+        "question": "Which function creates an array from a tuple?\nटपल से ऐरे बनाने के लिए कौन सा फंक्शन है?",
+        "options": ["np.array()", "np.asarray()", "np.fromtuple()", "Both A and B"],
+        "answer": 3,
+        "explanation": "Both np.array() and np.asarray() can create array from tuple/np.array() और np.asarray() दोनों टपल से ऐरे बना सकते हैं"
+    },
+    {
+        "question": "What is the output of np.array([1,2,3]).dtype?\nnp.array([1,2,3]).dtype का आउटपुट क्या है?",
+        "options": ["int64", "float64", "object", "string"],
+        "answer": 0,
+        "explanation": "Default dtype for integers is int64/इंटिजर्स के लिए डिफॉल्ट dtype int64 है"
+    },
+    {
+        "question": "How to access the element in first row, second column of a 2D array?\n2D ऐरे के पहली पंक्ति, दूसरे कॉलम के एलिमेंट तक कैसे पहुँचें?",
+        "options": ["arr[0,1]", "arr[1,2]", "arr[0][1]", "Both A and C"],
+        "answer": 3,
+        "explanation": "Both comma and double index notation work/कॉमा और डबल इंडेक्स नोटेशन दोनों काम करते हैं"
+    },
+    {
+        "question": "What does np.linspace(0,10,5) return?\nnp.linspace(0,10,5) क्या रिटर्न करता है?",
+        "options": ["[0,2.5,5,7.5,10]", "[0,10,5]", "[0,5,10]", "[0,1,2,3,4,5,6,7,8,9,10]"],
+        "answer": 0,
+        "explanation": "linspace creates evenly spaced numbers in range/linspace रेंज में समान दूरी वाले नंबर्स बनाता है"
+    },
+    {
+        "question": "How to transpose a 2D array?\n2D ऐरे को ट्रांसपोज़ कैसे करें?",
+        "options": ["arr.T", "np.transpose(arr)", "arr.transpose()", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods can transpose array/ये सभी मेथड ऐरे को ट्रांसपोज़ कर सकते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2]) * np.array([3,4])?\nnp.array([1,2]) * np.array([3,4]) का रिजल्ट क्या है?",
+        "options": ["[3,8]", "[1,2,3,4]", "[4,6]", "Error"],
+        "answer": 0,
+        "explanation": "NumPy performs element-wise multiplication/NumPy एलिमेंट-वाइज मल्टीप्लिकेशन करता है"
+    },
+    {
+        "question": "How to create a boolean array?\nबूलियन ऐरे कैसे बनाएं?",
+        "options": ["np.array([True,False])", "np.ones(2,dtype=bool)", "np.zeros(2,dtype=bool)", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods create boolean arrays/ये सभी मेथड बूलियन ऐरे बना सकते हैं"
+    },
+    {
+        "question": "Which function creates an array with values from 0 to 1?\n0 से 1 तक वैल्यू के साथ ऐरे बनाने के लिए कौन सा फंक्शन है?",
+        "options": ["np.random.random()", "np.random.rand()", "np.random.sample()", "All of the above"],
+        "answer": 3,
+        "explanation": "All these functions create arrays with values between 0-1/ये सभी फंक्शन 0-1 के बीच वैल्यू के साथ ऐरे बनाते हैं"
+    },
+    {
+        "question": "What is the output of np.array([1.1,2.2]).astype(int)?\nnp.array([1.1,2.2]).astype(int) का आउटपुट क्या है?",
+        "options": ["[1,2]", "[1.1,2.2]", "[1,2,3]", "[1.0,2.0]"],
+        "answer": 0,
+        "explanation": "astype(int) truncates decimal part/astype(int) दशमलव भाग को काट देता है"
+    },
+    {
+        "question": "How to concatenate two arrays vertically?\nदो ऐरे को वर्टिकली कैसे जोड़ें?",
+        "options": ["np.vstack()", "np.concatenate(axis=0)", "np.append(axis=0)", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods can concatenate vertically/ये सभी मेथड वर्टिकली जोड़ सकते हैं"
+    },
+    {
+        "question": "What is the result of np.sum([1,2,3])?\nnp.sum([1,2,3]) का रिजल्ट क्या है?",
+        "options": ["6", "[1,2,3]", "1", "[6]"],
+        "answer": 0,
+        "explanation": "sum() returns sum of all elements/sum() सभी एलिमेंट्स का योग रिटर्न करता है"
+    },
+    {
+        "question": "How to create a 1D array of 10 elements all equal to 1?\nसभी वैल्यू 1 के साथ 10 एलिमेंट का 1D ऐरे कैसे बनाएं?",
+        "options": ["np.ones(10)", "np.full(10,1)", "np.array([1]*10)", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods create array of 1s/ये सभी मेथड 1 के ऐरे बना सकते हैं"
+    },
+    {
+        "question": "Which function creates an array from a string?\nस्ट्रिंग से ऐरे बनाने के लिए कौन सा फंक्शन है?",
+        "options": ["np.fromstring()", "np.array(list(string))", "np.asarray(string)", "All of the above"],
+        "answer": 0,
+        "explanation": "np.fromstring() creates array from string/np.fromstring() स्ट्रिंग से ऐरे बनाता है"
+    },
+    {
+        "question": "What is the output of np.array([1,2,3]).ndim?\nnp.array([1,2,3]).ndim का आउटपुट क्या है?",
+        "options": ["1", "2", "3", "0"],
+        "answer": 0,
+        "explanation": "1D array has 1 dimension/1D ऐरे का 1 डायमेंशन होता है"
+    },
+    {
+        "question": "How to access every second element of an array?\nऐरे के हर दूसरे एलिमेंट तक कैसे पहुँचें?",
+        "options": ["arr[::2]", "arr[1::2]", "arr[0::2]", "arr[2:]"],
+        "answer": 0,
+        "explanation": "[::2] selects every second element/[::2] हर दूसरा एलिमेंट सिलेक्ट करता है"
+    },
+    {
+        "question": "What is the result of np.array([1,2]) == np.array([1,3])?\nnp.array([1,2]) == np.array([1,3]) का रिजल्ट क्या है?",
+        "options": ["[True,False]", "False", "True", "Error"],
+        "answer": 0,
+        "explanation": "NumPy does element-wise comparison/NumPy एलिमेंट-वाइज कम्पेरिजन करता है"
+    },
+    {
+        "question": "How to create a diagonal matrix?\nडायगोनल मैट्रिक्स कैसे बनाएं?",
+        "options": ["np.diag()", "np.eye()", "np.diagonal()", "Both A and B"],
+        "answer": 3,
+        "explanation": "Both np.diag() and np.eye() can create diagonal matrices/np.diag() और np.eye() दोनों डायगोनल मैट्रिक्स बना सकते हैं"
+    },
+    {
+        "question": "Which function creates an array from a buffer?\nबफर से ऐरे बनाने के लिए कौन सा फंक्शन है?",
+        "options": ["np.frombuffer()", "np.fromfile()", "np.asbuffer()", "np.buffer()"],
+        "answer": 0,
+        "explanation": "np.frombuffer() creates array from buffer/np.frombuffer() बफर से ऐरे बनाता है"
+    },
+    {
+        "question": "What is the output of np.array([1,2,3]).size?\nnp.array([1,2,3]).size का आउटपुट क्या है?",
+        "options": ["3", "1", "(3,)", "[1,2,3]"],
+        "answer": 0,
+        "explanation": "size returns total number of elements/size एलिमेंट्स की कुल संख्या रिटर्न करता है"
+    },
+    {
+        "question": "How to reverse a 1D array?\n1D ऐरे को रिवर्स कैसे करें?",
+        "options": ["arr[::-1]", "np.flip(arr)", "arr.reverse()", "Both A and B"],
+        "answer": 3,
+        "explanation": "Both slicing and flip can reverse array/स्लाइसिंग और flip दोनों ऐरे को रिवर्स कर सकते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2]) - 1?\nnp.array([1,2]) - 1 का रिजल्ट क्या है?",
+        "options": ["[0,1]", "[1,2,-1]", "[1,1]", "Error"],
+        "answer": 0,
+        "explanation": "NumPy broadcasts scalar operations/NumPy स्केलर ऑपरेशन्स को ब्रॉडकास्ट करता है"
+    },
+    {
+        "question": "How to create a 3D array of zeros?\nज़ीरो का 3D ऐरे कैसे बनाएं?",
+        "options": ["np.zeros((2,2,2))", "np.zeros([2,2,2])", "np.zeros(2,2,2)", "Both A and B"],
+        "answer": 3,
+        "explanation": "Shape can be tuple or list/शेप टपल या लिस्ट हो सकता है"
+    },
+    {
+        "question": "Which function creates an array from a generator?\nजनरेटर से ऐरे बनाने के लिए कौन सा फंक्शन है?",
+        "options": ["np.fromiter()", "np.fromgenerator()", "np.asarray()", "np.array()"],
+        "answer": 0,
+        "explanation": "np.fromiter() creates array from generator/np.fromiter() जनरेटर से ऐरे बनाता है"
+    },
+    {
+        "question": "What is the output of np.array([1.5,2.5]).astype(int)?\nnp.array([1.5,2.5]).astype(int) का आउटपुट क्या है?",
+        "options": ["[1,2]", "[1.5,2.5]", "[2,3]", "[1.0,2.0]"],
+        "answer": 0,
+        "explanation": "astype(int) truncates decimal part/astype(int) दशमलव भाग को काट देता है"
+    },
+    {
+        "question": "How to get the first 3 elements of an array?\nऐरे के पहले 3 एलिमेंट कैसे प्राप्त करें?",
+        "options": ["arr[:3]", "arr[0:3]", "arr[0,1,2]", "Both A and B"],
+        "answer": 3,
+        "explanation": "Both slicing methods work/दोनों स्लाइसिंग मेथड काम करते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2]) / np.array([2,2])?\nnp.array([1,2]) / np.array([2,2]) का रिजल्ट क्या है?",
+        "options": ["[0.5,1]", "[1,2,2,2]", "[1/2,2/2]", "Both A and C"],
+        "answer": 3,
+        "explanation": "NumPy performs element-wise division/NumPy एलिमेंट-वाइज डिवीजन करता है"
+    },
+    {
+        "question": "How to create an array with values from 5 to 15 with step 2?\n5 से 15 तक स्टेप 2 के साथ ऐरे कैसे बनाएं?",
+        "options": ["np.arange(5,16,2)", "np.range(5,15,2)", "np.linspace(5,15,6)", "np.sequence(5,15,2)"],
+        "answer": 0,
+        "explanation": "np.arange(start,stop,step) creates sequence/np.arange(start,stop,step) सीक्वेंस बनाता है"
+    },
+    {
+        "question": "Which function creates an array from a text file?\nटेक्स्ट फाइल से ऐरे बनाने के लिए कौन सा फंक्शन है?",
+        "options": ["np.loadtxt()", "np.fromfile()", "np.readtxt()", "np.importtxt()"],
+        "answer": 0,
+        "explanation": "np.loadtxt() loads array from text file/np.loadtxt() टेक्स्ट फाइल से ऐरे लोड करता है"
+    },
+    {
+        "question": "What is the output of np.array([[1,2],[3,4]]).shape?\nnp.array([[1,2],[3,4]]).shape का आउटपुट क्या है?",
+        "options": ["(2,2)", "(4,)", "(2,)", "[2,2]"],
+        "answer": 0,
+        "explanation": "Shape returns (rows, columns)/शेप (पंक्तियाँ, कॉलम) रिटर्न करता है"
+    },
+    {
+        "question": "How to get the maximum value in an array?\nऐरे में मैक्सिमम वैल्यू कैसे प्राप्त करें?",
+        "options": ["np.max(arr)", "arr.max()", "max(arr)", "Both A and B"],
+        "answer": 3,
+        "explanation": "Both np.max() and .max() methods work/np.max() और .max() दोनों मेथड काम करते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2]) ** 2?\nnp.array([1,2]) ** 2 का रिजल्ट क्या है?",
+        "options": ["[1,4]", "[1,2,1,2]", "[2,4]", "Error"],
+        "answer": 0,
+        "explanation": "** performs element-wise exponentiation/** एलिमेंट-वाइज एक्सपोनेंटिएशन करता है"
+    },
+    {
+        "question": "How to create a 2x3 array with random integers between 1-10?\n1-10 के बीच रैंडम इंटिजर्स के साथ 2x3 ऐरे कैसे बनाएं?",
+        "options": ["np.random.randint(1,11,(2,3))", "np.random.random((2,3))*10", "np.rand(1,10,(2,3))", "np.random.int(1,10,(2,3))"],
+        "answer": 0,
+        "explanation": "np.random.randint() creates random integers/np.random.randint() रैंडम इंटिजर्स बनाता है"
+    },
+    {
+        "question": "Which function creates an array from a binary file?\nबाइनरी फाइल से ऐरे बनाने के लिए कौन सा फंक्शन है?",
+        "options": ["np.fromfile()", "np.load()", "np.readbinary()", "np.importbinary()"],
+        "answer": 0,
+        "explanation": "np.fromfile() reads array from binary file/np.fromfile() बाइनरी फाइल से ऐरे पढ़ता है"
+    },
+    {
+        "question": "What is the output of np.array([1,2,3])[1:3]?\nnp.array([1,2,3])[1:3] का आउटपुट क्या है?",
+        "options": ["[2,3]", "[1,2]", "[1,2,3]", "[3]"],
+        "answer": 0,
+        "explanation": "Slicing is exclusive of end index/स्लाइसिंग एंड इंडेक्स को एक्सक्लूड करती है"
+    },
+    {
+        "question": "How to find the mean of array values?\nऐरे वैल्यूज़ का मीन कैसे प्राप्त करें?",
+        "options": ["np.mean(arr)", "arr.mean()", "sum(arr)/len(arr)", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods calculate mean/ये सभी मेथड मीन कैलकुलेट करते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2]) + 10?\nnp.array([1,2]) + 10 का रिजल्ट क्या है?",
+        "options": ["[11,12]", "[1,2,10]", "[1,10,2,10]", "Error"],
+        "answer": 0,
+        "explanation": "NumPy broadcasts scalar operations/NumPy स्केलर ऑपरेशन्स को ब्रॉडकास्ट करता है"
+    },
+    {
+        "question": "How to create a 4x4 array with 1s on the border and 0s inside?\nबॉर्डर पर 1 और अंदर 0 के साथ 4x4 ऐरे कैसे बनाएं?",
+        "options": ["np.pad(np.zeros((2,2)),1,constant_values=1)", "np.ones((4,4)); arr[1:-1,1:-1]=0", "Both methods work", "None of the above"],
+        "answer": 2,
+        "explanation": "Both methods can create bordered array/दोनों मेथड बॉर्डर वाला ऐरे बना सकते हैं"
+    },
+    {
+        "question": "Which function creates an array from a CSV file?\nCSV फाइल से ऐरे बनाने के लिए कौन सा फंक्शन है?",
+        "options": ["np.genfromtxt()", "np.readcsv()", "np.fromcsv()", "np.loadcsv()"],
+        "answer": 0,
+        "explanation": "np.genfromtxt() can read CSV files/np.genfromtxt() CSV फाइल्स पढ़ सकता है"
+    },
+    {
+        "question": "What is the output of np.array([1,2,3])[np.array([True,False,True])]?\nnp.array([1,2,3])[np.array([True,False,True])] का आउटपुट क्या है?",
+        "options": ["[1,3]", "[2]", "[True,False,True]", "Error"],
+        "answer": 0,
+        "explanation": "Boolean indexing selects True positions/बूलियन इंडेक्सिंग True पोजीशन सिलेक्ट करती है"
+    },
+    {
+        "question": "How to find unique elements in an array?\nऐरे में यूनिक एलिमेंट्स कैसे प्राप्त करें?",
+        "options": ["np.unique(arr)", "set(arr)", "list(dict.fromkeys(arr))", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods find unique elements/ये सभी मेथड यूनिक एलिमेंट्स ढूंढते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2]) * np.array([[3],[4]])?\nnp.array([1,2]) * np.array([[3],[4]]) का रिटर्न क्या है?",
+        "options": "[[3,6],[4,8]]",
+        "answer": 0,
+        "explanation": "NumPy performs broadcasting multiplication/NumPy ब्रॉडकास्टिंग मल्टीप्लिकेशन करता है"
+    },
+    {
+        "question": "How to create an array with values from 0 to π in 10 steps?\n0 से π तक 10 स्टेप्स में वैल्यू के साथ ऐरे कैसे बनाएं?",
+        "options": ["np.linspace(0,np.pi,10)", "np.arange(0,np.pi,np.pi/10)", "np.radians(np.linspace(0,180,10))", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods create the required array/ये सभी मेथड रिक्वायर्ड ऐरे बना सकते हैं"
+    },
+    {
+        "question": "Which function saves an array to a binary file?\nऐरे को बाइनरी फाइल में सेव करने के लिए कौन सा फंक्शन है?",
+        "options": ["np.save()", "np.savetxt()", "np.tobinary()", "np.dump()"],
+        "answer": 0,
+        "explanation": "np.save() saves array to binary file/np.save() ऐरे को बाइनरी फाइल में सेव करता है"
+    },
+    {
+        "question": "What is the output of np.array([1,2,3]) > 2?\nnp.array([1,2,3]) > 2 का आउटपुट क्या है?",
+        "options": ["[False,False,True]", "[1,2,3>2]", "[3]", "Error"],
+        "answer": 0,
+        "explanation": "Comparison returns boolean array/कम्पेरिजन बूलियन ऐरे रिटर्न करता है"
+    },
+    {
+        "question": "How to sort an array?\nऐरे को सॉर्ट कैसे करें?",
+        "options": ["np.sort(arr)", "arr.sort()", "sorted(arr)", "Both A and B"],
+        "answer": 3,
+        "explanation": "Both np.sort() and .sort() methods work/np.sort() और .sort() दोनों मेथड काम करते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2]) @ np.array([3,4])?\nnp.array([1,2]) @ np.array([3,4]) का रिजल्ट क्या है?",
+        "options": ["11", "[3,8]", "[1,2,3,4]", "Error"],
+        "answer": 0,
+        "explanation": "@ operator performs dot product/@ ऑपरेटर डॉट प्रोडक्ट करता है"
+    },
+    {
+        "question": "How to create a 3x3 array with values from 1 to 9?\n1 से 9 तक वैल्यू के साथ 3x3 ऐरे कैसे बनाएं?",
+        "options": ["np.arange(1,10).reshape(3,3)", "np.array([[1,2,3],[4,5,6],[7,8,9]])", "np.linspace(1,9,9).reshape(3,3)", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods create the required array/ये सभी मेथड रिक्वायर्ड ऐरे बना सकते हैं"
+    },
+    {
+        "question": "Which function saves an array to a text file?\nऐरे को टेक्स्ट फाइल में सेव करने के लिए कौन सा फंक्शन है?",
+        "options": ["np.savetxt()", "np.save()", "np.totext()", "np.dumptxt()"],
+        "answer": 0,
+        "explanation": "np.savetxt() saves array to text file/np.savetxt() ऐरे को टेक्स्ट फाइल में सेव करता है"
+    },
+    {
+        "question": "What is the output of np.array([1,2,3])[np.array([0,2])]?\nnp.array([1,2,3])[np.array([0,2])] का आउटपुट क्या है?",
+        "options": ["[1,3]", "[0,2]", "[1,2,3,0,2]", "Error"],
+        "answer": 0,
+        "explanation": "Integer array indexing selects elements/इंटिजर ऐरे इंडेक्सिंग एलिमेंट्स सिलेक्ट करती है"
+    },
+    {
+        "question": "How to find indices where array elements are greater than 5?\nऐरे एलिमेंट्स की कौन सी इंडिसेस 5 से बड़ी हैं, कैसे प्राप्त करें?",
+        "options": ["np.where(arr>5)", "(arr>5).nonzero()", "np.argwhere(arr>5)", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods find the required indices/ये सभी मेथड रिक्वायर्ड इंडिसेस ढूंढते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2,3]).reshape(3,1)?\nnp.array([1,2,3]).reshape(3,1) का रिजल्ट क्या है?",
+        "options": "[[1],[2],[3]]",
+        "answer": 0,
+        "explanation": "reshape(3,1) creates column vector/reshape(3,1) कॉलम वेक्टर बनाता है"
+    },
+    {
+        "question": "How to create a 2D array with random values between [0,1)?\n[0,1) के बीच रैंडम वैल्यू के साथ 2D ऐरे कैसे बनाएं?",
+        "options": ["np.random.rand(3,3)", "np.random.random((3,3))", "np.random.uniform(0,1,(3,3))", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods create random arrays/ये सभी मेथड रैंडम ऐरे बना सकते हैं"
+    },
+    {
+        "question": "Which function loads an array from a binary file?\nबाइनरी फाइल से ऐरे लोड करने के लिए कौन सा फंक्शन है?",
+        "options": ["np.load()", "np.read()", "np.frombinary()", "np.import()"],
+        "answer": 0,
+        "explanation": "np.load() loads array from binary file/np.load() बाइनरी फाइल से ऐरे लोड करता है"
+    },
+    {
+        "question": "What is the output of np.array([1,2,3]) + np.array([4,5])?\nnp.array([1,2,3]) + np.array([4,5]) का आउटपुट क्या है?",
+        "options": ["Error", "[5,7,3]", "[1,2,3,4,5]", "[1,4,2,5,3]"],
+        "answer": 0,
+        "explanation": "Arrays must have same shape for operations/ऑपरेशन्स के लिए ऐरे का शेप समान होना चाहिए"
+    },
+    {
+        "question": "How to find the index of maximum value in an array?\nऐरे में मैक्सिमम वैल्यू की इंडेक्स कैसे प्राप्त करें?",
+        "options": ["np.argmax(arr)", "arr.argmax()", "np.where(arr==arr.max())", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods find index of maximum/ये सभी मेथड मैक्सिमम की इंडेक्स ढूंढते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2,3]) * 0?\nnp.array([1,2,3]) * 0 का रिजल्ट क्या है?",
+        "options": ["[0,0,0]", "[1,2,3]", "[1,0,2,0,3,0]", "Error"],
+        "answer": 0,
+        "explanation": "Multiplication by 0 gives zeros/0 से मल्टीप्लिकेशन ज़ीरो देता है"
+    },
+    {
+        "question": "How to create a 3D array with values from 1 to 8?\n1 से 8 तक वैल्यू के साथ 3D ऐरे कैसे बनाएं?",
+        "options": ["np.arange(1,9).reshape(2,2,2)", "np.array([[[1,2],[3,4]],[[5,6],[7,8]]])", "np.linspace(1,8,8).reshape(2,2,2)", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods create the required array/ये सभी मेथड रिक्वायर्ड ऐरे बना सकते हैं"
+    },
+    {
+        "question": "Which function calculates dot product of two arrays?\nदो ऐरे का डॉट प्रोडक्ट कैलकुलेट करने के लिए कौन सा फंक्शन है?",
+        "options": ["np.dot()", "np.matmul()", "@ operator", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods calculate dot product/ये सभी मेथड डॉट प्रोडक्ट कैलकुलेट करते हैं"
+    },
+    {
+        "question": "What is the output of np.array([1,2,3])[1]?\nnp.array([1,2,3])[1] का आउटपुट क्या है?",
+        "options": ["2", "1", "[2]", "[1,2]"],
+        "answer": 0,
+        "explanation": "Indexing starts at 0/इंडेक्सिंग 0 से शुरू होती है"
+    },
+    {
+        "question": "How to concatenate two arrays horizontally?\nदो ऐरे को हॉरिजॉन्टली कैसे जोड़ें?",
+        "options": ["np.hstack()", "np.concatenate(axis=1)", "np.append(axis=1)", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods can concatenate horizontally/ये सभी मेथड हॉरिजॉन्टली जोड़ सकते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2,3]).sum()?\nnp.array([1,2,3]).sum() का रिजल्ट क्या है?",
+        "options": ["6", "[1,2,3]", "1", "[6]"],
+        "answer": 0,
+        "explanation": "sum() returns sum of all elements/sum() सभी एलिमेंट्स का योग रिटर्न करता है"
+    },
+    {
+        "question": "How to create a 2D array with 1s on diagonal and 0s elsewhere?\nडायगोनल पर 1 और बाकी जगह 0 के साथ 2D ऐरे कैसे बनाएं?",
+        "options": ["np.eye(3)", "np.diag(np.ones(3))", "np.identity(3)", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods create identity matrix/ये सभी मेथड आइडेंटिटी मैट्रिक्स बनाते हैं"
+    },
+    {
+        "question": "Which function calculates element-wise square root?\nएलिमेंट-वाइज स्क्वायर रूट कैलकुलेट करने के लिए कौन सा फंक्शन है?",
+        "options": ["np.sqrt()", "np.square_root()", "np.root()", "np.sqr()"],
+        "answer": 0,
+        "explanation": "np.sqrt() calculates square roots/np.sqrt() स्क्वायर रूट कैलकुलेट करता है"
+    },
+    {
+        "question": "What is the output of np.array([1,2,3])[::2]?\nnp.array([1,2,3])[::2] का आउटपुट क्या है?",
+        "options": ["[1,3]", "[2]", "[1,2]", "[3,1]"],
+        "answer": 0,
+        "explanation": "[::2] selects every second element/[::2] हर दूसरा एलिमेंट सिलेक्ट करता है"
+    },
+    {
+        "question": "How to find the minimum value in each column of a 2D array?\n2D ऐरे के हर कॉलम में मिनिमम वैल्यू कैसे प्राप्त करें?",
+        "options": ["np.min(arr, axis=0)", "arr.min(axis=0)", "np.amin(arr, axis=0)", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods find column minimums/ये सभी मेथड कॉलम मिनिमम ढूंढते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2,3]) + np.array([4,5,6])?\nnp.array([1,2,3]) + np.array([4,5,6]) का रिजल्ट क्या है?",
+        "options": ["[5,7,9]", "[1,2,3,4,5,6]", "[1,4,2,5,3,6]", "Error"],
+        "answer": 0,
+        "explanation": "NumPy performs element-wise addition/NumPy एलिमेंट-वाइज एडिशन करता है"
+    },
+    {
+        "question": "How to create a 1D array with values from 10 to 1?\n10 से 1 तक वैल्यू के साथ 1D ऐरे कैसे बनाएं?",
+        "options": ["np.arange(10,0,-1)", "np.linspace(10,1,10)", "np.array(range(10,0,-1))", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods create descending array/ये सभी मेथड डिसेंडिंग ऐरे बना सकते हैं"
+    },
+    {
+        "question": "Which function calculates element-wise absolute value?\nएलिमेंट-वाइज एब्सोल्यूट वैल्यू कैलकुलेट करने के लिए कौन सा फंक्शन है?",
+        "options": ["np.abs()", "np.absolute()", "np.modulus()", "Both A and B"],
+        "answer": 3,
+        "explanation": "Both np.abs() and np.absolute() work/np.abs() और np.absolute() दोनों काम करते हैं"
+    },
+    {
+        "question": "What is the output of np.array([1,2,3]).T?\nnp.array([1,2,3]).T का आउटपुट क्या है?",
+        "options": ["[1,2,3]", "[[1],[2],[3]]", "Error", "None of the above"],
+        "answer": 0,
+        "explanation": "Transpose of 1D array is same/1D ऐरे का ट्रांसपोज़ वही रहता है"
+    },
+    {
+        "question": "How to find indices where array equals a value?\nऐरे की कौन सी इंडिसेस किसी वैल्यू के बराबर हैं, कैसे प्राप्त करें?",
+        "options": ["np.where(arr==value)", "(arr==value).nonzero()", "np.argwhere(arr==value)", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods find matching indices/ये सभी मेथड मिलान वाली इंडिसेस ढूंढते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2,3]) * np.array([1,2,3])?\nnp.array([1,2,3]) * np.array([1,2,3]) का रिजल्ट क्या है?",
+        "options": ["[1,4,9]", "[1,2,3,1,2,3]", "[1,1,2,2,3,3]", "Error"],
+        "answer": 0,
+        "explanation": "NumPy performs element-wise multiplication/NumPy एलिमेंट-वाइज मल्टीप्लिकेशन करता है"
+    },
+    {
+        "question": "How to create a 2x2 array with random integers between 0-100?\n0-100 के बीच रैंडम इंटिजर्स के साथ 2x2 ऐरे कैसे बनाएं?",
+        "options": ["np.random.randint(0,101,(2,2))", "np.random.random((2,2))*100", "np.rand(0,100,(2,2))", "np.random.int(0,100,(2,2))"],
+        "answer": 0,
+        "explanation": "np.random.randint() creates random integers/np.random.randint() रैंडम इंटिजर्स बनाता है"
+    },
+    {
+        "question": "Which function calculates trigonometric sine?\nट्राइगोनोमेट्रिक साइन कैलकुलेट करने के लिए कौन सा फंक्शन है?",
+        "options": ["np.sin()", "np.sine()", "np.trigsin()", "np.math.sin()"],
+        "answer": 0,
+        "explanation": "np.sin() calculates sine of angles/np.sin() एंगल्स का साइन कैलकुलेट करता है"
+    },
+    {
+        "question": "What is the output of np.array([1,2,3])[np.array([1,1,0])]?\nnp.array([1,2,3])[np.array([1,1,0])] का आउटपुट क्या है?",
+        "options": ["[2,2,1]", "[1,1,0]", "[1,2,3,1,2,3]", "Error"],
+        "answer": 0,
+        "explanation": "Integer array indexing selects elements/इंटिजर ऐरे इंडेक्सिंग एलिमेंट्स सिलेक्ट करती है"
+    },
+    {
+        "question": "How to find the standard deviation of array values?\nऐरे वैल्यूज़ का स्टैंडर्ड डेविएशन कैसे प्राप्त करें?",
+        "options": ["np.std(arr)", "arr.std()", "np.sqrt(np.mean((arr-arr.mean())**2))", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods calculate standard deviation/ये सभी मेथड स्टैंडर्ड डेविएशन कैलकुलेट करते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2,3]) / 2?\nnp.array([1,2,3]) / 2 का रिजल्ट क्या है?",
+        "options": ["[0.5,1,1.5]", "[1,2,3,2]", "[1/2,2/2,3/2]", "Both A and C"],
+        "answer": 3,
+        "explanation": "NumPy performs element-wise division/NumPy एलिमेंट-वाइज डिवीजन करता है"
+    },
+    {
+        "question": "How to create a 3x3 array with values from 9 to 1 in reverse order?\nरिवर्स ऑर्डर में 9 से 1 तक वैल्यू के साथ 3x3 ऐरे कैसे बनाएं?",
+        "options": ["np.arange(9,0,-1).reshape(3,3)", "np.array([[9,8,7],[6,5,4],[3,2,1]])", "np.linspace(9,1,9).reshape(3,3)", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods create the required array/ये सभी मेथड रिक्वायर्ड ऐरे बना सकते हैं"
+    },
+    {
+        "question": "Which function calculates exponential e^x?\nएक्सपोनेंशियल e^x कैलकुलेट करने के लिए कौन सा फंक्शन है?",
+        "options": ["np.exp()", "np.power(np.e,x)", "np.exponential()", "Both A and B"],
+        "answer": 3,
+        "explanation": "Both np.exp() and np.power(np.e,x) work/np.exp() और np.power(np.e,x) दोनों काम करते हैं"
+    },
+    {
+        "question": "What is the output of np.array([1,2,3]) > np.array([3,2,1])?\nnp.array([1,2,3]) > np.array([3,2,1]) का आउटपुट क्या है?",
+        "options": ["[False,False,True]", "[True,False,False]", "[1>3,2>2,3>1]", "Error"],
+        "answer": 0,
+        "explanation": "NumPy does element-wise comparison/NumPy एलिमेंट-वाइज कम्पेरिजन करता है"
+    },
+    {
+        "question": "How to find the median of array values?\nऐरे वैल्यूज़ का मीडियन कैसे प्राप्त करें?",
+        "options": ["np.median(arr)", "np.percentile(arr,50)", "np.sort(arr)[len(arr)//2]", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods calculate median/ये सभी मेथड मीडियन कैलकुलेट करते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2,3]) ** np.array([2,3,1])?\nnp.array([1,2,3]) ** np.array([2,3,1]) का रिजल्ट क्या है?",
+        "options": ["[1,8,3]", "[1,2,3,2,3,1]", "[1**2,2**3,3**1]", "Both A and C"],
+        "answer": 3,
+        "explanation": "NumPy performs element-wise exponentiation/NumPy एलिमेंट-वाइज एक्सपोनेंटिएशन करता है"
+    },
+    {
+        "question": "How to create a 4x4 array with alternating 1s and 0s?\nअल्टरनेटिंग 1 और 0 के साथ 4x4 ऐरे कैसे बनाएं?",
+        "options": ["np.zeros((4,4)); arr[::2,::2]=1; arr[1::2,1::2]=1", "np.tile(np.array([[1,0],[0,1]]),(2,2))", "Both methods work", "None of the above"],
+        "answer": 2,
+        "explanation": "Both methods can create checkerboard pattern/दोनों मेथड चेकरबोर्ड पैटर्न बना सकते हैं"
+    },
+    {
+        "question": "Which function calculates natural logarithm?\nनेचुरल लॉगरिदम कैलकुलेट करने के लिए कौन सा फंक्शन है?",
+        "options": ["np.log()", "np.ln()", "np.logarithm()", "np.naturallog()"],
+        "answer": 0,
+        "explanation": "np.log() calculates natural log (base e)/np.log() नेचुरल लॉग (बेस e) कैलकुलेट करता है"
+    },
+    {
+        "question": "What is the output of np.array([1,2,3]) + np.array([1])?\nnp.array([1,2,3]) + np.array([1]) का आउटपुट क्या है?",
+        "options": ["[2,3,4]", "[1,2,3,1]", "[1,1,2,1,3,1]", "Error"],
+        "answer": 0,
+        "explanation": "NumPy broadcasts the smaller array/NumPy छोटे ऐरे को ब्रॉडकास्ट करता है"
+    },
+    {
+        "question": "How to find indices where array elements are non-zero?\nऐरे एलिमेंट्स की कौन सी इंडिसेस नॉन-ज़ीरो हैं, कैसे प्राप्त करें?",
+        "options": ["np.nonzero(arr)", "np.where(arr!=0)", "arr.nonzero()", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods find non-zero indices/ये सभी मेथड नॉन-ज़ीरो इंडिसेस ढूंढते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2,3]).dot(np.array([4,5,6]))?\nnp.array([1,2,3]).dot(np.array([4,5,6])) का रिजल्ट क्या है?",
+        "options": ["32", "[4,10,18]", "[1,2,3,4,5,6]", "Error"],
+        "answer": 0,
+        "explanation": "dot() calculates dot product/dot() डॉट प्रोडक्ट कैलकुलेट करता है"
+    },
+    {
+        "question": "How to create a 5x5 array with 1s on borders and 0s inside?\nबॉर्डर पर 1 और अंदर 0 के साथ 5x5 ऐरे कैसे बनाएं?",
+        "options": ["np.ones((5,5)); arr[1:-1,1:-1]=0", "np.pad(np.zeros((3,3)),1,constant_values=1)", "Both methods work", "None of the above"],
+        "answer": 2,
+        "explanation": "Both methods can create bordered array/दोनों मेथड बॉर्डर वाला ऐरे बना सकते हैं"
+    },
+    {
+        "question": "Which function calculates base-10 logarithm?\nबेस-10 लॉगरिदम कैलकुलेट करने के लिए कौन सा फंक्शन है?",
+        "options": ["np.log10()", "np.log(x,10)", "np.logarithm10()", "Both A and B"],
+        "answer": 3,
+        "explanation": "Both np.log10() and np.log(x,10) work/np.log10() और np.log(x,10) दोनों काम करते हैं"
+    },
+    {
+        "question": "What is the output of np.array([1,2,3]) * np.array([1])?\nnp.array([1,2,3]) * np.array([1]) का आउटपुट क्या है?",
+        "options": ["[1,2,3]", "[1,1,2,1,3,1]", "[1,2,3,1]", "Error"],
+        "answer": 0,
+        "explanation": "NumPy broadcasts the smaller array/NumPy छोटे ऐरे को ब्रॉडकास्ट करता है"
+    },
+    {
+        "question": "How to find the variance of array values?\nऐरे वैल्यूज़ का वेरिएंस कैसे प्राप्त करें?",
+        "options": ["np.var(arr)", "arr.var()", "np.mean((arr-arr.mean())**2)", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods calculate variance/ये सभी मेथड वेरिएंस कैलकुलेट करते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2,3]).reshape(1,3)?\nnp.array([1,2,3]).reshape(1,3) का रिजल्ट क्या है?",
+        "options": "[[1,2,3]]",
+        "answer": 0,
+        "explanation": "reshape(1,3) creates row vector/reshape(1,3) रो वेक्टर बनाता है"
+    },
+    {
+        "question": "How to create a 3x3 array with random values from standard normal distribution?\nस्टैंडर्ड नॉर्मल डिस्ट्रीब्यूशन से रैंडम वैल्यू के साथ 3x3 ऐरे कैसे बनाएं?",
+        "options": ["np.random.randn(3,3)", "np.random.normal(0,1,(3,3))", "np.random.standard_normal((3,3))", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods create standard normal arrays/ये सभी मेथड स्टैंडर्ड नॉर्मल ऐरे बना सकते हैं"
+    },
+    {
+        "question": "Which function calculates element-wise ceiling?\nएलिमेंट-वाइज सीलिंग कैलकुलेट करने के लिए कौन सा फंक्शन है?",
+        "options": ["np.ceil()", "np.floor()", "np.round_up()", "np.top()"],
+        "answer": 0,
+        "explanation": "np.ceil() rounds up to nearest integer/np.ceil() निकटतम इंटिजर तक राउंड अप करता है"
+    },
+    {
+        "question": "What is the output of np.array([1.1,2.5,3.9]).astype(int)?\nnp.array([1.1,2.5,3.9]).astype(int) का आउटपुट क्या है?",
+        "options": ["[1,2,3]", "[1.0,2.0,3.0]", "[2,3,4]", "[1,2,3,4]"],
+        "answer": 0,
+        "explanation": "astype(int) truncates decimal part/astype(int) दशमलव भाग को काट देता है"
+    },
+    {
+        "question": "How to find the product of all array elements?\nऐरे के सभी एलिमेंट्स का प्रोडक्ट कैसे प्राप्त करें?",
+        "options": ["np.prod(arr)", "arr.prod()", "np.multiply.reduce(arr)", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods calculate product/ये सभी मेथड प्रोडक्ट कैलकुलेट करते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2,3]) + 10?\nnp.array([1,2,3]) + 10 का रिजल्ट क्या है?",
+        "options": ["[11,12,13]", "[1,2,3,10]", "[1,10,2,10,3,10]", "Error"],
+        "answer": 0,
+        "explanation": "NumPy broadcasts scalar operations/NumPy स्केलर ऑपरेशन्स को ब्रॉडकास्ट करता है"
+    },
+    {
+        "question": "How to create a 2D array with 1s on anti-diagonal and 0s elsewhere?\nएंटी-डायगोनल पर 1 और बाकी जगह 0 के साथ 2D ऐरे कैसे बनाएं?",
+        "options": ["np.eye(3)[::-1]", "np.flipud(np.eye(3))", "np.fliplr(np.eye(3))", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods create anti-diagonal matrix/ये सभी मेथड एंटी-डायगोनल मैट्रिक्स बनाते हैं"
+    },
+    {
+        "question": "Which function calculates element-wise floor?\nएलिमेंट-वाइज फ्लोर कैलकुलेट करने के लिए कौन सा फंक्शन है?",
+        "options": ["np.floor()", "np.ceil()", "np.round_down()", "np.bottom()"],
+        "answer": 0,
+        "explanation": "np.floor() rounds down to nearest integer/np.floor() निकटतम इंटिजर तक राउंड डाउन करता है"
+    },
+    {
+        "question": "What is the output of np.array([1,2,3])[None,:]?\nnp.array([1,2,3])[None,:] का आउटपुट क्या है?",
+        "options": "[[1,2,3]]",
+        "answer": 0,
+        "explanation": "None adds new axis/None नया एक्सिस जोड़ता है"
+    },
+    {
+        "question": "How to find cumulative sum of array elements?\nऐरे एलिमेंट्स का क्यूम्युलेटिव सम कैसे प्राप्त करें?",
+        "options": ["np.cumsum(arr)", "arr.cumsum()", "np.add.accumulate(arr)", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods calculate cumulative sum/ये सभी मेथड क्यूम्युलेटिव सम कैलकुलेट करते हैं"
+    },
+    {
+        "question": "What is the result of np.array([1,2,3]) - np.array([1,1,1])?\nnp.array([1,2,3]) - np.array([1,1,1]) का रिजल्ट क्या है?",
+        "options": ["[0,1,2]", "[1,2,3,-1,-1,-1]", "[1,1,2,1,3,1]", "Error"],
+        "answer": 0,
+        "explanation": "NumPy performs element-wise subtraction/NumPy एलिमेंट-वाइज सबट्रैक्शन करता है"
     }
 ]
+
 ,
+    //==============================================================================================================================
+    //==============================================================================================================================
+    //==============================================================================================================================
+    //==============================================================================================================================
+    
             "Internet of Things and its Applications": [
     /* Introduction to IoT (10) */
     {
@@ -2038,7 +2185,14 @@
         "options": ["Continuous learning", "Networking", "Following trends", "All of these"],
         "answer": 3
     }
-], "ADCA Test":[
+], 
+    //==============================================================================================================================
+    //==============================================================================================================================
+    //==============================================================================================================================
+    //==============================================================================================================================
+    //==============================================================================================================================
+    
+    "ADCA Test":[
     {
         "question": "What is the default file extension for a Word document? / वर्ड डॉक्यूमेंट का डिफॉल्ट फाइल एक्सटेंशन क्या है?",
         "options": [
@@ -3000,6 +3154,15 @@
         "answer": 0
     }
 ],
+    
+    //==============================================================================================================================
+    //==============================================================================================================================
+    //==============================================================================================================================
+    //==============================================================================================================================
+    //==============================================================================================================================
+    //==============================================================================================================================
+    //==============================================================================================================================
+    
             "CCC Test":[
     {
         "question": "What is the full form of CCC? / CCC का पूरा नाम क्या है?",
