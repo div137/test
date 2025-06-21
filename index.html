@@ -1003,264 +1003,622 @@
 ],
             "Programming and Problem Solving through Python":[
     {
-        "question": "What is the output of random.randint(1,10)? / random.randint(1,10) का आउटपुट क्या है?",
-        "options": ["Random integer between 1-10 / 1-10 के बीच रैंडम इंटिजर", "Random float between 1-10 / 1-10 के बीच रैंडम फ्लोट", "Always 5 / हमेशा 5", "Error / एरर"],
-        "answer": 0
+        "question": "How to import the entire math module in Python?\nPython में पूरे math मॉड्यूल को कैसे इम्पोर्ट करें?",
+        "options": ["import math", "from math import *", "include math", "require math"],
+        "answer": 0,
+        "explanation": "Use 'import math' to import the entire math module/पूरे math मॉड्यूल को इम्पोर्ट करने के लिए 'import math' का उपयोग करें"
     },
     {
-        "question": "How to shuffle a list in Python? / पायथन में लिस्ट को कैसे शफल करें?",
-        "options": ["random.shuffle(list) / random.shuffle(list)", "list.shuffle() / list.shuffle()", "shuffle(list) / shuffle(list)", "random.shuffleList(list) / random.shuffleList(list)"],
-        "answer": 0
+        "question": "Which function returns the value of pi from math module?\nmath मॉड्यूल से pi का मान कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["math.pi()", "math.pi", "math.PI", "math.PI()"],
+        "answer": 1,
+        "explanation": "math.pi is a constant, not a function/math.pi एक कॉन्स्टेंट है, फंक्शन नहीं"
     },
     {
-        "question": "What does random.choice() do? / random.choice() क्या करता है?",
-        "options": ["Returns random element from sequence / सीक्वेंस से रैंडम एलिमेंट रिटर्न करता है", "Returns random number / रैंडम नंबर रिटर्न करता है", "Returns sorted list / सॉर्टेड लिस्ट रिटर्न करता है", "Returns first element / पहला एलिमेंट रिटर्न करता है"],
-        "answer": 0
+        "question": "How to import only the exp function from math module?\nmath मॉड्यूल से केवल exp फंक्शन को कैसे इम्पोर्ट करें?",
+        "options": ["import exp from math", "from math import exp", "import math.exp", "math.import(exp)"],
+        "answer": 1,
+        "explanation": "Use 'from math import exp' to import specific function/किसी विशिष्ट फंक्शन को इम्पोर्ट करने के लिए 'from math import exp' का उपयोग करें"
     },
     {
-        "question": "How to generate random float between 0-1? / 0-1 के बीच रैंडम फ्लोट कैसे जनरेट करें?",
-        "options": ["random.random() / random.random()", "random.float() / random.float()", "random.uniform() / random.uniform()", "random.randfloat() / random.randfloat()"],
-        "answer": 0
+        "question": "What does math.exp(1) return?\nmath.exp(1) क्या रिटर्न करता है?",
+        "options": ["1", "2.718", "3.14", "0"],
+        "answer": 1,
+        "explanation": "math.exp(1) returns e^1 ≈ 2.718/math.exp(1) e^1 ≈ 2.718 रिटर्न करता है"
     },
     {
-        "question": "What is the scope of a variable defined inside a function? / फंक्शन के अंदर डिफाइन्ड वेरिएबल का स्कोप क्या होता है?",
-        "options": ["Local / लोकल", "Global / ग्लोबल", "Module / मॉड्यूल", "Built-in / बिल्ट-इन"],
-        "answer": 0
+        "question": "How to calculate 2^5 using math module?\nmath मॉड्यूल का उपयोग करके 2^5 की गणना कैसे करें?",
+        "options": ["math.pow(2,5)", "math.power(2,5)", "2**5", "math.exp(2,5)"],
+        "answer": 0,
+        "explanation": "math.pow(x,y) returns x raised to power y/math.pow(x,y) x की पावर y रिटर्न करता है"
     },
     {
-        "question": "How to import specific function from module? / मॉड्यूल से स्पेसिफिक फंक्शन कैसे इम्पोर्ट करें?",
-        "options": ["from module import function / from module import function", "import function from module / import function from module", "import module.function / import module.function", "require module:function / require module:function"],
-        "answer": 0
+        "question": "Which function checks if a number is finite in math module?\nmath मॉड्यूल में कौन सा फंक्शन चेक करता है कि कोई नंबर फाइनाइट है या नहीं?",
+        "options": ["math.finite()", "math.isfinite()", "math.checkfinite()", "math.is_finite()"],
+        "answer": 1,
+        "explanation": "math.isfinite() checks if number is finite/math.isfinite() चेक करता है कि नंबर फाइनाइट है या नहीं"
     },
     {
-        "question": "What is the correct way to open file for writing? / राइटिंग के लिए फाइल ओपन करने का सही तरीका क्या है?",
-        "options": ["open('file.txt','w') / open('file.txt','w')", "open('file.txt','r') / open('file.txt','r')", "open('file.txt','write') / open('file.txt','write')", "open('file.txt','a') / open('file.txt','a')"],
-        "answer": 0
+        "question": "What does math.gcd(12,18) return?\nmath.gcd(12,18) क्या रिटर्न करता है?",
+        "options": ["2", "3", "6", "12"],
+        "answer": 2,
+        "explanation": "GCD of 12 and 18 is 6/12 और 18 का GCD 6 है"
     },
     {
-        "question": "How to get current date and time? / करंट डेट और टाइम कैसे प्राप्त करें?",
-        "options": ["datetime.datetime.now() / datetime.datetime.now()", "time.current() / time.current()", "date.today() / date.today()", "calendar.datetime() / calendar.datetime()"],
-        "answer": 0
+        "question": "How to generate a random float between 0 and 1 using random module?\nrandom मॉड्यूल का उपयोग करके 0 और 1 के बीच रैंडम फ्लोट कैसे जनरेट करें?",
+        "options": ["random.random()", "random.float()", "random.uniform(0,1)", "random.randfloat()"],
+        "answer": 0,
+        "explanation": "random.random() returns float between 0 and 1/random.random() 0 और 1 के बीच फ्लोट रिटर्न करता है"
     },
     {
-        "question": "What does math.sqrt(16) return? / math.sqrt(16) क्या रिटर्न करता है?",
-        "options": ["4.0 / 4.0", "8.0 / 8.0", "256.0 / 256.0", "Error / एरर"],
-        "answer": 0
+        "question": "Which function returns current date in datetime module?\ndatetime मॉड्यूल में करंट डेट कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["datetime.now()", "datetime.date()", "datetime.today()", "datetime.current()"],
+        "answer": 2,
+        "explanation": "datetime.date.today() returns current date/datetime.date.today() करंट डेट रिटर्न करता है"
     },
     {
-        "question": "How to check if year is leap year? / लीप ईयर कैसे चेक करें?",
-        "options": ["calendar.isleap(year) / calendar.isleap(year)", "datetime.isleap(year) / datetime.isleap(year)", "time.leap(year) / time.leap(year)", "year.leap() / year.leap()"],
-        "answer": 0
+        "question": "How to get current timestamp using time module?\ntime मॉड्यूल का उपयोग करके करंट टाइमस्टैम्प कैसे प्राप्त करें?",
+        "options": ["time.now()", "time.time()", "time.timestamp()", "time.current()"],
+        "answer": 1,
+        "explanation": "time.time() returns current timestamp/time.time() करंट टाइमस्टैम्प रिटर्न करता है"
     },
     {
-        "question": "What does time.sleep(5) do? / time.sleep(5) क्या करता है?",
-        "options": ["Pauses execution for 5 seconds / एक्जीक्यूशन को 5 सेकंड के लिए रोकता है", "Runs faster for 5 seconds / 5 सेकंड के लिए तेज चलता है", "Records execution time / एक्जीक्यूशन टाइम रिकॉर्ड करता है", "Nothing / कुछ नहीं"],
-        "answer": 0
+        "question": "Which function checks if a year is leap year in calendar module?\ncalendar मॉड्यूल में कौन सा फंक्शन चेक करता है कि कोई साल लीप ईयर है या नहीं?",
+        "options": ["calendar.leap()", "calendar.isleap()", "calendar.checkleap()", "calendar.leapyear()"],
+        "answer": 1,
+        "explanation": "calendar.isleap() checks leap year/calendar.isleap() लीप ईयर चेक करता है"
     },
     {
-        "question": "How to get random element from list? / लिस्ट से रैंडम एलिमेंट कैसे प्राप्त करें?",
-        "options": ["random.choice(list) / random.choice(list)", "list.random() / list.random()", "random.list(list) / random.list(list)", "choice(list) / choice(list)"],
-        "answer": 0
+        "question": "What does math.log(100,10) return?\nmath.log(100,10) क्या रिटर्न करता है?",
+        "options": ["1", "2", "10", "100"],
+        "answer": 1,
+        "explanation": "log of 100 with base 10 is 2/100 का लॉग बेस 10 में 2 होता है"
     },
     {
-        "question": "What is the output of random.uniform(5,10)? / random.uniform(5,10) का आउटपुट क्या है?",
-        "options": ["Random float between 5-10 / 5-10 के बीच रैंडम फ्लोट", "Random integer between 5-10 / 5-10 के बीच रैंडम इंटिजर", "Always 7.5 / हमेशा 7.5", "Error / एरर"],
-        "answer": 0
+        "question": "How to shuffle a list using random module?\nrandom मॉड्यूल का उपयोग करके लिस्ट को कैसे शफल करें?",
+        "options": ["random.shuffle()", "random.mix()", "random.reorder()", "random.arrange()"],
+        "answer": 0,
+        "explanation": "random.shuffle() shuffles list in place/random.shuffle() लिस्ट को इन-प्लेस शफल करता है"
     },
     {
-        "question": "How to convert datetime to string? / डेटटाइम को स्ट्रिंग में कैसे बदलें?",
-        "options": ["strftime() / strftime()", "tostring() / tostring()", "format() / format()", "convert() / convert()"],
-        "answer": 0
+        "question": "Which function returns formatted time from time module?\ntime मॉड्यूल से फॉर्मेटेड टाइम कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["time.strftime()", "time.format()", "time.ctime()", "time.localtime()"],
+        "answer": 0,
+        "explanation": "time.strftime() returns formatted time/time.strftime() फॉर्मेटेड टाइम रिटर्न करता है"
     },
     {
-        "question": "What is the value of math.e? / math.e का मान क्या है?",
-        "options": ["2.71828... / 2.71828...", "3.14159... / 3.14159...", "1.61803... / 1.61803...", "0.57721... / 0.57721..."],
-        "answer": 0
+        "question": "What does math.remainder(10,3) return?\nmath.remainder(10,3) क्या रिटर्न करता है?",
+        "options": ["1", "1.0", "3.333", "0.333"],
+        "answer": 1,
+        "explanation": "remainder when 10 is divided by 3 is 1/10 को 3 से भाग देने पर रिमाइंडर 1 होता है"
     },
     {
-        "question": "How to get weekday name from date? / डेट से वीकडे नाम कैसे प्राप्त करें?",
-        "options": ["calendar.day_name[weekday] / calendar.day_name[weekday]", "datetime.weekdayname() / datetime.weekdayname()", "time.getweekday() / time.getweekday()", "date.weekdayname() / date.weekdayname()"],
-        "answer": 0
+        "question": "How to get current year from datetime module?\ndatetime मॉड्यूल से करंट ईयर कैसे प्राप्त करें?",
+        "options": ["datetime.year()", "datetime.now().year", "datetime.current().year", "datetime.today().getYear()"],
+        "answer": 1,
+        "explanation": "datetime.now().year returns current year/datetime.now().year करंट ईयर रिटर्न करता है"
     },
     {
-        "question": "What does time.time() return? / time.time() क्या रिटर्न करता है?",
-        "options": ["Current timestamp / करंट टाइमस्टैम्प", "Formatted time / फॉर्मेटेड टाइम", "Date string / डेट स्ट्रिंग", "Time object / टाइम ऑब्जेक्ट"],
-        "answer": 0
+        "question": "Which function returns day names in calendar module?\ncalendar मॉड्यूल में दिन के नाम कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["calendar.days()", "calendar.day_name", "calendar.getdays()", "calendar.weekdays()"],
+        "answer": 1,
+        "explanation": "calendar.day_name contains day names/calendar.day_name में दिन के नाम होते हैं"
     },
     {
-        "question": "How to calculate factorial of 5? / 5 के फैक्टोरियल की गणना कैसे करें?",
-        "options": ["math.factorial(5) / math.factorial(5)", "factorial(5) / factorial(5)", "math.fact(5) / math.fact(5)", "5.factorial() / 5.factorial()"],
-        "answer": 0
+        "question": "What does random.randint(1,10) return?\nrandom.randint(1,10) क्या रिटर्न करता है?",
+        "options": ["Float between 1-10", "Integer between 1-10 inclusive", "List of numbers 1-10", "Random float"],
+        "answer": 1,
+        "explanation": "randint returns random integer in range inclusive/randint रेंज में रैंडम इंटीजर इन्क्लूसिव रिटर्न करता है"
     },
     {
-        "question": "What is the output of math.degrees(math.pi)? / math.degrees(math.pi) का आउटपुट क्या है?",
-        "options": ["180.0 / 180.0", "90.0 / 90.0", "3.14159 / 3.14159", "360.0 / 360.0"],
-        "answer": 0
+        "question": "How to calculate LCM of 4 and 6 using math module?\nmath मॉड्यूल का उपयोग करके 4 और 6 के LCM की गणना कैसे करें?",
+        "options": ["math.lcm(4,6)", "math.gcd(4,6)", "math.lcd(4,6)", "math.lcm([4,6])"],
+        "answer": 0,
+        "explanation": "math.lcm() calculates least common multiple/math.lcm() लीस्ट कॉमन मल्टीपल कैलकुलेट करता है"
     },
     {
-        "question": "How to generate random number from normal distribution? / नॉर्मल डिस्ट्रीब्यूशन से रैंडम नंबर कैसे जनरेट करें?",
-        "options": ["random.gauss() / random.gauss()", "random.normal() / random.normal()", "random.distribution() / random.distribution()", "random.randnormal() / random.randnormal()"],
-        "answer": 0
+        "question": "Which function returns local time from time module?\ntime मॉड्यूल से लोकल टाइम कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["time.time()", "time.localtime()", "time.now()", "time.current()"],
+        "answer": 1,
+        "explanation": "time.localtime() returns local time/time.localtime() लोकल टाइम रिटर्न करता है"
     },
     {
-        "question": "What is the scope resolution order in Python? / पायथन में स्कोप रेजोल्यूशन ऑर्डर क्या है?",
-        "options": ["LEGB (Local, Enclosing, Global, Built-in) / लेग्बी (लोकल, एनक्लोजिंग, ग्लोबल, बिल्ट-इन)", "GBLE (Global, Built-in, Local, Enclosing) / जीबीएलई (ग्लोबल, बिल्ट-इन, लोकल, एनक्लोजिंग)", "ELGB (Enclosing, Local, Global, Built-in) / ईएलजीबी (एनक्लोजिंग, लोकल, ग्लोबल, बिल्ट-इन)", "BGEL (Built-in, Global, Enclosing, Local) / बीजीईएल (बिल्ट-इन, ग्लोबल, एनक्लोजिंग, लोकल)"],
-        "answer": 0
+        "question": "What does math.prod([2,3,4]) return?\nmath.prod([2,3,4]) क्या रिटर्न करता है?",
+        "options": ["9", "24", "[2,3,4]", "Error"],
+        "answer": 1,
+        "explanation": "prod calculates product of elements/prod एलिमेंट्स का प्रोडक्ट कैलकुलेट करता है"
     },
     {
-        "question": "How to read entire file content at once? / फाइल कंटेंट को एक बार में कैसे पढ़ें?",
-        "options": ["file.read() / file.read()", "file.readall() / file.readall()", "file.get() / file.get()", "file.content() / file.content()"],
-        "answer": 0
+        "question": "How to get weekday of a date in datetime module?\ndatetime मॉड्यूल में डेट का वीकडे कैसे प्राप्त करें?",
+        "options": ["date.weekday()", "date.day()", "date.getweekday()", "date.week()"],
+        "answer": 0,
+        "explanation": "date.weekday() returns weekday (0=Monday)/date.weekday() वीकडे रिटर्न करता है (0=सोमवार)"
     },
     {
-        "question": "What is the output of datetime.datetime.now().strftime('%Y')? / datetime.datetime.now().strftime('%Y') का आउटपुट क्या है?",
-        "options": ["Current year / करंट ईयर", "Current month / करंट मंथ", "Current day / करंट डे", "Current time / करंट टाइम"],
-        "answer": 0
+        "question": "Which function returns random element from sequence in random module?\nrandom मॉड्यूल में सीक्वेंस से रैंडम एलिमेंट कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["random.pick()", "random.select()", "random.choice()", "random.element()"],
+        "answer": 2,
+        "explanation": "random.choice() returns random element/random.choice() रैंडम एलिमेंट रिटर्न करता है"
     },
     {
-        "question": "How to calculate tangent of angle? / एंगल के टेंजेंट की गणना कैसे करें?",
-        "options": ["math.tan() / math.tan()", "math.tangent() / math.tangent()", "tan() / tan()", "angle.tan() / angle.tan()"],
-        "answer": 0
+        "question": "What does math.isclose(1.0, 1.0000001) likely return?\nmath.isclose(1.0, 1.0000001) संभवतः क्या रिटर्न करता है?",
+        "options": ["True", "False", "Error", "None"],
+        "answer": 0,
+        "explanation": "Numbers are close within default tolerance/नंबर्स डिफॉल्ट टॉलरेंस के भीतर क्लोज हैं"
     },
     {
-        "question": "What does calendar.monthcalendar() return? / calendar.monthcalendar() क्या रिटर्न करता है?",
-        "options": ["Matrix representing month's calendar / मैट्रिक्स जो महीने के कैलेंडर को रिप्रेजेंट करता है", "List of dates / तारीखों की सूची", "Number of days / दिनों की संख्या", "Weekday names / वीकडे नाम"],
-        "answer": 0
+        "question": "How to convert timestamp to local time using time module?\ntime मॉड्यूल का उपयोग करके टाइमस्टैम्प को लोकल टाइम में कैसे कन्वर्ट करें?",
+        "options": ["time.localtime(timestamp)", "time.fromtimestamp(timestamp)", "time.convert(timestamp)", "time.tolocal(timestamp)"],
+        "answer": 0,
+        "explanation": "time.localtime() converts timestamp/time.localtime() टाइमस्टैम्प को कन्वर्ट करता है"
     },
     {
-        "question": "How to measure time taken by code execution? / कोड एक्जीक्यूशन द्वारा लिए गए समय को कैसे मापें?",
-        "options": ["Use time.time() before and after / time.time() का उपयोग पहले और बाद में करें", "Use time.measure() / time.measure() का उपयोग करें", "Use datetime.duration() / datetime.duration() का उपयोग करें", "Use stopwatch() / stopwatch() का उपयोग करें"],
-        "answer": 0
+        "question": "Which function returns multiple random elements with replacement in random module?\nrandom मॉड्यूल में रिप्लेसमेंट के साथ मल्टीपल रैंडम एलिमेंट्स कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["random.sample()", "random.choices()", "random.multichoice()", "random.picks()"],
+        "answer": 1,
+        "explanation": "random.choices() returns multiple elements with replacement/random.choices() रिप्लेसमेंट के साथ मल्टीपल एलिमेंट्स रिटर्न करता है"
     },
     {
-        "question": "What is the output of random.sample(range(100),5)? / random.sample(range(100),5) का आउटपुट क्या है?",
-        "options": ["List of 5 unique random numbers from 0-99 / 0-99 से 5 यूनिक रैंडम नंबर्स की लिस्ट", "Single random number between 0-99 / 0-99 के बीच एक रैंडम नंबर", "List of 5 sequential numbers / 5 सीक्वेंशियल नंबर्स की लिस्ट", "Error / एरर"],
-        "answer": 0
+        "question": "What does math.log1p(0) return?\nmath.log1p(0) क्या रिटर्न करता है?",
+        "options": ["0", "1", "e", "Error"],
+        "answer": 0,
+        "explanation": "log1p(0) is log(1+0) which is 0/log1p(0) लॉग(1+0) है जो 0 है"
     },
     {
-        "question": "How to convert string to datetime object? / स्ट्रिंग को डेटटाइम ऑब्जेक्ट में कैसे बदलें?",
-        "options": ["datetime.strptime() / datetime.strptime()", "datetime.parse() / datetime.parse()", "datetime.fromstring() / datetime.fromstring()", "datetime.convert() / datetime.convert()"],
-        "answer": 0
+        "question": "How to format date as 'YYYY-MM-DD' using datetime module?\ndatetime मॉड्यूल का उपयोग करके डेट को 'YYYY-MM-DD' के रूप में कैसे फॉर्मेट करें?",
+        "options": ["date.format('%Y-%m-%d')", "date.strftime('%Y-%m-%d')", "date.toString('YYYY-MM-DD')", "date.toformat('%Y-%m-%d')"],
+        "answer": 1,
+        "explanation": "strftime() formats date/strftime() डेट को फॉर्मेट करता है"
     },
     {
-        "question": "What is the output of math.log(math.e)? / math.log(math.e) का आउटपुट क्या है?",
-        "options": ["1.0 / 1.0", "2.71828 / 2.71828", "0.0 / 0.0", "Error / एरर"],
-        "answer": 0
+        "question": "Which function returns permutation count in math module?\nmath मॉड्यूल में परम्यूटेशन काउंट कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["math.perm()", "math.comb()", "math.factorial()", "math.permutation()"],
+        "answer": 0,
+        "explanation": "math.perm() returns permutation count/math.perm() परम्यूटेशन काउंट रिटर्न करता है"
     },
     {
-        "question": "How to get month name from month number? / महीने के नंबर से महीने का नाम कैसे प्राप्त करें?",
-        "options": ["calendar.month_name[number] / calendar.month_name[number]", "datetime.monthname(number) / datetime.monthname(number)", "time.getmonth(number) / time.getmonth(number)", "date.monthname(number) / date.monthname(number)"],
-        "answer": 0
+        "question": "What does random.seed(42) do?\nrandom.seed(42) क्या करता है?",
+        "options": ["Generates 42 random numbers", "Sets random number generator seed", "Returns 42", "Creates 42 random seeds"],
+        "answer": 1,
+        "explanation": "seed() initializes random number generator/seed() रैंडम नंबर जनरेटर को इनिशियलाइज़ करता है"
     },
     {
-        "question": "What does time.localtime() return? / time.localtime() क्या रिटर्न करता है?",
-        "options": ["struct_time object with local time / लोकल टाइम के साथ struct_time ऑब्जेक्ट", "Timestamp / टाइमस्टैम्प", "Formatted string / फॉर्मेटेड स्ट्रिंग", "Time zone info / टाइम जोन इन्फो"],
-        "answer": 0
+        "question": "How to get month name from calendar module?\ncalendar मॉड्यूल से महीने का नाम कैसे प्राप्त करें?",
+        "options": ["calendar.month_name[1]", "calendar.get_month(1)", "calendar.monthname(1)", "calendar.month(1)"],
+        "answer": 0,
+        "explanation": "calendar.month_name contains month names/calendar.month_name में महीनों के नाम होते हैं"
     },
     {
-        "question": "How to calculate hypotenuse of right triangle? / राइट ट्रायंगल के हाइपोटेन्यूज की गणना कैसे करें?",
-        "options": ["math.hypot(x,y) / math.hypot(x,y)", "math.sqrt(x*x + y*y) / math.sqrt(x*x + y*y)", "Both A and B / A और B दोनों", "math.triangle(x,y) / math.triangle(x,y)"],
-        "answer": 2
+        "question": "Which function returns combination count in math module?\nmath मॉड्यूल में कॉम्बिनेशन काउंट कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["math.comb()", "math.perm()", "math.factorial()", "math.combination()"],
+        "answer": 0,
+        "explanation": "math.comb() returns combination count/math.comb() कॉम्बिनेशन काउंट रिटर्न करता है"
     },
     {
-        "question": "What is the output of calendar.weekday(2023,9,15)? / calendar.weekday(2023,9,15) का आउटपुट क्या है?",
-        "options": ["4 (Friday) / 4 (शुक्रवार)", "5 (Saturday) / 5 (शनिवार)", "6 (Sunday) / 6 (रविवार)", "0 (Monday) / 0 (सोमवार)"],
-        "answer": 0
+        "question": "What does math.fmod(7,3) return?\nmath.fmod(7,3) क्या रिटर्न करता है?",
+        "options": ["1", "2", "1.0", "2.333"],
+        "answer": 0,
+        "explanation": "fmod returns floating-point remainder/fmod फ्लोटिंग-पॉइंट रिमाइंडर रिटर्न करता है"
     },
     {
-        "question": "How to generate random password in Python? / पायथन में रैंडम पासवर्ड कैसे जनरेट करें?",
-        "options": ["Use random.choices() with string module / string मॉड्यूल के साथ random.choices() का उपयोग करें", "random.password() / random.password()", "generate.password() / generate.password()", "password.random() / password.random()"],
-        "answer": 0
+        "question": "How to generate random float between 5 and 10 using random module?\nrandom मॉड्यूल का उपयोग करके 5 और 10 के बीच रैंडम फ्लोट कैसे जनरेट करें?",
+        "options": ["random.random(5,10)", "random.float(5,10)", "random.uniform(5,10)", "random.range(5,10)"],
+        "answer": 2,
+        "explanation": "random.uniform() returns float in range/random.uniform() रेंज में फ्लोट रिटर्न करता है"
     },
     {
-        "question": "What is the output of math.ceil(9.1)? / math.ceil(9.1) का आउटपुट क्या है?",
-        "options": ["10 / 10", "9 / 9", "9.1 / 9.1", "Error / एरर"],
-        "answer": 0
+        "question": "Which function returns current datetime in datetime module?\ndatetime मॉड्यूल में करंट डेटटाइम कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["datetime.current()", "datetime.now()", "datetime.today()", "datetime.date()"],
+        "answer": 1,
+        "explanation": "datetime.now() returns current datetime/datetime.now() करंट डेटटाइम रिटर्न करता है"
     },
     {
-        "question": "How to format date as '15 September 2023'? / डेट को '15 September 2023' के रूप में कैसे फॉर्मेट करें?",
-        "options": ["strftime('%d %B %Y') / strftime('%d %B %Y')", "format('DD Month YYYY') / format('DD Month YYYY')", "dateformat('long') / dateformat('long')", "convert('full_date') / convert('full_date')"],
-        "answer": 0
+        "question": "What does math.ldexp(3,2) return?\nmath.ldexp(3,2) क्या रिटर्न करता है?",
+        "options": ["6", "9", "12", "32"],
+        "answer": 2,
+        "explanation": "ldexp(x,i) returns x*(2^i)/ldexp(x,i) x*(2^i) रिटर्न करता है"
     },
     {
-        "question": "What is the output of random.random()? / random.random() का आउटपुट क्या है?",
-        "options": ["Float between 0.0 and 1.0 / 0.0 और 1.0 के बीच फ्लोट", "Integer between 0 and 1 / 0 और 1 के बीच इंटिजर", "Boolean value / बूलियन वैल्यू", "Random string / रैंडम स्ट्रिंग"],
-        "answer": 0
+        "question": "How to check if year 2024 is leap using calendar module?\ncalendar मॉड्यूल का उपयोग करके चेक कैसे करें कि वर्ष 2024 लीप है?",
+        "options": ["calendar.leap(2024)", "calendar.isleap(2024)", "calendar.leapyear(2024)", "calendar.checkleap(2024)"],
+        "answer": 1,
+        "explanation": "calendar.isleap() checks leap year/calendar.isleap() लीप ईयर चेक करता है"
     },
     {
-        "question": "How to write to file without overwriting? / ओवरराइट किए बिना फाइल में कैसे लिखें?",
-        "options": ["Open in append mode ('a') / ऐपेंड मोड ('a') में ओपन करें", "Open in write mode ('w') / राइट मोड ('w') में ओपन करें", "Use file.insert() / file.insert() का उपयोग करें", "Use non_overwrite mode / non_overwrite मोड का उपयोग करें"],
-        "answer": 0
+        "question": "Which function returns multiple random elements without replacement in random module?\nrandom मॉड्यूल में बिना रिप्लेसमेंट के मल्टीपल रैंडम एलिमेंट्स कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["random.choices()", "random.sample()", "random.multipick()", "random.selection()"],
+        "answer": 1,
+        "explanation": "random.sample() returns unique elements/random.sample() यूनिक एलिमेंट्स रिटर्न करता है"
     },
     {
-        "question": "What is the output of math.fmod(10,3)? / math.fmod(10,3) का आउटपुट क्या है?",
-        "options": ["1.0 / 1.0", "3.333... / 3.333...", "0.0 / 0.0", "Error / एरर"],
-        "answer": 0
+        "question": "What does math.nextafter(1.0, 2.0) return?\nmath.nextafter(1.0, 2.0) क्या रिटर्न करता है?",
+        "options": ["1.0000000000000002", "2.0", "1.5", "1.0000000000000001"],
+        "answer": 0,
+        "explanation": "nextafter returns next floating-point value/nextafter अगला फ्लोटिंग-पॉइंट वैल्यू रिटर्न करता है"
     },
     {
-        "question": "How to get time in seconds since epoch? / एपोक से सेकंड में टाइम कैसे प्राप्त करें?",
-        "options": ["time.time() / time.time()", "datetime.timestamp() / datetime.timestamp()", "time.seconds() / time.seconds()", "calendar.epoch() / calendar.epoch()"],
-        "answer": 0
+        "question": "How to get day name from weekday number in calendar module?\ncalendar मॉड्यूल में वीकडे नंबर से दिन का नाम कैसे प्राप्त करें?",
+        "options": ["calendar.day_name[0]", "calendar.get_day(0)", "calendar.weekdayname(0)", "calendar.dayname(0)"],
+        "answer": 0,
+        "explanation": "calendar.day_name contains day names/calendar.day_name में दिन के नाम होते हैं"
     },
     {
-        "question": "What is the output of math.trunc(3.7)? / math.trunc(3.7) का आउटपुट क्या है?",
-        "options": ["3 / 3", "4 / 4", "3.7 / 3.7", "0.7 / 0.7"],
-        "answer": 0
+        "question": "Which function returns exponential minus 1 in math module?\nmath मॉड्यूल में एक्सपोनेंशियल माइनस 1 कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["math.exp()", "math.expm1()", "math.exminus1()", "math.e-1()"],
+        "answer": 1,
+        "explanation": "math.expm1() returns exp(x)-1/math.expm1() exp(x)-1 रिटर्न करता है"
     },
     {
-        "question": "How to generate random integer between 50-100? / 50-100 के बीच रैंडम इंटिजर कैसे जनरेट करें?",
-        "options": ["random.randint(50,100) / random.randint(50,100)", "random.randrange(50,100) / random.randrange(50,100)", "Both A and B / A और B दोनों", "random.random(50,100) / random.random(50,100)"],
-        "answer": 2
+        "question": "What does random.randrange(1,10,2) return?\nrandom.randrange(1,10,2) क्या रिटर्न करता है?",
+        "options": ["Random even number between 1-10", "Random odd number between 1-10", "List of numbers 1-10 step 2", "Random float between 1-10"],
+        "answer": 1,
+        "explanation": "randrange with step 2 returns odd numbers/स्टेप 2 के साथ randrange विषम संख्याएँ रिटर्न करता है"
     },
     {
-        "question": "What is the output of datetime.timedelta(days=5)? / datetime.timedelta(days=5) का आउटपुट क्या है?",
-        "options": ["5 days, 0:00:00 / 5 दिन, 0:00:00", "5 / 5", "Current date + 5 days / करंट डेट + 5 दिन", "Error / एरर"],
-        "answer": 0
+        "question": "How to create datetime object for 2023-12-25 in datetime module?\ndatetime मॉड्यूल में 2023-12-25 के लिए डेटटाइम ऑब्जेक्ट कैसे बनाएं?",
+        "options": ["datetime(2023,12,25)", "datetime.date(2023,12,25)", "datetime.create(2023,12,25)", "datetime.new(2023,12,25)"],
+        "answer": 0,
+        "explanation": "datetime() constructor creates datetime object/datetime() कंस्ट्रक्टर डेटटाइम ऑब्जेक्ट बनाता है"
     },
     {
-        "question": "How to calculate log base 2 of 8? / 8 के लॉग बेस 2 की गणना कैसे करें?",
-        "options": ["math.log2(8) / math.log2(8)", "math.log(8,2) / math.log(8,2)", "Both A and B / A और B दोनों", "log(8)/log(2) / log(8)/log(2)"],
-        "answer": 2
+        "question": "Which function returns time struct from timestamp in time module?\ntime मॉड्यूल में टाइमस्टैम्प से टाइम स्ट्रक्चर कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["time.fromtimestamp()", "time.localtime()", "time.structtime()", "time.mktime()"],
+        "answer": 1,
+        "explanation": "time.localtime() converts timestamp to struct/time.localtime() टाइमस्टैम्प को स्ट्रक्चर में कन्वर्ट करता है"
     },
     {
-        "question": "What is the output of calendar.monthrange(2023,9)[1]? / calendar.monthrange(2023,9)[1] का आउटपुट क्या है?",
-        "options": ["30 (days in September) / 30 (सितंबर में दिन)", "31 (days in September) / 31 (सितंबर में दिन)", "7 (days in week) / 7 (सप्ताह में दिन)", "4 (weekday of 1st September) / 4 (1 सितंबर का वीकडे)"],
-        "answer": 0
+        "question": "What does math.tau return?\nmath.tau क्या रिटर्न करता है?",
+        "options": ["3.14", "6.28", "1.57", "0.79"],
+        "answer": 1,
+        "explanation": "tau is 2*pi ≈ 6.28/tau 2*pi ≈ 6.28 है"
     },
     {
-        "question": "How to seed the random number generator? / रैंडम नंबर जनरेटर को कैसे सीड करें?",
-        "options": ["random.seed() / random.seed()", "random.init() / random.init()", "random.start() / random.start()", "random.begin() / random.begin()"],
-        "answer": 0
+        "question": "How to calculate number of leap days between 2000 and 2020 using calendar module?\ncalendar मॉड्यूल का उपयोग करके 2000 और 2020 के बीच लीप डेज़ की संख्या की गणना कैसे करें?",
+        "options": ["calendar.leapdays(2000,2020)", "calendar.countleaps(2000,2020)", "calendar.leapcount(2000,2020)", "calendar.leapyears(2000,2020)"],
+        "answer": 0,
+        "explanation": "calendar.leapdays() counts leap days/calendar.leapdays() लीप डेज़ की गिनती करता है"
     },
     {
-        "question": "What is the output of math.gcd(48,18)? / math.gcd(48,18) का आउटपुट क्या है?",
-        "options": ["6 / 6", "18 / 18", "48 / 48", "3 / 3"],
-        "answer": 0
+        "question": "Which function returns logarithm base 2 in math module?\nmath मॉड्यूल में लॉगरिदम बेस 2 कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["math.log()", "math.log2()", "math.log10()", "math.ln()"],
+        "answer": 1,
+        "explanation": "math.log2() returns base-2 logarithm/math.log2() बेस-2 लॉगरिदम रिटर्न करता है"
     },
     {
-        "question": "How to get time in UTC? / यूटीसी में टाइम कैसे प्राप्त करें?",
-        "options": ["time.gmtime() / time.gmtime()", "time.utc() / time.utc()", "datetime.utcnow() / datetime.utcnow()", "Both A and C / A और C दोनों"],
-        "answer": 3
+        "question": "What does datetime.now().strftime('%H:%M') return?\ndatetime.now().strftime('%H:%M') क्या रिटर्न करता है?",
+        "options": ["Current date", "Current time in HH:MM format", "Current timestamp", "Hour and minute as tuple"],
+        "answer": 1,
+        "explanation": "strftime('%H:%M') formats time as HH:MM/strftime('%H:%M') टाइम को HH:MM के रूप में फॉर्मेट करता है"
     },
     {
-        "question": "What is the output of random.choices(['a','b','c'], k=2)? / random.choices(['a','b','c'], k=2) का आउटपुट क्या है?",
-        "options": ["List of 2 elements (may contain duplicates) / 2 एलिमेंट्स की लिस्ट (डुप्लीकेट हो सकते हैं)", "List of 2 unique elements / 2 यूनिक एलिमेंट्स की लिस्ट", "Single random element / सिंगल रैंडम एलिमेंट", "Error / एरर"],
-        "answer": 0
+        "question": "How to check if value is NaN in math module?\nmath मॉड्यूल में कैसे चेक करें कि वैल्यू NaN है?",
+        "options": ["math.isnan()", "math.checknan()", "math.nan()", "math.is_nan()"],
+        "answer": 0,
+        "explanation": "math.isnan() checks for NaN/math.isnan() NaN के लिए चेक करता है"
     },
     {
-        "question": "How to convert radians to degrees? / रेडियन को डिग्री में कैसे बदलें?",
-        "options": ["math.degrees() / math.degrees()", "radians.to_degrees() / radians.to_degrees()", "convert.rad_to_deg() / convert.rad_to_deg()", "math.rad2deg() / math.rad2deg()"],
-        "answer": 0
+        "question": "Which function returns random integer in random module?\nrandom मॉड्यूल में रैंडम इंटीजर कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["random.int()", "random.randint()", "random.integer()", "random.randomint()"],
+        "answer": 1,
+        "explanation": "random.randint() returns random integer/random.randint() रैंडम इंटीजर रिटर्न करता है"
     },
     {
-        "question": "What is the output of datetime.datetime.now().hour? / datetime.datetime.now().hour का आउटपुट क्या है?",
-        "options": ["Current hour (0-23) / करंट घंटा (0-23)", "Current hour (1-12) / करंट घंटा (1-12)", "Hours since midnight / मिडनाइट से घंटे", "Error / एरर"],
-        "answer": 0
+        "question": "What does math.log10(1000) return?\nmath.log10(1000) क्या रिटर्न करता है?",
+        "options": ["2", "3", "10", "1000"],
+        "answer": 1,
+        "explanation": "log10(1000) is 3 because 10^3=1000/log10(1000) 3 है क्योंकि 10^3=1000"
     },
     {
-        "question": "How to calculate Euclidean distance between points? / पॉइंट्स के बीच यूक्लिडियन डिस्टेंस कैसे कैलकुलेट करें?",
-        "options": ["math.dist() / math.dist()", "math.hypot() / math.hypot()", "Both A and B / A और B दोनों", "distance.euclidean() / distance.euclidean()"],
-        "answer": 2
+        "question": "How to get month from datetime object in datetime module?\ndatetime मॉड्यूल में datetime ऑब्जेक्ट से महीना कैसे प्राप्त करें?",
+        "options": ["dt.getMonth()", "dt.month", "dt.date.month", "dt.get_month()"],
+        "answer": 1,
+        "explanation": "dt.month returns month/dt.month महीना रिटर्न करता है"
+    },
+    {
+        "question": "Which function returns formatted calendar month in calendar module?\ncalendar मॉड्यूल में फॉर्मेटेड कैलेंडर मंथ कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["calendar.month()", "calendar.formatmonth()", "calendar.prmonth()", "calendar.monthcalendar()"],
+        "answer": 0,
+        "explanation": "calendar.month() returns formatted month/calendar.month() फॉर्मेटेड महीना रिटर्न करता है"
+    },
+    {
+        "question": "What does time.ctime() return?\ntime.ctime() क्या रिटर्न करता है?",
+        "options": ["Current timestamp", "Current time as string", "Current date as tuple", "Current time in milliseconds"],
+        "answer": 1,
+        "explanation": "ctime() returns current time as string/ctime() करंट टाइम को स्ट्रिंग के रूप में रिटर्न करता है"
+    },
+    {
+        "question": "How to calculate permutation of 5 items taken 2 at a time in math module?\nmath मॉड्यूल में 5 आइटम्स से 2 को एक समय में लेकर परम्यूटेशन की गणना कैसे करें?",
+        "options": ["math.perm(5,2)", "math.comb(5,2)", "math.factorial(5)/factorial(3)", "math.permutation(5,2)"],
+        "answer": 0,
+        "explanation": "math.perm() calculates permutations/math.perm() परम्यूटेशन की गणना करता है"
+    },
+    {
+        "question": "Which function returns current date as string in datetime module?\ndatetime मॉड्यूल में करंट डेट को स्ट्रिंग के रूप में कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["datetime.now().toString()", "datetime.now().isoformat()", "datetime.now().str()", "datetime.now().format()"],
+        "answer": 1,
+        "explanation": "isoformat() returns date as string/isoformat() डेट को स्ट्रिंग के रूप में रिटर्न करता है"
+    },
+    {
+        "question": "What does random.choice(['a','b','c']) return?\nrandom.choice(['a','b','c']) क्या रिटर्न करता है?",
+        "options": ["['a','b','c']", "Random element from list", "Shuffled list", "Error"],
+        "answer": 1,
+        "explanation": "choice() returns random element/choice() रैंडम एलिमेंट रिटर्न करता है"
+    },
+    {
+        "question": "How to check if value is infinite in math module?\nmath मॉड्यूल में कैसे चेक करें कि वैल्यू इनफिनिट है?",
+        "options": ["math.isinf()", "math.infinite()", "math.checkinf()", "math.is_inf()"],
+        "answer": 0,
+        "explanation": "math.isinf() checks for infinity/math.isinf() इनफिनिटी के लिए चेक करता है"
+    },
+    {
+        "question": "Which function converts time tuple to timestamp in time module?\ntime मॉड्यूल में टाइम टपल को टाइमस्टैम्प में कौन सा फंक्शन कन्वर्ट करता है?",
+        "options": ["time.fromtuple()", "time.mktime()", "time.totimestamp()", "time.convert()"],
+        "answer": 1,
+        "explanation": "time.mktime() converts time tuple/time.mktime() टाइम टपल को कन्वर्ट करता है"
+    },
+    {
+        "question": "What does math.nan represent?\nmath.nan क्या प्रतिनिधित्व करता है?",
+        "options": ["Negative number", "Not a Number", "Natural number", "Null value"],
+        "answer": 1,
+        "explanation": "nan means Not a Number/nan का मतलब है नॉट ए नंबर"
+    },
+    {
+        "question": "How to get day of week (0-6) from datetime in datetime module?\ndatetime मॉड्यूल में datetime से वीक डे (0-6) कैसे प्राप्त करें?",
+        "options": ["dt.dayofweek", "dt.weekday()", "dt.getDay()", "dt.day()"],
+        "answer": 1,
+        "explanation": "weekday() returns day number (0=Monday)/weekday() दिन का नंबर रिटर्न करता है (0=सोमवार)"
+    },
+    {
+        "question": "Which function returns calendar as matrix in calendar module?\ncalendar मॉड्यूल में कैलेंडर को मैट्रिक्स के रूप में कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["calendar.monthcalendar()", "calendar.matrix()", "calendar.grid()", "calendar.monthgrid()"],
+        "answer": 0,
+        "explanation": "monthcalendar() returns calendar as matrix/monthcalendar() कैलेंडर को मैट्रिक्स के रूप में रिटर्न करता है"
+    },
+    {
+        "question": "What does datetime.now().hour return?\ndatetime.now().hour क्या रिटर्न करता है?",
+        "options": ["Current hour (0-23)", "Current hour (1-12)", "Hours since epoch", "Total hours today"],
+        "answer": 0,
+        "explanation": "hour returns current hour (0-23)/hour करंट आवर रिटर्न करता है (0-23)"
+    },
+    {
+        "question": "How to calculate combination of 5 items taken 2 at a time in math module?\nmath मॉड्यूल में 5 आइटम्स से 2 को एक समय में लेकर कॉम्बिनेशन की गणना कैसे करें?",
+        "options": ["math.comb(5,2)", "math.perm(5,2)", "math.factorial(5)/(factorial(2)*factorial(3))", "math.combination(5,2)"],
+        "answer": 0,
+        "explanation": "math.comb() calculates combinations/math.comb() कॉम्बिनेशन की गणना करता है"
+    },
+    {
+        "question": "Which function returns current time as string in time module?\ntime मॉड्यूल में करंट टाइम को स्ट्रिंग के रूप में कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["time.now()", "time.ctime()", "time.str()", "time.localtime()"],
+        "answer": 1,
+        "explanation": "ctime() returns time as string/ctime() टाइम को स्ट्रिंग के रूप में रिटर्न करता है"
+    },
+    {
+        "question": "What does math.inf represent?\nmath.inf क्या प्रतिनिधित्व करता है?",
+        "options": ["Very large number", "Infinity", "Invalid float", "Negative number"],
+        "answer": 1,
+        "explanation": "inf represents infinity/inf इनफिनिटी को प्रतिनिधित्व करता है"
+    },
+    {
+        "question": "How to get microsecond from datetime in datetime module?\ndatetime मॉड्यूल में datetime से माइक्रोसेकंड कैसे प्राप्त करें?",
+        "options": ["dt.microsecond", "dt.getmicrosecond()", "dt.time.microsecond", "dt.usec"],
+        "answer": 0,
+        "explanation": "microsecond attribute returns microseconds/microsecond एट्रिब्यूट माइक्रोसेकंड्स रिटर्न करता है"
+    },
+    {
+        "question": "Which function returns formatted weekday name in calendar module?\ncalendar मॉड्यूल में फॉर्मेटेड वीकडे नाम कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["calendar.weekday()", "calendar.day_name", "calendar.formatweekday()", "calendar.weekdayname()"],
+        "answer": 2,
+        "explanation": "formatweekday() returns formatted name/formatweekday() फॉर्मेटेड नाम रिटर्न करता है"
+    },
+    {
+        "question": "What does datetime.now().minute return?\ndatetime.now().minute क्या रिटर्न करता है?",
+        "options": ["Current minute (0-59)", "Minutes since midnight", "Total minutes today", "Current minute (1-60)"],
+        "answer": 0,
+        "explanation": "minute returns current minute (0-59)/minute करंट मिनट रिटर्न करता है (0-59)"
+    },
+    {
+        "question": "How to calculate floating-point remainder in math module?\nmath मॉड्यूल में फ्लोटिंग-पॉइंट रिमाइंडर की गणना कैसे करें?",
+        "options": ["math.remainder()", "math.fmod()", "math.mod()", "math.modf()"],
+        "answer": 1,
+        "explanation": "math.fmod() returns floating-point remainder/math.fmod() फ्लोटिंग-पॉइंट रिमाइंडर रिटर्न करता है"
+    },
+    {
+        "question": "Which function returns time struct from components in time module?\ntime मॉड्यूल में कंपोनेंट्स से टाइम स्ट्रक्चर कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["time.struct()", "time.mktime()", "time.gmtime()", "time.localtime()"],
+        "answer": 1,
+        "explanation": "mktime() creates struct from components/mktime() कंपोनेंट्स से स्ट्रक्चर बनाता है"
+    },
+    {
+        "question": "What does datetime.now().second return?\ndatetime.now().second क्या रिटर्न करता है?",
+        "options": ["Current second (0-59)", "Seconds since midnight", "Total seconds today", "Current second (1-60)"],
+        "answer": 0,
+        "explanation": "second returns current second (0-59)/second करंट सेकंड रिटर्न करता है (0-59)"
+    },
+    {
+        "question": "How to set random seed in random module?\nrandom मॉड्यूल में रैंडम सीड कैसे सेट करें?",
+        "options": ["random.setseed()", "random.seed()", "random.init()", "random.srand()"],
+        "answer": 1,
+        "explanation": "random.seed() initializes random generator/random.seed() रैंडम जनरेटर को इनिशियलाइज़ करता है"
+    },
+    {
+        "question": "Which function returns formatted calendar year in calendar module?\ncalendar मॉड्यूल में फॉर्मेटेड कैलेंडर ईयर कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["calendar.year()", "calendar.formatyear()", "calendar.pryear()", "calendar.yearcalendar()"],
+        "answer": 1,
+        "explanation": "formatyear() returns formatted year/formatyear() फॉर्मेटेड ईयर रिटर्न करता है"
+    },
+    {
+        "question": "What does math.exp(0) return?\nmath.exp(0) क्या रिटर्न करता है?",
+        "options": ["0", "1", "e", "Error"],
+        "answer": 1,
+        "explanation": "exp(0) is e^0 which is 1/exp(0) e^0 है जो 1 होता है"
+    },
+    {
+        "question": "How to get timestamp from datetime in datetime module?\ndatetime मॉड्यूल में datetime से टाइमस्टैम्प कैसे प्राप्त करें?",
+        "options": ["dt.timestamp()", "dt.gettimestamp()", "dt.toTimestamp()", "dt.time()"],
+        "answer": 0,
+        "explanation": "timestamp() method returns POSIX timestamp/timestamp() मेथड POSIX टाइमस्टैम्प रिटर्न करता है"
+    },
+    {
+        "question": "Which function returns time as string with format in time module?\ntime मॉड्यूल में फॉर्मेट के साथ टाइम को स्ट्रिंग के रूप में कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["time.strftime()", "time.ctime()", "time.format()", "time.tostring()"],
+        "answer": 0,
+        "explanation": "strftime() formats time as string/strftime() टाइम को स्ट्रिंग के रूप में फॉर्मेट करता है"
+    },
+    {
+        "question": "What does math.log1p(1) return?\nmath.log1p(1) क्या रिटर्न करता है?",
+        "options": ["0", "1", "0.693", "2"],
+        "answer": 2,
+        "explanation": "log1p(1) is log(2) ≈ 0.693/log1p(1) लॉग(2) ≈ 0.693 है"
+    },
+    {
+        "question": "How to create date object for 2025-01-01 in datetime module?\ndatetime मॉड्यूल में 2025-01-01 के लिए डेट ऑब्जेक्ट कैसे बनाएं?",
+        "options": ["datetime.date(2025,1,1)", "date(2025,1,1)", "datetime(2025,1,1)", "new Date(2025,1,1)"],
+        "answer": 0,
+        "explanation": "date() constructor creates date object/date() कंस्ट्रक्टर डेट ऑब्जेक्ट बनाता है"
+    },
+    {
+        "question": "Which function returns time struct from UTC timestamp in time module?\ntime मॉड्यूल में UTC टाइमस्टैम्प से टाइम स्ट्रक्चर कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["time.utctime()", "time.gmtime()", "time.fromutc()", "time.ucttime()"],
+        "answer": 1,
+        "explanation": "gmtime() returns UTC struct/gmtime() UTC स्ट्रक्चर रिटर्न करता है"
+    },
+    {
+        "question": "What does math.isclose(1.0, 1.0) return?\nmath.isclose(1.0, 1.0) क्या रिटर्न करता है?",
+        "options": ["True", "False", "Error", "None"],
+        "answer": 0,
+        "explanation": "Numbers are exactly equal/नंबर्स बिल्कुल बराबर हैं"
+    },
+    {
+        "question": "How to get day of month from datetime in datetime module?\ndatetime मॉड्यूल में datetime से महीने का दिन कैसे प्राप्त करें?",
+        "options": ["dt.day", "dt.getDay()", "dt.dayofmonth", "dt.mday"],
+        "answer": 0,
+        "explanation": "day attribute returns day of month/day एट्रिब्यूट महीने का दिन रिटर्न करता है"
+    },
+    {
+        "question": "Which function returns calendar with weeks starting on Sunday in calendar module?\ncalendar मॉड्यूल में रविवार से शुरू होने वाले सप्ताह के साथ कैलेंडर कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["calendar.setfirstweekday(6)", "calendar.SundayFirst()", "calendar.weekstart(0)", "calendar.firstday(6)"],
+        "answer": 0,
+        "explanation": "setfirstweekday(6) sets Sunday as first day/setfirstweekday(6) रविवार को पहला दिन सेट करता है"
+    },
+    {
+        "question": "What does datetime.now().year return?\ndatetime.now().year क्या रिटर्न करता है?",
+        "options": ["Current year", "Years since epoch", "Year as string", "Last two digits of year"],
+        "answer": 0,
+        "explanation": "year returns current year/year करंट ईयर रिटर्न करता है"
+    },
+    {
+        "question": "How to calculate logarithm base e in math module?\nmath मॉड्यूल में लॉगरिदम बेस e की गणना कैसे करें?",
+        "options": ["math.log()", "math.ln()", "math.loge()", "math.log10()"],
+        "answer": 0,
+        "explanation": "math.log() with single argument is natural log/एकल आर्ग्युमेंट के साथ math.log() नेचुरल लॉग है"
+    },
+    {
+        "question": "Which function returns time struct from components in time module?\ntime मॉड्यूल में कंपोनेंट्स से टाइम स्ट्रक्चर कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["time.struct()", "time.mktime()", "time.gmtime()", "time.localtime()"],
+        "answer": 1,
+        "explanation": "mktime() creates struct from components/mktime() कंपोनेंट्स से स्ट्रक्चर बनाता है"
+    },
+    {
+        "question": "What does math.comb(4,2) return?\nmath.comb(4,2) क्या रिटर्न करता है?",
+        "options": ["4", "6", "8", "12"],
+        "answer": 1,
+        "explanation": "comb(4,2) is 6 (4 choose 2)/comb(4,2) 6 है (4 चूज़ 2)"
+    },
+    {
+        "question": "How to get month name from datetime in datetime module?\ndatetime मॉड्यूल में datetime से महीने का नाम कैसे प्राप्त करें?",
+        "options": ["dt.month_name", "dt.strftime('%B')", "dt.getMonthName()", "dt.monthname()"],
+        "answer": 1,
+        "explanation": "strftime('%B') returns full month name/strftime('%B') पूरा महीने का नाम रिटर्न करता है"
+    },
+    {
+        "question": "Which function returns calendar as text in calendar module?\ncalendar मॉड्यूल में कैलेंडर को टेक्स्ट के रूप में कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["calendar.textcalendar()", "calendar.prcal()", "calendar.format()", "calendar.TextCalendar()"],
+        "answer": 3,
+        "explanation": "TextCalendar() creates text calendar/TextCalendar() टेक्स्ट कैलेंडर बनाता है"
+    },
+    {
+        "question": "What does math.perm(4,2) return?\nmath.perm(4,2) क्या रिटर्न करता है?",
+        "options": ["6", "8", "12", "16"],
+        "answer": 2,
+        "explanation": "perm(4,2) is 12 (4*3)/perm(4,2) 12 है (4*3)"
+    },
+    {
+        "question": "How to get day name from datetime in datetime module?\ndatetime मॉड्यूल में datetime से दिन का नाम कैसे प्राप्त करें?",
+        "options": ["dt.day_name", "dt.strftime('%A')", "dt.getDayName()", "dt.weekdayname()"],
+        "answer": 1,
+        "explanation": "strftime('%A') returns full day name/strftime('%A') पूरा दिन का नाम रिटर्न करता है"
+    },
+    {
+        "question": "Which function returns formatted month header in calendar module?\ncalendar मॉड्यूल में फॉर्मेटेड मंथ हेडर कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["calendar.monthheader()", "calendar.formatmonthname()", "calendar.monthname()", "calendar.month()"],
+        "answer": 1,
+        "explanation": "formatmonthname() returns month header/formatmonthname() मंथ हेडर रिटर्न करता है"
+    },
+    {
+        "question": "What does math.lcm(3,4) return?\nmath.lcm(3,4) क्या रिटर्न करता है?",
+        "options": ["1", "6", "12", "24"],
+        "answer": 2,
+        "explanation": "LCM of 3 and 4 is 12/3 और 4 का LCM 12 है"
+    },
+    {
+        "question": "How to get week number from datetime in datetime module?\ndatetime मॉड्यूल में datetime से सप्ताह संख्या कैसे प्राप्त करें?",
+        "options": ["dt.week", "dt.isocalendar()[1]", "dt.getWeek()", "dt.weeknumber()"],
+        "answer": 1,
+        "explanation": "isocalendar()[1] returns week number/isocalendar()[1] सप्ताह संख्या रिटर्न करता है"
+    },
+    {
+        "question": "Which function returns calendar with custom width in calendar module?\ncalendar मॉड्यूल में कस्टम चौड़ाई के साथ कैलेंडर कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["calendar.setwidth()", "calendar.format(width=)", "calendar.TextCalendar(width=)", "calendar.width()"],
+        "answer": 2,
+        "explanation": "TextCalendar(width=) sets calendar width/TextCalendar(width=) कैलेंडर की चौड़ाई सेट करता है"
+    },
+    {
+        "question": "What does math.fmod(-10,3) return?\nmath.fmod(-10,3) क्या रिटर्न करता है?",
+        "options": ["1", "-1", "2", "-2"],
+        "answer": 1,
+        "explanation": "fmod preserves dividend sign (-10%3=-1)/fmod डिविडेंड साइन प्रिजर्व करता है (-10%3=-1)"
+    },
+    {
+        "question": "How to get quarter from datetime in datetime module?\ndatetime मॉड्यूल में datetime से क्वार्टर कैसे प्राप्त करें?",
+        "options": ["dt.quarter", "(dt.month-1)//3+1", "dt.getQuarter()", "dt.quarter()"],
+        "answer": 1,
+        "explanation": "Quarter can be calculated from month/महीने से क्वार्टर की गणना की जा सकती है"
+    },
+    {
+        "question": "Which function returns calendar with custom locale in calendar module?\ncalendar मॉड्यूल में कस्टम लोकेल के साथ कैलेंडर कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["calendar.setlocale()", "calendar.LocaleCalendar()", "calendar.TextCalendar(locale=)", "calendar.locale()"],
+        "answer": 2,
+        "explanation": "TextCalendar(locale=) sets locale/TextCalendar(locale=) लोकेल सेट करता है"
+    },
+    {
+        "question": "What does math.remainder(-10,3) return?\nmath.remainder(-10,3) क्या रिटर्न करता है?",
+        "options": ["1", "-1", "2", "-2"],
+        "answer": 1,
+        "explanation": "remainder(-10,3) is -1/remainder(-10,3) -1 है"
+    },
+    {
+        "question": "How to get days in month from datetime in datetime module?\ndatetime मॉड्यूल में datetime से महीने के दिन कैसे प्राप्त करें?",
+        "options": ["dt.daysinmonth", "calendar.monthrange(dt.year, dt.month)[1]", "dt.getDaysInMonth()", "dt.monthdays"],
+        "answer": 1,
+        "explanation": "monthrange() returns (weekday, days)/monthrange() (वीकडे, दिन) रिटर्न करता है"
+    },
+    {
+        "question": "Which function returns HTML calendar in calendar module?\ncalendar मॉड्यूल में HTML कैलेंडर कौन सा फंक्शन रिटर्न करता है?",
+        "options": ["calendar.HTMLCalendar()", "calendar.tohtml()", "calendar.webcalendar()", "calendar.html()"],
+        "answer": 0,
+        "explanation": "HTMLCalendar() creates HTML calendar/HTMLCalendar() HTML कैलेंडर बनाता है"
+    },
+    {
+        "question": "What does math.nextafter(0.0, 1.0) return?\nmath.nextafter(0.0, 1.0) क्या रिटर्न करता है?",
+        "options": ["0.0", "1.0", "Smallest float > 0", "Error"],
+        "answer": 2,
+        "explanation": "nextafter returns next representable float/nextafter अगला प्रस्तुत करने योग्य फ्लोट रिटर्न करता है"
+    },
+    {
+        "question": "How to get timezone from datetime in datetime module?\ndatetime मॉड्यूल में datetime से टाइमज़ोन कैसे प्राप्त करें?",
+        "options": ["dt.tz", "dt.timezone", "dt.getTimezone()", "dt.tzinfo"],
+        "answer": 3,
+        "explanation": "tzinfo contains timezone info/tzinfo में टाइमज़ोन इन्फो होता है"
     }
 ]
 ,
