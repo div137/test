@@ -1009,611 +1009,314 @@
     //==============================================================================================================================
     //==============================================================================================================================
     //==============================================================================================================================
-            "Programming and Problem Solving through Python":
-[
+            "Programming and Problem Solving through Python":[
     {
-        "question": "What is NumPy?\nNumPy क्या है?",
-        "options": ["A Python library for numerical computations", "A database management system", "A web development framework", "A machine learning algorithm"],
+        "question": "What is the output of the following code?\nfor i in range(3):\n    print(i)\n\nनिम्नलिखित कोड का आउटपुट क्या है?\nfor i in range(3):\n    print(i)",
+        "options": ["0 1 2", "1 2 3", "0 1 2 3", "1 2"],
         "answer": 0,
-        "explanation": "NumPy is a Python library used for numerical computations/NumPy एक पायथन लाइब्रेरी है जिसका उपयोग संख्यात्मक गणनाओं के लिए किया जाता है"
+        "explanation": "range(3) generates numbers 0, 1, 2"
     },
     {
-        "question": "How to install NumPy?\nNumPy को कैसे इंस्टॉल करें?",
-        "options": ["pip install numpy", "install numpy", "python get numpy", "python install numpy"],
+        "question": "How many times will 'Hello' be printed?\nfor i in range(1, 5):\n    print('Hello')\n\n'Hello' कितनी बार प्रिंट होगा?\nfor i in range(1, 5):\n    print('Hello')",
+        "options": ["4", "5", "6", "3"],
         "answer": 0,
-        "explanation": "NumPy can be installed using pip install numpy/NumPy को pip install numpy का उपयोग करके इंस्टॉल किया जा सकता है"
+        "explanation": "range(1,5) gives 1,2,3,4 (4 iterations)"
     },
     {
-        "question": "What is the main object in NumPy?\nNumPy में मुख्य ऑब्जेक्ट क्या है?",
-        "options": ["ndarray", "list", "tuple", "dictionary"],
-        "answer": 0,
-        "explanation": "The main object in NumPy is ndarray (n-dimensional array)/NumPy में मुख्य ऑब्जेक्ट ndarray (n-डायमेंशनल ऐरे) है"
-    },
-    {
-        "question": "How to create a NumPy array from a list?\nलिस्ट से NumPy ऐरे कैसे बनाएं?",
-        "options": ["np.array(list)", "np.create(list)", "np.make(list)", "np.list_to_array(list)"],
-        "answer": 0,
-        "explanation": "Use np.array() to create array from list/लिस्ट से ऐरे बनाने के लिए np.array() का उपयोग करें"
-    },
-    {
-        "question": "What does ndarray stand for?\nndarray का पूरा नाम क्या है?",
-        "options": ["n-dimensional array", "numeric data array", "named data array", "nested data array"],
-        "answer": 0,
-        "explanation": "ndarray stands for n-dimensional array/ndarray का मतलब n-डायमेंशनल ऐरे है"
-    },
-    {
-        "question": "Which attribute returns the shape of an array?\nकौन सा एट्रिब्यूट ऐरे का शेप रिटर्न करता है?",
-        "options": ["shape", "size", "dim", "length"],
-        "answer": 0,
-        "explanation": "shape attribute returns array dimensions/shape एट्रिब्यूट ऐरे के डायमेंशन रिटर्न करता है"
-    },
-    {
-        "question": "How to create an array of zeros?\nज़ीरो का ऐरे कैसे बनाएं?",
-        "options": ["np.zeros()", "np.empty()", "np.zeroes()", "np.null()"],
-        "answer": 0,
-        "explanation": "Use np.zeros() to create array filled with zeros/ज़ीरो से भरे ऐरे बनाने के लिए np.zeros() का उपयोग करें"
-    },
-    {
-        "question": "Which function creates an array with evenly spaced values?\nकौन सा फंक्शन समान दूरी वाले वैल्यूज़ के साथ ऐरे बनाता है?",
-        "options": ["np.linspace()", "np.arange()", "np.range()", "np.sequence()"],
-        "answer": 0,
-        "explanation": "np.linspace() creates array with evenly spaced numbers/np.linspace() समान दूरी वाले नंबर्स के साथ ऐरे बनाता है"
-    },
-    {
-        "question": "How to get the data type of a NumPy array?\nNumPy ऐरे का डेटा टाइप कैसे प्राप्त करें?",
-        "options": ["dtype", "type", "datatype", "arraytype"],
-        "answer": 0,
-        "explanation": "dtype attribute returns array's data type/dtype एट्रिब्यूट ऐरे का डेटा टाइप रिटर्न करता है"
-    },
-    {
-        "question": "What is the output of np.arange(5)?\nnp.arange(5) का आउटपुट क्या है?",
-        "options": ["[0 1 2 3 4]", "[1 2 3 4 5]", "[5]", "[0 1 2 3 4 5]"],
-        "answer": 0,
-        "explanation": "np.arange(5) creates array from 0 to 4/np.arange(5) 0 से 4 तक का ऐरे बनाता है"
-    },
-    {
-        "question": "How to create a 2x2 identity matrix?\n2x2 आइडेंटिटी मैट्रिक्स कैसे बनाएं?",
-        "options": ["np.eye(2)", "np.identity(2)", "np.ones((2,2))", "Both A and B"],
-        "answer": 3,
-        "explanation": "Both np.eye(2) and np.identity(2) create identity matrix/np.eye(2) और np.identity(2) दोनों आइडेंटिटी मैट्रिक्स बनाते हैं"
-    },
-    {
-        "question": "Which method converts a list to a NumPy array?\nकौन सी मेथड लिस्ट को NumPy ऐरे में कन्वर्ट करती है?",
-        "options": ["np.array()", "np.asarray()", "np.fromiter()", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods can convert list to array/ये सभी मेथड लिस्ट को ऐरे में कन्वर्ट कर सकती हैं"
-    },
-    {
-        "question": "How to get the number of dimensions of an array?\nऐरे के डायमेंशन की संख्या कैसे प्राप्त करें?",
-        "options": ["ndim", "shape", "size", "dim"],
-        "answer": 0,
-        "explanation": "ndim attribute returns number of dimensions/ndim एट्रिब्यूट डायमेंशन की संख्या रिटर्न करता है"
-    },
-    {
-        "question": "What does array slicing allow?\nऐरे स्लाइसिंग क्या अनुमति देती है?",
-        "options": ["Accessing parts of array", "Changing array shape", "Converting array type", "All of the above"],
-        "answer": 0,
-        "explanation": "Slicing allows accessing parts of array/स्लाइसिंग ऐरे के भागों तक पहुँचने की अनुमति देती है"
-    },
-    {
-        "question": "How to access the first element of a 1D array?\n1D ऐरे के पहले एलिमेंट तक कैसे पहुँचें?",
-        "options": ["arr[0]", "arr[1]", "arr.first", "arr(0)"],
-        "answer": 0,
-        "explanation": "Use index 0 to access first element/पहले एलिमेंट तक पहुँचने के लिए इंडेक्स 0 का उपयोग करें"
-    },
-    {
-        "question": "What is the result of np.array([1,2]) + np.array([3,4])?\nnp.array([1,2]) + np.array([3,4]) का रिजल्ट क्या है?",
-        "options": ["[4,6]", "[1,2,3,4]", "[1,3,2,4]", "Error"],
-        "answer": 0,
-        "explanation": "NumPy performs element-wise addition/NumPy एलिमेंट-वाइज एडिशन करता है"
-    },
-    {
-        "question": "How to create a 3x3 array of random numbers?\nरैंडम नंबर्स का 3x3 ऐरे कैसे बनाएं?",
-        "options": ["np.random.rand(3,3)", "np.rand(3,3)", "np.random.random((3,3))", "Both A and C"],
-        "answer": 3,
-        "explanation": "Both np.random.rand() and np.random.random() can create random arrays/np.random.rand() और np.random.random() दोनों रैंडम ऐरे बना सकते हैं"
-    },
-    {
-        "question": "Which function creates an array from existing data?\nकौन सा फंक्शन मौजूदा डेटा से ऐरे बनाता है?",
-        "options": ["np.asarray()", "np.fromfunction()", "np.fromiter()", "All of the above"],
-        "answer": 3,
-        "explanation": "All these functions can create arrays from existing data/ये सभी फंक्शन मौजूदा डेटा से ऐरे बना सकते हैं"
-    },
-    {
-        "question": "What is the output of np.zeros((2,3)).shape?\nnp.zeros((2,3)).shape का आउटपुट क्या है?",
-        "options": ["(2,3)", "(3,2)", "(6)", "(2)"],
-        "answer": 0,
-        "explanation": "shape returns dimensions (rows, columns)/shape डायमेंशन (पंक्तियाँ, कॉलम) रिटर्न करता है"
-    },
-    {
-        "question": "How to get the last element of a 1D array?\n1D ऐरे के अंतिम एलिमेंट को कैसे प्राप्त करें?",
-        "options": ["arr[-1]", "arr[last]", "arr[len(arr)]", "arr.end"],
-        "answer": 0,
-        "explanation": "Negative indexing starts from the end/नेगेटिव इंडेक्सिंग अंत से शुरू होती है"
-    },
-    {
-        "question": "What does the size attribute return?\nsize एट्रिब्यूट क्या रिटर्न करता है?",
-        "options": ["Total number of elements", "Memory size", "Data type size", "Array dimensions"],
-        "answer": 0,
-        "explanation": "size returns total number of elements/size एलिमेंट्स की कुल संख्या रिटर्न करता है"
-    },
-    {
-        "question": "How to create a 1D array from 0 to 9?\n0 से 9 तक का 1D ऐरे कैसे बनाएं?",
-        "options": ["np.arange(10)", "np.range(10)", "np.array(0,9)", "np.sequence(10)"],
-        "answer": 0,
-        "explanation": "np.arange(10) creates array with values 0-9/np.arange(10) 0-9 वैल्यू के साथ ऐरे बनाता है"
-    },
-    {
-        "question": "What is the result of np.array([1,2,3]) * 2?\nnp.array([1,2,3]) * 2 का रिजल्ट क्या है?",
-        "options": ["[2,4,6]", "[1,2,3,1,2,3]", "[1,2,3,2]", "Error"],
-        "answer": 0,
-        "explanation": "NumPy performs element-wise operations/NumPy एलिमेंट-वाइज ऑपरेशन करता है"
-    },
-    {
-        "question": "How to create a 2D array with all values as 5?\nसभी वैल्यू 5 के साथ 2D ऐरे कैसे बनाएं?",
-        "options": ["np.full((2,2),5)", "np.ones((2,2))*5", "np.array([[5,5],[5,5]])", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods create 2D array with all 5s/ये सभी मेथड सभी वैल्यू 5 के साथ 2D ऐरे बनाते हैं"
-    },
-    {
-        "question": "Which function creates an array from a tuple?\nटपल से ऐरे बनाने के लिए कौन सा फंक्शन है?",
-        "options": ["np.array()", "np.asarray()", "np.fromtuple()", "Both A and B"],
-        "answer": 3,
-        "explanation": "Both np.array() and np.asarray() can create array from tuple/np.array() और np.asarray() दोनों टपल से ऐरे बना सकते हैं"
-    },
-    {
-        "question": "What is the output of np.array([1,2,3]).dtype?\nnp.array([1,2,3]).dtype का आउटपुट क्या है?",
-        "options": ["int64", "float64", "object", "string"],
-        "answer": 0,
-        "explanation": "Default dtype for integers is int64/इंटिजर्स के लिए डिफॉल्ट dtype int64 है"
-    },
-    {
-        "question": "How to access the element in first row, second column of a 2D array?\n2D ऐरे के पहली पंक्ति, दूसरे कॉलम के एलिमेंट तक कैसे पहुँचें?",
-        "options": ["arr[0,1]", "arr[1,2]", "arr[0][1]", "Both A and C"],
-        "answer": 3,
-        "explanation": "Both comma and double index notation work/कॉमा और डबल इंडेक्स नोटेशन दोनों काम करते हैं"
-    },
-    {
-        "question": "What does np.linspace(0,10,5) return?\nnp.linspace(0,10,5) क्या रिटर्न करता है?",
-        "options": ["[0,2.5,5,7.5,10]", "[0,10,5]", "[0,5,10]", "[0,1,2,3,4,5,6,7,8,9,10]"],
-        "answer": 0,
-        "explanation": "linspace creates evenly spaced numbers in range/linspace रेंज में समान दूरी वाले नंबर्स बनाता है"
-    },
-    {
-        "question": "How to transpose a 2D array?\n2D ऐरे को ट्रांसपोज़ कैसे करें?",
-        "options": ["arr.T", "np.transpose(arr)", "arr.transpose()", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods can transpose array/ये सभी मेथड ऐरे को ट्रांसपोज़ कर सकते हैं"
-    },
-    {
-        "question": "What is the result of np.array([1,2]) * np.array([3,4])?\nnp.array([1,2]) * np.array([3,4]) का रिजल्ट क्या है?",
-        "options": ["[3,8]", "[1,2,3,4]", "[4,6]", "Error"],
-        "answer": 0,
-        "explanation": "NumPy performs element-wise multiplication/NumPy एलिमेंट-वाइज मल्टीप्लिकेशन करता है"
-    },
-    {
-        "question": "How to create a boolean array?\nबूलियन ऐरे कैसे बनाएं?",
-        "options": ["np.array([True,False])", "np.ones(2,dtype=bool)", "np.zeros(2,dtype=bool)", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods create boolean arrays/ये सभी मेथड बूलियन ऐरे बना सकते हैं"
-    },
-    {
-        "question": "Which function creates an array with values from 0 to 1?\n0 से 1 तक वैल्यू के साथ ऐरे बनाने के लिए कौन सा फंक्शन है?",
-        "options": ["np.random.random()", "np.random.rand()", "np.random.sample()", "All of the above"],
-        "answer": 3,
-        "explanation": "All these functions create arrays with values between 0-1/ये सभी फंक्शन 0-1 के बीच वैल्यू के साथ ऐरे बनाते हैं"
-    },
-    {
-        "question": "What is the output of np.array([1.1,2.2]).astype(int)?\nnp.array([1.1,2.2]).astype(int) का आउटपुट क्या है?",
-        "options": ["[1,2]", "[1.1,2.2]", "[1,2,3]", "[1.0,2.0]"],
-        "answer": 0,
-        "explanation": "astype(int) truncates decimal part/astype(int) दशमलव भाग को काट देता है"
-    },
-    {
-        "question": "How to concatenate two arrays vertically?\nदो ऐरे को वर्टिकली कैसे जोड़ें?",
-        "options": ["np.vstack()", "np.concatenate(axis=0)", "np.append(axis=0)", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods can concatenate vertically/ये सभी मेथड वर्टिकली जोड़ सकते हैं"
-    },
-    {
-        "question": "What is the result of np.sum([1,2,3])?\nnp.sum([1,2,3]) का रिजल्ट क्या है?",
-        "options": ["6", "[1,2,3]", "1", "[6]"],
-        "answer": 0,
-        "explanation": "sum() returns sum of all elements/sum() सभी एलिमेंट्स का योग रिटर्न करता है"
-    },
-    {
-        "question": "How to create a 1D array of 10 elements all equal to 1?\nसभी वैल्यू 1 के साथ 10 एलिमेंट का 1D ऐरे कैसे बनाएं?",
-        "options": ["np.ones(10)", "np.full(10,1)", "np.array([1]*10)", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods create array of 1s/ये सभी मेथड 1 के ऐरे बना सकते हैं"
-    },
-    {
-        "question": "Which function creates an array from a string?\nस्ट्रिंग से ऐरे बनाने के लिए कौन सा फंक्शन है?",
-        "options": ["np.fromstring()", "np.array(list(string))", "np.asarray(string)", "All of the above"],
-        "answer": 0,
-        "explanation": "np.fromstring() creates array from string/np.fromstring() स्ट्रिंग से ऐरे बनाता है"
-    },
-    {
-        "question": "What is the output of np.array([1,2,3]).ndim?\nnp.array([1,2,3]).ndim का आउटपुट क्या है?",
-        "options": ["1", "2", "3", "0"],
-        "answer": 0,
-        "explanation": "1D array has 1 dimension/1D ऐरे का 1 डायमेंशन होता है"
-    },
-    {
-        "question": "How to access every second element of an array?\nऐरे के हर दूसरे एलिमेंट तक कैसे पहुँचें?",
-        "options": ["arr[::2]", "arr[1::2]", "arr[0::2]", "arr[2:]"],
-        "answer": 0,
-        "explanation": "[::2] selects every second element/[::2] हर दूसरा एलिमेंट सिलेक्ट करता है"
-    },
-    {
-        "question": "What is the result of np.array([1,2]) == np.array([1,3])?\nnp.array([1,2]) == np.array([1,3]) का रिजल्ट क्या है?",
-        "options": ["[True,False]", "False", "True", "Error"],
-        "answer": 0,
-        "explanation": "NumPy does element-wise comparison/NumPy एलिमेंट-वाइज कम्पेरिजन करता है"
-    },
-    {
-        "question": "How to create a diagonal matrix?\nडायगोनल मैट्रिक्स कैसे बनाएं?",
-        "options": ["np.diag()", "np.eye()", "np.diagonal()", "Both A and B"],
-        "answer": 3,
-        "explanation": "Both np.diag() and np.eye() can create diagonal matrices/np.diag() और np.eye() दोनों डायगोनल मैट्रिक्स बना सकते हैं"
-    },
-    {
-        "question": "Which function creates an array from a buffer?\nबफर से ऐरे बनाने के लिए कौन सा फंक्शन है?",
-        "options": ["np.frombuffer()", "np.fromfile()", "np.asbuffer()", "np.buffer()"],
-        "answer": 0,
-        "explanation": "np.frombuffer() creates array from buffer/np.frombuffer() बफर से ऐरे बनाता है"
-    },
-    {
-        "question": "What is the output of np.array([1,2,3]).size?\nnp.array([1,2,3]).size का आउटपुट क्या है?",
-        "options": ["3", "1", "(3,)", "[1,2,3]"],
-        "answer": 0,
-        "explanation": "size returns total number of elements/size एलिमेंट्स की कुल संख्या रिटर्न करता है"
-    },
-    {
-        "question": "How to reverse a 1D array?\n1D ऐरे को रिवर्स कैसे करें?",
-        "options": ["arr[::-1]", "np.flip(arr)", "arr.reverse()", "Both A and B"],
-        "answer": 3,
-        "explanation": "Both slicing and flip can reverse array/स्लाइसिंग और flip दोनों ऐरे को रिवर्स कर सकते हैं"
-    },
-    {
-        "question": "What is the result of np.array([1,2]) - 1?\nnp.array([1,2]) - 1 का रिजल्ट क्या है?",
-        "options": ["[0,1]", "[1,2,-1]", "[1,1]", "Error"],
-        "answer": 0,
-        "explanation": "NumPy broadcasts scalar operations/NumPy स्केलर ऑपरेशन्स को ब्रॉडकास्ट करता है"
-    },
-    {
-        "question": "How to create a 3D array of zeros?\nज़ीरो का 3D ऐरे कैसे बनाएं?",
-        "options": ["np.zeros((2,2,2))", "np.zeros([2,2,2])", "np.zeros(2,2,2)", "Both A and B"],
-        "answer": 3,
-        "explanation": "Shape can be tuple or list/शेप टपल या लिस्ट हो सकता है"
-    },
-    {
-        "question": "Which function creates an array from a generator?\nजनरेटर से ऐरे बनाने के लिए कौन सा फंक्शन है?",
-        "options": ["np.fromiter()", "np.fromgenerator()", "np.asarray()", "np.array()"],
-        "answer": 0,
-        "explanation": "np.fromiter() creates array from generator/np.fromiter() जनरेटर से ऐरे बनाता है"
-    },
-    {
-        "question": "What is the output of np.array([1.5,2.5]).astype(int)?\nnp.array([1.5,2.5]).astype(int) का आउटपुट क्या है?",
-        "options": ["[1,2]", "[1.5,2.5]", "[2,3]", "[1.0,2.0]"],
-        "answer": 0,
-        "explanation": "astype(int) truncates decimal part/astype(int) दशमलव भाग को काट देता है"
-    },
-    {
-        "question": "How to get the first 3 elements of an array?\nऐरे के पहले 3 एलिमेंट कैसे प्राप्त करें?",
-        "options": ["arr[:3]", "arr[0:3]", "arr[0,1,2]", "Both A and B"],
-        "answer": 3,
-        "explanation": "Both slicing methods work/दोनों स्लाइसिंग मेथड काम करते हैं"
-    },
-    {
-        "question": "What is the result of np.array([1,2]) / np.array([2,2])?\nnp.array([1,2]) / np.array([2,2]) का रिजल्ट क्या है?",
-        "options": ["[0.5,1]", "[1,2,2,2]", "[1/2,2/2]", "Both A and C"],
-        "answer": 3,
-        "explanation": "NumPy performs element-wise division/NumPy एलिमेंट-वाइज डिवीजन करता है"
-    },
-    {
-        "question": "How to create an array with values from 5 to 15 with step 2?\n5 से 15 तक स्टेप 2 के साथ ऐरे कैसे बनाएं?",
-        "options": ["np.arange(5,16,2)", "np.range(5,15,2)", "np.linspace(5,15,6)", "np.sequence(5,15,2)"],
-        "answer": 0,
-        "explanation": "np.arange(start,stop,step) creates sequence/np.arange(start,stop,step) सीक्वेंस बनाता है"
-    },
-    {
-        "question": "Which function creates an array from a text file?\nटेक्स्ट फाइल से ऐरे बनाने के लिए कौन सा फंक्शन है?",
-        "options": ["np.loadtxt()", "np.fromfile()", "np.readtxt()", "np.importtxt()"],
-        "answer": 0,
-        "explanation": "np.loadtxt() loads array from text file/np.loadtxt() टेक्स्ट फाइल से ऐरे लोड करता है"
-    },
-    {
-        "question": "What is the output of np.array([[1,2],[3,4]]).shape?\nnp.array([[1,2],[3,4]]).shape का आउटपुट क्या है?",
-        "options": ["(2,2)", "(4,)", "(2,)", "[2,2]"],
-        "answer": 0,
-        "explanation": "Shape returns (rows, columns)/शेप (पंक्तियाँ, कॉलम) रिटर्न करता है"
-    },
-    {
-        "question": "How to get the maximum value in an array?\nऐरे में मैक्सिमम वैल्यू कैसे प्राप्त करें?",
-        "options": ["np.max(arr)", "arr.max()", "max(arr)", "Both A and B"],
-        "answer": 3,
-        "explanation": "Both np.max() and .max() methods work/np.max() और .max() दोनों मेथड काम करते हैं"
-    },
-    {
-        "question": "What is the result of np.array([1,2]) ** 2?\nnp.array([1,2]) ** 2 का रिजल्ट क्या है?",
-        "options": ["[1,4]", "[1,2,1,2]", "[2,4]", "Error"],
-        "answer": 0,
-        "explanation": "** performs element-wise exponentiation/** एलिमेंट-वाइज एक्सपोनेंटिएशन करता है"
-    },
-    {
-        "question": "How to create a 2x3 array with random integers between 1-10?\n1-10 के बीच रैंडम इंटिजर्स के साथ 2x3 ऐरे कैसे बनाएं?",
-        "options": ["np.random.randint(1,11,(2,3))", "np.random.random((2,3))*10", "np.rand(1,10,(2,3))", "np.random.int(1,10,(2,3))"],
-        "answer": 0,
-        "explanation": "np.random.randint() creates random integers/np.random.randint() रैंडम इंटिजर्स बनाता है"
-    },
-    {
-        "question": "Which function creates an array from a binary file?\nबाइनरी फाइल से ऐरे बनाने के लिए कौन सा फंक्शन है?",
-        "options": ["np.fromfile()", "np.load()", "np.readbinary()", "np.importbinary()"],
-        "answer": 0,
-        "explanation": "np.fromfile() reads array from binary file/np.fromfile() बाइनरी फाइल से ऐरे पढ़ता है"
-    },
-    {
-        "question": "What is the output of np.array([1,2,3])[1:3]?\nnp.array([1,2,3])[1:3] का आउटपुट क्या है?",
-        "options": ["[2,3]", "[1,2]", "[1,2,3]", "[3]"],
-        "answer": 0,
-        "explanation": "Slicing is exclusive of end index/स्लाइसिंग एंड इंडेक्स को एक्सक्लूड करती है"
-    },
-    {
-        "question": "How to find the mean of array values?\nऐरे वैल्यूज़ का मीन कैसे प्राप्त करें?",
-        "options": ["np.mean(arr)", "arr.mean()", "sum(arr)/len(arr)", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods calculate mean/ये सभी मेथड मीन कैलकुलेट करते हैं"
-    },
-    {
-        "question": "What is the result of np.array([1,2]) + 10?\nnp.array([1,2]) + 10 का रिजल्ट क्या है?",
-        "options": ["[11,12]", "[1,2,10]", "[1,10,2,10]", "Error"],
-        "answer": 0,
-        "explanation": "NumPy broadcasts scalar operations/NumPy स्केलर ऑपरेशन्स को ब्रॉडकास्ट करता है"
-    },
-    {
-        "question": "How to create a 4x4 array with 1s on the border and 0s inside?\nबॉर्डर पर 1 और अंदर 0 के साथ 4x4 ऐरे कैसे बनाएं?",
-        "options": ["np.pad(np.zeros((2,2)),1,constant_values=1)", "np.ones((4,4)); arr[1:-1,1:-1]=0", "Both methods work", "None of the above"],
+        "question": "What does this loop do?\nwhile True:\n    print('Infinite')\n\nयह लूप क्या करता है?\nwhile True:\n    print('Infinite')",
+        "options": ["Prints 'Infinite' once", "Prints 'Infinite' 100 times", "Creates infinite loop", "Does nothing"],
         "answer": 2,
-        "explanation": "Both methods can create bordered array/दोनों मेथड बॉर्डर वाला ऐरे बना सकते हैं"
+        "explanation": "while True creates infinite loop"
     },
     {
-        "question": "Which function creates an array from a CSV file?\nCSV फाइल से ऐरे बनाने के लिए कौन सा फंक्शन है?",
-        "options": ["np.genfromtxt()", "np.readcsv()", "np.fromcsv()", "np.loadcsv()"],
-        "answer": 0,
-        "explanation": "np.genfromtxt() can read CSV files/np.genfromtxt() CSV फाइल्स पढ़ सकता है"
-    },
-   
-    {
-        "question": "What is the result of np.array([1,2,3]) * 0?\nnp.array([1,2,3]) * 0 का रिजल्ट क्या है?",
-        "options": ["[0,0,0]", "[1,2,3]", "[1,0,2,0,3,0]", "Error"],
-        "answer": 0,
-        "explanation": "Multiplication by 0 gives zeros/0 से मल्टीप्लिकेशन ज़ीरो देता है"
+        "question": "What is the value of x after this loop?\nx = 0\nfor i in range(3):\n    x += i\n\nइस लूप के बाद x का मान क्या है?\nx = 0\nfor i in range(3):\n    x += i",
+        "options": ["0", "3", "6", "1"],
+        "answer": 1,
+        "explanation": "Adds 0+1+2 = 3"
     },
     {
-        "question": "How to create a 3D array with values from 1 to 8?\n1 से 8 तक वैल्यू के साथ 3D ऐरे कैसे बनाएं?",
-        "options": ["np.arange(1,9).reshape(2,2,2)", "np.array([[[1,2],[3,4]],[[5,6],[7,8]]])", "np.linspace(1,8,8).reshape(2,2,2)", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods create the required array/ये सभी मेथड रिक्वायर्ड ऐरे बना सकते हैं"
-    },
-    {
-        "question": "Which function calculates dot product of two arrays?\nदो ऐरे का डॉट प्रोडक्ट कैलकुलेट करने के लिए कौन सा फंक्शन है?",
-        "options": ["np.dot()", "np.matmul()", "@ operator", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods calculate dot product/ये सभी मेथड डॉट प्रोडक्ट कैलकुलेट करते हैं"
-    },
-    {
-        "question": "What is the output of np.array([1,2,3])[1]?\nnp.array([1,2,3])[1] का आउटपुट क्या है?",
-        "options": ["2", "1", "[2]", "[1,2]"],
-        "answer": 0,
-        "explanation": "Indexing starts at 0/इंडेक्सिंग 0 से शुरू होती है"
-    },
-    {
-        "question": "How to concatenate two arrays horizontally?\nदो ऐरे को हॉरिजॉन्टली कैसे जोड़ें?",
-        "options": ["np.hstack()", "np.concatenate(axis=1)", "np.append(axis=1)", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods can concatenate horizontally/ये सभी मेथड हॉरिजॉन्टली जोड़ सकते हैं"
-    },
-    {
-        "question": "What is the result of np.array([1,2,3]).sum()?\nnp.array([1,2,3]).sum() का रिजल्ट क्या है?",
-        "options": ["6", "[1,2,3]", "1", "[6]"],
-        "answer": 0,
-        "explanation": "sum() returns sum of all elements/sum() सभी एलिमेंट्स का योग रिटर्न करता है"
-    },
-    {
-        "question": "How to create a 2D array with 1s on diagonal and 0s elsewhere?\nडायगोनल पर 1 और बाकी जगह 0 के साथ 2D ऐरे कैसे बनाएं?",
-        "options": ["np.eye(3)", "np.diag(np.ones(3))", "np.identity(3)", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods create identity matrix/ये सभी मेथड आइडेंटिटी मैट्रिक्स बनाते हैं"
-    },
-    {
-        "question": "Which function calculates element-wise square root?\nएलिमेंट-वाइज स्क्वायर रूट कैलकुलेट करने के लिए कौन सा फंक्शन है?",
-        "options": ["np.sqrt()", "np.square_root()", "np.root()", "np.sqr()"],
-        "answer": 0,
-        "explanation": "np.sqrt() calculates square roots/np.sqrt() स्क्वायर रूट कैलकुलेट करता है"
-    },
-    {
-        "question": "What is the output of np.array([1,2,3])[::2]?\nnp.array([1,2,3])[::2] का आउटपुट क्या है?",
-        "options": ["[1,3]", "[2]", "[1,2]", "[3,1]"],
-        "answer": 0,
-        "explanation": "[::2] selects every second element/[::2] हर दूसरा एलिमेंट सिलेक्ट करता है"
-    },
-    {
-        "question": "How to find the minimum value in each column of a 2D array?\n2D ऐरे के हर कॉलम में मिनिमम वैल्यू कैसे प्राप्त करें?",
-        "options": ["np.min(arr, axis=0)", "arr.min(axis=0)", "np.amin(arr, axis=0)", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods find column minimums/ये सभी मेथड कॉलम मिनिमम ढूंढते हैं"
-    },
-    {
-        "question": "What is the result of np.array([1,2,3]) + np.array([4,5,6])?\nnp.array([1,2,3]) + np.array([4,5,6]) का रिजल्ट क्या है?",
-        "options": ["[5,7,9]", "[1,2,3,4,5,6]", "[1,4,2,5,3,6]", "Error"],
-        "answer": 0,
-        "explanation": "NumPy performs element-wise addition/NumPy एलिमेंट-वाइज एडिशन करता है"
-    },
-    {
-        "question": "How to create a 1D array with values from 10 to 1?\n10 से 1 तक वैल्यू के साथ 1D ऐरे कैसे बनाएं?",
-        "options": ["np.arange(10,0,-1)", "np.linspace(10,1,10)", "np.array(range(10,0,-1))", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods create descending array/ये सभी मेथड डिसेंडिंग ऐरे बना सकते हैं"
-    },
-    {
-        "question": "Which function calculates element-wise absolute value?\nएलिमेंट-वाइज एब्सोल्यूट वैल्यू कैलकुलेट करने के लिए कौन सा फंक्शन है?",
-        "options": ["np.abs()", "np.absolute()", "np.modulus()", "Both A and B"],
-        "answer": 3,
-        "explanation": "Both np.abs() and np.absolute() work/np.abs() और np.absolute() दोनों काम करते हैं"
-    },
-    {
-        "question": "What is the output of np.array([1,2,3]).T?\nnp.array([1,2,3]).T का आउटपुट क्या है?",
-        "options": ["[1,2,3]", "[[1],[2],[3]]", "Error", "None of the above"],
-        "answer": 0,
-        "explanation": "Transpose of 1D array is same/1D ऐरे का ट्रांसपोज़ वही रहता है"
-    },
-    {
-        "question": "How to find indices where array equals a value?\nऐरे की कौन सी इंडिसेस किसी वैल्यू के बराबर हैं, कैसे प्राप्त करें?",
-        "options": ["np.where(arr==value)", "(arr==value).nonzero()", "np.argwhere(arr==value)", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods find matching indices/ये सभी मेथड मिलान वाली इंडिसेस ढूंढते हैं"
-    },
-    {
-        "question": "What is the result of np.array([1,2,3]) * np.array([1,2,3])?\nnp.array([1,2,3]) * np.array([1,2,3]) का रिजल्ट क्या है?",
-        "options": ["[1,4,9]", "[1,2,3,1,2,3]", "[1,1,2,2,3,3]", "Error"],
-        "answer": 0,
-        "explanation": "NumPy performs element-wise multiplication/NumPy एलिमेंट-वाइज मल्टीप्लिकेशन करता है"
-    },
-    {
-        "question": "How to create a 2x2 array with random integers between 0-100?\n0-100 के बीच रैंडम इंटिजर्स के साथ 2x2 ऐरे कैसे बनाएं?",
-        "options": ["np.random.randint(0,101,(2,2))", "np.random.random((2,2))*100", "np.rand(0,100,(2,2))", "np.random.int(0,100,(2,2))"],
-        "answer": 0,
-        "explanation": "np.random.randint() creates random integers/np.random.randint() रैंडम इंटिजर्स बनाता है"
-    },
-    {
-        "question": "Which function calculates trigonometric sine?\nट्राइगोनोमेट्रिक साइन कैलकुलेट करने के लिए कौन सा फंक्शन है?",
-        "options": ["np.sin()", "np.sine()", "np.trigsin()", "np.math.sin()"],
-        "answer": 0,
-        "explanation": "np.sin() calculates sine of angles/np.sin() एंगल्स का साइन कैलकुलेट करता है"
-    },
-    {
-        "question": "What is the output of np.array([1,2,3])[np.array([1,1,0])]?\nnp.array([1,2,3])[np.array([1,1,0])] का आउटपुट क्या है?",
-        "options": ["[2,2,1]", "[1,1,0]", "[1,2,3,1,2,3]", "Error"],
-        "answer": 0,
-        "explanation": "Integer array indexing selects elements/इंटिजर ऐरे इंडेक्सिंग एलिमेंट्स सिलेक्ट करती है"
-    },
-    {
-        "question": "How to find the standard deviation of array values?\nऐरे वैल्यूज़ का स्टैंडर्ड डेविएशन कैसे प्राप्त करें?",
-        "options": ["np.std(arr)", "arr.std()", "np.sqrt(np.mean((arr-arr.mean())**2))", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods calculate standard deviation/ये सभी मेथड स्टैंडर्ड डेविएशन कैलकुलेट करते हैं"
-    },
-    {
-        "question": "What is the result of np.array([1,2,3]) / 2?\nnp.array([1,2,3]) / 2 का रिजल्ट क्या है?",
-        "options": ["[0.5,1,1.5]", "[1,2,3,2]", "[1/2,2/2,3/2]", "Both A and C"],
-        "answer": 3,
-        "explanation": "NumPy performs element-wise division/NumPy एलिमेंट-वाइज डिवीजन करता है"
-    },
-    {
-        "question": "How to create a 3x3 array with values from 9 to 1 in reverse order?\nरिवर्स ऑर्डर में 9 से 1 तक वैल्यू के साथ 3x3 ऐरे कैसे बनाएं?",
-        "options": ["np.arange(9,0,-1).reshape(3,3)", "np.array([[9,8,7],[6,5,4],[3,2,1]])", "np.linspace(9,1,9).reshape(3,3)", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods create the required array/ये सभी मेथड रिक्वायर्ड ऐरे बना सकते हैं"
-    },
-    {
-        "question": "Which function calculates exponential e^x?\nएक्सपोनेंशियल e^x कैलकुलेट करने के लिए कौन सा फंक्शन है?",
-        "options": ["np.exp()", "np.power(np.e,x)", "np.exponential()", "Both A and B"],
-        "answer": 3,
-        "explanation": "Both np.exp() and np.power(np.e,x) work/np.exp() और np.power(np.e,x) दोनों काम करते हैं"
-    },
-    {
-        "question": "What is the output of np.array([1,2,3]) > np.array([3,2,1])?\nnp.array([1,2,3]) > np.array([3,2,1]) का आउटपुट क्या है?",
-        "options": ["[False,False,True]", "[True,False,False]", "[1>3,2>2,3>1]", "Error"],
-        "answer": 0,
-        "explanation": "NumPy does element-wise comparison/NumPy एलिमेंट-वाइज कम्पेरिजन करता है"
-    },
-    {
-        "question": "How to find the median of array values?\nऐरे वैल्यूज़ का मीडियन कैसे प्राप्त करें?",
-        "options": ["np.median(arr)", "np.percentile(arr,50)", "np.sort(arr)[len(arr)//2]", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods calculate median/ये सभी मेथड मीडियन कैलकुलेट करते हैं"
-    },
-    {
-        "question": "What is the result of np.array([1,2,3]) ** np.array([2,3,1])?\nnp.array([1,2,3]) ** np.array([2,3,1]) का रिजल्ट क्या है?",
-        "options": ["[1,8,3]", "[1,2,3,2,3,1]", "[1**2,2**3,3**1]", "Both A and C"],
-        "answer": 3,
-        "explanation": "NumPy performs element-wise exponentiation/NumPy एलिमेंट-वाइज एक्सपोनेंटिएशन करता है"
-    },
-    {
-        "question": "How to create a 4x4 array with alternating 1s and 0s?\nअल्टरनेटिंग 1 और 0 के साथ 4x4 ऐरे कैसे बनाएं?",
-        "options": ["np.zeros((4,4)); arr[::2,::2]=1; arr[1::2,1::2]=1", "np.tile(np.array([[1,0],[0,1]]),(2,2))", "Both methods work", "None of the above"],
+        "question": "How to exit a while loop prematurely?\nwhile लूप को समय से पहले कैसे बंद करें?",
+        "options": ["stop", "exit", "break", "return"],
         "answer": 2,
-        "explanation": "Both methods can create checkerboard pattern/दोनों मेथड चेकरबोर्ड पैटर्न बना सकते हैं"
+        "explanation": "break statement exits loop"
     },
     {
-        "question": "Which function calculates natural logarithm?\nनेचुरल लॉगरिदम कैलकुलेट करने के लिए कौन सा फंक्शन है?",
-        "options": ["np.log()", "np.ln()", "np.logarithm()", "np.naturallog()"],
-        "answer": 0,
-        "explanation": "np.log() calculates natural log (base e)/np.log() नेचुरल लॉग (बेस e) कैलकुलेट करता है"
+        "question": "What does range(5, 0, -1) generate?\nrange(5, 0, -1) क्या जनरेट करता है?",
+        "options": ["0,1,2,3,4", "5,4,3,2,1", "1,2,3,4,5", "5,4,3,2,1,0"],
+        "answer": 1,
+        "explanation": "Counts down from 5 to 1"
     },
     {
-        "question": "What is the output of np.array([1,2,3]) + np.array([1])?\nnp.array([1,2,3]) + np.array([1]) का आउटपुट क्या है?",
-        "options": ["[2,3,4]", "[1,2,3,1]", "[1,1,2,1,3,1]", "Error"],
-        "answer": 0,
-        "explanation": "NumPy broadcasts the smaller array/NumPy छोटे ऐरे को ब्रॉडकास्ट करता है"
+        "question": "What is the output?\nfor i in range(2):\n    pass\nprint(i)\n\nआउटपुट क्या है?\nfor i in range(2):\n    pass\nprint(i)",
+        "options": ["0", "1", "2", "Error"],
+        "answer": 1,
+        "explanation": "Last value of i is 1"
     },
     {
-        "question": "How to find indices where array elements are non-zero?\nऐरे एलिमेंट्स की कौन सी इंडिसेस नॉन-ज़ीरो हैं, कैसे प्राप्त करें?",
-        "options": ["np.nonzero(arr)", "np.where(arr!=0)", "arr.nonzero()", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods find non-zero indices/ये सभी मेथड नॉन-ज़ीरो इंडिसेस ढूंढते हैं"
-    },
-    {
-        "question": "What is the result of np.array([1,2,3]).dot(np.array([4,5,6]))?\nnp.array([1,2,3]).dot(np.array([4,5,6])) का रिजल्ट क्या है?",
-        "options": ["32", "[4,10,18]", "[1,2,3,4,5,6]", "Error"],
-        "answer": 0,
-        "explanation": "dot() calculates dot product/dot() डॉट प्रोडक्ट कैलकुलेट करता है"
-    },
-    {
-        "question": "How to create a 5x5 array with 1s on borders and 0s inside?\nबॉर्डर पर 1 और अंदर 0 के साथ 5x5 ऐरे कैसे बनाएं?",
-        "options": ["np.ones((5,5)); arr[1:-1,1:-1]=0", "np.pad(np.zeros((3,3)),1,constant_values=1)", "Both methods work", "None of the above"],
+        "question": "How to skip current iteration in a loop?\nलूप में वर्तमान इटरेशन को कैसे स्किप करें?",
+        "options": ["skip", "next", "continue", "pass"],
         "answer": 2,
-        "explanation": "Both methods can create bordered array/दोनों मेथड बॉर्डर वाला ऐरे बना सकते हैं"
+        "explanation": "continue skips to next iteration"
     },
     {
-        "question": "Which function calculates base-10 logarithm?\nबेस-10 लॉगरिदम कैलकुलेट करने के लिए कौन सा फंक्शन है?",
-        "options": ["np.log10()", "np.log(x,10)", "np.logarithm10()", "Both A and B"],
-        "answer": 3,
-        "explanation": "Both np.log10() and np.log(x,10) work/np.log10() और np.log(x,10) दोनों काम करते हैं"
+        "question": "What does this code do?\nfor num in [1,2,3]:\n    if num == 2:\n        break\n    print(num)\n\nयह कोड क्या करता है?\nfor num in [1,2,3]:\n    if num == 2:\n        break\n    print(num)",
+        "options": ["Prints 1,2,3", "Prints 1", "Prints 1,3", "Prints 2,3"],
+        "answer": 1,
+        "explanation": "Breaks when num is 2"
     },
     {
-        "question": "What is the output of np.array([1,2,3]) * np.array([1])?\nnp.array([1,2,3]) * np.array([1]) का आउटपुट क्या है?",
-        "options": ["[1,2,3]", "[1,1,2,1,3,1]", "[1,2,3,1]", "Error"],
+        "question": "How many times will this loop run?\ncount = 0\nwhile count < 5:\n    count += 1\n\nयह लूप कितनी बार चलेगा?\ncount = 0\nwhile count < 5:\n    count += 1",
+        "options": ["4", "5", "6", "Infinite"],
+        "answer": 1,
+        "explanation": "Runs for count=0,1,2,3,4 (5 times)"
+    },
+    {
+        "question": "What is the output?\nfor i in range(3):\n    print(i)\nelse:\n    print('Done')\n\nआउटपुट क्या है?\nfor i in range(3):\n    print(i)\nelse:\n    print('Done')",
+        "options": ["0 1 2", "0 1 2 Done", "Done", "Error"],
+        "answer": 1,
+        "explanation": "else runs after loop completes"
+    },
+    {
+        "question": "What does this code print?\nfor i in range(1, 10, 2):\n    print(i)\n\nयह कोड क्या प्रिंट करता है?\nfor i in range(1, 10, 2):\n    print(i)",
+        "options": ["1,3,5,7,9", "2,4,6,8,10", "1,2,3...9", "Odd numbers 1-9"],
         "answer": 0,
-        "explanation": "NumPy broadcasts the smaller array/NumPy छोटे ऐरे को ब्रॉडकास्ट करता है"
+        "explanation": "Steps by 2 (1,3,5,7,9)"
     },
     {
-        "question": "How to find the variance of array values?\nऐरे वैल्यूज़ का वेरिएंस कैसे प्राप्त करें?",
-        "options": ["np.var(arr)", "arr.var()", "np.mean((arr-arr.mean())**2)", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods calculate variance/ये सभी मेथड वेरिएंस कैलकुलेट करते हैं"
+        "question": "How to iterate over list elements?\nलिस्ट एलिमेंट्स पर कैसे इटरेट करें?",
+        "options": ["for i in len(list)", "for i in list", "for i in range(list)", "while list"],
+        "answer": 1,
+        "explanation": "Direct iteration over list elements"
     },
     {
-        "question": "What is the result of np.array([1,2,3]).reshape(1,3)?\nnp.array([1,2,3]).reshape(1,3) का रिजल्ट क्या है?",
-        "options": "[[1,2,3]]",
+        "question": "What is the output?\nfor i in 'Python':\n    print(i, end=' ')\n\nआउटपुट क्या है?\nfor i in 'Python':\n    print(i, end=' ')",
+        "options": ["P y t h o n", "Python", "0 1 2 3 4 5", "Error"],
         "answer": 0,
-        "explanation": "reshape(1,3) creates row vector/reshape(1,3) रो वेक्टर बनाता है"
+        "explanation": "Iterates over string characters"
     },
     {
-        "question": "How to create a 3x3 array with random values from standard normal distribution?\nस्टैंडर्ड नॉर्मल डिस्ट्रीब्यूशन से रैंडम वैल्यू के साथ 3x3 ऐरे कैसे बनाएं?",
-        "options": ["np.random.randn(3,3)", "np.random.normal(0,1,(3,3))", "np.random.standard_normal((3,3))", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods create standard normal arrays/ये सभी मेथड स्टैंडर्ड नॉर्मल ऐरे बना सकते हैं"
+        "question": "What does while False do?\nwhile False क्या करता है?",
+        "options": ["Infinite loop", "Runs once", "Never runs", "Runs until false"],
+        "answer": 2,
+        "explanation": "Loop body never executes"
     },
     {
-        "question": "Which function calculates element-wise ceiling?\nएलिमेंट-वाइज सीलिंग कैलकुलेट करने के लिए कौन सा फंक्शन है?",
-        "options": ["np.ceil()", "np.floor()", "np.round_up()", "np.top()"],
+        "question": "How to get both index and value in loop?\nलूप में इंडेक्स और वैल्यू दोनों कैसे प्राप्त करें?",
+        "options": ["for i, v in list", "for i in enumerate(list)", "for i, v in enumerate(list)", "for i in range(len(list))"],
+        "answer": 2,
+        "explanation": "enumerate() provides index and value"
+    },
+    {
+        "question": "What is the output?\nx = 10\nwhile x > 0:\n    x -= 3\n    print(x)\n\nआउटपुट क्या है?\nx = 10\nwhile x > 0:\n    x -= 3\n    print(x)",
+        "options": ["7,4,1,-2", "7,4,1", "10,7,4,1", "7,4,1,0"],
         "answer": 0,
-        "explanation": "np.ceil() rounds up to nearest integer/np.ceil() निकटतम इंटिजर तक राउंड अप करता है"
+        "explanation": "Subtracts 3 until x <= 0"
+    },
+    {
+        "question": "What does this code do?\nfor i in range(5, 0, -2):\n    print(i)\n\nयह कोड क्या करता है?\nfor i in range(5, 0, -2):\n    print(i)",
+        "options": ["5,3,1", "5,4,3,2,1", "1,3,5", "2,4"],
+        "answer": 0,
+        "explanation": "Counts down from 5 by 2"
+    },
+    {
+        "question": "How to make infinite while loop?\nअनंत while लूप कैसे बनाएं?",
+        "options": ["while True", "while 1", "while None", "both a and b"],
+        "answer": 3,
+        "explanation": "Both while True and while 1 are infinite"
+    },
+    {
+        "question": "What is the output?\nfor i in range(3):\n    if i == 1:\n        continue\n    print(i)\n\nआउटपुट क्या है?\nfor i in range(3):\n    if i == 1:\n        continue\n    print(i)",
+        "options": ["0,1,2", "0,2", "1,2", "0,1"],
+        "answer": 1,
+        "explanation": "Skips printing when i=1"
+    },
+    {
+        "question": "What does this code print?\nfor i in range(1,4):\n    for j in range(1,4):\n        print(i*j, end=' ')\n\nयह कोड क्या प्रिंट करता है?\nfor i in range(1,4):\n    for j in range(1,4):\n        print(i*j, end=' ')",
+        "options": ["1 2 3 2 4 6 3 6 9", "1 2 3 4 5 6 7 8 9", "1 4 9", "1 2 3"],
+        "answer": 0,
+        "explanation": "Multiplication table 1-3"
+    },
+    {
+        "question": "How to iterate dictionary keys?\nडिक्शनरी कीज़ पर कैसे इटरेट करें?",
+        "options": ["for k in dict.keys()", "for k in dict", "for k, v in dict.items()", "all of above"],
+        "answer": 3,
+        "explanation": "All methods iterate dictionary keys"
+    },
+    {
+        "question": "What is the output?\nfor i in range(2):\n    for j in range(2):\n        print(i+j)\n\nआउटपुट क्या है?\nfor i in range(2):\n    for j in range(2):\n        print(i+j)",
+        "options": ["0 1 1 2", "0 1 2 3", "1 2 2 3", "0 1"],
+        "answer": 0,
+        "explanation": "Nested loop sums i and j"
+    },
+    {
+        "question": "What does this code do?\nnumbers = [1,2,3]\nfor n in numbers:\n    n += 1\nprint(numbers)\n\nयह कोड क्या करता है?\nnumbers = [1,2,3]\nfor n in numbers:\n    n += 1\nprint(numbers)",
+        "options": ["[2,3,4]", "[1,2,3]", "[1,2,3,1]", "Error"],
+        "answer": 1,
+        "explanation": "Original list not modified"
+    },
+    {
+        "question": "How to reverse iterate a list?\nलिस्ट को रिवर्स में कैसे इटरेट करें?",
+        "options": ["for i in list.reverse()", "for i in reversed(list)", "for i in list[::-1]", "both b and c"],
+        "answer": 3,
+        "explanation": "Both reversed() and slicing work"
+    },
+    {
+        "question": "What is the output?\nfor i in range(3):\n    if i == 1:\n        break\nelse:\n    print('Else')\n\nआउटपुट क्या है?\nfor i in range(3):\n    if i == 1:\n        break\nelse:\n    print('Else')",
+        "options": ["Else", "No output", "0 1 2 Else", "Error"],
+        "answer": 1,
+        "explanation": "else doesn't run if break occurs"
+    },
+    {
+        "question": "What does this code print?\nfor x in [1,2,3]:\n    print(x*x)\n\nयह कोड क्या प्रिंट करता है?\nfor x in [1,2,3]:\n    print(x*x)",
+        "options": ["1,4,9", "1,2,3", "2,4,6", "1,1,2,4,3,9"],
+        "answer": 0,
+        "explanation": "Prints squares of numbers"
+    },
+    {
+        "question": "How to iterate two lists together?\nदो लिस्ट को एक साथ कैसे इटरेट करें?",
+        "options": ["for a, b in list1, list2", "for a, b in zip(list1, list2)", "for a in list1 and b in list2", "for a in list1 + list2"],
+        "answer": 1,
+        "explanation": "zip() pairs elements from lists"
+    },
+    {
+        "question": "What is the output?\nfor i in range(1,6,2):\n    print(i, end=',')\n\nआउटपुट क्या है?\nfor i in range(1,6,2):\n    print(i, end=',')",
+        "options": ["1,3,5,", "1,3,5", "2,4,6,", "1,2,3,4,5,"],
+        "answer": 0,
+        "explanation": "Steps by 2, includes comma after each"
+    },
+    {
+        "question": "What does this code do?\ncount = 5\nwhile count:\n    print(count)\n    count -= 1\n\nयह कोड क्या करता है?\ncount = 5\nwhile count:\n    print(count)\n    count -= 1",
+        "options": ["Prints 5 to 1", "Prints 5 to 0", "Infinite loop", "Prints 1 to 5"],
+        "answer": 0,
+        "explanation": "Stops when count is 0 (False)"
+    },
+    {
+        "question": "How to get loop counter in for loop?\nfor लूप में लूप काउंटर कैसे प्राप्त करें?",
+        "options": ["for i, item in enumerate(items)", "for i in range(len(items))", "count = 0; for item in items: count += 1", "all of above"],
+        "answer": 3,
+        "explanation": "All methods can track loop count"
+    },
+    {
+        "question": "What is the output?\nfor i in range(3):\n    pass\nprint('Done')\n\nआउटपुट क्या है?\nfor i in range(3):\n    pass\nprint('Done')",
+        "options": ["0 1 2 Done", "Done", "No output", "Error"],
+        "answer": 1,
+        "explanation": "pass does nothing, prints 'Done' after"
+    },
+    {
+        "question": "What does this code print?\nfor i in range(4,1,-1):\n    print(i)\n\nयह कोड क्या प्रिंट करता है?\nfor i in range(4,1,-1):\n    print(i)",
+        "options": ["4,3,2", "4,3,2,1", "1,2,3,4", "4"],
+        "answer": 0,
+        "explanation": "Counts down from 4 to 2"
+    },
+    {
+        "question": "How to iterate over file lines?\nफाइल लाइन्स पर कैसे इटरेट करें?",
+        "options": ["for line in open('file.txt')", "for line in file.txt", "for line in read('file.txt')", "for line in file('file.txt')"],
+        "answer": 0,
+        "explanation": "File object is iterable by lines"
+    },
+    {
+        "question": "What is the output?\nfor i in range(2):\n    print(i)\n    i += 5\n    print(i)\n\nआउटपुट क्या है?\nfor i in range(2):\n    print(i)\n    i += 5\n    print(i)",
+        "options": ["0 5 1 6", "0 1 5 6", "0 1", "5 6"],
+        "answer": 0,
+        "explanation": "Modifying i doesn't affect loop"
+    },
+    {
+        "question": "What does this code do?\nfor i in range(10):\n    if i % 2 == 0:\n        print(i)\n\nयह कोड क्या करता है?\nfor i in range(10):\n    if i % 2 == 0:\n        print(i)",
+        "options": ["Prints even numbers 0-8", "Prints odd numbers 1-9", "Prints all numbers 0-9", "Prints multiples of 2"],
+        "answer": 0,
+        "explanation": "Prints 0,2,4,6,8"
+    },
+    {
+        "question": "How to create list with loop?\nलूप के साथ लिस्ट कैसे बनाएं?",
+        "options": ["[x for x in range(3)]", "list(range(3))", "both a and b", "for x in range(3): list.append(x)"],
+        "answer": 2,
+        "explanation": "Both list comprehension and range work"
+    },
+    {
+        "question": "What is the output?\nfor i in range(1,3):\n    for j in range(1,3):\n        if i == j:\n            break\n        print(i,j)\n\nआउटपुट क्या है?\nfor i in range(1,3):\n    for j in range(1,3):\n        if i == j:\n            break\n        print(i,j)",
+        "options": ["1 2", "1 2 2 1", "1 1 2 2", "No output"],
+        "answer": 0,
+        "explanation": "Only prints 1,2 before break"
+    },
+    {
+        "question": "What does this code print?\nfor i in range(1,4):\n    print('*' * i)\n\nयह कोड क्या प्रिंट करता है?\nfor i in range(1,4):\n    print('*' * i)",
+        "options": ["* ** ***", "1 2 3", "* * *", "***"],
+        "answer": 0,
+        "explanation": "Prints growing star pattern"
+    },
+    {
+        "question": "How to iterate over dictionary values?\nडिक्शनरी वैल्यूज़ पर कैसे इटरेट करें?",
+        "options": ["for v in dict", "for v in dict.values()", "for k, v in dict.items()", "both b and c"],
+        "answer": 3,
+        "explanation": "Both methods access values"
+    },
+    {
+        "question": "What is the output?\nfor i in range(3):\n    print(i)\n    if i == 1:\n        continue\n    print(i*2)\n\nआउटपुट क्या है?\nfor i in range(3):\n    print(i)\n    if i == 1:\n        continue\n    print(i*2)",
+        "options": ["0 0 1 2 2 4", "0 0 1 2 4", "0 0 1 2 2", "0 1 2"],
+        "answer": 0,
+        "explanation": "Prints i and i*2, skips i*2 when i=1"
+    },
+    {
+        "question": "What does this code do?\nfor i in range(1,6):\n    if i % 3 == 0:\n        continue\n    print(i)\n\nयह कोड क्या करता है?\nfor i in range(1,6):\n    if i % 3 == 0:\n        continue\n    print(i)",
+        "options": ["Prints 1,2,4,5", "Prints 1,2,3,4,5", "Prints 3", "Prints 1,2"],
+        "answer": 0,
+        "explanation": "Skips multiples of 3"
+    },
+    {
+        "question": "How to iterate with index in for loop?\nfor लूप में इंडेक्स के साथ कैसे इटरेट करें?",
+        "options": ["for i in range(len(list))", "for i, item in enumerate(list)", "both a and b", "for item in list"],
+        "answer": 2,
+        "explanation": "Both range+len and enumerate work"
+    },
+    {
+        "question": "What is the output?\nfor i in range(3):\n    if i == 2:\n        pass\n    print(i)\n\nआउटपुट क्या है?\nfor i in range(3):\n    if i == 2:\n        pass\n    print(i)",
+        "options": ["0 1", "0 1 2", "2", "0 1 2 3"],
+        "answer": 1,
+        "explanation": "pass does nothing, prints all"
+    },
+    {
+        "question": "What does this code print?\nfor i in range(1,5,3):\n    print(i)\n\nयह कोड क्या प्रिंट करता है?\nfor i in range(1,5,3):\n    print(i)",
+        "options": ["1,4", "1,2,3,4", "1", "4"],
+        "answer": 0,
+        "explanation": "Steps by 3 (1, then 4)"
+    },
+    {
+        "question": "How to iterate over set elements?\nसेट एलिमेंट्स पर कैसे इटरेट करें?",
+        "options": ["for i in set", "for i in range(set)", "for i in len(set)", "while set"],
+        "answer": 0,
+        "explanation": "Sets are directly iterable"
+    },
+    {
+        "question": "What is the output?\nfor i in range(2):\n    for j in range(2):\n        if i == j:\n            continue\n        print(i,j)\n\nआउटपुट क्या है?\nfor i in range(2):\n    for j in range(2):\n        if i == j:\n            continue\n        print(i,j)",
+        "options": ["0 1 1 0", "0 1", "1 0", "0 0 1 1"],
+        "answer": 2,
+        "explanation": "Skips when i=j, prints 0,1 and 1,0"
+    },
+    {
+        "question": "What does this code do?\nfor i in range(5,1,-1):\n    print(i)\n\nयह कोड क्या करता है?\nfor i in range(5,1,-1):\n    print(i)",
+        "options": ["Prints 5 to 1", "Prints 5 to 2", "Prints 1 to 5", "Infinite loop"],
+        "answer": 1,
+        "explanation": "Counts down from 5 to 2"
+    },
+    {
+        "question": "How to iterate over tuple elements?\nटपल एलिमेंट्स पर कैसे इटरेट करें?",
+        "options": ["for i in tuple", "for i in range(tuple)", "for i in len(tuple)", "while tuple"],
+        "answer": 0,
+        "explanation": "Tuples are directly iterable"
+    },
+    {
+        "question": "What is the output?\nfor i in range(1,4):\n    print(i)\n    if i == 2:\n        break\nelse:\n    print('Else')\n\nआउटपुट क्या है?\nfor i in range(1,4):\n    print(i)\n    if i == 2:\n        break\nelse:\n    print('Else')",
+        "options": ["1 2 Else", "1 2", "1 2 3 Else", "1 2 3"],
+        "answer": 1,
+        "explanation": "break skips else clause"
+    },
+    {
+        "question": "What does this code print?\nfor i in range(0,6,2):\n    print(i)\n\nयह कोड क्या प्रिंट करता है?\nfor i in range(0,6,2):\n    print(i)",
+        "options": ["0,2,4", "0,2,4,6", "2,4,6", "1,3,5"],
+        "answer": 0,
+        "explanation": "Steps by 2 from 0 to 4"
     }
 ]
-
 ,
     //==============================================================================================================================
     //==============================================================================================================================
