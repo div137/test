@@ -1010,312 +1010,396 @@
     //==============================================================================================================================
     //==============================================================================================================================
             "Programming and Problem Solving through Python":[
-    {
-        "question": "What is the output of the following code?\nfor i in range(3):\n    print(i)\n\nनिम्नलिखित कोड का आउटपुट क्या है?\nfor i in range(3):\n    print(i)",
-        "options": ["0 1 2", "1 2 3", "0 1 2 3", "1 2"],
-        "answer": 0,
-        "explanation": "range(3) generates numbers 0, 1, 2"
-    },
-    {
-        "question": "How many times will 'Hello' be printed?\nfor i in range(1, 5):\n    print('Hello')\n\n'Hello' कितनी बार प्रिंट होगा?\nfor i in range(1, 5):\n    print('Hello')",
-        "options": ["4", "5", "6", "3"],
-        "answer": 0,
-        "explanation": "range(1,5) gives 1,2,3,4 (4 iterations)"
-    },
-    {
-        "question": "What does this loop do?\nwhile True:\n    print('Infinite')\n\nयह लूप क्या करता है?\nwhile True:\n    print('Infinite')",
-        "options": ["Prints 'Infinite' once", "Prints 'Infinite' 100 times", "Creates infinite loop", "Does nothing"],
-        "answer": 2,
-        "explanation": "while True creates infinite loop"
-    },
-    {
-        "question": "What is the value of x after this loop?\nx = 0\nfor i in range(3):\n    x += i\n\nइस लूप के बाद x का मान क्या है?\nx = 0\nfor i in range(3):\n    x += i",
-        "options": ["0", "3", "6", "1"],
-        "answer": 1,
-        "explanation": "Adds 0+1+2 = 3"
-    },
-    {
-        "question": "How to exit a while loop prematurely?\nwhile लूप को समय से पहले कैसे बंद करें?",
-        "options": ["stop", "exit", "break", "return"],
-        "answer": 2,
-        "explanation": "break statement exits loop"
-    },
-    {
-        "question": "What does range(5, 0, -1) generate?\nrange(5, 0, -1) क्या जनरेट करता है?",
-        "options": ["0,1,2,3,4", "5,4,3,2,1", "1,2,3,4,5", "5,4,3,2,1,0"],
-        "answer": 1,
-        "explanation": "Counts down from 5 to 1"
-    },
-    {
-        "question": "What is the output?\nfor i in range(2):\n    pass\nprint(i)\n\nआउटपुट क्या है?\nfor i in range(2):\n    pass\nprint(i)",
-        "options": ["0", "1", "2", "Error"],
-        "answer": 1,
-        "explanation": "Last value of i is 1"
-    },
-    {
-        "question": "How to skip current iteration in a loop?\nलूप में वर्तमान इटरेशन को कैसे स्किप करें?",
-        "options": ["skip", "next", "continue", "pass"],
-        "answer": 2,
-        "explanation": "continue skips to next iteration"
-    },
-    {
-        "question": "What does this code do?\nfor num in [1,2,3]:\n    if num == 2:\n        break\n    print(num)\n\nयह कोड क्या करता है?\nfor num in [1,2,3]:\n    if num == 2:\n        break\n    print(num)",
-        "options": ["Prints 1,2,3", "Prints 1", "Prints 1,3", "Prints 2,3"],
-        "answer": 1,
-        "explanation": "Breaks when num is 2"
-    },
-    {
-        "question": "How many times will this loop run?\ncount = 0\nwhile count < 5:\n    count += 1\n\nयह लूप कितनी बार चलेगा?\ncount = 0\nwhile count < 5:\n    count += 1",
-        "options": ["4", "5", "6", "Infinite"],
-        "answer": 1,
-        "explanation": "Runs for count=0,1,2,3,4 (5 times)"
-    },
-    {
-        "question": "What is the output?\nfor i in range(3):\n    print(i)\nelse:\n    print('Done')\n\nआउटपुट क्या है?\nfor i in range(3):\n    print(i)\nelse:\n    print('Done')",
-        "options": ["0 1 2", "0 1 2 Done", "Done", "Error"],
-        "answer": 1,
-        "explanation": "else runs after loop completes"
-    },
-    {
-        "question": "What does this code print?\nfor i in range(1, 10, 2):\n    print(i)\n\nयह कोड क्या प्रिंट करता है?\nfor i in range(1, 10, 2):\n    print(i)",
-        "options": ["1,3,5,7,9", "2,4,6,8,10", "1,2,3...9", "Odd numbers 1-9"],
-        "answer": 0,
-        "explanation": "Steps by 2 (1,3,5,7,9)"
-    },
-    {
-        "question": "How to iterate over list elements?\nलिस्ट एलिमेंट्स पर कैसे इटरेट करें?",
-        "options": ["for i in len(list)", "for i in list", "for i in range(list)", "while list"],
-        "answer": 1,
-        "explanation": "Direct iteration over list elements"
-    },
-    {
-        "question": "What is the output?\nfor i in 'Python':\n    print(i, end=' ')\n\nआउटपुट क्या है?\nfor i in 'Python':\n    print(i, end=' ')",
-        "options": ["P y t h o n", "Python", "0 1 2 3 4 5", "Error"],
-        "answer": 0,
-        "explanation": "Iterates over string characters"
-    },
-    {
-        "question": "What does while False do?\nwhile False क्या करता है?",
-        "options": ["Infinite loop", "Runs once", "Never runs", "Runs until false"],
-        "answer": 2,
-        "explanation": "Loop body never executes"
-    },
-    {
-        "question": "How to get both index and value in loop?\nलूप में इंडेक्स और वैल्यू दोनों कैसे प्राप्त करें?",
-        "options": ["for i, v in list", "for i in enumerate(list)", "for i, v in enumerate(list)", "for i in range(len(list))"],
-        "answer": 2,
-        "explanation": "enumerate() provides index and value"
-    },
-    {
-        "question": "What is the output?\nx = 10\nwhile x > 0:\n    x -= 3\n    print(x)\n\nआउटपुट क्या है?\nx = 10\nwhile x > 0:\n    x -= 3\n    print(x)",
-        "options": ["7,4,1,-2", "7,4,1", "10,7,4,1", "7,4,1,0"],
-        "answer": 0,
-        "explanation": "Subtracts 3 until x <= 0"
-    },
-    {
-        "question": "What does this code do?\nfor i in range(5, 0, -2):\n    print(i)\n\nयह कोड क्या करता है?\nfor i in range(5, 0, -2):\n    print(i)",
-        "options": ["5,3,1", "5,4,3,2,1", "1,3,5", "2,4"],
-        "answer": 0,
-        "explanation": "Counts down from 5 by 2"
-    },
-    {
-        "question": "How to make infinite while loop?\nअनंत while लूप कैसे बनाएं?",
-        "options": ["while True", "while 1", "while None", "both a and b"],
-        "answer": 3,
-        "explanation": "Both while True and while 1 are infinite"
-    },
-    {
-        "question": "What is the output?\nfor i in range(3):\n    if i == 1:\n        continue\n    print(i)\n\nआउटपुट क्या है?\nfor i in range(3):\n    if i == 1:\n        continue\n    print(i)",
-        "options": ["0,1,2", "0,2", "1,2", "0,1"],
-        "answer": 1,
-        "explanation": "Skips printing when i=1"
-    },
-    {
-        "question": "What does this code print?\nfor i in range(1,4):\n    for j in range(1,4):\n        print(i*j, end=' ')\n\nयह कोड क्या प्रिंट करता है?\nfor i in range(1,4):\n    for j in range(1,4):\n        print(i*j, end=' ')",
-        "options": ["1 2 3 2 4 6 3 6 9", "1 2 3 4 5 6 7 8 9", "1 4 9", "1 2 3"],
-        "answer": 0,
-        "explanation": "Multiplication table 1-3"
-    },
-    {
-        "question": "How to iterate dictionary keys?\nडिक्शनरी कीज़ पर कैसे इटरेट करें?",
-        "options": ["for k in dict.keys()", "for k in dict", "for k, v in dict.items()", "all of above"],
-        "answer": 3,
-        "explanation": "All methods iterate dictionary keys"
-    },
-    {
-        "question": "What is the output?\nfor i in range(2):\n    for j in range(2):\n        print(i+j)\n\nआउटपुट क्या है?\nfor i in range(2):\n    for j in range(2):\n        print(i+j)",
-        "options": ["0 1 1 2", "0 1 2 3", "1 2 2 3", "0 1"],
-        "answer": 0,
-        "explanation": "Nested loop sums i and j"
-    },
-    {
-        "question": "What does this code do?\nnumbers = [1,2,3]\nfor n in numbers:\n    n += 1\nprint(numbers)\n\nयह कोड क्या करता है?\nnumbers = [1,2,3]\nfor n in numbers:\n    n += 1\nprint(numbers)",
-        "options": ["[2,3,4]", "[1,2,3]", "[1,2,3,1]", "Error"],
-        "answer": 1,
-        "explanation": "Original list not modified"
-    },
-    {
-        "question": "How to reverse iterate a list?\nलिस्ट को रिवर्स में कैसे इटरेट करें?",
-        "options": ["for i in list.reverse()", "for i in reversed(list)", "for i in list[::-1]", "both b and c"],
-        "answer": 3,
-        "explanation": "Both reversed() and slicing work"
-    },
-    {
-        "question": "What is the output?\nfor i in range(3):\n    if i == 1:\n        break\nelse:\n    print('Else')\n\nआउटपुट क्या है?\nfor i in range(3):\n    if i == 1:\n        break\nelse:\n    print('Else')",
-        "options": ["Else", "No output", "0 1 2 Else", "Error"],
-        "answer": 1,
-        "explanation": "else doesn't run if break occurs"
-    },
-    {
-        "question": "What does this code print?\nfor x in [1,2,3]:\n    print(x*x)\n\nयह कोड क्या प्रिंट करता है?\nfor x in [1,2,3]:\n    print(x*x)",
-        "options": ["1,4,9", "1,2,3", "2,4,6", "1,1,2,4,3,9"],
-        "answer": 0,
-        "explanation": "Prints squares of numbers"
-    },
-    {
-        "question": "How to iterate two lists together?\nदो लिस्ट को एक साथ कैसे इटरेट करें?",
-        "options": ["for a, b in list1, list2", "for a, b in zip(list1, list2)", "for a in list1 and b in list2", "for a in list1 + list2"],
-        "answer": 1,
-        "explanation": "zip() pairs elements from lists"
-    },
-    {
-        "question": "What is the output?\nfor i in range(1,6,2):\n    print(i, end=',')\n\nआउटपुट क्या है?\nfor i in range(1,6,2):\n    print(i, end=',')",
-        "options": ["1,3,5,", "1,3,5", "2,4,6,", "1,2,3,4,5,"],
-        "answer": 0,
-        "explanation": "Steps by 2, includes comma after each"
-    },
-    {
-        "question": "What does this code do?\ncount = 5\nwhile count:\n    print(count)\n    count -= 1\n\nयह कोड क्या करता है?\ncount = 5\nwhile count:\n    print(count)\n    count -= 1",
-        "options": ["Prints 5 to 1", "Prints 5 to 0", "Infinite loop", "Prints 1 to 5"],
-        "answer": 0,
-        "explanation": "Stops when count is 0 (False)"
-    },
-    {
-        "question": "How to get loop counter in for loop?\nfor लूप में लूप काउंटर कैसे प्राप्त करें?",
-        "options": ["for i, item in enumerate(items)", "for i in range(len(items))", "count = 0; for item in items: count += 1", "all of above"],
-        "answer": 3,
-        "explanation": "All methods can track loop count"
-    },
-    {
-        "question": "What is the output?\nfor i in range(3):\n    pass\nprint('Done')\n\nआउटपुट क्या है?\nfor i in range(3):\n    pass\nprint('Done')",
-        "options": ["0 1 2 Done", "Done", "No output", "Error"],
-        "answer": 1,
-        "explanation": "pass does nothing, prints 'Done' after"
-    },
-    {
-        "question": "What does this code print?\nfor i in range(4,1,-1):\n    print(i)\n\nयह कोड क्या प्रिंट करता है?\nfor i in range(4,1,-1):\n    print(i)",
-        "options": ["4,3,2", "4,3,2,1", "1,2,3,4", "4"],
-        "answer": 0,
-        "explanation": "Counts down from 4 to 2"
-    },
-    {
-        "question": "How to iterate over file lines?\nफाइल लाइन्स पर कैसे इटरेट करें?",
-        "options": ["for line in open('file.txt')", "for line in file.txt", "for line in read('file.txt')", "for line in file('file.txt')"],
-        "answer": 0,
-        "explanation": "File object is iterable by lines"
-    },
-    {
-        "question": "What is the output?\nfor i in range(2):\n    print(i)\n    i += 5\n    print(i)\n\nआउटपुट क्या है?\nfor i in range(2):\n    print(i)\n    i += 5\n    print(i)",
-        "options": ["0 5 1 6", "0 1 5 6", "0 1", "5 6"],
-        "answer": 0,
-        "explanation": "Modifying i doesn't affect loop"
-    },
-    {
-        "question": "What does this code do?\nfor i in range(10):\n    if i % 2 == 0:\n        print(i)\n\nयह कोड क्या करता है?\nfor i in range(10):\n    if i % 2 == 0:\n        print(i)",
-        "options": ["Prints even numbers 0-8", "Prints odd numbers 1-9", "Prints all numbers 0-9", "Prints multiples of 2"],
-        "answer": 0,
-        "explanation": "Prints 0,2,4,6,8"
-    },
-    {
-        "question": "How to create list with loop?\nलूप के साथ लिस्ट कैसे बनाएं?",
-        "options": ["[x for x in range(3)]", "list(range(3))", "both a and b", "for x in range(3): list.append(x)"],
-        "answer": 2,
-        "explanation": "Both list comprehension and range work"
-    },
-    {
-        "question": "What is the output?\nfor i in range(1,3):\n    for j in range(1,3):\n        if i == j:\n            break\n        print(i,j)\n\nआउटपुट क्या है?\nfor i in range(1,3):\n    for j in range(1,3):\n        if i == j:\n            break\n        print(i,j)",
-        "options": ["1 2", "1 2 2 1", "1 1 2 2", "No output"],
-        "answer": 0,
-        "explanation": "Only prints 1,2 before break"
-    },
-    {
-        "question": "What does this code print?\nfor i in range(1,4):\n    print('*' * i)\n\nयह कोड क्या प्रिंट करता है?\nfor i in range(1,4):\n    print('*' * i)",
-        "options": ["* ** ***", "1 2 3", "* * *", "***"],
-        "answer": 0,
-        "explanation": "Prints growing star pattern"
-    },
-    {
-        "question": "How to iterate over dictionary values?\nडिक्शनरी वैल्यूज़ पर कैसे इटरेट करें?",
-        "options": ["for v in dict", "for v in dict.values()", "for k, v in dict.items()", "both b and c"],
-        "answer": 3,
-        "explanation": "Both methods access values"
-    },
-    {
-        "question": "What is the output?\nfor i in range(3):\n    print(i)\n    if i == 1:\n        continue\n    print(i*2)\n\nआउटपुट क्या है?\nfor i in range(3):\n    print(i)\n    if i == 1:\n        continue\n    print(i*2)",
-        "options": ["0 0 1 2 2 4", "0 0 1 2 4", "0 0 1 2 2", "0 1 2"],
-        "answer": 0,
-        "explanation": "Prints i and i*2, skips i*2 when i=1"
-    },
-    {
-        "question": "What does this code do?\nfor i in range(1,6):\n    if i % 3 == 0:\n        continue\n    print(i)\n\nयह कोड क्या करता है?\nfor i in range(1,6):\n    if i % 3 == 0:\n        continue\n    print(i)",
-        "options": ["Prints 1,2,4,5", "Prints 1,2,3,4,5", "Prints 3", "Prints 1,2"],
-        "answer": 0,
-        "explanation": "Skips multiples of 3"
-    },
-    {
-        "question": "How to iterate with index in for loop?\nfor लूप में इंडेक्स के साथ कैसे इटरेट करें?",
-        "options": ["for i in range(len(list))", "for i, item in enumerate(list)", "both a and b", "for item in list"],
-        "answer": 2,
-        "explanation": "Both range+len and enumerate work"
-    },
-    {
-        "question": "What is the output?\nfor i in range(3):\n    if i == 2:\n        pass\n    print(i)\n\nआउटपुट क्या है?\nfor i in range(3):\n    if i == 2:\n        pass\n    print(i)",
-        "options": ["0 1", "0 1 2", "2", "0 1 2 3"],
-        "answer": 1,
-        "explanation": "pass does nothing, prints all"
-    },
-    {
-        "question": "What does this code print?\nfor i in range(1,5,3):\n    print(i)\n\nयह कोड क्या प्रिंट करता है?\nfor i in range(1,5,3):\n    print(i)",
-        "options": ["1,4", "1,2,3,4", "1", "4"],
-        "answer": 0,
-        "explanation": "Steps by 3 (1, then 4)"
-    },
-    {
-        "question": "How to iterate over set elements?\nसेट एलिमेंट्स पर कैसे इटरेट करें?",
-        "options": ["for i in set", "for i in range(set)", "for i in len(set)", "while set"],
-        "answer": 0,
-        "explanation": "Sets are directly iterable"
-    },
-    {
-        "question": "What is the output?\nfor i in range(2):\n    for j in range(2):\n        if i == j:\n            continue\n        print(i,j)\n\nआउटपुट क्या है?\nfor i in range(2):\n    for j in range(2):\n        if i == j:\n            continue\n        print(i,j)",
-        "options": ["0 1 1 0", "0 1", "1 0", "0 0 1 1"],
-        "answer": 2,
-        "explanation": "Skips when i=j, prints 0,1 and 1,0"
-    },
-    {
-        "question": "What does this code do?\nfor i in range(5,1,-1):\n    print(i)\n\nयह कोड क्या करता है?\nfor i in range(5,1,-1):\n    print(i)",
-        "options": ["Prints 5 to 1", "Prints 5 to 2", "Prints 1 to 5", "Infinite loop"],
-        "answer": 1,
-        "explanation": "Counts down from 5 to 2"
-    },
-    {
-        "question": "How to iterate over tuple elements?\nटपल एलिमेंट्स पर कैसे इटरेट करें?",
-        "options": ["for i in tuple", "for i in range(tuple)", "for i in len(tuple)", "while tuple"],
-        "answer": 0,
-        "explanation": "Tuples are directly iterable"
-    },
-    {
-        "question": "What is the output?\nfor i in range(1,4):\n    print(i)\n    if i == 2:\n        break\nelse:\n    print('Else')\n\nआउटपुट क्या है?\nfor i in range(1,4):\n    print(i)\n    if i == 2:\n        break\nelse:\n    print('Else')",
-        "options": ["1 2 Else", "1 2", "1 2 3 Else", "1 2 3"],
-        "answer": 1,
-        "explanation": "break skips else clause"
-    },
-    {
-        "question": "What does this code print?\nfor i in range(0,6,2):\n    print(i)\n\nयह कोड क्या प्रिंट करता है?\nfor i in range(0,6,2):\n    print(i)",
-        "options": ["0,2,4", "0,2,4,6", "2,4,6", "1,3,5"],
-        "answer": 0,
-        "explanation": "Steps by 2 from 0 to 4"
-    }
+  {
+    "question": "How do you create a complex number with real=3 and imaginary=5? / रीयल=3 और इमेजिनरी=5 वाला कॉम्प्लेक्स नंबर कैसे बनाएं?",
+    "options": [
+      "3 + 5i",
+      "complex(3, 5)",
+      "3 + 5j",
+      "[3, 5]"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is `(2+3j).real`? / `(2+3j).real` क्या है?",
+    "options": [
+      "2",
+      "3",
+      "2+3j",
+      "Error"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the output of `abs(3+4j)`? / `abs(3+4j)` का आउटपुट क्या है?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which module provides `cmath.sqrt(-1)`? / `cmath.sqrt(-1)` किस मॉड्यूल में है?",
+    "options": [
+      "math",
+      "numpy",
+      "cmath",
+      "built-in"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is `1j * 1j`? / `1j * 1j` क्या है?",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "1j"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What does `'hello'.upper()` return? / `'hello'.upper()` क्या रिटर्न करता है?",
+    "options": [
+      "'HELLO'",
+      "'Hello'",
+      "'hello'",
+      "Error"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the output of `print(datetime.datetime.now().year)`? / `print(datetime.datetime.now().year)` का आउटपुट क्या है?",
+    "options": [
+      "Current hour",
+      "Current year",
+      "Current month",
+      "Error"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "How to open a file in read mode? / रीड मोड में फाइल कैसे खोलें?",
+    "options": [
+      "open('file.txt', 'r')",
+      "open('file.txt', 'read')",
+      "open('file.txt')",
+      "read('file.txt')"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is `__init__.py` used for? / `__init__.py` किस लिए उपयोग होता है?",
+    "options": [
+      "To run scripts",
+      "To mark a directory as a package",
+      "To define variables",
+      "For exception handling"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which scope does Python check first (LEGB)? / Python किस स्कोप को पहले चेक करता है (LEGB)?",
+    "options": [
+      "Local",
+      "Global",
+      "Built-in",
+      "Enclosing"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is `math.sqrt(16)`? / `math.sqrt(16)` क्या है?",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "How to import `sqrt` from `math`? / `math` से `sqrt` कैसे इम्पोर्ट करें?",
+    "options": [
+      "import sqrt from math",
+      "from math import sqrt",
+      "import math.sqrt",
+      "require math.sqrt"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is `os.path.exists('file.txt')` used for? / `os.path.exists('file.txt')` किस लिए उपयोग होता है?",
+    "options": [
+      "Delete a file",
+      "Check if file exists",
+      "Read file content",
+      "Rename a file"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the output of `(1+2j) + (3+4j)`? / `(1+2j) + (3+4j)` का आउटपुट क्या है?",
+    "options": [
+      "4+6j",
+      "3+8j",
+      "1+3j",
+      "4+2j"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "How to get the conjugate of `5+6j`? / `5+6j` का conjugate कैसे प्राप्त करें?",
+    "options": [
+      "conjugate(5+6j)",
+      "(5+6j).conjugate()",
+      "math.conj(5+6j)",
+      "~5+6j"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is `0j ** 0`? / `0j ** 0` क्या है?",
+    "options": [
+      "0",
+      "1",
+      "0j",
+      "Error"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What does `complex('4+5j')` return? / `complex('4+5j')` क्या रिटर्न करता है?",
+    "options": [
+      "4+5j",
+      "(4, 5)",
+      "'4+5j'",
+      "Error"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is `cmath.phase(1+1j)` in radians? / `cmath.phase(1+1j)` रेडियन में क्या है?",
+    "options": [
+      "0.785",
+      "1.414",
+      "3.14",
+      "0"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "How to check if a variable is complex? / वेरिएबल कॉम्प्लेक्स है या नहीं कैसे चेक करें?",
+    "options": [
+      "type(x) == complex",
+      "isinstance(x, complex)",
+      "x.is_complex()",
+      "Both 1 and 2"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What is `(2+3j) * (1-1j)`? / `(2+3j) * (1-1j)` क्या है?",
+    "options": [
+      "5+1j",
+      "2-3j",
+      "-1+5j",
+      "5+5j"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which function returns the current time? / करंट टाइम कौन-सा फंक्शन रिटर्न करता है?",
+    "options": [
+      "datetime.now()",
+      "time.time()",
+      "calendar.time()",
+      "os.time()"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is `'hello'.replace('l', 'x')`? / `'hello'.replace('l', 'x')` क्या है?",
+    "options": [
+      "'hexxo'",
+      "'hexlo'",
+      "'helxo'",
+      "'hxllo'"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "How to write to a file? / फाइल में कैसे लिखें?",
+    "options": [
+      "open('file.txt', 'w').write('text')",
+      "write('file.txt', 'text')",
+      "file.write('text')",
+      "os.write('file.txt', 'text')"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is `math.factorial(5)`? / `math.factorial(5)` क्या है?",
+    "options": [
+      "120",
+      "60",
+      "20",
+      "5"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is `(4+2j).imag`? / `(4+2j).imag` क्या है?",
+    "options": [
+      "4",
+      "2",
+      "4+2j",
+      "Error"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "How to import all functions from `math`? / `math` के सभी फंक्शन्स कैसे इम्पोर्ट करें?",
+    "options": [
+      "import math",
+      "from math import *",
+      "include math",
+      "require math"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is `os.path.join('a', 'b')`? / `os.path.join('a', 'b')` क्या है?",
+    "options": [
+      "'a/b' or 'a\\b'",
+      "'a+b'",
+      "'ab'",
+      "Error"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is `str(2+3j)`? / `str(2+3j)` क्या है?",
+    "options": [
+      "'2+3j'",
+      "'(2,3)'",
+      "'2+3i'",
+      "'2.0+3.0j'"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is `1+2j > 3+4j`? / `1+2j > 3+4j` क्या है?",
+    "options": [
+      "True",
+      "False",
+      "TypeError",
+      "Compares real parts"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "How to convert `'4+5j'` to complex? / `'4+5j'` को कॉम्प्लेक्स में कैसे बदलें?",
+    "options": [
+      "complex('4+5j')",
+      "eval('4+5j')",
+      "float('4+5j')",
+      "int('4+5j')"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is `math.ceil(3.2)`? / `math.ceil(3.2)` क्या है?",
+    "options": [
+      "3",
+      "4",
+      "3.0",
+      "4.0"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is `calendar.month(2023, 9)`? / `calendar.month(2023, 9)` क्या है?",
+    "options": [
+      "September 2023 calendar",
+      "9th month name",
+      "2023-09-01",
+      "Error"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is `time.sleep(1)` used for? / `time.sleep(1)` किस लिए उपयोग होता है?",
+    "options": [
+      "Delay execution by 1 second",
+      "Measure time",
+      "Get current time",
+      "Stop program"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is `globals()`? / `globals()` क्या है?",
+    "options": [
+      "Returns global variables",
+      "Returns local variables",
+      "Imports modules",
+      "Checks scope"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is `'hello'.split('e')`? / `'hello'.split('e')` क्या है?",
+    "options": [
+      "['h', 'llo']",
+      "['he', 'llo']",
+      "['hel', 'lo']",
+      "Error"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is `math.pi`? / `math.pi` क्या है?",
+    "options": [
+      "3.14",
+      "22/7",
+      "π (pi) value",
+      "180 degrees"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is `os.getcwd()`? / `os.getcwd()` क्या है?",
+    "options": [
+      "Current working directory",
+      "List files",
+      "Change directory",
+      "Get CPU info"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is `(1+2j).conjugate()`? / `(1+2j).conjugate()` क्या है?",
+    "options": [
+      "1-2j",
+      "1+2j",
+      "-1-2j",
+      "2+1j"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "How to format a complex number? / कॉम्प्लेक्स नंबर को कैसे फॉर्मेट करें?",
+    "options": [
+      "f'{1+2j}'",
+      "format(1+2j)",
+      "str(1+2j)",
+      "All of the above"
+    ],
+    "answer": 3
+  }
 ]
 ,
     //==============================================================================================================================
