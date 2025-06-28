@@ -1010,396 +1010,288 @@
     //==============================================================================================================================
     //==============================================================================================================================
             "Programming and Problem Solving through Python":[
-  {
-    "question": "How do you create a complex number with real=3 and imaginary=5? / रीयल=3 और इमेजिनरी=5 वाला कॉम्प्लेक्स नंबर कैसे बनाएं?",
-    "options": [
-      "3 + 5i",
-      "complex(3, 5)",
-      "3 + 5j",
-      "[3, 5]"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is `(2+3j).real`? / `(2+3j).real` क्या है?",
-    "options": [
-      "2",
-      "3",
-      "2+3j",
-      "Error"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "What is the output of `abs(3+4j)`? / `abs(3+4j)` का आउटपुट क्या है?",
-    "options": [
-      "3",
-      "4",
-      "5",
-      "7"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "Which module provides `cmath.sqrt(-1)`? / `cmath.sqrt(-1)` किस मॉड्यूल में है?",
-    "options": [
-      "math",
-      "numpy",
-      "cmath",
-      "built-in"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "What is `1j * 1j`? / `1j * 1j` क्या है?",
-    "options": [
-      "1",
-      "-1",
-      "0",
-      "1j"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What does `'hello'.upper()` return? / `'hello'.upper()` क्या रिटर्न करता है?",
-    "options": [
-      "'HELLO'",
-      "'Hello'",
-      "'hello'",
-      "Error"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "What is the output of `print(datetime.datetime.now().year)`? / `print(datetime.datetime.now().year)` का आउटपुट क्या है?",
-    "options": [
-      "Current hour",
-      "Current year",
-      "Current month",
-      "Error"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "How to open a file in read mode? / रीड मोड में फाइल कैसे खोलें?",
-    "options": [
-      "open('file.txt', 'r')",
-      "open('file.txt', 'read')",
-      "open('file.txt')",
-      "read('file.txt')"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "What is `__init__.py` used for? / `__init__.py` किस लिए उपयोग होता है?",
-    "options": [
-      "To run scripts",
-      "To mark a directory as a package",
-      "To define variables",
-      "For exception handling"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which scope does Python check first (LEGB)? / Python किस स्कोप को पहले चेक करता है (LEGB)?",
-    "options": [
-      "Local",
-      "Global",
-      "Built-in",
-      "Enclosing"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "What is `math.sqrt(16)`? / `math.sqrt(16)` क्या है?",
-    "options": [
-      "2",
-      "4",
-      "8",
-      "16"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "How to import `sqrt` from `math`? / `math` से `sqrt` कैसे इम्पोर्ट करें?",
-    "options": [
-      "import sqrt from math",
-      "from math import sqrt",
-      "import math.sqrt",
-      "require math.sqrt"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is `os.path.exists('file.txt')` used for? / `os.path.exists('file.txt')` किस लिए उपयोग होता है?",
-    "options": [
-      "Delete a file",
-      "Check if file exists",
-      "Read file content",
-      "Rename a file"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is the output of `(1+2j) + (3+4j)`? / `(1+2j) + (3+4j)` का आउटपुट क्या है?",
-    "options": [
-      "4+6j",
-      "3+8j",
-      "1+3j",
-      "4+2j"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "How to get the conjugate of `5+6j`? / `5+6j` का conjugate कैसे प्राप्त करें?",
-    "options": [
-      "conjugate(5+6j)",
-      "(5+6j).conjugate()",
-      "math.conj(5+6j)",
-      "~5+6j"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is `0j ** 0`? / `0j ** 0` क्या है?",
-    "options": [
-      "0",
-      "1",
-      "0j",
-      "Error"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What does `complex('4+5j')` return? / `complex('4+5j')` क्या रिटर्न करता है?",
-    "options": [
-      "4+5j",
-      "(4, 5)",
-      "'4+5j'",
-      "Error"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "What is `cmath.phase(1+1j)` in radians? / `cmath.phase(1+1j)` रेडियन में क्या है?",
-    "options": [
-      "0.785",
-      "1.414",
-      "3.14",
-      "0"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "How to check if a variable is complex? / वेरिएबल कॉम्प्लेक्स है या नहीं कैसे चेक करें?",
-    "options": [
-      "type(x) == complex",
-      "isinstance(x, complex)",
-      "x.is_complex()",
-      "Both 1 and 2"
-    ],
-    "answer": 3
-  },
-  {
-    "question": "What is `(2+3j) * (1-1j)`? / `(2+3j) * (1-1j)` क्या है?",
-    "options": [
-      "5+1j",
-      "2-3j",
-      "-1+5j",
-      "5+5j"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Which function returns the current time? / करंट टाइम कौन-सा फंक्शन रिटर्न करता है?",
-    "options": [
-      "datetime.now()",
-      "time.time()",
-      "calendar.time()",
-      "os.time()"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "What is `'hello'.replace('l', 'x')`? / `'hello'.replace('l', 'x')` क्या है?",
-    "options": [
-      "'hexxo'",
-      "'hexlo'",
-      "'helxo'",
-      "'hxllo'"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "How to write to a file? / फाइल में कैसे लिखें?",
-    "options": [
-      "open('file.txt', 'w').write('text')",
-      "write('file.txt', 'text')",
-      "file.write('text')",
-      "os.write('file.txt', 'text')"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "What is `math.factorial(5)`? / `math.factorial(5)` क्या है?",
-    "options": [
-      "120",
-      "60",
-      "20",
-      "5"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "What is `(4+2j).imag`? / `(4+2j).imag` क्या है?",
-    "options": [
-      "4",
-      "2",
-      "4+2j",
-      "Error"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "How to import all functions from `math`? / `math` के सभी फंक्शन्स कैसे इम्पोर्ट करें?",
-    "options": [
-      "import math",
-      "from math import *",
-      "include math",
-      "require math"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is `os.path.join('a', 'b')`? / `os.path.join('a', 'b')` क्या है?",
-    "options": [
-      "'a/b' or 'a\\b'",
-      "'a+b'",
-      "'ab'",
-      "Error"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "What is `str(2+3j)`? / `str(2+3j)` क्या है?",
-    "options": [
-      "'2+3j'",
-      "'(2,3)'",
-      "'2+3i'",
-      "'2.0+3.0j'"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "What is `1+2j > 3+4j`? / `1+2j > 3+4j` क्या है?",
-    "options": [
-      "True",
-      "False",
-      "TypeError",
-      "Compares real parts"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "How to convert `'4+5j'` to complex? / `'4+5j'` को कॉम्प्लेक्स में कैसे बदलें?",
-    "options": [
-      "complex('4+5j')",
-      "eval('4+5j')",
-      "float('4+5j')",
-      "int('4+5j')"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "What is `math.ceil(3.2)`? / `math.ceil(3.2)` क्या है?",
-    "options": [
-      "3",
-      "4",
-      "3.0",
-      "4.0"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is `calendar.month(2023, 9)`? / `calendar.month(2023, 9)` क्या है?",
-    "options": [
-      "September 2023 calendar",
-      "9th month name",
-      "2023-09-01",
-      "Error"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "What is `time.sleep(1)` used for? / `time.sleep(1)` किस लिए उपयोग होता है?",
-    "options": [
-      "Delay execution by 1 second",
-      "Measure time",
-      "Get current time",
-      "Stop program"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "What is `globals()`? / `globals()` क्या है?",
-    "options": [
-      "Returns global variables",
-      "Returns local variables",
-      "Imports modules",
-      "Checks scope"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "What is `'hello'.split('e')`? / `'hello'.split('e')` क्या है?",
-    "options": [
-      "['h', 'llo']",
-      "['he', 'llo']",
-      "['hel', 'lo']",
-      "Error"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "What is `math.pi`? / `math.pi` क्या है?",
-    "options": [
-      "3.14",
-      "22/7",
-      "π (pi) value",
-      "180 degrees"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "What is `os.getcwd()`? / `os.getcwd()` क्या है?",
-    "options": [
-      "Current working directory",
-      "List files",
-      "Change directory",
-      "Get CPU info"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "What is `(1+2j).conjugate()`? / `(1+2j).conjugate()` क्या है?",
-    "options": [
-      "1-2j",
-      "1+2j",
-      "-1-2j",
-      "2+1j"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "How to format a complex number? / कॉम्प्लेक्स नंबर को कैसे फॉर्मेट करें?",
-    "options": [
-      "f'{1+2j}'",
-      "format(1+2j)",
-      "str(1+2j)",
-      "All of the above"
-    ],
-    "answer": 3
-  }
+    {
+        "question": "How to declare a complex number in Python?\nPython में complex number कैसे डिक्लेयर करें?",
+        "options": ["3 + 4j", "3 + i4", "3 + 4i", "complex(3,4)"],
+        "answer": 0,
+        "explanation": "In Python, complex numbers use 'j' suffix/ Python में complex numbers 'j' suffix का उपयोग करते हैं"
+    },
+    {
+        "question": "What is the output of complex(2,3)?\ncomplex(2,3) का आउटपुट क्या है?",
+        "options": ["2+3j", "3+2j", "(2,3)", "2.3j"],
+        "answer": 0,
+        "explanation": "complex(real, imag) creates complex number/complex(real, imag) complex number बनाता है"
+    },
+    {
+        "question": "How to get real part of complex number 5+7j?\n5+7j के real part को कैसे प्राप्त करें?",
+        "options": ["(5+7j).real", "real(5+7j)", "get_real(5+7j)", "5+7j.real"],
+        "answer": 0,
+        "explanation": "Use .real attribute/.real attribute का उपयोग करें"
+    },
+    {
+        "question": "How to get imaginary part of 3+8j?\n3+8j के imaginary part को कैसे प्राप्त करें?",
+        "options": ["(3+8j).imag", "imag(3+8j)", "get_imag(3+8j)", "3+8j.imag"],
+        "answer": 0,
+        "explanation": "Use .imag attribute/.imag attribute का उपयोग करें"
+    },
+    {
+        "question": "What is (2+3j) + (4+5j)?\n(2+3j) + (4+5j) क्या है?",
+        "options": ["6+8j", "8+15j", "2+4j + 3+5j", "6+15j"],
+        "answer": 0,
+        "explanation": "Add real and imaginary parts separately/real और imaginary parts को अलग-अलग जोड़ें"
+    },
+    {
+        "question": "What is (5+2j) - (3+1j)?\n(5+2j) - (3+1j) क्या है?",
+        "options": ["2+1j", "8+3j", "2+3j", "5-3j + 2-1j"],
+        "answer": 0,
+        "explanation": "Subtract real and imaginary parts separately/real और imaginary parts को अलग-अलग घटाएं"
+    },
+    {
+        "question": "What is (2+3j) * (1+2j)?\n(2+3j) * (1+2j) क्या है?",
+        "options": ["-4+7j", "2+6j", "8+7j", "4+7j"],
+        "answer": 0,
+        "explanation": "Use FOIL method (First, Outer, Inner, Last)/FOIL method का उपयोग करें"
+    },
+    {
+        "question": "What is (4+8j) / (2+0j)?\n(4+8j) / (2+0j) क्या है?",
+        "options": ["2+4j", "4+8j", "0.5+2j", "2+8j"],
+        "answer": 0,
+        "explanation": "Divide both parts by denominator/दोनों parts को denominator से भाग दें"
+    },
+    {
+        "question": "How to get conjugate of 3+4j?\n3+4j का conjugate कैसे प्राप्त करें?",
+        "options": ["(3+4j).conjugate()", "conj(3+4j)", "3-4j", "Both A and C"],
+        "answer": 3,
+        "explanation": "Both method and manual sign change work/दोनों method और manual sign change काम करते हैं"
+    },
+    {
+        "question": "What is absolute value of 3+4j?\n3+4j का absolute value क्या है?",
+        "options": ["5.0", "7.0", "25", "3+4j"],
+        "answer": 0,
+        "explanation": "√(3² + 4²) = 5/√(3² + 4²) = 5"
+    },
+    {
+        "question": "How to compute absolute value of complex number?\nComplex number का absolute value कैसे कैलकुलेट करें?",
+        "options": ["abs(3+4j)", "|3+4j|", "mod(3+4j)", "magnitude(3+4j)"],
+        "answer": 0,
+        "explanation": "Use abs() function/abs() function का उपयोग करें"
+    },
+    {
+        "question": "Can we compare complex numbers with == in Python?\nक्या हम Python में complex numbers की == से तुलना कर सकते हैं?",
+        "options": ["Yes", "No", "Only real parts", "Only when imaginary part is zero"],
+        "answer": 0,
+        "explanation": "Python compares both real and imaginary parts/Python real और imaginary दोनों parts की तुलना करता है"
+    },
+    {
+        "question": "What is (1+2j) == (1+2j)?\n(1+2j) == (1+2j) क्या है?",
+        "options": ["True", "False", "Error", "None"],
+        "answer": 0,
+        "explanation": "Same complex numbers are equal/समान complex numbers बराबर होते हैं"
+    },
+    {
+        "question": "What is (1+2j) == (2+1j)?\n(1+2j) == (2+1j) क्या है?",
+        "options": ["False", "True", "Error", "None"],
+        "answer": 0,
+        "explanation": "Different complex numbers are not equal/अलग complex numbers बराबर नहीं होते"
+    },
+    {
+        "question": "Can we use < or > with complex numbers?\nक्या हम complex numbers के साथ < या > का उपयोग कर सकते हैं?",
+        "options": ["No", "Yes", "Only with same imaginary parts", "Only with zero imaginary part"],
+        "answer": 0,
+        "explanation": "Complex numbers have no natural ordering/Complex numbers का कोई natural ordering नहीं होता"
+    },
+    {
+        "question": "What is the type of 3+4j in Python?\nPython में 3+4j का टाइप क्या है?",
+        "options": ["complex", "float", "int", "tuple"],
+        "answer": 0,
+        "explanation": "Numbers with 'j' suffix are complex/'j' suffix वाले numbers complex होते हैं"
+    },
+    {
+        "question": "How to convert real number to complex?\nReal number को complex में कैसे बदलें?",
+        "options": ["complex(5)", "5+0j", "Both A and B", "float(5)"],
+        "answer": 2,
+        "explanation": "Both methods create complex number with zero imaginary part/दोनों methods zero imaginary part वाला complex number बनाते हैं"
+    },
+    {
+        "question": "What is (3+4j).real?\n(3+4j).real क्या है?",
+        "options": ["3.0", "4.0", "3", "5.0"],
+        "answer": 0,
+        "explanation": ".real returns real part as float/.real real part को float में रिटर्न करता है"
+    },
+    {
+        "question": "What is (5+6j).imag?\n(5+6j).imag क्या है?",
+        "options": ["6.0", "5.0", "6", "11.0"],
+        "answer": 0,
+        "explanation": ".imag returns imaginary part as float/.imag imaginary part को float में रिटर्न करता है"
+    },
+    {
+        "question": "What is (0+3j) * (0-3j)?\n(0+3j) * (0-3j) क्या है?",
+        "options": ["9", "9j", "-9j", "0"],
+        "answer": 0,
+        "explanation": "j * -j = 1, so 3*3=9/j * -j = 1, इसलिए 3*3=9"
+    },
+    {
+        "question": "What is (1+0j) * (3+4j)?\n(1+0j) * (3+4j) क्या है?",
+        "options": ["3+4j", "4+3j", "0+7j", "1+7j"],
+        "answer": 0,
+        "explanation": "Multiplying by 1 doesn't change the number/1 से गुणा करने पर number नहीं बदलता"
+    },
+    {
+        "question": "What is (0+0j) + (2+3j)?\n(0+0j) + (2+3j) क्या है?",
+        "options": ["2+3j", "0+0j", "2+0j", "0+3j"],
+        "answer": 0,
+        "explanation": "Adding zero doesn't change the number/zero जोड़ने पर number नहीं बदलता"
+    },
+    {
+        "question": "What is (2+3j) - (2+3j)?\n(2+3j) - (2+3j) क्या है?",
+        "options": ["0+0j", "4+6j", "0+6j", "-4-6j"],
+        "answer": 0,
+        "explanation": "Subtracting number from itself gives zero/number को खुद से घटाने पर zero मिलता है"
+    },
+    {
+        "question": "What is (1+1j) ** 2?\n(1+1j) ** 2 क्या है?",
+        "options": ["0+2j", "1+1j", "2+2j", "0+0j"],
+        "answer": 0,
+        "explanation": "(1+1j)² = 1 + 2j + j² = 1 + 2j -1 = 2j"
+    },
+    {
+        "question": "What is 1j * 1j?\n1j * 1j क्या है?",
+        "options": ["-1", "1", "j", "-j"],
+        "answer": 0,
+        "explanation": "j² = -1 by definition/परिभाषा के अनुसार j² = -1"
+    },
+    {
+        "question": "How to create complex zero in Python?\nPython में complex zero कैसे बनाएं?",
+        "options": ["0+0j", "complex()", "complex(0,0)", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods create complex zero/ये सभी methods complex zero बनाते हैं"
+    },
+    {
+        "question": "What is the output of complex('3+4j')?\ncomplex('3+4j') का आउटपुट क्या है?",
+        "options": ["3+4j", "Error", "7j", "(3,4)"],
+        "answer": 0,
+        "explanation": "complex() can parse strings/complex() strings को पार्स कर सकता है"
+    },
+    {
+        "question": "What is the output of complex('3 + 4j')?\ncomplex('3 + 4j') का आउटपुट क्या है?",
+        "options": ["Error", "3+4j", "7j", "3 4j"],
+        "answer": 1,
+        "explanation": "Python can parse strings with spaces/Python spaces वाली strings को पार्स कर सकता है"
+    },
+    {
+        "question": "What is (3+4j) + 2?\n(3+4j) + 2 क्या है?",
+        "options": ["5+4j", "3+6j", "Error", "5+6j"],
+        "answer": 0,
+        "explanation": "Python treats 2 as 2+0j/Python 2 को 2+0j की तरह ट्रीट करता है"
+    },
+    {
+        "question": "What is (3+4j) - 1.5?\n(3+4j) - 1.5 क्या है?",
+        "options": ["1.5+4j", "3+2.5j", "Error", "4.5+4j"],
+        "answer": 0,
+        "explanation": "Python treats 1.5 as 1.5+0j/Python 1.5 को 1.5+0j की तरह ट्रीट करता है"
+    },
+    {
+        "question": "What is (2+3j) * 2?\n(2+3j) * 2 क्या है?",
+        "options": ["4+6j", "2+6j", "4+3j", "4+9j"],
+        "answer": 0,
+        "explanation": "Multiply both parts by scalar/दोनों parts को scalar से गुणा करें"
+    },
+    {
+        "question": "What is (4+6j) / 2?\n(4+6j) / 2 क्या है?",
+        "options": ["2+3j", "4+3j", "2+6j", "4+12j"],
+        "answer": 0,
+        "explanation": "Divide both parts by scalar/दोनों parts को scalar से भाग दें"
+    },
+    {
+        "question": "What is 1 / (1+1j)?\n1 / (1+1j) क्या है?",
+        "options": ["0.5-0.5j", "1-1j", "0.5+0.5j", "1+1j"],
+        "answer": 0,
+        "explanation": "Multiply numerator and denominator by conjugate/conjugate से numerator और denominator को गुणा करें"
+    },
+    {
+        "question": "What is (2+0j) * (3+4j)?\n(2+0j) * (3+4j) क्या है?",
+        "options": ["6+8j", "2+7j", "5+4j", "6+4j"],
+        "answer": 0,
+        "explanation": "Real number times complex number/Real number गुणा complex number"
+    },
+    {
+        "question": "What is (0+2j) * (0+3j)?\n(0+2j) * (0+3j) क्या है?",
+        "options": ["-6+0j", "0+6j", "6+0j", "0+5j"],
+        "answer": 0,
+        "explanation": "j * j = -1, so 2*3*-1 = -6/j * j = -1, इसलिए 2*3*-1 = -6"
+    },
+    {
+        "question": "What is (1+1j) + (2-1j)?\n(1+1j) + (2-1j) क्या है?",
+        "options": ["3+0j", "1+2j", "3+2j", "-1+0j"],
+        "answer": 0,
+        "explanation": "Imaginary parts cancel out/Imaginary parts कैंसल हो जाते हैं"
+    },
+    {
+        "question": "What is (3+4j) - (1+2j)?\n(3+4j) - (1+2j) क्या है?",
+        "options": ["2+2j", "4+6j", "2+6j", "4+2j"],
+        "answer": 0,
+        "explanation": "Subtract corresponding parts/संबंधित parts को घटाएं"
+    },
+    {
+        "question": "What is (1+2j) * (0+0j)?\n(1+2j) * (0+0j) क्या है?",
+        "options": ["0+0j", "1+2j", "0+2j", "1+0j"],
+        "answer": 0,
+        "explanation": "Multiplying by zero gives zero/zero से गुणा करने पर zero मिलता है"
+    },
+    {
+        "question": "What is (1+1j) / (1+1j)?\n(1+1j) / (1+1j) क्या है?",
+        "options": ["1+0j", "0+1j", "1+1j", "0.5+0.5j"],
+        "answer": 0,
+        "explanation": "Number divided by itself is 1/number को खुद से भाग देने पर 1 मिलता है"
+    },
+    {
+        "question": "What is the conjugate of 5-6j?\n5-6j का conjugate क्या है?",
+        "options": ["5+6j", "-5+6j", "-5-6j", "5-6j"],
+        "answer": 0,
+        "explanation": "Conjugate changes sign of imaginary part/Conjugate imaginary part का साइन बदलता है"
+    },
+    {
+        "question": "What is the absolute value of 5+0j?\n5+0j का absolute value क्या है?",
+        "options": ["5.0", "0.0", "25.0", "5+0j"],
+        "answer": 0,
+        "explanation": "√(5² + 0²) = 5/√(5² + 0²) = 5"
+    },
+    {
+        "question": "What is the absolute value of 0+7j?\n0+7j का absolute value क्या है?",
+        "options": ["7.0", "0.0", "49.0", "0+7j"],
+        "answer": 0,
+        "explanation": "√(0² + 7²) = 7/√(0² + 7²) = 7"
+    },
+    {
+        "question": "Can we create complex number without imaginary part?\nक्या हम imaginary part के बिना complex number बना सकते हैं?",
+        "options": ["Yes, like 5+0j", "No", "Only with fractions", "Only with negative numbers"],
+        "answer": 0,
+        "explanation": "Imaginary part can be zero/Imaginary part zero हो सकता है"
+    },
+    {
+        "question": "What is complex(0)?\ncomplex(0) क्या है?",
+        "options": ["0+0j", "0", "Error", "None"],
+        "answer": 0,
+        "explanation": "complex(real) creates number with zero imaginary part/complex(real) zero imaginary part वाला number बनाता है"
+    },
+    {
+        "question": "What is complex(2, -3)?\ncomplex(2, -3) क्या है?",
+        "options": ["2-3j", "2+3j", "-2-3j", "-2+3j"],
+        "answer": 0,
+        "explanation": "complex(real, imag) creates real + imag*j/complex(real, imag) real + imag*j बनाता है"
+    },
+    {
+        "question": "What is the output of type(3+4j)?\ntype(3+4j) का आउटपुट क्या है?",
+        "options": ["<class 'complex'>", "<class 'float'>", "<class 'int'>", "<class 'number'>"],
+        "answer": 0,
+        "explanation": "Numbers with 'j' are complex/'j' वाले numbers complex होते हैं"
+    },
+    {
+        "question": "How to check if a number is complex?\nकैसे चेक करें कि number complex है?",
+        "options": ["isinstance(x, complex)", "type(x) == complex", "hasattr(x, 'imag')", "All of the above"],
+        "answer": 3,
+        "explanation": "All these methods can check for complex numbers/ये सभी methods complex numbers को चेक कर सकते हैं"
+    }
 ]
 ,
     //==============================================================================================================================
