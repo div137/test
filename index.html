@@ -1009,289 +1009,898 @@
     //==============================================================================================================================
     //==============================================================================================================================
     //==============================================================================================================================
-            "Programming and Problem Solving through Python":[
+            "Programming and Problem Solving through Python":[ {
+  "questions": [
     {
-        "question": "How to declare a complex number in Python?\nPython में complex number कैसे डिक्लेयर करें?",
-        "options": ["3 + 4j", "3 + i4", "3 + 4i", "complex(3,4)"],
-        "answer": 0,
-        "explanation": "In Python, complex numbers use 'j' suffix/ Python में complex numbers 'j' suffix का उपयोग करते हैं"
+      "question": "What is the output of `print(2 + 3 * 4)`? / `print(2 + 3 * 4)` का आउटपुट क्या होगा?",
+      "options": [
+        "20",
+        "14",
+        "24",
+        "10"
+      ],
+      "answer": 1,
+      "concept": "Operator Precedence",
+      "code_example": "print(2 + 3 * 4)  # Output: 14"
     },
     {
-        "question": "What is the output of complex(2,3)?\ncomplex(2,3) का आउटपुट क्या है?",
-        "options": ["2+3j", "3+2j", "(2,3)", "2.3j"],
-        "answer": 0,
-        "explanation": "complex(real, imag) creates complex number/complex(real, imag) complex number बनाता है"
+      "question": "Which function converts a string to integer in Python? / पायथन में स्ट्रिंग को इंटीजर में कौन-सा फंक्शन बदलता है?",
+      "options": [
+        "str()",
+        "float()",
+        "int()",
+        "chr()"
+      ],
+      "answer": 2,
+      "concept": "Type Conversion",
+      "code_example": "int('5')  # Returns 5"
     },
     {
-        "question": "How to get real part of complex number 5+7j?\n5+7j के real part को कैसे प्राप्त करें?",
-        "options": ["(5+7j).real", "real(5+7j)", "get_real(5+7j)", "5+7j.real"],
-        "answer": 0,
-        "explanation": "Use .real attribute/.real attribute का उपयोग करें"
+      "question": "What does `len()` function do? / `len()` फंक्शन क्या करता है?",
+      "options": [
+        "Returns length of string/list",
+        "Converts to lowercase",
+        "Rounds a number",
+        "Prints output"
+      ],
+      "answer": 0,
+      "concept": "Built-in Functions",
+      "code_example": "len('hello')  # Returns 5"
     },
     {
-        "question": "How to get imaginary part of 3+8j?\n3+8j के imaginary part को कैसे प्राप्त करें?",
-        "options": ["(3+8j).imag", "imag(3+8j)", "get_imag(3+8j)", "3+8j.imag"],
-        "answer": 0,
-        "explanation": "Use .imag attribute/.imag attribute का उपयोग करें"
+      "question": "Which symbol is used for comments in Python? / पायथन में कमेंट्स के लिए कौन-सा सिंबल यूज़ होता है?",
+      "options": [
+        "//",
+        "#",
+        "/*",
+        "--"
+      ],
+      "answer": 1,
+      "concept": "Comments",
+      "code_example": "# This is a comment"
     },
     {
-        "question": "What is (2+3j) + (4+5j)?\n(2+3j) + (4+5j) क्या है?",
-        "options": ["6+8j", "8+15j", "2+4j + 3+5j", "6+15j"],
-        "answer": 0,
-        "explanation": "Add real and imaginary parts separately/real और imaginary parts को अलग-अलग जोड़ें"
+      "question": "What is the output of `print('hi' * 3)`? / `print('hi' * 3)` का आउटपुट क्या होगा?",
+      "options": [
+        "hihihi",
+        "hi hi hi",
+        "hi3",
+        "Error"
+      ],
+      "answer": 0,
+      "concept": "String Operations",
+      "code_example": "print('hi' * 3)  # Output: hihihi"
     },
     {
-        "question": "What is (5+2j) - (3+1j)?\n(5+2j) - (3+1j) क्या है?",
-        "options": ["2+1j", "8+3j", "2+3j", "5-3j + 2-1j"],
-        "answer": 0,
-        "explanation": "Subtract real and imaginary parts separately/real और imaginary parts को अलग-अलग घटाएं"
+      "question": "Which data type is immutable in Python? / पायथन में कौन-सा डेटा टाइप इम्यूटेबल है?",
+      "options": [
+        "List",
+        "Dictionary",
+        "Tuple",
+        "Set"
+      ],
+      "answer": 2,
+      "concept": "Data Types",
+      "code_example": "t = (1, 2, 3)  # Tuple is immutable"
     },
     {
-        "question": "What is (2+3j) * (1+2j)?\n(2+3j) * (1+2j) क्या है?",
-        "options": ["-4+7j", "2+6j", "8+7j", "4+7j"],
-        "answer": 0,
-        "explanation": "Use FOIL method (First, Outer, Inner, Last)/FOIL method का उपयोग करें"
+      "question": "What is the output of `print(10 == '10')`? / `print(10 == '10')` का आउटपुट क्या होगा?",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "None"
+      ],
+      "answer": 1,
+      "concept": "Comparison Operators",
+      "code_example": "print(10 == '10')  # Output: False"
     },
     {
-        "question": "What is (4+8j) / (2+0j)?\n(4+8j) / (2+0j) क्या है?",
-        "options": ["2+4j", "4+8j", "0.5+2j", "2+8j"],
-        "answer": 0,
-        "explanation": "Divide both parts by denominator/दोनों parts को denominator से भाग दें"
+      "question": "Which keyword defines a function in Python? / पायथन में फंक्शन डिफाइन करने के लिए कौन-सा कीवर्ड यूज़ होता है?",
+      "options": [
+        "def",
+        "function",
+        "define",
+        "fun"
+      ],
+      "answer": 0,
+      "concept": "Functions",
+      "code_example": "def my_func():\n    pass"
     },
     {
-        "question": "How to get conjugate of 3+4j?\n3+4j का conjugate कैसे प्राप्त करें?",
-        "options": ["(3+4j).conjugate()", "conj(3+4j)", "3-4j", "Both A and C"],
-        "answer": 3,
-        "explanation": "Both method and manual sign change work/दोनों method और manual sign change काम करते हैं"
+      "question": "What does `range(5)` generate? / `range(5)` क्या जनरेट करता है?",
+      "options": [
+        "[0,1,2,3,4]",
+        "[1,2,3,4,5]",
+        "[5]",
+        "Error"
+      ],
+      "answer": 0,
+      "concept": "range() function",
+      "code_example": "list(range(5))  # [0,1,2,3,4]"
     },
     {
-        "question": "What is absolute value of 3+4j?\n3+4j का absolute value क्या है?",
-        "options": ["5.0", "7.0", "25", "3+4j"],
-        "answer": 0,
-        "explanation": "√(3² + 4²) = 5/√(3² + 4²) = 5"
+      "question": "Which method adds an item to a list? / लिस्ट में आइटम ऐड करने के लिए कौन-सा मेथड यूज़ होता है?",
+      "options": [
+        "append()",
+        "add()",
+        "insert()",
+        "push()"
+      ],
+      "answer": 0,
+      "concept": "List Methods",
+      "code_example": "lst = [1,2]\nlst.append(3)"
     },
     {
-        "question": "How to compute absolute value of complex number?\nComplex number का absolute value कैसे कैलकुलेट करें?",
-        "options": ["abs(3+4j)", "|3+4j|", "mod(3+4j)", "magnitude(3+4j)"],
-        "answer": 0,
-        "explanation": "Use abs() function/abs() function का उपयोग करें"
+      "question": "What is the output of `print(not True)`? / `print(not True)` का आउटपुट क्या होगा?",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Error"
+      ],
+      "answer": 1,
+      "concept": "Boolean Operators",
+      "code_example": "print(not True)  # Output: False"
     },
     {
-        "question": "Can we compare complex numbers with == in Python?\nक्या हम Python में complex numbers की == से तुलना कर सकते हैं?",
-        "options": ["Yes", "No", "Only real parts", "Only when imaginary part is zero"],
-        "answer": 0,
-        "explanation": "Python compares both real and imaginary parts/Python real और imaginary दोनों parts की तुलना करता है"
+      "question": "Which operator checks if value is present in sequence? / कौन-सा ऑपरेटर चेक करता है कि वैल्यू सीक्वेंस में है या नहीं?",
+      "options": [
+        "==",
+        "in",
+        "has",
+        "contains"
+      ],
+      "answer": 1,
+      "concept": "Membership Operators",
+      "code_example": "'a' in 'apple'  # Returns True"
     },
     {
-        "question": "What is (1+2j) == (1+2j)?\n(1+2j) == (1+2j) क्या है?",
-        "options": ["True", "False", "Error", "None"],
-        "answer": 0,
-        "explanation": "Same complex numbers are equal/समान complex numbers बराबर होते हैं"
+      "question": "What does `'hello'.upper()` return? / `'hello'.upper()` क्या रिटर्न करता है?",
+      "options": [
+        "HELLO",
+        "hello",
+        "Hello",
+        "hELLO"
+      ],
+      "answer": 0,
+      "concept": "String Methods",
+      "code_example": "'hello'.upper()  # Returns 'HELLO'"
     },
     {
-        "question": "What is (1+2j) == (2+1j)?\n(1+2j) == (2+1j) क्या है?",
-        "options": ["False", "True", "Error", "None"],
-        "answer": 0,
-        "explanation": "Different complex numbers are not equal/अलग complex numbers बराबर नहीं होते"
+      "question": "Which is used to handle exceptions? / एक्सेप्शन हैंडल करने के लिए क्या यूज़ होता है?",
+      "options": [
+        "try-except",
+        "if-else",
+        "for-else",
+        "while"
+      ],
+      "answer": 0,
+      "concept": "Exception Handling",
+      "code_example": "try:\n    x=1/0\nexcept:\n    print('Error')"
     },
     {
-        "question": "Can we use < or > with complex numbers?\nक्या हम complex numbers के साथ < या > का उपयोग कर सकते हैं?",
-        "options": ["No", "Yes", "Only with same imaginary parts", "Only with zero imaginary part"],
-        "answer": 0,
-        "explanation": "Complex numbers have no natural ordering/Complex numbers का कोई natural ordering नहीं होता"
+      "question": "What is the output of `print(bool(''))`? / `print(bool(''))` का आउटपुट क्या होगा?",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Error"
+      ],
+      "answer": 1,
+      "concept": "Truthy/Falsy Values",
+      "code_example": "print(bool(''))  # Output: False"
     },
     {
-        "question": "What is the type of 3+4j in Python?\nPython में 3+4j का टाइप क्या है?",
-        "options": ["complex", "float", "int", "tuple"],
-        "answer": 0,
-        "explanation": "Numbers with 'j' suffix are complex/'j' suffix वाले numbers complex होते हैं"
+      "question": "Which symbol represents decision in flowchart? / फ्लोचार्ट में डिसीजन को कौन-सा सिंबल रिप्रेजेंट करता है?",
+      "options": [
+        "Rectangle",
+        "Diamond",
+        "Oval",
+        "Arrow"
+      ],
+      "answer": 1,
+      "concept": "Flowchart Symbols",
+      "code_example": "Diamond shape represents decision points"
     },
     {
-        "question": "How to convert real number to complex?\nReal number को complex में कैसे बदलें?",
-        "options": ["complex(5)", "5+0j", "Both A and B", "float(5)"],
-        "answer": 2,
-        "explanation": "Both methods create complex number with zero imaginary part/दोनों methods zero imaginary part वाला complex number बनाते हैं"
+      "question": "What is the purpose of pseudocode? / स्यूडोकोड का क्या उद्देश्य है?",
+      "options": [
+        "Actual code execution",
+        "Algorithm representation",
+        "Graphical representation",
+        "Data storage"
+      ],
+      "answer": 1,
+      "concept": "Pseudocode",
+      "code_example": "Pseudocode is informal high-level description"
     },
     {
-        "question": "What is (3+4j).real?\n(3+4j).real क्या है?",
-        "options": ["3.0", "4.0", "3", "5.0"],
-        "answer": 0,
-        "explanation": ".real returns real part as float/.real real part को float में रिटर्न करता है"
+      "question": "Which loop is guaranteed to execute at least once? / कौन-सा लूप कम से कम एक बार तो एक्जीक्यूट होगा ही?",
+      "options": [
+        "for",
+        "while",
+        "do-while",
+        "if"
+      ],
+      "answer": 2,
+      "concept": "Loops",
+      "code_example": "do-while executes before condition check"
     },
     {
-        "question": "What is (5+6j).imag?\n(5+6j).imag क्या है?",
-        "options": ["6.0", "5.0", "6", "11.0"],
-        "answer": 0,
-        "explanation": ".imag returns imaginary part as float/.imag imaginary part को float में रिटर्न करता है"
+      "question": "What is the output of `print(3 ** 2)`? / `print(3 ** 2)` का आउटपुट क्या होगा?",
+      "options": [
+        "6",
+        "9",
+        "1.5",
+        "Error"
+      ],
+      "answer": 1,
+      "concept": "Arithmetic Operators",
+      "code_example": "print(3 ** 2)  # Output: 9 (exponent)"
     },
     {
-        "question": "What is (0+3j) * (0-3j)?\n(0+3j) * (0-3j) क्या है?",
-        "options": ["9", "9j", "-9j", "0"],
-        "answer": 0,
-        "explanation": "j * -j = 1, so 3*3=9/j * -j = 1, इसलिए 3*3=9"
+      "question": "Which method removes last item from list? / लिस्ट से लास्ट आइटम रिमूव करने के लिए कौन-सा मेथड यूज़ होता है?",
+      "options": [
+        "remove()",
+        "pop()",
+        "delete()",
+        "clear()"
+      ],
+      "answer": 1,
+      "concept": "List Methods",
+      "code_example": "lst = [1,2,3]\nlst.pop()"
     },
     {
-        "question": "What is (1+0j) * (3+4j)?\n(1+0j) * (3+4j) क्या है?",
-        "options": ["3+4j", "4+3j", "0+7j", "1+7j"],
-        "answer": 0,
-        "explanation": "Multiplying by 1 doesn't change the number/1 से गुणा करने पर number नहीं बदलता"
+      "question": "What is the output of `print(10 % 3)`? / `print(10 % 3)` का आउटपुट क्या होगा?",
+      "options": [
+        "3",
+        "1",
+        "0",
+        "3.33"
+      ],
+      "answer": 1,
+      "concept": "Modulus Operator",
+      "code_example": "print(10 % 3)  # Output: 1 (remainder)"
     },
     {
-        "question": "What is (0+0j) + (2+3j)?\n(0+0j) + (2+3j) क्या है?",
-        "options": ["2+3j", "0+0j", "2+0j", "0+3j"],
-        "answer": 0,
-        "explanation": "Adding zero doesn't change the number/zero जोड़ने पर number नहीं बदलता"
+      "question": "Which is NOT a valid variable name? / कौन-सा वैरिएबल नाम वैलिड नहीं है?",
+      "options": [
+        "_var",
+        "var_name",
+        "2var",
+        "var2"
+      ],
+      "answer": 2,
+      "concept": "Variable Naming",
+      "code_example": "2var is invalid (can't start with number)"
     },
     {
-        "question": "What is (2+3j) - (2+3j)?\n(2+3j) - (2+3j) क्या है?",
-        "options": ["0+0j", "4+6j", "0+6j", "-4-6j"],
-        "answer": 0,
-        "explanation": "Subtracting number from itself gives zero/number को खुद से घटाने पर zero मिलता है"
+      "question": "What does `'hello'.split('e')` return? / `'hello'.split('e')` क्या रिटर्न करता है?",
+      "options": [
+        "['h', 'llo']",
+        "['he', 'llo']",
+        "['hell', 'o']",
+        "Error"
+      ],
+      "answer": 0,
+      "concept": "String Methods",
+      "code_example": "'hello'.split('e')  # ['h', 'llo']"
     },
     {
-        "question": "What is (1+1j) ** 2?\n(1+1j) ** 2 क्या है?",
-        "options": ["0+2j", "1+1j", "2+2j", "0+0j"],
-        "answer": 0,
-        "explanation": "(1+1j)² = 1 + 2j + j² = 1 + 2j -1 = 2j"
+      "question": "Which is used to read user input? / यूजर इनपुट पढ़ने के लिए क्या यूज़ होता है?",
+      "options": [
+        "input()",
+        "get()",
+        "read()",
+        "scan()"
+      ],
+      "answer": 0,
+      "concept": "User Input",
+      "code_example": "name = input('Enter name: ')"
     },
     {
-        "question": "What is 1j * 1j?\n1j * 1j क्या है?",
-        "options": ["-1", "1", "j", "-j"],
-        "answer": 0,
-        "explanation": "j² = -1 by definition/परिभाषा के अनुसार j² = -1"
+      "question": "What is the output of `print('Hello'[1:4])`? / `print('Hello'[1:4])` का आउटपुट क्या होगा?",
+      "options": [
+        "ell",
+        "Hel",
+        "ello",
+        "Hlo"
+      ],
+      "answer": 0,
+      "concept": "String Slicing",
+      "code_example": "print('Hello'[1:4])  # Output: 'ell'"
     },
     {
-        "question": "How to create complex zero in Python?\nPython में complex zero कैसे बनाएं?",
-        "options": ["0+0j", "complex()", "complex(0,0)", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods create complex zero/ये सभी methods complex zero बनाते हैं"
+      "question": "Which data structure uses FIFO principle? / कौन-सा डेटा स्ट्रक्चर FIFO प्रिंसिपल यूज़ करता है?",
+      "options": [
+        "Stack",
+        "Queue",
+        "List",
+        "Tree"
+      ],
+      "answer": 1,
+      "concept": "Queue",
+      "code_example": "Queue: First In First Out"
     },
     {
-        "question": "What is the output of complex('3+4j')?\ncomplex('3+4j') का आउटपुट क्या है?",
-        "options": ["3+4j", "Error", "7j", "(3,4)"],
-        "answer": 0,
-        "explanation": "complex() can parse strings/complex() strings को पार्स कर सकता है"
+      "question": "What is the output of `print(round(3.14159, 2))`? / `print(round(3.14159, 2))` का आउटपुट क्या होगा?",
+      "options": [
+        "3.14",
+        "3.1",
+        "3.0",
+        "3.141"
+      ],
+      "answer": 0,
+      "concept": "round() function",
+      "code_example": "print(round(3.14159, 2))  # Output: 3.14"
     },
     {
-        "question": "What is the output of complex('3 + 4j')?\ncomplex('3 + 4j') का आउटपुट क्या है?",
-        "options": ["Error", "3+4j", "7j", "3 4j"],
-        "answer": 1,
-        "explanation": "Python can parse strings with spaces/Python spaces वाली strings को पार्स कर सकता है"
+      "question": "Which is NOT a Python data type? / कौन-सा पायथन डेटा टाइप नहीं है?",
+      "options": [
+        "int",
+        "float",
+        "char",
+        "bool"
+      ],
+      "answer": 2,
+      "concept": "Data Types",
+      "code_example": "Python doesn't have 'char' type specifically"
     },
     {
-        "question": "What is (3+4j) + 2?\n(3+4j) + 2 क्या है?",
-        "options": ["5+4j", "3+6j", "Error", "5+6j"],
-        "answer": 0,
-        "explanation": "Python treats 2 as 2+0j/Python 2 को 2+0j की तरह ट्रीट करता है"
+      "question": "What is the output of `print([1,2] + [3,4])`? / `print([1,2] + [3,4])` का आउटपुट क्या होगा?",
+      "options": [
+        "[1,2,3,4]",
+        "[4,6]",
+        "[1,3,2,4]",
+        "Error"
+      ],
+      "answer": 0,
+      "concept": "List Concatenation",
+      "code_example": "print([1,2] + [3,4])  # Output: [1,2,3,4]"
     },
     {
-        "question": "What is (3+4j) - 1.5?\n(3+4j) - 1.5 क्या है?",
-        "options": ["1.5+4j", "3+2.5j", "Error", "4.5+4j"],
-        "answer": 0,
-        "explanation": "Python treats 1.5 as 1.5+0j/Python 1.5 को 1.5+0j की तरह ट्रीट करता है"
+      "question": "Which method removes all items from list? / लिस्ट से सभी आइटम्स रिमूव करने के लिए कौन-सा मेथड यूज़ होता है?",
+      "options": [
+        "remove()",
+        "pop()",
+        "clear()",
+        "delete()"
+      ],
+      "answer": 2,
+      "concept": "List Methods",
+      "code_example": "lst = [1,2,3]\nlst.clear()"
     },
     {
-        "question": "What is (2+3j) * 2?\n(2+3j) * 2 क्या है?",
-        "options": ["4+6j", "2+6j", "4+3j", "4+9j"],
-        "answer": 0,
-        "explanation": "Multiply both parts by scalar/दोनों parts को scalar से गुणा करें"
+      "question": "What is the output of `print('Python'.find('th'))`? / `print('Python'.find('th'))` का आउटपुट क्या होगा?",
+      "options": [
+        "2",
+        "3",
+        "-1",
+        "True"
+      ],
+      "answer": 0,
+      "concept": "String Methods",
+      "code_example": "print('Python'.find('th'))  # Output: 2"
     },
     {
-        "question": "What is (4+6j) / 2?\n(4+6j) / 2 क्या है?",
-        "options": ["2+3j", "4+3j", "2+6j", "4+12j"],
-        "answer": 0,
-        "explanation": "Divide both parts by scalar/दोनों parts को scalar से भाग दें"
+      "question": "Which is used to exit a function? / फंक्शन से एग्जिट करने के लिए क्या यूज़ होता है?",
+      "options": [
+        "break",
+        "return",
+        "exit",
+        "continue"
+      ],
+      "answer": 1,
+      "concept": "Functions",
+      "code_example": "def func():\n    return 5"
     },
     {
-        "question": "What is 1 / (1+1j)?\n1 / (1+1j) क्या है?",
-        "options": ["0.5-0.5j", "1-1j", "0.5+0.5j", "1+1j"],
-        "answer": 0,
-        "explanation": "Multiply numerator and denominator by conjugate/conjugate से numerator और denominator को गुणा करें"
+      "question": "What is the output of `print(10 // 3)`? / `print(10 // 3)` का आउटपुट क्या होगा?",
+      "options": [
+        "3",
+        "3.33",
+        "1",
+        "0"
+      ],
+      "answer": 0,
+      "concept": "Floor Division",
+      "code_example": "print(10 // 3)  # Output: 3"
     },
     {
-        "question": "What is (2+0j) * (3+4j)?\n(2+0j) * (3+4j) क्या है?",
-        "options": ["6+8j", "2+7j", "5+4j", "6+4j"],
-        "answer": 0,
-        "explanation": "Real number times complex number/Real number गुणा complex number"
+      "question": "Which is valid dictionary creation? / कौन-सा डिक्शनरी क्रिएशन वैलिड है?",
+      "options": [
+        "{1: 'a', 2: 'b'}",
+        "[1: 'a', 2: 'b']",
+        "(1: 'a', 2: 'b')",
+        "<1: 'a', 2: 'b'>"
+      ],
+      "answer": 0,
+      "concept": "Dictionary",
+      "code_example": "d = {1: 'a', 2: 'b'}"
     },
     {
-        "question": "What is (0+2j) * (0+3j)?\n(0+2j) * (0+3j) क्या है?",
-        "options": ["-6+0j", "0+6j", "6+0j", "0+5j"],
-        "answer": 0,
-        "explanation": "j * j = -1, so 2*3*-1 = -6/j * j = -1, इसलिए 2*3*-1 = -6"
+      "question": "What is the output of `print(min([3,1,4,2]))`? / `print(min([3,1,4,2]))` का आउटपुट क्या होगा?",
+      "options": [
+        "1",
+        "3",
+        "2",
+        "4"
+      ],
+      "answer": 0,
+      "concept": "Built-in Functions",
+      "code_example": "print(min([3,1,4,2]))  # Output: 1"
     },
     {
-        "question": "What is (1+1j) + (2-1j)?\n(1+1j) + (2-1j) क्या है?",
-        "options": ["3+0j", "1+2j", "3+2j", "-1+0j"],
-        "answer": 0,
-        "explanation": "Imaginary parts cancel out/Imaginary parts कैंसल हो जाते हैं"
+      "question": "Which operator performs logical AND? / लॉजिकल AND के लिए कौन-सा ऑपरेटर यूज़ होता है?",
+      "options": [
+        "&",
+        "&&",
+        "and",
+        "|"
+      ],
+      "answer": 2,
+      "concept": "Logical Operators",
+      "code_example": "if x > 0 and x < 10:"
     },
     {
-        "question": "What is (3+4j) - (1+2j)?\n(3+4j) - (1+2j) क्या है?",
-        "options": ["2+2j", "4+6j", "2+6j", "4+2j"],
-        "answer": 0,
-        "explanation": "Subtract corresponding parts/संबंधित parts को घटाएं"
+      "question": "What is the output of `print('a' in {'a':1})`? / `print('a' in {'a':1})` का आउटपुट क्या होगा?",
+      "options": [
+        "True",
+        "False",
+        "1",
+        "Error"
+      ],
+      "answer": 0,
+      "concept": "Dictionary Keys",
+      "code_example": "print('a' in {'a':1})  # Output: True"
     },
     {
-        "question": "What is (1+2j) * (0+0j)?\n(1+2j) * (0+0j) क्या है?",
-        "options": ["0+0j", "1+2j", "0+2j", "1+0j"],
-        "answer": 0,
-        "explanation": "Multiplying by zero gives zero/zero से गुणा करने पर zero मिलता है"
+      "question": "Which is used to create a sequence diagram? / सीक्वेंस डायग्राम क्रिएट करने के लिए क्या यूज़ होता है?",
+      "options": [
+        "Flowchart",
+        "Pseudocode",
+        "UML",
+        "Algorithm"
+      ],
+      "answer": 2,
+      "concept": "Sequence Diagram",
+      "code_example": "UML includes sequence diagrams"
     },
     {
-        "question": "What is (1+1j) / (1+1j)?\n(1+1j) / (1+1j) क्या है?",
-        "options": ["1+0j", "0+1j", "1+1j", "0.5+0.5j"],
-        "answer": 0,
-        "explanation": "Number divided by itself is 1/number को खुद से भाग देने पर 1 मिलता है"
+      "question": "What is the output of `print(bool(0))`? / `print(bool(0))` का आउटपुट क्या होगा?",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Error"
+      ],
+      "answer": 1,
+      "concept": "Truthy/Falsy Values",
+      "code_example": "print(bool(0))  # Output: False"
     },
     {
-        "question": "What is the conjugate of 5-6j?\n5-6j का conjugate क्या है?",
-        "options": ["5+6j", "-5+6j", "-5-6j", "5-6j"],
-        "answer": 0,
-        "explanation": "Conjugate changes sign of imaginary part/Conjugate imaginary part का साइन बदलता है"
+      "question": "Which method returns dictionary keys? / डिक्शनरी कीज़ रिटर्न करने के लिए कौन-सा मेथड यूज़ होता है?",
+      "options": [
+        "keys()",
+        "items()",
+        "values()",
+        "get()"
+      ],
+      "answer": 0,
+      "concept": "Dictionary Methods",
+      "code_example": "d = {'a':1}\nd.keys()  # ['a']"
     },
     {
-        "question": "What is the absolute value of 5+0j?\n5+0j का absolute value क्या है?",
-        "options": ["5.0", "0.0", "25.0", "5+0j"],
-        "answer": 0,
-        "explanation": "√(5² + 0²) = 5/√(5² + 0²) = 5"
+      "question": "What is the output of `print(1 == True)`? / `print(1 == True)` का आउटपुट क्या होगा?",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "None"
+      ],
+      "answer": 0,
+      "concept": "Boolean Values",
+      "code_example": "print(1 == True)  # Output: True"
     },
     {
-        "question": "What is the absolute value of 0+7j?\n0+7j का absolute value क्या है?",
-        "options": ["7.0", "0.0", "49.0", "0+7j"],
-        "answer": 0,
-        "explanation": "√(0² + 7²) = 7/√(0² + 7²) = 7"
+      "question": "Which is used for single-line pseudocode? / सिंगल लाइन स्यूडोकोड के लिए क्या यूज़ होता है?",
+      "options": [
+        "//",
+        "#",
+        "--",
+        "No symbol needed"
+      ],
+      "answer": 3,
+      "concept": "Pseudocode",
+      "code_example": "Pseudocode often has no strict syntax"
     },
     {
-        "question": "Can we create complex number without imaginary part?\nक्या हम imaginary part के बिना complex number बना सकते हैं?",
-        "options": ["Yes, like 5+0j", "No", "Only with fractions", "Only with negative numbers"],
-        "answer": 0,
-        "explanation": "Imaginary part can be zero/Imaginary part zero हो सकता है"
+      "question": "What is the output of `print('Hello'.replace('l','x'))`? / `print('Hello'.replace('l','x'))` का आउटपुट क्या होगा?",
+      "options": [
+        "Hexxo",
+        "Hxxlo",
+        "Hexlo",
+        "Hxllo"
+      ],
+      "answer": 0,
+      "concept": "String Methods",
+      "code_example": "print('Hello'.replace('l','x'))  # Output: Hexxo"
     },
     {
-        "question": "What is complex(0)?\ncomplex(0) क्या है?",
-        "options": ["0+0j", "0", "Error", "None"],
-        "answer": 0,
-        "explanation": "complex(real) creates number with zero imaginary part/complex(real) zero imaginary part वाला number बनाता है"
+      "question": "Which is NOT a loop structure? / कौन-सा लूप स्ट्रक्चर नहीं है?",
+      "options": [
+        "for",
+        "while",
+        "do-while",
+        "if-else"
+      ],
+      "answer": 3,
+      "concept": "Loops",
+      "code_example": "if-else is conditional, not a loop"
     },
     {
-        "question": "What is complex(2, -3)?\ncomplex(2, -3) क्या है?",
-        "options": ["2-3j", "2+3j", "-2-3j", "-2+3j"],
-        "answer": 0,
-        "explanation": "complex(real, imag) creates real + imag*j/complex(real, imag) real + imag*j बनाता है"
+      "question": "What is the output of `print(3 * 'ab')`? / `print(3 * 'ab')` का आउटपुट क्या होगा?",
+      "options": [
+        "ababab",
+        "3ab",
+        "ab3",
+        "Error"
+      ],
+      "answer": 0,
+      "concept": "String Operations",
+      "code_example": "print(3 * 'ab')  # Output: ababab"
     },
     {
-        "question": "What is the output of type(3+4j)?\ntype(3+4j) का आउटपुट क्या है?",
-        "options": ["<class 'complex'>", "<class 'float'>", "<class 'int'>", "<class 'number'>"],
-        "answer": 0,
-        "explanation": "Numbers with 'j' are complex/'j' वाले numbers complex होते हैं"
+      "question": "Which method adds element at specific index? / स्पेसिफिक इंडेक्स पर एलिमेंट ऐड करने के लिए कौन-सा मेथड यूज़ होता है?",
+      "options": [
+        "append()",
+        "insert()",
+        "add()",
+        "push()"
+      ],
+      "answer": 1,
+      "concept": "List Methods",
+      "code_example": "lst = [1,3]\nlst.insert(1,2)"
     },
     {
-        "question": "How to check if a number is complex?\nकैसे चेक करें कि number complex है?",
-        "options": ["isinstance(x, complex)", "type(x) == complex", "hasattr(x, 'imag')", "All of the above"],
-        "answer": 3,
-        "explanation": "All these methods can check for complex numbers/ये सभी methods complex numbers को चेक कर सकते हैं"
+      "question": "What is the output of `print(7 > 5 > 3)`? / `print(7 > 5 > 3)` का आउटपुट क्या होगा?",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "None"
+      ],
+      "answer": 0,
+      "concept": "Chained Comparisons",
+      "code_example": "print(7 > 5 > 3)  # Output: True"
+    },
+    {
+      "question": "Which is valid set creation? / कौन-सा सेट क्रिएशन वैलिड है?",
+      "options": [
+        "{1,2,3}",
+        "[1,2,3]",
+        "(1,2,3)",
+        "<1,2,3>"
+      ],
+      "answer": 0,
+      "concept": "Set",
+      "code_example": "s = {1,2,3}"
+    },
+    {
+      "question": "What is the output of `print('Python'[-3:])`? / `print('Python'[-3:])` का आउटपुट क्या होगा?",
+      "options": [
+        "hon",
+        "Pyt",
+        "thon",
+        "Error"
+      ],
+      "answer": 0,
+      "concept": "String Slicing",
+      "code_example": "print('Python'[-3:])  # Output: 'hon'"
+    },
+    {
+      "question": "Which is used to skip current iteration? / करंट इटरेशन को स्किप करने के लिए क्या यूज़ होता है?",
+      "options": [
+        "break",
+        "continue",
+        "pass",
+        "skip"
+      ],
+      "answer": 1,
+      "concept": "Loop Control",
+      "code_example": "for i in range(5):\n    if i == 2:\n        continue"
+    },
+    {
+      "question": "What is the output of `print(3 + 4 * 2)`? / `print(3 + 4 * 2)` का आउटपुट क्या होगा?",
+      "options": [
+        "14",
+        "11",
+        "10",
+        "Error"
+      ],
+      "answer": 1,
+      "concept": "Operator Precedence",
+      "code_example": "print(3 + 4 * 2)  # Output: 11"
+    },
+    {
+      "question": "Which method returns dictionary values? / डिक्शनरी वैल्यूज रिटर्न करने के लिए कौन-सा मेथड यूज़ होता है?",
+      "options": [
+        "keys()",
+        "items()",
+        "values()",
+        "get()"
+      ],
+      "answer": 2,
+      "concept": "Dictionary Methods",
+      "code_example": "d = {'a':1}\nd.values()  # [1]"
+    },
+    {
+      "question": "What is the output of `print('Hello'.lower())`? / `print('Hello'.lower())` का आउटपुट क्या होगा?",
+      "options": [
+        "hello",
+        "HELLO",
+        "Hello",
+        "hELLO"
+      ],
+      "answer": 0,
+      "concept": "String Methods",
+      "code_example": "print('Hello'.lower())  # Output: hello"
+    },
+    {
+      "question": "Which is used to represent start/end in flowchart? / फ्लोचार्ट में स्टार्ट/एंड को रिप्रेजेंट करने के लिए क्या यूज़ होता है?",
+      "options": [
+        "Rectangle",
+        "Diamond",
+        "Oval",
+        "Arrow"
+      ],
+      "answer": 2,
+      "concept": "Flowchart Symbols",
+      "code_example": "Oval represents start/end points"
+    },
+    {
+      "question": "What is the output of `print(2**3**2)`? / `print(2**3**2)` का आउटपुट क्या होगा?",
+      "options": [
+        "64",
+        "512",
+        "12",
+        "Error"
+      ],
+      "answer": 1,
+      "concept": "Operator Precedence",
+      "code_example": "print(2**3**2)  # Output: 512 (right associative)"
+    },
+    {
+      "question": "Which method removes whitespace from string? / स्ट्रिंग से व्हाइटस्पेस रिमूव करने के लिए कौन-सा मेथड यूज़ होता है?",
+      "options": [
+        "trim()",
+        "strip()",
+        "clean()",
+        "remove()"
+      ],
+      "answer": 1,
+      "concept": "String Methods",
+      "code_example": "' hello '.strip()  # 'hello'"
+    },
+    {
+      "question": "What is the output of `print([n**2 for n in range(3)])`? / `print([n**2 for n in range(3)])` का आउटपुट क्या होगा?",
+      "options": [
+        "[0,1,4]",
+        "[1,4,9]",
+        "[0,1,2]",
+        "Error"
+      ],
+      "answer": 0,
+      "concept": "List Comprehension",
+      "code_example": "print([n**2 for n in range(3)])  # [0,1,4]"
+    },
+    {
+      "question": "Which is used to represent input/output in flowchart? / फ्लोचार्ट में इनपुट/आउटपुट को रिप्रेजेंट करने के लिए क्या यूज़ होता है?",
+      "options": [
+        "Rectangle",
+        "Diamond",
+        "Parallelogram",
+        "Oval"
+      ],
+      "answer": 2,
+      "concept": "Flowchart Symbols",
+      "code_example": "Parallelogram represents I/O"
+    },
+    {
+      "question": "What is the output of `print('Python'[::2])`? / `print('Python'[::2])` का आउटपुट क्या होगा?",
+      "options": [
+        "Pto",
+        "yhn",
+        "Python",
+        "Pyth"
+      ],
+      "answer": 0,
+      "concept": "String Slicing",
+      "code_example": "print('Python'[::2])  # Output: 'Pto'"
+    },
+    {
+      "question": "Which is used to represent process in flowchart? / फ्लोचार्ट में प्रोसेस को रिप्रेजेंट करने के लिए क्या यूज़ होता है?",
+      "options": [
+        "Rectangle",
+        "Diamond",
+        "Oval",
+        "Arrow"
+      ],
+      "answer": 0,
+      "concept": "Flowchart Symbols",
+      "code_example": "Rectangle represents processing steps"
+    },
+    {
+      "question": "What is the output of `print(any([False, True, False]))`? / `print(any([False, True, False]))` का आउटपुट क्या होगा?",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Error"
+      ],
+      "answer": 0,
+      "concept": "any() function",
+      "code_example": "print(any([False, True, False]))  # Output: True"
+    },
+    {
+      "question": "Which method checks if string starts with prefix? / स्ट्रिंग प्रीफिक्स से स्टार्ट होती है या नहीं चेक करने के लिए कौन-सा मेथड यूज़ होता है?",
+      "options": [
+        "startswith()",
+        "beginwith()",
+        "prefix()",
+        "first()"
+      ],
+      "answer": 0,
+      "concept": "String Methods",
+      "code_example": "'hello'.startswith('he')  # True"
+    },
+    {
+      "question": "What is the output of `print(all([True, False, True]))`? / `print(all([True, False, True]))` का आउटपुट क्या होगा?",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Error"
+      ],
+      "answer": 1,
+      "concept": "all() function",
+      "code_example": "print(all([True, False, True]))  # Output: False"
+    },
+    {
+      "question": "Which is used to represent flow direction? / फ्लो डायरेक्शन को रिप्रेजेंट करने के लिए क्या यूज़ होता है?",
+      "options": [
+        "Rectangle",
+        "Diamond",
+        "Oval",
+        "Arrow"
+      ],
+      "answer": 3,
+      "concept": "Flowchart Symbols",
+      "code_example": "Arrows show flow direction"
+    },
+    {
+      "question": "What is the output of `print(sorted([3,1,2]))`? / `print(sorted([3,1,2]))` का आउटपुट क्या होगा?",
+      "options": [
+        "[1,2,3]",
+        "[3,1,2]",
+        "[3,2,1]",
+        "Error"
+      ],
+      "answer": 0,
+      "concept": "sorted() function",
+      "code_example": "print(sorted([3,1,2]))  # Output: [1,2,3]"
+    },
+    {
+      "question": "Which method returns string without leading/trailing chars? / लीडिंग/ट्रेलिंग कैरेक्टर्स के बिना स्ट्रिंग रिटर्न करने के लिए कौन-सा मेथड यूज़ होता है?",
+      "options": [
+        "clean()",
+        "strip()",
+        "trim()",
+        "cut()"
+      ],
+      "answer": 1,
+      "concept": "String Methods",
+      "code_example": "' hello '.strip()  # 'hello'"
+    },
+    {
+      "question": "What is the output of `print('Hello'.isalpha())`? / `print('Hello'.isalpha())` का आउटपुट क्या होगा?",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Error"
+      ],
+      "answer": 0,
+      "concept": "String Methods",
+      "code_example": "print('Hello'.isalpha())  # Output: True"
+    },
+    {
+      "question": "Which is used to represent subroutine in flowchart? / फ्लोचार्ट में सबरूटीन को रिप्रेजेंट करने के लिए क्या यूज़ होता है?",
+      "options": [
+        "Rectangle with double lines",
+        "Diamond",
+        "Oval",
+        "Parallelogram"
+      ],
+      "answer": 0,
+      "concept": "Flowchart Symbols",
+      "code_example": "Double-lined rectangle for subroutines"
+    },
+    {
+      "question": "What is the output of `print('123'.isdigit())`? / `print('123'.isdigit())` का आउटपुट क्या होगा?",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Error"
+      ],
+      "answer": 0,
+      "concept": "String Methods",
+      "code_example": "print('123'.isdigit())  # Output: True"
+    },
+    {
+      "question": "Which method returns string centered in width? / विड्थ में सेंटर्ड स्ट्रिंग रिटर्न करने के लिए कौन-सा मेथड यूज़ होता है?",
+      "options": [
+        "align()",
+        "center()",
+        "middle()",
+        "pad()"
+      ],
+      "answer": 1,
+      "concept": "String Methods",
+      "code_example": "'hi'.center(5)  # ' hi  '"
+    },
+    {
+      "question": "What is the output of `print('Python'.count('t'))`? / `print('Python'.count('t'))` का आउटपुट क्या होगा?",
+      "options": [
+        "1",
+        "0",
+        "2",
+        "Error"
+      ],
+      "answer": 0,
+      "concept": "String Methods",
+      "code_example": "print('Python'.count('t'))  # Output: 1"
+    },
+    {
+      "question": "Which is used to represent connection between pages? / पेजेस के बीच कनेक्शन रिप्रेजेंट करने के लिए क्या यूज़ होता है?",
+      "options": [
+        "Circle",
+        "Pentagon",
+        "Diamond",
+        "Rectangle"
+      ],
+      "answer": 0,
+      "concept": "Flowchart Symbols",
+      "code_example": "Circle represents connector between pages"
+    },
+    {
+      "question": "What is the output of `print('Hello'.endswith('lo'))`? / `print('Hello'.endswith('lo'))` का आउटपुट क्या होगा?",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Error"
+      ],
+      "answer": 0,
+      "concept": "String Methods",
+      "code_example": "print('Hello'.endswith('lo'))  # Output: True"
+    },
+    {
+      "question": "Which method returns string with first letter capitalized? / फर्स्ट लेटर कैपिटलाइज्ड स्ट्रिंग रिटर्न करने के लिए कौन-सा मेथड यूज़ होता है?",
+      "options": [
+        "upper()",
+        "capitalize()",
+        "title()",
+        "firstupper()"
+      ],
+      "answer": 1,
+      "concept": "String Methods",
+      "code_example": "'hello'.capitalize()  # 'Hello'"
     }
+  ]
+}
 ]
 ,
     //==============================================================================================================================
@@ -1299,7 +1908,7 @@
     //==============================================================================================================================
     //==============================================================================================================================
     
-            "Internet of Things and its Applications": [
+            "Internet of Things and its Applications": [ 
     /* Introduction to IoT (10) */
     {
         "question": "What does IoT stand for? / IoT का फुल फॉर्म क्या है?",
