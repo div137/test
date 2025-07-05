@@ -1009,895 +1009,441 @@
     //==============================================================================================================================
     //==============================================================================================================================
     //==============================================================================================================================
-            "Programming and Problem Solving through Python":[
+            "Programming and Problem Solving through Python":[{
+  "python_control_flow": [
+    /* ========== LOOPS (25 Questions) ========== */
     {
-      "question": "What is the output of `print(2 + 3 * 4)`? / `print(2 + 3 * 4)` का आउटपुट क्या होगा?",
-      "options": [
-        "20",
-        "14",
-        "24",
-        "10"
-      ],
+      "question": "What is the output of: `for i in range(3): print(i*2)`?",
+      "options": ["0 1 2", "0 2 4", "1 2 3", "2 4 6"],
       "answer": 1,
-      "concept": "Operator Precedence",
-      "code_example": "print(2 + 3 * 4)  # Output: 14"
+      "explanation": "range(3) gives 0,1,2 which are multiplied by 2"
     },
     {
-      "question": "Which function converts a string to integer in Python? / पायथन में स्ट्रिंग को इंटीजर में कौन-सा फंक्शन बदलता है?",
-      "options": [
-        "str()",
-        "float()",
-        "int()",
-        "chr()"
-      ],
+      "question": "How many times will 'Hello' print? `for i in range(1,6,2): print('Hello')`",
+      "options": ["2", "3", "5", "6"],
+      "answer": 1,
+      "explanation": "range(1,6,2) produces 1,3,5 (3 numbers)"
+    },
+    {
+      "question": "What does this code do? `while True: print('Infinite')`",
+      "options": ["Prints once", "Prints 100 times", "Infinite loop", "Syntax error"],
       "answer": 2,
-      "concept": "Type Conversion",
-      "code_example": "int('5')  # Returns 5"
+      "explanation": "Condition is always True"
     },
     {
-      "question": "What does `len()` function do? / `len()` फंक्शन क्या करता है?",
-      "options": [
-        "Returns length of string/list",
-        "Converts to lowercase",
-        "Rounds a number",
-        "Prints output"
-      ],
-      "answer": 0,
-      "concept": "Built-in Functions",
-      "code_example": "len('hello')  # Returns 5"
-    },
-    {
-      "question": "Which symbol is used for comments in Python? / पायथन में कमेंट्स के लिए कौन-सा सिंबल यूज़ होता है?",
-      "options": [
-        "//",
-        "#",
-        "/*",
-        "--"
-      ],
+      "question": "Output of: `for i in 'Python': if i == 'h': break; print(i)`",
+      "options": ["P y t h o n", "P y t", "P y", "P y t h"],
       "answer": 1,
-      "concept": "Comments",
-      "code_example": "# This is a comment"
+      "explanation": "Loop breaks at 'h'"
     },
     {
-      "question": "What is the output of `print('hi' * 3)`? / `print('hi' * 3)` का आउटपुट क्या होगा?",
-      "options": [
-        "hihihi",
-        "hi hi hi",
-        "hi3",
-        "Error"
-      ],
+      "question": "What will be printed? `x=3; while x>0: print(x); x-=1`",
+      "options": ["3 2 1", "3 2 1 0", "Infinite loop", "0"],
       "answer": 0,
-      "concept": "String Operations",
-      "code_example": "print('hi' * 3)  # Output: hihihi"
+      "explanation": "Decrements from 3 to 1"
     },
     {
-      "question": "Which data type is immutable in Python? / पायथन में कौन-सा डेटा टाइप इम्यूटेबल है?",
-      "options": [
-        "List",
-        "Dictionary",
-        "Tuple",
-        "Set"
-      ],
-      "answer": 2,
-      "concept": "Data Types",
-      "code_example": "t = (1, 2, 3)  # Tuple is immutable"
-    },
-    {
-      "question": "What is the output of `print(10 == '10')`? / `print(10 == '10')` का आउटपुट क्या होगा?",
-      "options": [
-        "True",
-        "False",
-        "Error",
-        "None"
-      ],
+      "question": "Output of: `for i in range(2): for j in range(2): print(i,j)`",
+      "options": ["0 1 0 1", "0 0 1 1", "0 1 1 2", "0 0 0 1 1 0 1 1"],
       "answer": 1,
-      "concept": "Comparison Operators",
-      "code_example": "print(10 == '10')  # Output: False"
+      "explanation": "Nested loops produce all combinations"
     },
     {
-      "question": "Which keyword defines a function in Python? / पायथन में फंक्शन डिफाइन करने के लिए कौन-सा कीवर्ड यूज़ होता है?",
-      "options": [
-        "def",
-        "function",
-        "define",
-        "fun"
-      ],
+      "question": "What does `for i in range(5,0,-1): print(i)` print?",
+      "options": ["5 4 3 2 1", "0 1 2 3 4 5", "5 4 3 2 1 0", "1 2 3 4 5"],
       "answer": 0,
-      "concept": "Functions",
-      "code_example": "def my_func():\n    pass"
+      "explanation": "Negative step counts down"
     },
     {
-      "question": "What does `range(5)` generate? / `range(5)` क्या जनरेट करता है?",
-      "options": [
-        "[0,1,2,3,4]",
-        "[1,2,3,4,5]",
-        "[5]",
-        "Error"
-      ],
+      "question": "How to skip even numbers in a loop?",
+      "options": ["Use continue", "Use break", "Use pass", "Use exit"],
       "answer": 0,
-      "concept": "range() function",
-      "code_example": "list(range(5))  # [0,1,2,3,4]"
+      "explanation": "continue skips current iteration"
     },
     {
-      "question": "Which method adds an item to a list? / लिस्ट में आइटम ऐड करने के लिए कौन-सा मेथड यूज़ होता है?",
-      "options": [
-        "append()",
-        "add()",
-        "insert()",
-        "push()"
-      ],
-      "answer": 0,
-      "concept": "List Methods",
-      "code_example": "lst = [1,2]\nlst.append(3)"
-    },
-    {
-      "question": "What is the output of `print(not True)`? / `print(not True)` का आउटपुट क्या होगा?",
-      "options": [
-        "True",
-        "False",
-        "None",
-        "Error"
-      ],
+      "question": "Output of: `for i in range(3): pass; print(i)`",
+      "options": ["0 1 2", "2", "3", "Nothing"],
       "answer": 1,
-      "concept": "Boolean Operators",
-      "code_example": "print(not True)  # Output: False"
+      "explanation": "Loop completes and i retains last value"
     },
     {
-      "question": "Which operator checks if value is present in sequence? / कौन-सा ऑपरेटर चेक करता है कि वैल्यू सीक्वेंस में है या नहीं?",
-      "options": [
-        "==",
-        "in",
-        "has",
-        "contains"
-      ],
-      "answer": 1,
-      "concept": "Membership Operators",
-      "code_example": "'a' in 'apple'  # Returns True"
-    },
-    {
-      "question": "What does `'hello'.upper()` return? / `'hello'.upper()` क्या रिटर्न करता है?",
-      "options": [
-        "HELLO",
-        "hello",
-        "Hello",
-        "hELLO"
-      ],
+      "question": "What will this print? `numbers = [1,2,3]; for n in numbers: n*=2; print(numbers)`",
+      "options": ["[1,2,3]", "[2,4,6]", "[1,2,3,1,2,3]", "Error"],
       "answer": 0,
-      "concept": "String Methods",
-      "code_example": "'hello'.upper()  # Returns 'HELLO'"
+      "explanation": "Original list isn't modified"
     },
     {
-      "question": "Which is used to handle exceptions? / एक्सेप्शन हैंडल करने के लिए क्या यूज़ होता है?",
-      "options": [
-        "try-except",
-        "if-else",
-        "for-else",
-        "while"
-      ],
-      "answer": 0,
-      "concept": "Exception Handling",
-      "code_example": "try:\n    x=1/0\nexcept:\n    print('Error')"
-    },
-    {
-      "question": "What is the output of `print(bool(''))`? / `print(bool(''))` का आउटपुट क्या होगा?",
-      "options": [
-        "True",
-        "False",
-        "None",
-        "Error"
-      ],
-      "answer": 1,
-      "concept": "Truthy/Falsy Values",
-      "code_example": "print(bool(''))  # Output: False"
-    },
-    {
-      "question": "Which symbol represents decision in flowchart? / फ्लोचार्ट में डिसीजन को कौन-सा सिंबल रिप्रेजेंट करता है?",
-      "options": [
-        "Rectangle",
-        "Diamond",
-        "Oval",
-        "Arrow"
-      ],
-      "answer": 1,
-      "concept": "Flowchart Symbols",
-      "code_example": "Diamond shape represents decision points"
-    },
-    {
-      "question": "What is the purpose of pseudocode? / स्यूडोकोड का क्या उद्देश्य है?",
-      "options": [
-        "Actual code execution",
-        "Algorithm representation",
-        "Graphical representation",
-        "Data storage"
-      ],
-      "answer": 1,
-      "concept": "Pseudocode",
-      "code_example": "Pseudocode is informal high-level description"
-    },
-    {
-      "question": "Which loop is guaranteed to execute at least once? / कौन-सा लूप कम से कम एक बार तो एक्जीक्यूट होगा ही?",
-      "options": [
-        "for",
-        "while",
-        "do-while",
-        "if"
-      ],
-      "answer": 2,
-      "concept": "Loops",
-      "code_example": "do-while executes before condition check"
-    },
-    {
-      "question": "What is the output of `print(3 ** 2)`? / `print(3 ** 2)` का आउटपुट क्या होगा?",
-      "options": [
-        "6",
-        "9",
-        "1.5",
-        "Error"
-      ],
-      "answer": 1,
-      "concept": "Arithmetic Operators",
-      "code_example": "print(3 ** 2)  # Output: 9 (exponent)"
-    },
-    {
-      "question": "Which method removes last item from list? / लिस्ट से लास्ट आइटम रिमूव करने के लिए कौन-सा मेथड यूज़ होता है?",
-      "options": [
-        "remove()",
-        "pop()",
-        "delete()",
-        "clear()"
-      ],
-      "answer": 1,
-      "concept": "List Methods",
-      "code_example": "lst = [1,2,3]\nlst.pop()"
-    },
-    {
-      "question": "What is the output of `print(10 % 3)`? / `print(10 % 3)` का आउटपुट क्या होगा?",
-      "options": [
-        "3",
-        "1",
-        "0",
-        "3.33"
-      ],
-      "answer": 1,
-      "concept": "Modulus Operator",
-      "code_example": "print(10 % 3)  # Output: 1 (remainder)"
-    },
-    {
-      "question": "Which is NOT a valid variable name? / कौन-सा वैरिएबल नाम वैलिड नहीं है?",
-      "options": [
-        "_var",
-        "var_name",
-        "2var",
-        "var2"
-      ],
-      "answer": 2,
-      "concept": "Variable Naming",
-      "code_example": "2var is invalid (can't start with number)"
-    },
-    {
-      "question": "What does `'hello'.split('e')` return? / `'hello'.split('e')` क्या रिटर्न करता है?",
-      "options": [
-        "['h', 'llo']",
-        "['he', 'llo']",
-        "['hell', 'o']",
-        "Error"
-      ],
-      "answer": 0,
-      "concept": "String Methods",
-      "code_example": "'hello'.split('e')  # ['h', 'llo']"
-    },
-    {
-      "question": "Which is used to read user input? / यूजर इनपुट पढ़ने के लिए क्या यूज़ होता है?",
-      "options": [
-        "input()",
-        "get()",
-        "read()",
-        "scan()"
-      ],
-      "answer": 0,
-      "concept": "User Input",
-      "code_example": "name = input('Enter name: ')"
-    },
-    {
-      "question": "What is the output of `print('Hello'[1:4])`? / `print('Hello'[1:4])` का आउटपुट क्या होगा?",
-      "options": [
-        "ell",
-        "Hel",
-        "ello",
-        "Hlo"
-      ],
-      "answer": 0,
-      "concept": "String Slicing",
-      "code_example": "print('Hello'[1:4])  # Output: 'ell'"
-    },
-    {
-      "question": "Which data structure uses FIFO principle? / कौन-सा डेटा स्ट्रक्चर FIFO प्रिंसिपल यूज़ करता है?",
-      "options": [
-        "Stack",
-        "Queue",
-        "List",
-        "Tree"
-      ],
-      "answer": 1,
-      "concept": "Queue",
-      "code_example": "Queue: First In First Out"
-    },
-    {
-      "question": "What is the output of `print(round(3.14159, 2))`? / `print(round(3.14159, 2))` का आउटपुट क्या होगा?",
-      "options": [
-        "3.14",
-        "3.1",
-        "3.0",
-        "3.141"
-      ],
-      "answer": 0,
-      "concept": "round() function",
-      "code_example": "print(round(3.14159, 2))  # Output: 3.14"
-    },
-    {
-      "question": "Which is NOT a Python data type? / कौन-सा पायथन डेटा टाइप नहीं है?",
-      "options": [
-        "int",
-        "float",
-        "char",
-        "bool"
-      ],
-      "answer": 2,
-      "concept": "Data Types",
-      "code_example": "Python doesn't have 'char' type specifically"
-    },
-    {
-      "question": "What is the output of `print([1,2] + [3,4])`? / `print([1,2] + [3,4])` का आउटपुट क्या होगा?",
-      "options": [
-        "[1,2,3,4]",
-        "[4,6]",
-        "[1,3,2,4]",
-        "Error"
-      ],
-      "answer": 0,
-      "concept": "List Concatenation",
-      "code_example": "print([1,2] + [3,4])  # Output: [1,2,3,4]"
-    },
-    {
-      "question": "Which method removes all items from list? / लिस्ट से सभी आइटम्स रिमूव करने के लिए कौन-सा मेथड यूज़ होता है?",
-      "options": [
-        "remove()",
-        "pop()",
-        "clear()",
-        "delete()"
-      ],
-      "answer": 2,
-      "concept": "List Methods",
-      "code_example": "lst = [1,2,3]\nlst.clear()"
-    },
-    {
-      "question": "What is the output of `print('Python'.find('th'))`? / `print('Python'.find('th'))` का आउटपुट क्या होगा?",
-      "options": [
-        "2",
-        "3",
-        "-1",
-        "True"
-      ],
-      "answer": 0,
-      "concept": "String Methods",
-      "code_example": "print('Python'.find('th'))  # Output: 2"
-    },
-    {
-      "question": "Which is used to exit a function? / फंक्शन से एग्जिट करने के लिए क्या यूज़ होता है?",
-      "options": [
-        "break",
-        "return",
-        "exit",
-        "continue"
-      ],
-      "answer": 1,
-      "concept": "Functions",
-      "code_example": "def func():\n    return 5"
-    },
-    {
-      "question": "What is the output of `print(10 // 3)`? / `print(10 // 3)` का आउटपुट क्या होगा?",
-      "options": [
-        "3",
-        "3.33",
-        "1",
-        "0"
-      ],
-      "answer": 0,
-      "concept": "Floor Division",
-      "code_example": "print(10 // 3)  # Output: 3"
-    },
-    {
-      "question": "Which is valid dictionary creation? / कौन-सा डिक्शनरी क्रिएशन वैलिड है?",
-      "options": [
-        "{1: 'a', 2: 'b'}",
-        "[1: 'a', 2: 'b']",
-        "(1: 'a', 2: 'b')",
-        "<1: 'a', 2: 'b'>"
-      ],
-      "answer": 0,
-      "concept": "Dictionary",
-      "code_example": "d = {1: 'a', 2: 'b'}"
-    },
-    {
-      "question": "What is the output of `print(min([3,1,4,2]))`? / `print(min([3,1,4,2]))` का आउटपुट क्या होगा?",
-      "options": [
-        "1",
-        "3",
-        "2",
-        "4"
-      ],
-      "answer": 0,
-      "concept": "Built-in Functions",
-      "code_example": "print(min([3,1,4,2]))  # Output: 1"
-    },
-    {
-      "question": "Which operator performs logical AND? / लॉजिकल AND के लिए कौन-सा ऑपरेटर यूज़ होता है?",
-      "options": [
-        "&",
-        "&&",
-        "and",
-        "|"
-      ],
-      "answer": 2,
-      "concept": "Logical Operators",
-      "code_example": "if x > 0 and x < 10:"
-    },
-    {
-      "question": "What is the output of `print('a' in {'a':1})`? / `print('a' in {'a':1})` का आउटपुट क्या होगा?",
-      "options": [
-        "True",
-        "False",
-        "1",
-        "Error"
-      ],
-      "answer": 0,
-      "concept": "Dictionary Keys",
-      "code_example": "print('a' in {'a':1})  # Output: True"
-    },
-    {
-      "question": "Which is used to create a sequence diagram? / सीक्वेंस डायग्राम क्रिएट करने के लिए क्या यूज़ होता है?",
-      "options": [
-        "Flowchart",
-        "Pseudocode",
-        "UML",
-        "Algorithm"
-      ],
-      "answer": 2,
-      "concept": "Sequence Diagram",
-      "code_example": "UML includes sequence diagrams"
-    },
-    {
-      "question": "What is the output of `print(bool(0))`? / `print(bool(0))` का आउटपुट क्या होगा?",
-      "options": [
-        "True",
-        "False",
-        "None",
-        "Error"
-      ],
-      "answer": 1,
-      "concept": "Truthy/Falsy Values",
-      "code_example": "print(bool(0))  # Output: False"
-    },
-    {
-      "question": "Which method returns dictionary keys? / डिक्शनरी कीज़ रिटर्न करने के लिए कौन-सा मेथड यूज़ होता है?",
-      "options": [
-        "keys()",
-        "items()",
-        "values()",
-        "get()"
-      ],
-      "answer": 0,
-      "concept": "Dictionary Methods",
-      "code_example": "d = {'a':1}\nd.keys()  # ['a']"
-    },
-    {
-      "question": "What is the output of `print(1 == True)`? / `print(1 == True)` का आउटपुट क्या होगा?",
-      "options": [
-        "True",
-        "False",
-        "Error",
-        "None"
-      ],
-      "answer": 0,
-      "concept": "Boolean Values",
-      "code_example": "print(1 == True)  # Output: True"
-    },
-    {
-      "question": "Which is used for single-line pseudocode? / सिंगल लाइन स्यूडोकोड के लिए क्या यूज़ होता है?",
-      "options": [
-        "//",
-        "#",
-        "--",
-        "No symbol needed"
-      ],
+      "question": "Which loop is guaranteed to execute at least once?",
+      "options": ["for", "while", "do-while", "Python has no such loop"],
       "answer": 3,
-      "concept": "Pseudocode",
-      "code_example": "Pseudocode often has no strict syntax"
+      "explanation": "Python doesn't have do-while"
     },
     {
-      "question": "What is the output of `print('Hello'.replace('l','x'))`? / `print('Hello'.replace('l','x'))` का आउटपुट क्या होगा?",
-      "options": [
-        "Hexxo",
-        "Hxxlo",
-        "Hexlo",
-        "Hxllo"
-      ],
+      "question": "Output of: `for i in range(0): print(i)`",
+      "options": ["0", "Nothing", "Error", "None"],
+      "answer": 1,
+      "explanation": "range(0) is empty"
+    },
+    {
+      "question": "What does `else` with a for loop do?",
+      "options": ["Executes if loop completes normally", "Always executes", "Executes on error", "Invalid syntax"],
       "answer": 0,
-      "concept": "String Methods",
-      "code_example": "print('Hello'.replace('l','x'))  # Output: Hexxo"
+      "explanation": "Else executes if no break occurred"
     },
     {
-      "question": "Which is NOT a loop structure? / कौन-सा लूप स्ट्रक्चर नहीं है?",
-      "options": [
-        "for",
-        "while",
-        "do-while",
-        "if-else"
-      ],
+      "question": "Output of: `i=5; while i>0: i-=1; if i==3: continue; print(i)`",
+      "options": ["4 2 1 0", "4 3 2 1 0", "4 2 1", "4 3 2 1"],
+      "answer": 0,
+      "explanation": "Skips printing when i=3"
+    },
+    {
+      "question": "How to exit nested loops?",
+      "options": ["Use multiple breaks", "Use a flag variable", "Use return if in function", "All of these"],
       "answer": 3,
-      "concept": "Loops",
-      "code_example": "if-else is conditional, not a loop"
+      "explanation": "All are valid approaches"
     },
     {
-      "question": "What is the output of `print(3 * 'ab')`? / `print(3 * 'ab')` का आउटपुट क्या होगा?",
-      "options": [
-        "ababab",
-        "3ab",
-        "ab3",
-        "Error"
-      ],
-      "answer": 0,
-      "concept": "String Operations",
-      "code_example": "print(3 * 'ab')  # Output: ababab"
-    },
-    {
-      "question": "Which method adds element at specific index? / स्पेसिफिक इंडेक्स पर एलिमेंट ऐड करने के लिए कौन-सा मेथड यूज़ होता है?",
-      "options": [
-        "append()",
-        "insert()",
-        "add()",
-        "push()"
-      ],
+      "question": "Output of: `for x,y in [(1,2),(3,4)]: print(x+y)`",
+      "options": ["1 2 3 4", "3 7", "1 3 2 4", "Error"],
       "answer": 1,
-      "concept": "List Methods",
-      "code_example": "lst = [1,3]\nlst.insert(1,2)"
+      "explanation": "Tuple unpacking in loop"
     },
     {
-      "question": "What is the output of `print(7 > 5 > 3)`? / `print(7 > 5 > 3)` का आउटपुट क्या होगा?",
-      "options": [
-        "True",
-        "False",
-        "Error",
-        "None"
-      ],
+      "question": "What will this print? `for i in range(10): if i%3==0: print(i)`",
+      "options": ["0 3 6 9", "3 6 9", "1 2 3", "0 1 2"],
       "answer": 0,
-      "concept": "Chained Comparisons",
-      "code_example": "print(7 > 5 > 3)  # Output: True"
+      "explanation": "Prints multiples of 3 including 0"
     },
     {
-      "question": "Which is valid set creation? / कौन-सा सेट क्रिएशन वैलिड है?",
-      "options": [
-        "{1,2,3}",
-        "[1,2,3]",
-        "(1,2,3)",
-        "<1,2,3>"
-      ],
-      "answer": 0,
-      "concept": "Set",
-      "code_example": "s = {1,2,3}"
-    },
-    {
-      "question": "What is the output of `print('Python'[-3:])`? / `print('Python'[-3:])` का आउटपुट क्या होगा?",
-      "options": [
-        "hon",
-        "Pyt",
-        "thon",
-        "Error"
-      ],
-      "answer": 0,
-      "concept": "String Slicing",
-      "code_example": "print('Python'[-3:])  # Output: 'hon'"
-    },
-    {
-      "question": "Which is used to skip current iteration? / करंट इटरेशन को स्किप करने के लिए क्या यूज़ होता है?",
-      "options": [
-        "break",
-        "continue",
-        "pass",
-        "skip"
-      ],
+      "question": "Which is faster? `while True:` or `while 1:`?",
+      "options": ["while True:", "while 1:", "Same speed", "Depends on Python version"],
       "answer": 1,
-      "concept": "Loop Control",
-      "code_example": "for i in range(5):\n    if i == 2:\n        continue"
+      "explanation": "In Python 2, while 1 is faster (not in Python 3)"
     },
     {
-      "question": "What is the output of `print(3 + 4 * 2)`? / `print(3 + 4 * 2)` का आउटपुट क्या होगा?",
-      "options": [
-        "14",
-        "11",
-        "10",
-        "Error"
-      ],
-      "answer": 1,
-      "concept": "Operator Precedence",
-      "code_example": "print(3 + 4 * 2)  # Output: 11"
-    },
-    {
-      "question": "Which method returns dictionary values? / डिक्शनरी वैल्यूज रिटर्न करने के लिए कौन-सा मेथड यूज़ होता है?",
-      "options": [
-        "keys()",
-        "items()",
-        "values()",
-        "get()"
-      ],
+      "question": "Output of: `for i in range(1,5): if i==3: break; print(i) else: print('Done')`",
+      "options": ["1 2 Done", "1 2 3", "1 2", "1 2 3 Done"],
       "answer": 2,
-      "concept": "Dictionary Methods",
-      "code_example": "d = {'a':1}\nd.values()  # [1]"
+      "explanation": "break skips else clause"
     },
     {
-      "question": "What is the output of `print('Hello'.lower())`? / `print('Hello'.lower())` का आउटपुट क्या होगा?",
-      "options": [
-        "hello",
-        "HELLO",
-        "Hello",
-        "hELLO"
-      ],
+      "question": "What does `enumerate()` do in loops?",
+      "options": ["Counts iterations", "Provides index and value", "Filters elements", "Speeds up loop"],
+      "answer": 1,
+      "explanation": "Returns (index, value) pairs"
+    },
+    {
+      "question": "Output of: `for i in range(2): print(i); else: print('Complete')`",
+      "options": ["0 1 Complete", "0 1", "Complete", "0 1 else Complete"],
       "answer": 0,
-      "concept": "String Methods",
-      "code_example": "print('Hello'.lower())  # Output: hello"
+      "explanation": "Else executes after normal completion"
     },
     {
-      "question": "Which is used to represent start/end in flowchart? / फ्लोचार्ट में स्टार्ट/एंड को रिप्रेजेंट करने के लिए क्या यूज़ होता है?",
-      "options": [
-        "Rectangle",
-        "Diamond",
-        "Oval",
-        "Arrow"
-      ],
+      "question": "How to make an infinite for loop?",
+      "options": ["for(;;)", "while True in for", "for i in iter(int,1)", "Not possible"],
       "answer": 2,
-      "concept": "Flowchart Symbols",
-      "code_example": "Oval represents start/end points"
+      "explanation": "iter(int,1) calls int() until it returns 1 (never)"
     },
     {
-      "question": "What is the output of `print(2**3**2)`? / `print(2**3**2)` का आउटपुट क्या होगा?",
-      "options": [
-        "64",
-        "512",
-        "12",
-        "Error"
-      ],
-      "answer": 1,
-      "concept": "Operator Precedence",
-      "code_example": "print(2**3**2)  # Output: 512 (right associative)"
-    },
-    {
-      "question": "Which method removes whitespace from string? / स्ट्रिंग से व्हाइटस्पेस रिमूव करने के लिए कौन-सा मेथड यूज़ होता है?",
-      "options": [
-        "trim()",
-        "strip()",
-        "clean()",
-        "remove()"
-      ],
-      "answer": 1,
-      "concept": "String Methods",
-      "code_example": "' hello '.strip()  # 'hello'"
-    },
-    {
-      "question": "What is the output of `print([n**2 for n in range(3)])`? / `print([n**2 for n in range(3)])` का आउटपुट क्या होगा?",
-      "options": [
-        "[0,1,4]",
-        "[1,4,9]",
-        "[0,1,2]",
-        "Error"
-      ],
+      "question": "Output of: `for i in range(3): print(i); i+=5`",
+      "options": ["0 1 2", "0 5 10", "0 6 12", "Infinite loop"],
       "answer": 0,
-      "concept": "List Comprehension",
-      "code_example": "print([n**2 for n in range(3)])  # [0,1,4]"
+      "explanation": "range() controls iteration, modifying i has no effect"
     },
     {
-      "question": "Which is used to represent input/output in flowchart? / फ्लोचार्ट में इनपुट/आउटपुट को रिप्रेजेंट करने के लिए क्या यूज़ होता है?",
-      "options": [
-        "Rectangle",
-        "Diamond",
-        "Parallelogram",
-        "Oval"
-      ],
+      "question": "What is the most Pythonic way to loop?",
+      "options": ["Using indices", "Using while", "Direct iteration", "List comprehensions"],
       "answer": 2,
-      "concept": "Flowchart Symbols",
-      "code_example": "Parallelogram represents I/O"
+      "explanation": "Python favors direct iteration over sequences"
     },
     {
-      "question": "What is the output of `print('Python'[::2])`? / `print('Python'[::2])` का आउटपुट क्या होगा?",
-      "options": [
-        "Pto",
-        "yhn",
-        "Python",
-        "Pyth"
-      ],
+      "question": "Output of: `for i in range(-2,2): print(i,end=' ')`",
+      "options": ["-2 -1 0 1", "-2 -1 0 1 2", "0 1", "Error"],
       "answer": 0,
-      "concept": "String Slicing",
-      "code_example": "print('Python'[::2])  # Output: 'Pto'"
+      "explanation": "range() includes start, excludes stop"
     },
+
+    /* ========== CONDITIONALS (25 Questions) ========== */
     {
-      "question": "Which is used to represent process in flowchart? / फ्लोचार्ट में प्रोसेस को रिप्रेजेंट करने के लिए क्या यूज़ होता है?",
-      "options": [
-        "Rectangle",
-        "Diamond",
-        "Oval",
-        "Arrow"
-      ],
+      "question": "What is the output of: `print('A' if 2>1 else 'B')`?",
+      "options": ["A", "B", "True", "Error"],
       "answer": 0,
-      "concept": "Flowchart Symbols",
-      "code_example": "Rectangle represents processing steps"
+      "explanation": "Condition is true"
     },
     {
-      "question": "What is the output of `print(any([False, True, False]))`? / `print(any([False, True, False]))` का आउटपुट क्या होगा?",
-      "options": [
-        "True",
-        "False",
-        "None",
-        "Error"
-      ],
-      "answer": 0,
-      "concept": "any() function",
-      "code_example": "print(any([False, True, False]))  # Output: True"
-    },
-    {
-      "question": "Which method checks if string starts with prefix? / स्ट्रिंग प्रीफिक्स से स्टार्ट होती है या नहीं चेक करने के लिए कौन-सा मेथड यूज़ होता है?",
-      "options": [
-        "startswith()",
-        "beginwith()",
-        "prefix()",
-        "first()"
-      ],
-      "answer": 0,
-      "concept": "String Methods",
-      "code_example": "'hello'.startswith('he')  # True"
-    },
-    {
-      "question": "What is the output of `print(all([True, False, True]))`? / `print(all([True, False, True]))` का आउटपुट क्या होगा?",
-      "options": [
-        "True",
-        "False",
-        "None",
-        "Error"
-      ],
+      "question": "What will this print? `if []: print('A') else: print('B')`",
+      "options": ["A", "B", "[]", "Nothing"],
       "answer": 1,
-      "concept": "all() function",
-      "code_example": "print(all([True, False, True]))  # Output: False"
+      "explanation": "Empty list is falsy"
     },
     {
-      "question": "Which is used to represent flow direction? / फ्लो डायरेक्शन को रिप्रेजेंट करने के लिए क्या यूज़ होता है?",
-      "options": [
-        "Rectangle",
-        "Diamond",
-        "Oval",
-        "Arrow"
-      ],
+      "question": "Output of: `print('Hi') if False else print('Bye') if True else print('None')`",
+      "options": ["Hi", "Bye", "None", "Hi Bye"],
+      "answer": 1,
+      "explanation": "First condition false, second true"
+    },
+    {
+      "question": "What does `if not 0: print('Zero')` do?",
+      "options": ["Prints 'Zero'", "Raises error", "Does nothing", "Prints '0'"],
+      "answer": 0,
+      "explanation": "0 is falsy, not makes it True"
+    },
+    {
+      "question": "Output of: `x=5; print('Big' if x>10 else 'Small' if x>2 else 'Tiny')`",
+      "options": ["Big", "Small", "Tiny", "Error"],
+      "answer": 1,
+      "explanation": "First condition false, second true"
+    },
+    {
+      "question": "Which evaluates to False?",
+      "options": ["'False'", "-1", "None", "'0'"],
+      "answer": 2,
+      "explanation": "None is falsy"
+    },
+    {
+      "question": "Output of: `if 1 and not 0: print(1)`",
+      "options": ["1", "0", "Nothing", "Error"],
+      "answer": 0,
+      "explanation": "1 is truthy, not 0 is True"
+    },
+    {
+      "question": "What will `bool('False')` return?",
+      "options": ["True", "False", "Error", "None"],
+      "answer": 0,
+      "explanation": "Non-empty strings are truthy"
+    },
+    {
+      "question": "Output of: `print('A') if 0 else print('B') if [] else print('C')`",
+      "options": ["A", "B", "C", "A B C"],
+      "answer": 2,
+      "explanation": "Both 0 and [] are falsy"
+    },
+    {
+      "question": "What is the correct chained condition for 5<x≤10?",
+      "options": ["if 5<x and x<=10", "if 5<x<=10", "Both work", "Neither works"],
+      "answer": 2,
+      "explanation": "Python supports chained comparisons"
+    },
+    {
+      "question": "Output of: `print('Yes') if None or 0 else print('No')`",
+      "options": ["Yes", "No", "None", "0"],
+      "answer": 1,
+      "explanation": "None and 0 are both falsy"
+    },
+    {
+      "question": "Which is NOT equivalent to `if x:`?",
+      "options": ["if x!=0:", "if x is not None:", "if bool(x):", "if len(x)>0:"],
       "answer": 3,
-      "concept": "Flowchart Symbols",
-      "code_example": "Arrows show flow direction"
+      "explanation": "Only works for sequences"
     },
     {
-      "question": "What is the output of `print(sorted([3,1,2]))`? / `print(sorted([3,1,2]))` का आउटपुट क्या होगा?",
-      "options": [
-        "[1,2,3]",
-        "[3,1,2]",
-        "[3,2,1]",
-        "Error"
-      ],
-      "answer": 0,
-      "concept": "sorted() function",
-      "code_example": "print(sorted([3,1,2]))  # Output: [1,2,3]"
-    },
-    {
-      "question": "Which method returns string without leading/trailing chars? / लीडिंग/ट्रेलिंग कैरेक्टर्स के बिना स्ट्रिंग रिटर्न करने के लिए कौन-सा मेथड यूज़ होता है?",
-      "options": [
-        "clean()",
-        "strip()",
-        "trim()",
-        "cut()"
-      ],
+      "question": "Output of: `if 1: if 0: print('A'); print('B')`",
+      "options": ["A B", "B", "A", "Nothing"],
       "answer": 1,
-      "concept": "String Methods",
-      "code_example": "' hello '.strip()  # 'hello'"
+      "explanation": "Outer if true, inner if false"
     },
     {
-      "question": "What is the output of `print('Hello'.isalpha())`? / `print('Hello'.isalpha())` का आउटपुट क्या होगा?",
-      "options": [
-        "True",
-        "False",
-        "None",
-        "Error"
-      ],
-      "answer": 0,
-      "concept": "String Methods",
-      "code_example": "print('Hello'.isalpha())  # Output: True"
-    },
-    {
-      "question": "Which is used to represent subroutine in flowchart? / फ्लोचार्ट में सबरूटीन को रिप्रेजेंट करने के लिए क्या यूज़ होता है?",
-      "options": [
-        "Rectangle with double lines",
-        "Diamond",
-        "Oval",
-        "Parallelogram"
-      ],
-      "answer": 0,
-      "concept": "Flowchart Symbols",
-      "code_example": "Double-lined rectangle for subroutines"
-    },
-    {
-      "question": "What is the output of `print('123'.isdigit())`? / `print('123'.isdigit())` का आउटपुट क्या होगा?",
-      "options": [
-        "True",
-        "False",
-        "None",
-        "Error"
-      ],
-      "answer": 0,
-      "concept": "String Methods",
-      "code_example": "print('123'.isdigit())  # Output: True"
-    },
-    {
-      "question": "Which method returns string centered in width? / विड्थ में सेंटर्ड स्ट्रिंग रिटर्न करने के लिए कौन-सा मेथड यूज़ होता है?",
-      "options": [
-        "align()",
-        "center()",
-        "middle()",
-        "pad()"
-      ],
+      "question": "What does `pass` do in conditionals?",
+      "options": ["Skips condition", "Null operation", "Exits loop", "Continues loop"],
       "answer": 1,
-      "concept": "String Methods",
-      "code_example": "'hi'.center(5)  # ' hi  '"
+      "explanation": "Placeholder that does nothing"
     },
     {
-      "question": "What is the output of `print('Python'.count('t'))`? / `print('Python'.count('t'))` का आउटपुट क्या होगा?",
-      "options": [
-        "1",
-        "0",
-        "2",
-        "Error"
-      ],
-      "answer": 0,
-      "concept": "String Methods",
-      "code_example": "print('Python'.count('t'))  # Output: 1"
+      "question": "Output of: `print('A' if '' else 'B' if None else 'C')`",
+      "options": ["A", "B", "C", "Error"],
+      "answer": 2,
+      "explanation": "Both empty string and None are falsy"
     },
     {
-      "question": "Which is used to represent connection between pages? / पेजेस के बीच कनेक्शन रिप्रेजेंट करने के लिए क्या यूज़ होता है?",
-      "options": [
-        "Circle",
-        "Pentagon",
-        "Diamond",
-        "Rectangle"
-      ],
-      "answer": 0,
-      "concept": "Flowchart Symbols",
-      "code_example": "Circle represents connector between pages"
+      "question": "What is the correct way to check for multiple conditions?",
+      "options": ["if x==1 or 2:", "if x==1 or x==2:", "if x in (1,2):", "Both 2 and 3"],
+      "answer": 3,
+      "explanation": "Both are valid approaches"
     },
     {
-      "question": "What is the output of `print('Hello'.endswith('lo'))`? / `print('Hello'.endswith('lo'))` का आउटपुट क्या होगा?",
-      "options": [
-        "True",
-        "False",
-        "None",
-        "Error"
-      ],
-      "answer": 0,
-      "concept": "String Methods",
-      "code_example": "print('Hello'.endswith('lo'))  # Output: True"
-    },
-    {
-      "question": "Which method returns string with first letter capitalized? / फर्स्ट लेटर कैपिटलाइज्ड स्ट्रिंग रिटर्न करने के लिए कौन-सा मेथड यूज़ होता है?",
-      "options": [
-        "upper()",
-        "capitalize()",
-        "title()",
-        "firstupper()"
-      ],
+      "question": "Output of: `if not 'hello': print(1); else: print(2)`",
+      "options": ["1", "2", "Error", "1 2"],
       "answer": 1,
-      "concept": "String Methods",
-      "code_example": "'hello'.capitalize()  # 'Hello'"
+      "explanation": "Non-empty string is truthy"
+    },
+    {
+      "question": "What will `bool(0.0)` return?",
+      "options": ["True", "False", "Error", "None"],
+      "answer": 1,
+      "explanation": "0.0 is falsy"
+    },
+    {
+      "question": "Output of: `print('A') if False else pass`",
+      "options": ["A", "Nothing", "Error", "None"],
+      "answer": 2,
+      "explanation": "pass cannot be used in expression"
+    },
+    {
+      "question": "Which is the correct ternary operator?",
+      "options": ["x ? y : z", "x if y else z", "y if x else z", "if x then y else z"],
+      "answer": 2,
+      "explanation": "Python's ternary syntax"
+    },
+    {
+      "question": "Output of: `if 5: print('5') if 0 else print('0')`",
+      "options": ["5", "0", "5 0", "Error"],
+      "answer": 1,
+      "explanation": "Outer if irrelevant, inner ternary prints 0"
+    },
+    {
+      "question": "What does `if x:=5:` do?",
+      "options": ["Compares x to 5", "Assigns 5 to x then checks", "Syntax error", "Checks if x equals 5"],
+      "answer": 1,
+      "explanation": "Walrus operator assigns and checks"
+    },
+    {
+      "question": "Output of: `print('A' if False else 'B' if True else 'C')`",
+      "options": ["A", "B", "C", "B C"],
+      "answer": 1,
+      "explanation": "First false, second true"
+    },
+    {
+      "question": "Which evaluates to True?",
+      "options": ["bool([])", "bool({})", "bool(' ')", "bool(0)"],
+      "answer": 2,
+      "explanation": "String with space is non-empty"
+    },
+    {
+      "question": "Output of: `if not (True and False): print('A')`",
+      "options": ["A", "Nothing", "False", "Error"],
+      "answer": 0,
+      "explanation": "True and False is False, not makes it True"
+    },
+
+    /* ========== PSEUDOCODE/FLOWCHART (20 Questions) ========== */
+    {
+      "question": "Pseudocode: x=5; if x>3: print('A'); else: print('B')",
+      "options": ["A", "B", "AB", "None"],
+      "answer": 0,
+      "explanation": "5 is greater than 3"
+    },
+    {
+      "question": "Flowchart: Start → x=0 → Is x<3? → Print x → x+=1 → Loop back → End",
+      "options": ["0 1 2", "0 1 2 3", "1 2 3", "Infinite loop"],
+      "answer": 0,
+      "explanation": "Loop runs while x is 0,1,2"
+    },
+    {
+      "question": "Pseudocode: for i from 1 to 3: print(i*2); if i==2: break",
+      "options": ["2 4", "2 4 6", "1 2 3", "2"],
+      "answer": 0,
+      "explanation": "Breaks after i=2"
+    },
+    {
+      "question": "Flowchart: Start → x=10 → Is x>5? → Print 'Yes' → End",
+      "options": ["Yes", "No", "10", "None"],
+      "answer": 0,
+      "explanation": "10 is greater than 5"
+    },
+    {
+      "question": "Pseudocode: i=1; while i<=5: print(i); i+=2",
+      "options": ["1 3 5", "1 2 3 4 5", "2 4", "1 3"],
+      "answer": 0,
+      "explanation": "Steps by 2 each iteration"
+    },
+    {
+      "question": "Flowchart: Start → x=1 → Is x<4? → Print x → x*=2 → Loop back → End",
+      "options": ["1 2 4", "1 2", "1 2 4 8", "2 4"],
+      "answer": 1,
+      "explanation": "Loop runs for x=1,2 (4 is not less than 4)"
+    },
+    {
+      "question": "Pseudocode: if 0: print('A'); elif '': print('B'); else: print('C')",
+      "options": ["A", "B", "C", "None"],
+      "answer": 2,
+      "explanation": "Both 0 and empty string are falsy"
+    },
+    {
+      "question": "Flowchart: Start → x=3 → Is x%2==0? → Print 'Even' → Else → Print 'Odd' → End",
+      "options": ["Even", "Odd", "3", "None"],
+      "answer": 1,
+      "explanation": "3 is odd"
+    },
+    {
+      "question": "Pseudocode: for each item in [2,4,6]: if item>3: print(item)",
+      "options": ["2 4 6", "4 6", "2", "6"],
+      "answer": 1,
+      "explanation": "Only prints numbers >3"
+    },
+    {
+      "question": "Flowchart: Start → i=0 → Is i<3? → Print 'Hi' → i+=1 → Loop back → Print 'Done' → End",
+      "options": ["Hi Hi Hi Done", "Hi Hi Hi", "Done", "Hi Done"],
+      "answer": 0,
+      "explanation": "Loop runs 3 times then prints Done"
+    },
+    {
+      "question": "Pseudocode: x=5; while x>0: x-=1; if x==2: continue; print(x)",
+      "options": ["4 3 1 0", "4 3 2 1 0", "4 3 0", "4 3"],
+      "answer": 0,
+      "explanation": "Skips printing 2"
+    },
+    {
+      "question": "Flowchart: Start → x=1 → Is x<10? → Print x → x+=x → Loop back → End",
+      "options": ["1 2 4 8", "1 2 4 8 16", "2 4 8 16", "1 2 3 4"],
+      "answer": 0,
+      "explanation": "x doubles each time (1,2,4,8)"
+    },
+    {
+      "question": "Pseudocode: if True and False: print('A'); else: print('B')",
+      "options": ["A", "B", "AB", "None"],
+      "answer": 1,
+      "explanation": "True AND False is False"
+    },
+    {
+      "question": "Flowchart: Start → x=5 → Is x==0? → Print 'Zero' → Else → Print 'Non-zero' → End",
+      "options": ["Zero", "Non-zero", "5", "None"],
+      "answer": 1,
+      "explanation": "5 is not zero"
+    },
+    {
+      "question": "Pseudocode: for i in [0,1,2]: if i%2==0: print(i); else: pass",
+      "options": ["0 1 2", "0 2", "1", "None"],
+      "answer": 1,
+      "explanation": "Prints even numbers"
+    },
+    {
+      "question": "Flowchart: Start → x=10 → Is x>5? → Yes → Print 'Big' → Is x>8? → Yes → Print 'Bigger' → End",
+      "options": ["Big", "Bigger", "Big Bigger", "None"],
+      "answer": 2,
+      "explanation": "Both conditions are true"
+    },
+    {
+      "question": "Pseudocode: result=1; for i in range(1,4): result*=i; print(result)",
+      "options": ["1 2 6", "6", "1 1 2 6", "1 2 3"],
+      "answer": 1,
+      "explanation": "Final result is 1*2*3=6"
+    },
+    {
+      "question": "Flowchart: Start → x=0 → Is x<3? → Print x → x+=1 → Is x==2? → Print 'Two' → Loop back → End",
+      "options": ["0 1 Two 2", "0 1 Two", "0 Two 1 2", "0 1 2 Two"],
+      "answer": 0,
+      "explanation": "Prints Two when x becomes 2"
+    },
+    {
+      "question": "Pseudocode: while False: print('A'); else: print('B')",
+      "options": ["A", "B", "A B", "None"],
+      "answer": 1,
+      "explanation": "Loop never runs, else executes"
+    },
+    {
+      "question": "Flowchart: Start → x=1 → Is x<5? → Print x → x+=2 → Loop back → Print 'Done' → End",
+      "options": ["1 3 Done", "1 3 5 Done", "1 3 5", "Done"],
+      "answer": 0,
+      "explanation": "Loop runs for x=1,3 (5 is not less than 5)"
+    },
+    {
+      "question": "Pseudocode: if not (False or True): print('A'); else: print('B')",
+      "options": ["A", "B", "AB", "None"],
+      "answer": 1,
+      "explanation": "False or True is True, not makes it False"
     }
+  ]
+}
   ],
     //==============================================================================================================================
     //==============================================================================================================================
